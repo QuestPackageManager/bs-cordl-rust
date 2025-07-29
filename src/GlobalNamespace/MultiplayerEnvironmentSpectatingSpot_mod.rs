@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerEnvironmentSpectatingSpot")]
+#[cfg(feature = "MultiplayerEnvironmentSpectatingSpot")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerEnvironmentSpectatingSpot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

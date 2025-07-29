@@ -42,7 +42,7 @@ for crate::System::Threading::Tasks::Task_1<TResult> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1")]
+#[cfg(feature = "System+Threading+Tasks+Task_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Task_1<TResult> {
     type Target = crate::System::Threading::Tasks::Task;
@@ -50,7 +50,7 @@ for crate::System::Threading::Tasks::Task_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1")]
+#[cfg(feature = "System+Threading+Tasks+Task_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::Task_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1396,7 +1396,7 @@ for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1404,7 +1404,7 @@ for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
+#[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

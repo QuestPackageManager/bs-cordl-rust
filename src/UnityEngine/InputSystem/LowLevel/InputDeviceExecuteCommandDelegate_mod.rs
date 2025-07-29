@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceExecuteCommandDelegate"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceExecuteCommandDelegate")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputDeviceExecuteCommandDelegate"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputDeviceExecuteCommandDelegate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

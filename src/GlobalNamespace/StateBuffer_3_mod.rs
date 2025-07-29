@@ -72,7 +72,7 @@ for crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3")]
+#[cfg(feature = "StateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -83,7 +83,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3")]
+#[cfg(feature = "StateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -461,7 +461,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
         false
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3+InterpolationDelegate")]
+#[cfg(feature = "StateBuffer_3+InterpolationDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -760,7 +760,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
         false
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -772,7 +772,7 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StateBuffer_3+SmoothingDelegate")]
+#[cfg(feature = "StateBuffer_3+SmoothingDelegate")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

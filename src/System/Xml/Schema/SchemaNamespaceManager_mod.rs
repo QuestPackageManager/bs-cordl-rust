@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::SchemaNamespaceManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+SchemaNamespaceManager")]
+#[cfg(feature = "System+Xml+Schema+SchemaNamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaNamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

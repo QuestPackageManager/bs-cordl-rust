@@ -31,9 +31,7 @@ for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
-)]
+#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     type Target = crate::Org::BouncyCastle::Cms::KeyTransRecipientInfoGenerator;
@@ -41,9 +39,7 @@ for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator"
-)]
+#[cfg(feature = "Org+BouncyCastle+Operators+CmsKeyTransRecipientInfoGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Operators::CmsKeyTransRecipientInfoGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

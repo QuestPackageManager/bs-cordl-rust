@@ -27,14 +27,14 @@ for crate::BeatSaber::AvatarCore::LobbyAvatarInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LobbyAvatarInstaller")]
+#[cfg(feature = "BeatSaber+AvatarCore+LobbyAvatarInstaller")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::LobbyAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LobbyAvatarInstaller")]
+#[cfg(feature = "BeatSaber+AvatarCore+LobbyAvatarInstaller")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::LobbyAvatarInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

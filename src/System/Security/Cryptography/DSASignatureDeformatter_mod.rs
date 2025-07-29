@@ -26,14 +26,14 @@ for crate::System::Security::Cryptography::DSASignatureDeformatter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+DSASignatureDeformatter")]
+#[cfg(feature = "System+Security+Cryptography+DSASignatureDeformatter")]
 impl std::ops::Deref for crate::System::Security::Cryptography::DSASignatureDeformatter {
     type Target = crate::System::Security::Cryptography::AsymmetricSignatureDeformatter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+DSASignatureDeformatter")]
+#[cfg(feature = "System+Security+Cryptography+DSASignatureDeformatter")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::DSASignatureDeformatter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -40,7 +40,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -48,7 +48,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -348,7 +348,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
@@ -358,7 +358,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Reference
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {

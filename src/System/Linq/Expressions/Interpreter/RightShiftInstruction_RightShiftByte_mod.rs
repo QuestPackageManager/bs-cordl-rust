@@ -29,7 +29,7 @@ for crate::GlobalNamespace::RightShiftInstruction_RightShiftByte {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
+    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShiftByte {
     type Target = crate::System::Linq::Expressions::Interpreter::RightShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::RightShiftInstruction_RightShif
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
+    feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction+RightShiftByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RightShiftInstruction_RightShiftByte {

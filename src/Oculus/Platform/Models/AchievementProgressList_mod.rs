@@ -26,7 +26,7 @@ for crate::Oculus::Platform::Models::AchievementProgressList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+AchievementProgressList")]
+#[cfg(feature = "Oculus+Platform+Models+AchievementProgressList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::AchievementProgressList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementProgress>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::AchievementProgressLis
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+AchievementProgressList")]
+#[cfg(feature = "Oculus+Platform+Models+AchievementProgressList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::AchievementProgressList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvid
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvid
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AtlasSpriteProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AtlasSpriteProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

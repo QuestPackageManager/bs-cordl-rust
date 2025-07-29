@@ -31,7 +31,7 @@ for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     type Target = crate::System::TimeoutException;
@@ -39,7 +39,7 @@ for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexMatchTimeoutException")]
+#[cfg(feature = "System+Text+RegularExpressions+RegexMatchTimeoutException")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::RegexMatchTimeoutException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

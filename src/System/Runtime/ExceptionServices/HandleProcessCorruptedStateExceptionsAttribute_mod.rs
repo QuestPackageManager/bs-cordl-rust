@@ -29,7 +29,7 @@ for crate::System::Runtime::ExceptionServices::HandleProcessCorruptedStateExcept
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+ExceptionServices+HandleProcessCorruptedStateExceptionsAttribute"
+    feature = "System+Runtime+ExceptionServices+HandleProcessCorruptedStateExceptionsAttribute"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::ExceptionServices::HandleProcessCorruptedStateExceptionsAttribute {
@@ -39,7 +39,7 @@ for crate::System::Runtime::ExceptionServices::HandleProcessCorruptedStateExcept
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+ExceptionServices+HandleProcessCorruptedStateExceptionsAttribute"
+    feature = "System+Runtime+ExceptionServices+HandleProcessCorruptedStateExceptionsAttribute"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::ExceptionServices::HandleProcessCorruptedStateExceptionsAttribute {

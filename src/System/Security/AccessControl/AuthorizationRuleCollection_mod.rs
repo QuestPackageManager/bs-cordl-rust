@@ -24,7 +24,7 @@ for crate::System::Security::AccessControl::AuthorizationRuleCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     type Target = crate::System::Collections::ReadOnlyCollectionBase;
@@ -32,7 +32,7 @@ for crate::System::Security::AccessControl::AuthorizationRuleCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+AuthorizationRuleCollection")]
+#[cfg(feature = "System+Security+AccessControl+AuthorizationRuleCollection")]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::AuthorizationRuleCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

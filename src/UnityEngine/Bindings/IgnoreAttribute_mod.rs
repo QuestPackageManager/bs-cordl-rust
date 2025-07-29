@@ -25,14 +25,14 @@ for crate::UnityEngine::Bindings::IgnoreAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+IgnoreAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+IgnoreAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::IgnoreAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+IgnoreAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+IgnoreAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::IgnoreAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

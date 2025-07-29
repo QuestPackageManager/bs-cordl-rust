@@ -24,14 +24,14 @@ for crate::Mono::Net::Security::SystemCertificateValidator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+SystemCertificateValidator")]
+#[cfg(feature = "Mono+Net+Security+SystemCertificateValidator")]
 impl std::ops::Deref for crate::Mono::Net::Security::SystemCertificateValidator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+SystemCertificateValidator")]
+#[cfg(feature = "Mono+Net+Security+SystemCertificateValidator")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::SystemCertificateValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration")]
+#[cfg(feature = "GameplayModifiersConfiguration")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration")]
+#[cfg(feature = "GameplayModifiersConfiguration")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersConfiguration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -82,7 +82,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+CutAngleTolerance")]
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+CutAngleTolerance")]
+#[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -138,7 +138,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+NoteUniformScale")]
+#[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -146,7 +146,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+NoteUniformScale")]
+#[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -194,7 +194,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+SongSpeed")]
+#[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -202,7 +202,7 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifiersConfiguration+SongSpeed")]
+#[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

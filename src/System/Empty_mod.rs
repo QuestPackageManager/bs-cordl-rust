@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Empty {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Empty")]
+#[cfg(feature = "System+Empty")]
 impl std::ops::Deref for crate::System::Empty {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Empty")]
+#[cfg(feature = "System+Empty")]
 impl std::ops::DerefMut for crate::System::Empty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

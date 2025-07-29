@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActiveCenterRingLightsController")]
+#[cfg(feature = "MultiplayerLocalActiveCenterRingLightsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActiveCenterRingLightsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

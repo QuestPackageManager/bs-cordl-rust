@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::InstantHandleAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::InstantHandleAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+InstantHandleAttribute")]
+#[cfg(feature = "JetBrains+Annotations+InstantHandleAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::InstantHandleAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

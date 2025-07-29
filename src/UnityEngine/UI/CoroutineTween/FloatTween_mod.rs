@@ -433,9 +433,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
-)]
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
@@ -443,9 +441,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
-)]
+#[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

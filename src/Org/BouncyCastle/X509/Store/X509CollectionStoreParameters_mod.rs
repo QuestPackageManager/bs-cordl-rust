@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CollectionStoreParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::X509::Store::X509CollectionStoreParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

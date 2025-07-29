@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RightShiftInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RightShiftInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::RightShiftInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

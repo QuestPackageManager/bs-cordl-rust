@@ -28,9 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -38,9 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::NegateCheckedInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

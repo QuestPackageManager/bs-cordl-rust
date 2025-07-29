@@ -24,14 +24,14 @@ for crate::UnityEngine::UI::MultipleDisplayUtilities {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MultipleDisplayUtilities")]
+#[cfg(feature = "UnityEngine+UI+MultipleDisplayUtilities")]
 impl std::ops::Deref for crate::UnityEngine::UI::MultipleDisplayUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MultipleDisplayUtilities")]
+#[cfg(feature = "UnityEngine+UI+MultipleDisplayUtilities")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::MultipleDisplayUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::AllocCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_ENet+AllocCallback")]
+#[cfg(feature = "ENet+AllocCallback")]
 impl std::ops::Deref for crate::ENet::AllocCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ENet+AllocCallback")]
+#[cfg(feature = "ENet+AllocCallback")]
 impl std::ops::DerefMut for crate::ENet::AllocCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -66,14 +66,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Cultur
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
+#[cfg(feature = "System+Globalization+CultureInfo")]
 impl std::ops::Deref for crate::System::Globalization::CultureInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+CultureInfo")]
+#[cfg(feature = "System+Globalization+CultureInfo")]
 impl std::ops::DerefMut for crate::System::Globalization::CultureInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2202,9 +2202,7 @@ for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
-)]
+#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
 impl std::ops::Deref
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -2212,9 +2210,7 @@ for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Globalization+CultureInfo+OnCultureInfoChangedDelegate"
-)]
+#[cfg(feature = "System+Globalization+CultureInfo+OnCultureInfoChangedDelegate")]
 impl std::ops::DerefMut
 for crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

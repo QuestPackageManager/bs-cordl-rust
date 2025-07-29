@@ -58,7 +58,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuViewController")]
+#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerInGameMenuViewController")]
+#[cfg(feature = "MultiplayerLocalActivePlayerInGameMenuViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

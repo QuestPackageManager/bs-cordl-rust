@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Srp6GroupParameters")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Srp6GroupParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Srp6GroupParameters")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Srp6GroupParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

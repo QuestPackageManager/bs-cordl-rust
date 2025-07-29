@@ -28,9 +28,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::WriteAccessRequiredAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+WriteAccessRequiredAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+WriteAccessRequiredAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::WriteAccessRequiredAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::WriteAccessRequiredAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+WriteAccessRequiredAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+WriteAccessRequiredAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::WriteAccessRequiredAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

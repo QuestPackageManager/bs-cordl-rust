@@ -28,9 +28,7 @@ for crate::Unity::Collections::NativeDisableParallelForRestrictionAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+NativeDisableParallelForRestrictionAttribute"
-)]
+#[cfg(feature = "Unity+Collections+NativeDisableParallelForRestrictionAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::NativeDisableParallelForRestrictionAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::NativeDisableParallelForRestrictionAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+NativeDisableParallelForRestrictionAttribute"
-)]
+#[cfg(feature = "Unity+Collections+NativeDisableParallelForRestrictionAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::NativeDisableParallelForRestrictionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcEditorTemplateAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcEditorTemplateAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

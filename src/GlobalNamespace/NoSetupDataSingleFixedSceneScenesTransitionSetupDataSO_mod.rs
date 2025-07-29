@@ -24,7 +24,7 @@ for crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupData
         false
     }
 }
-#[cfg(feature = "cordl_class_NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupData
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO")]
+#[cfg(feature = "NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

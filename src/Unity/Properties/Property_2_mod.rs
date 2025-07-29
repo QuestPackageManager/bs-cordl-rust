@@ -53,7 +53,7 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Property_2")]
+#[cfg(feature = "Unity+Properties+Property_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -63,7 +63,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Property_2")]
+#[cfg(feature = "Unity+Properties+Property_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

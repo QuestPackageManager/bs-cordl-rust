@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebResponseStrea
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
+#[cfg(feature = "System+Net+WebResponseStream")]
 impl std::ops::Deref for crate::System::Net::WebResponseStream {
     type Target = crate::System::Net::WebConnectionStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebResponseStream")]
+#[cfg(feature = "System+Net+WebResponseStream")]
 impl std::ops::DerefMut for crate::System::Net::WebResponseStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

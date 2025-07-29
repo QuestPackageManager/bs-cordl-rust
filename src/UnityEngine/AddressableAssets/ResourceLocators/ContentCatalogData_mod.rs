@@ -80,9 +80,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -90,9 +88,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -902,7 +898,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {
@@ -912,7 +908,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation {

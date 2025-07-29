@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ConcreteBinderNonGen
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ConcreteBinderNonGeneric")]
+#[cfg(feature = "Zenject+ConcreteBinderNonGeneric")]
 impl std::ops::Deref for crate::Zenject::ConcreteBinderNonGeneric {
     type Target = crate::Zenject::FromBinderNonGeneric;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ConcreteBinderNonGeneric")]
+#[cfg(feature = "Zenject+ConcreteBinderNonGeneric")]
 impl std::ops::DerefMut for crate::Zenject::ConcreteBinderNonGeneric {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

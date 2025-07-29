@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7 {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7")]
+#[cfg(feature = "Mono+Security+PKCS7")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7")]
+#[cfg(feature = "Mono+Security+PKCS7")]
 impl std::ops::DerefMut for crate::Mono::Security::PKCS7 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -83,14 +83,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_Content
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+ContentInfo")]
+#[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_ContentInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+ContentInfo")]
+#[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl std::ops::DerefMut for crate::Mono::Security::PKCS7_ContentInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,14 +434,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_Encrypt
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+EncryptedData")]
+#[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_EncryptedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+EncryptedData")]
+#[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl std::ops::DerefMut for crate::Mono::Security::PKCS7_EncryptedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -614,14 +614,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_SignedD
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignedData")]
+#[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignedData")]
+#[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl std::ops::DerefMut for crate::Mono::Security::PKCS7_SignedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -852,14 +852,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::PKCS7_SignerI
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignerInfo")]
+#[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignerInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+PKCS7+SignerInfo")]
+#[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl std::ops::DerefMut for crate::Mono::Security::PKCS7_SignerInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

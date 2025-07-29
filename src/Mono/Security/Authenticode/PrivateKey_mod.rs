@@ -28,14 +28,14 @@ for crate::Mono::Security::Authenticode::PrivateKey {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
 impl std::ops::Deref for crate::Mono::Security::Authenticode::PrivateKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Authenticode+PrivateKey")]
+#[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
 impl std::ops::DerefMut for crate::Mono::Security::Authenticode::PrivateKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

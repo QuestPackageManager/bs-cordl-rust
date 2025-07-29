@@ -24,14 +24,14 @@ for crate::UnityEngine::AssetBundleRecompressOperation {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AssetBundleRecompressOperation")]
+#[cfg(feature = "UnityEngine+AssetBundleRecompressOperation")]
 impl std::ops::Deref for crate::UnityEngine::AssetBundleRecompressOperation {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AssetBundleRecompressOperation")]
+#[cfg(feature = "UnityEngine+AssetBundleRecompressOperation")]
 impl std::ops::DerefMut for crate::UnityEngine::AssetBundleRecompressOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

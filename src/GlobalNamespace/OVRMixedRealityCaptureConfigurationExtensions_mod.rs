@@ -24,7 +24,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRMixedRealityCaptureConfigurationExtensions")]
+#[cfg(feature = "OVRMixedRealityCaptureConfigurationExtensions")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRMixedRealityCaptureConfigurationExtensions")]
+#[cfg(feature = "OVRMixedRealityCaptureConfigurationExtensions")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

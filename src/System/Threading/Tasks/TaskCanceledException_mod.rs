@@ -25,14 +25,14 @@ for crate::System::Threading::Tasks::TaskCanceledException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskCanceledException {
     type Target = crate::System::OperationCanceledException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskCanceledException")]
+#[cfg(feature = "System+Threading+Tasks+TaskCanceledException")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskCanceledException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::BSAppInit {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Init+BSAppInit")]
+#[cfg(feature = "BeatSaber+Init+BSAppInit")]
 impl std::ops::Deref for crate::BeatSaber::Init::BSAppInit {
     type Target = crate::GlobalNamespace::AppInit;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Init+BSAppInit")]
+#[cfg(feature = "BeatSaber+Init+BSAppInit")]
 impl std::ops::DerefMut for crate::BeatSaber::Init::BSAppInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

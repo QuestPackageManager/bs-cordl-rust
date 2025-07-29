@@ -34,9 +34,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameter
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyGenerationParameters"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyGenerationParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameters {
     type Target = crate::Org::BouncyCastle::Crypto::KeyGenerationParameters;
@@ -44,9 +42,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameter
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+Gost3410KeyGenerationParameters"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyGenerationParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyGenerationParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

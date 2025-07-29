@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     type Target = crate::System::Linq::Expressions::Interpreter::LeftShiftInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftB
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
+    feature = "System+Linq+Expressions+Interpreter+LeftShiftInstruction+LeftShiftByte"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeftShiftInstruction_LeftShiftByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

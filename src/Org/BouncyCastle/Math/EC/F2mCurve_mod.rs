@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::F2mCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -777,7 +777,7 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
@@ -785,7 +785,7 @@ for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+F2mCurve+DefaultF2mLookupTable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::F2mCurve_DefaultF2mLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

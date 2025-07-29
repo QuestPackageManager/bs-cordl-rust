@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Asn1::X509::X509DefaultEntryConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+X509DefaultEntryConverter")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509DefaultEntryConverter")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::X509DefaultEntryConverter {
     type Target = crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Asn1::X509::X509DefaultEntryConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+X509DefaultEntryConverter")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509DefaultEntryConverter")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::X509DefaultEntryConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

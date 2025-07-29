@@ -24,7 +24,7 @@ for crate::JetBrains::Annotations::RazorWriteLiteralMethodAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorWriteLiteralMethodAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorWriteLiteralMethodAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::RazorWriteLiteralMethodAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::JetBrains::Annotations::RazorWriteLiteralMethodAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorWriteLiteralMethodAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorWriteLiteralMethodAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::RazorWriteLiteralMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

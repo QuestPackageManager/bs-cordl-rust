@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         false
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant+Variant")]
+#[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -179,14 +179,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ShaderVarian
         false
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO")]
+#[cfg(feature = "ShaderVariantsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO")]
+#[cfg(feature = "ShaderVariantsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,14 +349,14 @@ for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         false
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ShaderVariantsSO+ShaderVariant")]
+#[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

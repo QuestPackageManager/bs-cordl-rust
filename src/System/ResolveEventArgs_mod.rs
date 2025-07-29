@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ResolveEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
+#[cfg(feature = "System+ResolveEventArgs")]
 impl std::ops::Deref for crate::System::ResolveEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ResolveEventArgs")]
+#[cfg(feature = "System+ResolveEventArgs")]
 impl std::ops::DerefMut for crate::System::ResolveEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

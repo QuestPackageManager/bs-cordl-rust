@@ -115,14 +115,14 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView")]
+#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2726,9 +2726,7 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
@@ -2736,9 +2734,7 @@ for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

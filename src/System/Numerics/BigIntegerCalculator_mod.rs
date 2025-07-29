@@ -24,14 +24,14 @@ for crate::System::Numerics::BigIntegerCalculator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Numerics+BigIntegerCalculator")]
+#[cfg(feature = "System+Numerics+BigIntegerCalculator")]
 impl std::ops::Deref for crate::System::Numerics::BigIntegerCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Numerics+BigIntegerCalculator")]
+#[cfg(feature = "System+Numerics+BigIntegerCalculator")]
 impl std::ops::DerefMut for crate::System::Numerics::BigIntegerCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

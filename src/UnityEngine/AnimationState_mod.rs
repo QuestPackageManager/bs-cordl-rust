@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimationState {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
+#[cfg(feature = "UnityEngine+AnimationState")]
 impl std::ops::Deref for crate::UnityEngine::AnimationState {
     type Target = crate::UnityEngine::TrackedReference;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AnimationState")]
+#[cfg(feature = "UnityEngine+AnimationState")]
 impl std::ops::DerefMut for crate::UnityEngine::AnimationState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

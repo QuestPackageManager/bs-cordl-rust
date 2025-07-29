@@ -29,9 +29,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProx
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
-)]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     type Target = crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionary;
@@ -39,9 +37,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProx
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy"
-)]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableDictionaryProxy")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableDictionaryProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,7 +24,7 @@ for crate::System::Xml::Serialization::XmlSerializationReadCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Xml::Serialization::XmlSerializationReadCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReadCallback")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReadCallback")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReadCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

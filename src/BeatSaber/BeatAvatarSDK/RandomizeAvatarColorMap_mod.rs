@@ -28,14 +28,14 @@ for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+RandomizeAvatarColorMap")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::RandomizeAvatarColorMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

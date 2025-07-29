@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
+#[cfg(feature = "UnityEngine+ProBuilder+ProGridsNoSnapAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ProGridsNoSnapAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

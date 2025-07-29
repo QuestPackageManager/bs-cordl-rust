@@ -39,14 +39,14 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_TubeBloomPrePassLightReflectionEffect")]
+#[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TubeBloomPrePassLightReflectionEffect")]
+#[cfg(feature = "TubeBloomPrePassLightReflectionEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -238,7 +238,7 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePa
     }
 }
 #[cfg(
-    feature = "cordl_class_TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
+    feature = "TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {
@@ -248,7 +248,7 @@ for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePa
     }
 }
 #[cfg(
-    feature = "cordl_class_TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
+    feature = "TubeBloomPrePassLightReflectionEffect+TubeBloomPrePassLightWithHitPoint"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPrePassLightWithHitPoint {

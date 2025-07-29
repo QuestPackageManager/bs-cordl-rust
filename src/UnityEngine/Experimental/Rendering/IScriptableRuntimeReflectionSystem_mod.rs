@@ -28,9 +28,7 @@ for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSys
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem"
-)]
+#[cfg(feature = "UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSys
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem"
-)]
+#[cfg(feature = "UnityEngine+Experimental+Rendering+IScriptableRuntimeReflectionSystem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

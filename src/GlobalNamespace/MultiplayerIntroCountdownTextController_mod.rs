@@ -29,7 +29,7 @@ for crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerIntroCountdownTextController")]
+#[cfg(feature = "MultiplayerIntroCountdownTextController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerIntroCountdownTextController")]
+#[cfg(feature = "MultiplayerIntroCountdownTextController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NoTransitionsToggle {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
+#[cfg(feature = "HMUI+NoTransitionsToggle")]
 impl std::ops::Deref for crate::HMUI::NoTransitionsToggle {
     type Target = crate::UnityEngine::UI::Toggle;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+NoTransitionsToggle")]
+#[cfg(feature = "HMUI+NoTransitionsToggle")]
 impl std::ops::DerefMut for crate::HMUI::NoTransitionsToggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

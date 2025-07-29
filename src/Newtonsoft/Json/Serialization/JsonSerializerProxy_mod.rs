@@ -31,14 +31,14 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerProxy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     type Target = crate::Newtonsoft::Json::JsonSerializer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerProxy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerProxy")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

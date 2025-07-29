@@ -24,14 +24,14 @@ for crate::System::ComponentModel::ComponentCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ComponentCollection")]
+#[cfg(feature = "System+ComponentModel+ComponentCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::ComponentCollection {
     type Target = crate::System::Collections::ReadOnlyCollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ComponentCollection")]
+#[cfg(feature = "System+ComponentModel+ComponentCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ComponentCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

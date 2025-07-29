@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     type Target = crate::UnityEngine::InputSystem::HumiditySensor;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidRelativeHumidity")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidRelativeHumidity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

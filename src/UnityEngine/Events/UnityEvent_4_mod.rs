@@ -59,7 +59,7 @@ for crate::UnityEngine::Events::UnityEvent_4<T0, T1, T2, T3> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_4")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_4")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

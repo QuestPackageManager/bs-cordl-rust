@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AndroidJNI {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AndroidJNI")]
+#[cfg(feature = "UnityEngine+AndroidJNI")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJNI {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AndroidJNI")]
+#[cfg(feature = "UnityEngine+AndroidJNI")]
 impl std::ops::DerefMut for crate::UnityEngine::AndroidJNI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

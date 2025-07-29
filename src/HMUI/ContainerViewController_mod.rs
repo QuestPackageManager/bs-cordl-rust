@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ContainerViewController
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
+#[cfg(feature = "HMUI+ContainerViewController")]
 impl std::ops::Deref for crate::HMUI::ContainerViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ContainerViewController")]
+#[cfg(feature = "HMUI+ContainerViewController")]
 impl std::ops::DerefMut for crate::HMUI::ContainerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

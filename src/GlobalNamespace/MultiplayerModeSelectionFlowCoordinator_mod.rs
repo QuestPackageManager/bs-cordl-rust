@@ -116,7 +116,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerModeSelectionFlowCoordinator")]
+#[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
@@ -124,7 +124,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerModeSelectionFlowCoordinator")]
+#[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

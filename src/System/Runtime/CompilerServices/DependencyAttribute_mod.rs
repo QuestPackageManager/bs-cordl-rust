@@ -28,14 +28,14 @@ for crate::System::Runtime::CompilerServices::DependencyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::DependencyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DependencyAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::DependencyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

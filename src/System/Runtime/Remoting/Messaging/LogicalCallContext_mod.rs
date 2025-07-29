@@ -47,7 +47,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,7 +55,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

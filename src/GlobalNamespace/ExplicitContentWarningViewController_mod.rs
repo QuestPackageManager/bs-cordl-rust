@@ -33,14 +33,14 @@ for crate::GlobalNamespace::ExplicitContentWarningViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
+#[cfg(feature = "ExplicitContentWarningViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::ExplicitContentWarningViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ExplicitContentWarningViewController")]
+#[cfg(feature = "ExplicitContentWarningViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ExplicitContentWarningViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

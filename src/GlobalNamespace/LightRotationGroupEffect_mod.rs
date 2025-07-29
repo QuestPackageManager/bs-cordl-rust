@@ -37,14 +37,14 @@ for crate::GlobalNamespace::LightRotationGroupEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroupEffect")]
+#[cfg(feature = "LightRotationGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroupEffect {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroupEffect")]
+#[cfg(feature = "LightRotationGroupEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroupEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,14 +273,14 @@ for crate::GlobalNamespace::LightRotationGroupEffect_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroupEffect+InitData")]
+#[cfg(feature = "LightRotationGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroupEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroupEffect+InitData")]
+#[cfg(feature = "LightRotationGroupEffect+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroupEffect_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

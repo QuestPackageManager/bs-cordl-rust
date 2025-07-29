@@ -37,7 +37,7 @@ for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializer
     }
 }
 #[cfg(
-    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {
@@ -47,7 +47,7 @@ for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializer
     }
 }
 #[cfg(
-    feature = "cordl_class_System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
+    feature = "System+ComponentModel+Design+Serialization+RootDesignerSerializerAttribute"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::Serialization::RootDesignerSerializerAttribute {

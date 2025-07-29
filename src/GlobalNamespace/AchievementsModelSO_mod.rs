@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Achievements
         false
     }
 }
-#[cfg(feature = "cordl_class_AchievementsModelSO")]
+#[cfg(feature = "AchievementsModelSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AchievementsModelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AchievementsModelSO")]
+#[cfg(feature = "AchievementsModelSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AchievementsModelSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

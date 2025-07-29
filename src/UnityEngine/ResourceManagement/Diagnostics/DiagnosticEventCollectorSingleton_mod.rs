@@ -52,7 +52,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
@@ -66,7 +66,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
+    feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {

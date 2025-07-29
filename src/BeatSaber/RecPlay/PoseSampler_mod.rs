@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PoseSampl
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseSampler")]
+#[cfg(feature = "BeatSaber+RecPlay+PoseSampler")]
 impl std::ops::Deref for crate::BeatSaber::RecPlay::PoseSampler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+RecPlay+PoseSampler")]
+#[cfg(feature = "BeatSaber+RecPlay+PoseSampler")]
 impl std::ops::DerefMut for crate::BeatSaber::RecPlay::PoseSampler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

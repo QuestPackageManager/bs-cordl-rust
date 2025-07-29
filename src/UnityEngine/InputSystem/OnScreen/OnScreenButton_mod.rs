@@ -25,14 +25,14 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
     type Target = crate::UnityEngine::InputSystem::OnScreen::OnScreenControl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+OnScreen+OnScreenButton")]
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenButton")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::OnScreen::OnScreenButton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

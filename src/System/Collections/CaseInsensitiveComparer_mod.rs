@@ -27,14 +27,14 @@ for crate::System::Collections::CaseInsensitiveComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
 impl std::ops::Deref for crate::System::Collections::CaseInsensitiveComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+CaseInsensitiveComparer")]
+#[cfg(feature = "System+Collections+CaseInsensitiveComparer")]
 impl std::ops::DerefMut for crate::System::Collections::CaseInsensitiveComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

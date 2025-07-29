@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_normalizedString {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_normalizedString")]
+#[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_normalizedString {
     type Target = crate::System::Xml::Schema::Datatype_string;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_normalizedString")]
+#[cfg(feature = "System+Xml+Schema+Datatype_normalizedString")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_normalizedString {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

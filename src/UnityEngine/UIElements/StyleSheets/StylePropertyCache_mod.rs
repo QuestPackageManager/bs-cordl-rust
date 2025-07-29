@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

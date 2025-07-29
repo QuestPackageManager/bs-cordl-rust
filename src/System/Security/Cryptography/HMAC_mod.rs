@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Cryptograph
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+HMAC")]
+#[cfg(feature = "System+Security+Cryptography+HMAC")]
 impl std::ops::Deref for crate::System::Security::Cryptography::HMAC {
     type Target = crate::System::Security::Cryptography::KeyedHashAlgorithm;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+HMAC")]
+#[cfg(feature = "System+Security+Cryptography+HMAC")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::HMAC {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

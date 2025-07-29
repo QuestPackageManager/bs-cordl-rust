@@ -37,14 +37,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DelaunayTriangle")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

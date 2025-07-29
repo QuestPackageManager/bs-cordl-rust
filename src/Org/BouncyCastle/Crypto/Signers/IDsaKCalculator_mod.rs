@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+IDsaKCalculator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+IDsaKCalculator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+IDsaKCalculator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+IDsaKCalculator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::IDsaKCalculator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

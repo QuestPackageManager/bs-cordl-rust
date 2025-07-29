@@ -39,14 +39,14 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator")]
+#[cfg(feature = "RecordingToolSettingsFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -256,7 +256,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -264,7 +264,7 @@ for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsFlowCoordinator+InitData")]
+#[cfg(feature = "RecordingToolSettingsFlowCoordinator+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsFlowCoordinator_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

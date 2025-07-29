@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::MeshRenderer {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
+#[cfg(feature = "UnityEngine+MeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::MeshRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+MeshRenderer")]
+#[cfg(feature = "UnityEngine+MeshRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::MeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

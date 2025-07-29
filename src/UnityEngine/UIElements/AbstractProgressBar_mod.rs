@@ -34,14 +34,14 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar")]
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::AbstractProgressBar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -403,14 +403,14 @@ for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

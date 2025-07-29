@@ -65,14 +65,14 @@ for crate::UnityEngine::UIElements::PanelSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
+#[cfg(feature = "UnityEngine+UIElements+PanelSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1416,7 +1416,7 @@ for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1424,7 +1424,7 @@ for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
+#[cfg(feature = "UnityEngine+UIElements+PanelSettings+RuntimePanelAccess")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::PanelSettings_RuntimePanelAccess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

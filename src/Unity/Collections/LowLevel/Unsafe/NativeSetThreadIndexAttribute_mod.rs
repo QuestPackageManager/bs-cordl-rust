@@ -28,9 +28,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSetThreadIndexAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetThreadIndexAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

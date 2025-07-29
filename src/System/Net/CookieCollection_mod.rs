@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
+#[cfg(feature = "System+Net+CookieCollection")]
 impl std::ops::Deref for crate::System::Net::CookieCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+CookieCollection")]
+#[cfg(feature = "System+Net+CookieCollection")]
 impl std::ops::DerefMut for crate::System::Net::CookieCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -464,7 +464,7 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
 impl std::ops::Deref
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -472,7 +472,7 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+CookieCollection+CookieCollectionEnumerator")]
+#[cfg(feature = "System+Net+CookieCollection+CookieCollectionEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

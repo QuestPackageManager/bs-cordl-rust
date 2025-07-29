@@ -25,14 +25,14 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl std::ops::Deref for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider")]
+#[cfg(feature = "System+ComponentModel+ReflectTypeDescriptionProvider")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1523,7 +1523,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeD
     }
 }
 #[cfg(
-    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
@@ -1533,7 +1533,7 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeD
     }
 }
 #[cfg(
-    feature = "cordl_class_System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
+    feature = "System+ComponentModel+ReflectTypeDescriptionProvider+ReflectedTypeData"
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {

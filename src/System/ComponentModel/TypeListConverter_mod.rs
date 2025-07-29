@@ -32,14 +32,14 @@ for crate::System::ComponentModel::TypeListConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeListConverter")]
+#[cfg(feature = "System+ComponentModel+TypeListConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeListConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeListConverter")]
+#[cfg(feature = "System+ComponentModel+TypeListConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeListConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -47,7 +47,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_1")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
     type Target = crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext;
@@ -55,7 +55,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_1")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_1")]
 impl<TParam1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::SubContainerCreatorByNewPrefabMethod_1<TParam1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

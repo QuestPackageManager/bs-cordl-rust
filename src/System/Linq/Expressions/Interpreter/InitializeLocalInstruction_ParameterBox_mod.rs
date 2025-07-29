@@ -29,7 +29,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox {

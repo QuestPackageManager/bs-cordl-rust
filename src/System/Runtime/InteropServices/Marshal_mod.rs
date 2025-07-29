@@ -24,14 +24,14 @@ for crate::System::Runtime::InteropServices::Marshal {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::Marshal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+Marshal")]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::Marshal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1794,9 +1794,7 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1804,9 +1802,7 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2006,9 +2002,7 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     type Target = crate::System::MulticastDelegate;
@@ -2016,9 +2010,7 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+Marshal+SecureStringAllocator"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

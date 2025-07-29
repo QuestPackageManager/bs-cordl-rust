@@ -27,14 +27,14 @@ for crate::System::Threading::OSSpecificSynchronizationContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext")]
+#[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl std::ops::Deref for crate::System::Threading::OSSpecificSynchronizationContext {
     type Target = crate::System::Threading::SynchronizationContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext")]
+#[cfg(feature = "System+Threading+OSSpecificSynchronizationContext")]
 impl std::ops::DerefMut for crate::System::Threading::OSSpecificSynchronizationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -342,9 +342,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationContext"
-)]
+#[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 impl std::ops::Deref
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -352,9 +350,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationContext"
-)]
+#[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+InvocationContext")]
 impl std::ops::DerefMut
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -472,7 +468,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDe
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
+    feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]
 impl std::ops::Deref
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate {
@@ -482,7 +478,7 @@ for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDe
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
+    feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
 )]
 impl std::ops::DerefMut
 for crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate {

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
+#[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls")]
+#[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -583,14 +583,14 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1287,7 +1287,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     type Target = crate::System::MulticastDelegate;
@@ -1295,7 +1295,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1549,14 +1549,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1684,14 +1684,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1819,14 +1819,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1954,7 +1954,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
@@ -1962,7 +1962,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2496,14 +2496,14 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_x509verify_callback")]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2742,7 +2742,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2752,7 +2752,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_create_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
@@ -2877,7 +2877,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -2887,7 +2887,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_errorstate_raise_error_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
@@ -3016,9 +3016,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     type Target = crate::System::MulticastDelegate;
@@ -3026,9 +3024,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3148,9 +3144,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     type Target = crate::System::MulticastDelegate;
@@ -3158,9 +3152,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3289,7 +3281,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3299,7 +3291,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
@@ -3447,7 +3439,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3457,7 +3449,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_parse_pem_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
@@ -3605,7 +3597,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3615,7 +3607,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_random_generate_bytes_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
@@ -3749,7 +3741,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3759,7 +3751,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_client_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
@@ -3905,7 +3897,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -3915,7 +3907,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_create_server_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
@@ -4064,9 +4056,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     type Target = crate::System::MulticastDelegate;
@@ -4074,9 +4064,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4197,7 +4185,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4207,7 +4195,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_ciphersuite_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
@@ -4341,7 +4329,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4351,7 +4339,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_get_protocol_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
@@ -4483,7 +4471,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4493,7 +4481,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_notify_close_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
@@ -4625,7 +4613,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4635,7 +4623,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_process_handshake_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
@@ -4768,9 +4756,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     type Target = crate::System::MulticastDelegate;
@@ -4778,9 +4764,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4916,7 +4900,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -4926,7 +4910,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_server_require_client_authentication_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
@@ -5061,7 +5045,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5071,7 +5055,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_certificate_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
@@ -5213,7 +5197,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5223,7 +5207,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_supported_ciphersuites_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
@@ -5367,7 +5351,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5377,7 +5361,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
@@ -5519,7 +5503,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5529,7 +5513,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
@@ -5670,9 +5654,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     type Target = crate::System::MulticastDelegate;
@@ -5680,9 +5662,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t"
-)]
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5817,7 +5797,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5827,7 +5807,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509_export_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
@@ -5964,7 +5944,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -5974,7 +5954,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_der_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
@@ -6113,7 +6093,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6123,7 +6103,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_append_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
@@ -6257,7 +6237,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6267,7 +6247,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_create_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
@@ -6393,7 +6373,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6403,7 +6383,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_free_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
@@ -6527,7 +6507,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6537,7 +6517,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_ref_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
@@ -6671,7 +6651,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6681,7 +6661,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509list_get_x509_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
@@ -6813,7 +6793,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6823,7 +6803,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_default_ca_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
@@ -6972,7 +6952,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
@@ -6982,7 +6962,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {

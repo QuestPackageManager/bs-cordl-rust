@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     type Target = crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<
         crate::UnityEngine::Color32,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

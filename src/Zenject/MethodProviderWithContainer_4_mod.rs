@@ -63,7 +63,7 @@ for crate::Zenject::MethodProviderWithContainer_4<TParam1, TParam2, TParam3, TVa
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MethodProviderWithContainer_4")]
+#[cfg(feature = "Zenject+MethodProviderWithContainer_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -76,7 +76,7 @@ for crate::Zenject::MethodProviderWithContainer_4<TParam1, TParam2, TParam3, TVa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MethodProviderWithContainer_4")]
+#[cfg(feature = "Zenject+MethodProviderWithContainer_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

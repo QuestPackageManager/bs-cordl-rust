@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream")]
+#[cfg(feature = "System+IO+Stream")]
 impl std::ops::Deref for crate::System::IO::Stream {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream")]
+#[cfg(feature = "System+IO+Stream")]
 impl std::ops::DerefMut for crate::System::IO::Stream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1973,14 +1973,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream_ReadWriteT
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
 impl std::ops::Deref for crate::System::IO::Stream_ReadWriteTask {
     type Target = crate::System::Threading::Tasks::Task_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream+ReadWriteTask")]
+#[cfg(feature = "System+IO+Stream+ReadWriteTask")]
 impl std::ops::DerefMut for crate::System::IO::Stream_ReadWriteTask {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2251,14 +2251,14 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 impl std::ops::Deref for crate::System::IO::Stream_SynchronousAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Stream+SynchronousAsyncResult")]
+#[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 impl std::ops::DerefMut for crate::System::IO::Stream_SynchronousAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

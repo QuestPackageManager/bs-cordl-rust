@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::PointerDeviceState {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerDeviceState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerDeviceState")]
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerDeviceState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

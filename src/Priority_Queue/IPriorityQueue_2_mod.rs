@@ -48,7 +48,7 @@ for crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+IPriorityQueue_2")]
+#[cfg(feature = "Priority_Queue+IPriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

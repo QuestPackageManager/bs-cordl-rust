@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsAtomicWriteOnlyAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {

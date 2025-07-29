@@ -24,14 +24,14 @@ for crate::System::Threading::SendOrPostCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+SendOrPostCallback")]
+#[cfg(feature = "System+Threading+SendOrPostCallback")]
 impl std::ops::Deref for crate::System::Threading::SendOrPostCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+SendOrPostCallback")]
+#[cfg(feature = "System+Threading+SendOrPostCallback")]
 impl std::ops::DerefMut for crate::System::Threading::SendOrPostCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

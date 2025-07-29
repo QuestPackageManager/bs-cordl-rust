@@ -100,9 +100,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
     TObject,
@@ -114,9 +112,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+ProviderOperation_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
     TObject,

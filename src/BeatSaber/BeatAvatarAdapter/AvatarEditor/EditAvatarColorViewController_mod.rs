@@ -47,7 +47,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContro
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {
@@ -57,7 +57,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContro
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
+    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarColorViewController"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewController {

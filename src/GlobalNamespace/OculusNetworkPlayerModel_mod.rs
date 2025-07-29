@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OculusNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
+#[cfg(feature = "OculusNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusNetworkPlayerModel {
     type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusNetworkPlayerModel")]
+#[cfg(feature = "OculusNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -31,14 +31,14 @@ for crate::Oculus::Platform::Models::PartyUpdateNotification {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+PartyUpdateNotification")]
+#[cfg(feature = "Oculus+Platform+Models+PartyUpdateNotification")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::PartyUpdateNotification {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+PartyUpdateNotification")]
+#[cfg(feature = "Oculus+Platform+Models+PartyUpdateNotification")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::PartyUpdateNotification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

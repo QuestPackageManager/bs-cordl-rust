@@ -24,14 +24,14 @@ for crate::System::Dynamic::UnaryOperationBinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+UnaryOperationBinder")]
+#[cfg(feature = "System+Dynamic+UnaryOperationBinder")]
 impl std::ops::Deref for crate::System::Dynamic::UnaryOperationBinder {
     type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+UnaryOperationBinder")]
+#[cfg(feature = "System+Dynamic+UnaryOperationBinder")]
 impl std::ops::DerefMut for crate::System::Dynamic::UnaryOperationBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

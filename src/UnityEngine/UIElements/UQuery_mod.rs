@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UQue
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -86,14 +86,14 @@ for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
     type Target = crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+FirstQueryMatcher")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -229,14 +229,14 @@ for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+IVisualPredicateWrapper")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -330,7 +330,7 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IsOfType_1")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -338,7 +338,7 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+IsOfType_1")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+IsOfType_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -473,14 +473,14 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     type Target = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+SingleQueryMatcher")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -703,14 +703,14 @@ for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+UQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     type Target = crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+UQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

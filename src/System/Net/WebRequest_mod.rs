@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebRequest {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebRequest")]
+#[cfg(feature = "System+Net+WebRequest")]
 impl std::ops::Deref for crate::System::Net::WebRequest {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebRequest")]
+#[cfg(feature = "System+Net+WebRequest")]
 impl std::ops::DerefMut for crate::System::Net::WebRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1286,14 +1286,14 @@ for crate::System::Net::WebRequest_DesignerWebRequestCreate {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::Deref for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebRequest+DesignerWebRequestCreate")]
+#[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
 impl std::ops::DerefMut for crate::System::Net::WebRequest_DesignerWebRequestCreate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

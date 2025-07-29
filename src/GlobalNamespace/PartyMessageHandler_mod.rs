@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PartyMessage
         false
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler")]
+#[cfg(feature = "PartyMessageHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::PartyMessageHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler")]
+#[cfg(feature = "PartyMessageHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PartyMessageHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -284,7 +284,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerDelegate")]
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -292,7 +292,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerDelegate")]
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -471,7 +471,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
         false
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerMessage")]
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -479,7 +479,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ConnectToMasterServerMessage")]
+#[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -822,7 +822,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ServerStatusUpdatedDelegate")]
+#[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -830,7 +830,7 @@ for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PartyMessageHandler+ServerStatusUpdatedDelegate")]
+#[cfg(feature = "PartyMessageHandler+ServerStatusUpdatedDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PartyMessageHandler_ServerStatusUpdatedDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

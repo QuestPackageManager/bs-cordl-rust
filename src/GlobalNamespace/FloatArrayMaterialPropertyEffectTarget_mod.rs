@@ -34,14 +34,14 @@ for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
         false
     }
 }
-#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]
+#[cfg(feature = "FloatArrayMaterialPropertyEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FloatArrayMaterialPropertyEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

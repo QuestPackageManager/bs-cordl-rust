@@ -41,14 +41,14 @@ for crate::GlobalNamespace::TabBarViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_TabBarViewController")]
+#[cfg(feature = "TabBarViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TabBarViewController")]
+#[cfg(feature = "TabBarViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TabBarViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -349,14 +349,14 @@ for crate::GlobalNamespace::TabBarViewController_TabBarItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_TabBarViewController+TabBarItem")]
+#[cfg(feature = "TabBarViewController+TabBarItem")]
 impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController_TabBarItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TabBarViewController+TabBarItem")]
+#[cfg(feature = "TabBarViewController+TabBarItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TabBarViewController_TabBarItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

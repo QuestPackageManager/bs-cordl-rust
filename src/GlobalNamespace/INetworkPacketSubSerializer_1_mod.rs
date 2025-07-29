@@ -41,7 +41,7 @@ for crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
         false
     }
 }
-#[cfg(feature = "cordl_class_INetworkPacketSubSerializer_1")]
+#[cfg(feature = "INetworkPacketSubSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_INetworkPacketSubSerializer_1")]
+#[cfg(feature = "INetworkPacketSubSerializer_1")]
 impl<TData: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

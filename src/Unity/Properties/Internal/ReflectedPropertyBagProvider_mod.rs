@@ -54,7 +54,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagProvider")]
+#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

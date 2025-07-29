@@ -53,7 +53,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
@@ -65,7 +65,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+DelayedActionManager")]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

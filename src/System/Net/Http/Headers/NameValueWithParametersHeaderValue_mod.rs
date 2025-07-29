@@ -35,9 +35,7 @@ for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
-)]
+#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     type Target = crate::System::Net::Http::Headers::NameValueHeaderValue;
@@ -45,9 +43,7 @@ for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Http+Headers+NameValueWithParametersHeaderValue"
-)]
+#[cfg(feature = "System+Net+Http+Headers+NameValueWithParametersHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::NameValueWithParametersHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

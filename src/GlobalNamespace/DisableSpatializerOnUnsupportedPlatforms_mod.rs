@@ -25,7 +25,7 @@ for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
         false
     }
 }
-#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DisableSpatializerOnUnsupportedPlatforms")]
+#[cfg(feature = "DisableSpatializerOnUnsupportedPlatforms")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DisableSpatializerOnUnsupportedPlatforms {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

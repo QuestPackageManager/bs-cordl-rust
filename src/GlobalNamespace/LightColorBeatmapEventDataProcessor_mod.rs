@@ -26,7 +26,7 @@ for crate::GlobalNamespace::LightColorBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightColorBeatmapEventDataProcessor")]
+#[cfg(feature = "LightColorBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::LightColorBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBeatmapEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightColorBeatmapEventDataProce
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightColorBeatmapEventDataProcessor")]
+#[cfg(feature = "LightColorBeatmapEventDataProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightColorBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -25,7 +25,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     type Target = crate::GlobalNamespace::NoteController;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerNoteController")]
+#[cfg(feature = "MultiplayerConnectedPlayerNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

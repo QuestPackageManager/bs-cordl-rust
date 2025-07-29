@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingle {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingle"
+    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingle"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingle {
     type Target = crate::System::Linq::Expressions::Interpreter::NotEqualInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualSin
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingle"
+    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSingle"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::NotEqualInstruction_NotEqualSingle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelPackSO")]
+#[cfg(feature = "BeatmapLevelPackSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelPackSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelPackSO")]
+#[cfg(feature = "BeatmapLevelPackSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelPackSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

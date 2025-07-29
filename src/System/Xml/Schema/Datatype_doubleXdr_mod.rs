@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_doubleXdr {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_doubleXdr {
     type Target = crate::System::Xml::Schema::Datatype_double;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_doubleXdr")]
+#[cfg(feature = "System+Xml+Schema+Datatype_doubleXdr")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_doubleXdr {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

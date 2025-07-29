@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::X509::X509Crl
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl")]
+#[cfg(feature = "Mono+Security+X509+X509Crl")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl")]
+#[cfg(feature = "Mono+Security+X509+X509Crl")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::X509Crl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -448,14 +448,14 @@ for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl+X509CrlEntry")]
+#[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509Crl+X509CrlEntry")]
+#[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

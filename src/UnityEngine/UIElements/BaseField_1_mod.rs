@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement;
@@ -80,7 +80,7 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1")]
+#[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1242,7 +1242,7 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
@@ -1250,7 +1250,7 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseField_1+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

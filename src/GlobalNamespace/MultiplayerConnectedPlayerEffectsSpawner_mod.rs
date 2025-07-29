@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerEffectsSpawner")]
+#[cfg(feature = "MultiplayerConnectedPlayerEffectsSpawner")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerEffectsSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,14 +26,14 @@ for crate::UnityEngine::ProBuilder::ChangelogEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ChangelogEntry")]
+#[cfg(feature = "UnityEngine+ProBuilder+ChangelogEntry")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ChangelogEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ChangelogEntry")]
+#[cfg(feature = "UnityEngine+ProBuilder+ChangelogEntry")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ChangelogEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

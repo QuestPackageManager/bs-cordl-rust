@@ -27,7 +27,7 @@ for crate::UnityEngine::UIElements::PointerMoveEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerMoveEvent")]
+#[cfg(feature = "UnityEngine+UIElements+PointerMoveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerMoveEvent {
     type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PointerMoveEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerMoveEvent")]
+#[cfg(feature = "UnityEngine+UIElements+PointerMoveEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerMoveEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

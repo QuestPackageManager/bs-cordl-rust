@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::DateTimeFacetsChecker {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DateTimeFacetsChecker")]
+#[cfg(feature = "System+Xml+Schema+DateTimeFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::DateTimeFacetsChecker {
     type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DateTimeFacetsChecker")]
+#[cfg(feature = "System+Xml+Schema+DateTimeFacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DateTimeFacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

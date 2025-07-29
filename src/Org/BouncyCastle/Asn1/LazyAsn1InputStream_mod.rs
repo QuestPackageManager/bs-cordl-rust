@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1InputStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+LazyAsn1InputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::LazyAsn1InputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

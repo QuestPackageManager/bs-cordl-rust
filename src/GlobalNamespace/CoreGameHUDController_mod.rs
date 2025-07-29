@@ -29,14 +29,14 @@ for crate::GlobalNamespace::CoreGameHUDController {
         false
     }
 }
-#[cfg(feature = "cordl_class_CoreGameHUDController")]
+#[cfg(feature = "CoreGameHUDController")]
 impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CoreGameHUDController")]
+#[cfg(feature = "CoreGameHUDController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CoreGameHUDController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -278,14 +278,14 @@ for crate::GlobalNamespace::CoreGameHUDController_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_CoreGameHUDController+InitData")]
+#[cfg(feature = "CoreGameHUDController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CoreGameHUDController+InitData")]
+#[cfg(feature = "CoreGameHUDController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CoreGameHUDController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

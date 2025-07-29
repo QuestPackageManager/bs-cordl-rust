@@ -48,14 +48,14 @@ for crate::System::Net::Sockets::SocketAsyncResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncResult")]
+#[cfg(feature = "System+Net+Sockets+SocketAsyncResult")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketAsyncResult {
     type Target = crate::System::IOAsyncResult;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SocketAsyncResult")]
+#[cfg(feature = "System+Net+Sockets+SocketAsyncResult")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::SocketAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

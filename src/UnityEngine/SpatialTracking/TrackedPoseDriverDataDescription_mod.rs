@@ -28,9 +28,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription"
-)]
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription"
-)]
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriverDataDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

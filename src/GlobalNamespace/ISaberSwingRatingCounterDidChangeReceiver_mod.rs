@@ -24,7 +24,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
         false
     }
 }
-#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ISaberSwingRatingCounterDidChangeReceiver")]
+#[cfg(feature = "ISaberSwingRatingCounterDidChangeReceiver")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

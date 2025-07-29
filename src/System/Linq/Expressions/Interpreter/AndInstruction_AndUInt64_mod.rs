@@ -28,18 +28,14 @@ for crate::GlobalNamespace::AndInstruction_AndUInt64 {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction+AndUInt64"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt64")]
 impl std::ops::Deref for crate::GlobalNamespace::AndInstruction_AndUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::AndInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction+AndUInt64"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndUInt64")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AndInstruction_AndUInt64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

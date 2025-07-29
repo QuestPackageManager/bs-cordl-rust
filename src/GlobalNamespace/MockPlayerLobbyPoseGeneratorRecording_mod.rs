@@ -24,14 +24,14 @@ for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorRecording {
         false
     }
 }
-#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorRecording")]
+#[cfg(feature = "MockPlayerLobbyPoseGeneratorRecording")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorRecording {
     type Target = crate::GlobalNamespace::MockPlayerLobbyPoseGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MockPlayerLobbyPoseGeneratorRecording")]
+#[cfg(feature = "MockPlayerLobbyPoseGeneratorRecording")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorRecording {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

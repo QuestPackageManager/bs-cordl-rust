@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OverridableGradientDirection {
         false
     }
 }
-#[cfg(feature = "cordl_class_OverridableGradientDirection")]
+#[cfg(feature = "OverridableGradientDirection")]
 impl std::ops::Deref for crate::GlobalNamespace::OverridableGradientDirection {
     type Target = crate::StyledUITemplates::OverridableData_1<
         crate::GlobalNamespace::GradientDirection,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::OverridableGradientDirection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OverridableGradientDirection")]
+#[cfg(feature = "OverridableGradientDirection")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OverridableGradientDirection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

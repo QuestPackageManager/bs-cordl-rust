@@ -27,7 +27,7 @@ for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_SmoothCameraSmoothnessSettingsController")]
+#[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SmoothCameraSmoothnessSettingsController")]
+#[cfg(feature = "SmoothCameraSmoothnessSettingsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SmoothCameraSmoothnessSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

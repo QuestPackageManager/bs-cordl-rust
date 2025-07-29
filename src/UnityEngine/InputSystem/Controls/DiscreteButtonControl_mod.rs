@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     type Target = crate::UnityEngine::InputSystem::Controls::ButtonControl;
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

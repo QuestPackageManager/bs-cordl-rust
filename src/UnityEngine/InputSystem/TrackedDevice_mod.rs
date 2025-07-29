@@ -36,14 +36,14 @@ for crate::UnityEngine::InputSystem::TrackedDevice {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+TrackedDevice")]
+#[cfg(feature = "UnityEngine+InputSystem+TrackedDevice")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::TrackedDevice {
     type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+TrackedDevice")]
+#[cfg(feature = "UnityEngine+InputSystem+TrackedDevice")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::TrackedDevice {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -27,14 +27,14 @@ for crate::System::ComponentModel::DescriptionAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DescriptionAttribute")]
+#[cfg(feature = "System+ComponentModel+DescriptionAttribute")]
 impl std::ops::Deref for crate::System::ComponentModel::DescriptionAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DescriptionAttribute")]
+#[cfg(feature = "System+ComponentModel+DescriptionAttribute")]
 impl std::ops::DerefMut for crate::System::ComponentModel::DescriptionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

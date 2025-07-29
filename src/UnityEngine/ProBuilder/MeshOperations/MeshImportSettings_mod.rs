@@ -27,7 +27,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
+#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImportSettings")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

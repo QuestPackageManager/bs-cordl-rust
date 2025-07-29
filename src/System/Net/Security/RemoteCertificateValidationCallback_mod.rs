@@ -24,7 +24,7 @@ for crate::System::Net::Security::RemoteCertificateValidationCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+RemoteCertificateValidationCallback")]
+#[cfg(feature = "System+Net+Security+RemoteCertificateValidationCallback")]
 impl std::ops::Deref
 for crate::System::Net::Security::RemoteCertificateValidationCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Net::Security::RemoteCertificateValidationCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+RemoteCertificateValidationCallback")]
+#[cfg(feature = "System+Net+Security+RemoteCertificateValidationCallback")]
 impl std::ops::DerefMut
 for crate::System::Net::Security::RemoteCertificateValidationCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

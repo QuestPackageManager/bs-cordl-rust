@@ -25,14 +25,14 @@ for crate::System::Net::Sockets::SocketException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
+#[cfg(feature = "System+Net+Sockets+SocketException")]
 impl std::ops::Deref for crate::System::Net::Sockets::SocketException {
     type Target = crate::System::ComponentModel::Win32Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SocketException")]
+#[cfg(feature = "System+Net+Sockets+SocketException")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::SocketException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

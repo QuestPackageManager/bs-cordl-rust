@@ -55,14 +55,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade 
         false
     }
 }
-#[cfg(feature = "cordl_class_BlocksBlade")]
+#[cfg(feature = "BlocksBlade")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BlocksBlade")]
+#[cfg(feature = "BlocksBlade")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,14 +286,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BlocksBlade_
         false
     }
 }
-#[cfg(feature = "cordl_class_BlocksBlade+Element")]
+#[cfg(feature = "BlocksBlade+Element")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade_Element {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BlocksBlade+Element")]
+#[cfg(feature = "BlocksBlade+Element")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BlocksBlade_Element {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

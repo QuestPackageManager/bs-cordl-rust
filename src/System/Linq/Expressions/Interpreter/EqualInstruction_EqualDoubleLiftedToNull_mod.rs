@@ -29,7 +29,7 @@ for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
+    feature = "System+Linq+Expressions+Interpreter+EqualInstruction+EqualDoubleLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EqualInstruction_EqualDoubleLiftedToNull {

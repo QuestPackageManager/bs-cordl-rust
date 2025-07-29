@@ -31,9 +31,7 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     type Target = crate::System::Attribute;
@@ -41,9 +39,7 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -31,9 +31,7 @@ for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     type Target = crate::System::Attribute;
@@ -41,9 +39,7 @@ for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+AspMvcAreaMasterLocationFormatAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcAreaMasterLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

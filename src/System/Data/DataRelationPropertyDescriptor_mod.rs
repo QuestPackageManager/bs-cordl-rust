@@ -27,14 +27,14 @@ for crate::System::Data::DataRelationPropertyDescriptor {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
 impl std::ops::Deref for crate::System::Data::DataRelationPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRelationPropertyDescriptor")]
+#[cfg(feature = "System+Data+DataRelationPropertyDescriptor")]
 impl std::ops::DerefMut for crate::System::Data::DataRelationPropertyDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

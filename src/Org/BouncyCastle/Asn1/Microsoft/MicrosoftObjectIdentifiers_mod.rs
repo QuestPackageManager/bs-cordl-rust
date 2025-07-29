@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Asn1::Microsoft::MicrosoftObjectIdentifiers {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+Microsoft+MicrosoftObjectIdentifiers"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Microsoft+MicrosoftObjectIdentifiers")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::Microsoft::MicrosoftObjectIdentifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Asn1::Microsoft::MicrosoftObjectIdentifiers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+Microsoft+MicrosoftObjectIdentifiers"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Microsoft+MicrosoftObjectIdentifiers")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Microsoft::MicrosoftObjectIdentifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

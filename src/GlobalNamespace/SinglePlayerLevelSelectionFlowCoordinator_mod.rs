@@ -58,7 +58,7 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
@@ -66,7 +66,7 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SinglePlayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

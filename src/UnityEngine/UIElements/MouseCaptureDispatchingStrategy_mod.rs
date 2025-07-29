@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
+#[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

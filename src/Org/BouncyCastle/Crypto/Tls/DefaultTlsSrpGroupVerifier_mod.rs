@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsSrpGroupVerifier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsSrpGroupVerifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

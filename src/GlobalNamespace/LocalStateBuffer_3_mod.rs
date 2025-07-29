@@ -76,7 +76,7 @@ for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
+#[cfg(feature = "LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalStateBuffer_3")]
+#[cfg(feature = "LocalStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

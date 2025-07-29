@@ -30,14 +30,14 @@ for crate::GlobalNamespace::MissionLevelAnalytics {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
+#[cfg(feature = "MissionLevelAnalytics")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelAnalytics")]
+#[cfg(feature = "MissionLevelAnalytics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelAnalytics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

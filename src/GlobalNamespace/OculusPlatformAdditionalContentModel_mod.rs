@@ -36,14 +36,14 @@ for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "OculusPlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::AdditionalContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusPlatformAdditionalContentModel")]
+#[cfg(feature = "OculusPlatformAdditionalContentModel")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

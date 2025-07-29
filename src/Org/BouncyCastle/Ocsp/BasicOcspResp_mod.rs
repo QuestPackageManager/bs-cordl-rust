@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+BasicOcspResp")]
+#[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspResp")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
     type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+BasicOcspResp")]
+#[cfg(feature = "Org+BouncyCastle+Ocsp+BasicOcspResp")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::BasicOcspResp {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

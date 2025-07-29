@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPacketPool {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
+#[cfg(feature = "LiteNetLib+NetPacketPool")]
 impl std::ops::Deref for crate::LiteNetLib::NetPacketPool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPacketPool")]
+#[cfg(feature = "LiteNetLib+NetPacketPool")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetPacketPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

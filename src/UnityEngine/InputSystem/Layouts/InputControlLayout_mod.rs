@@ -1084,14 +1084,14 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout")]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout")]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2614,9 +2614,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Builder"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2624,9 +2622,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+Builder"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5829,9 +5825,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -5839,9 +5833,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6432,7 +6424,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException {
@@ -6442,7 +6434,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException {

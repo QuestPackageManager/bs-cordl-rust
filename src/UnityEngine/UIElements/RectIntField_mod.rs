@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::RectIntField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField {
     type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::RectInt,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectIntField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ for crate::UnityEngine::UIElements::RectIntField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectIntField>,
@@ -222,7 +222,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectIntField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -309,7 +309,7 @@ for crate::UnityEngine::UIElements::RectIntField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::RectInt,
@@ -318,7 +318,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectIntField_UxmlTraits
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RectIntField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectIntField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

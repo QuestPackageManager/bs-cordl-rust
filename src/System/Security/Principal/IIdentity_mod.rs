@@ -24,14 +24,14 @@ for crate::System::Security::Principal::IIdentity {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+IIdentity")]
+#[cfg(feature = "System+Security+Principal+IIdentity")]
 impl std::ops::Deref for crate::System::Security::Principal::IIdentity {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+IIdentity")]
+#[cfg(feature = "System+Security+Principal+IIdentity")]
 impl std::ops::DerefMut for crate::System::Security::Principal::IIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

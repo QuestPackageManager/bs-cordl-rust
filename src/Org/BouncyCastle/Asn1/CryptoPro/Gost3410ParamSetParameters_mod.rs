@@ -32,9 +32,7 @@ for crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410ParamSetParameters {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+CryptoPro+Gost3410ParamSetParameters"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost3410ParamSetParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410ParamSetParameters {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -42,9 +40,7 @@ for crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410ParamSetParameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+CryptoPro+Gost3410ParamSetParameters"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost3410ParamSetParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410ParamSetParameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

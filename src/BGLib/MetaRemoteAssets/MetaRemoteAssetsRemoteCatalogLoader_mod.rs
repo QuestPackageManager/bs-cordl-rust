@@ -28,9 +28,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader")]
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

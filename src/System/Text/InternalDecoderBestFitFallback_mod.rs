@@ -29,14 +29,14 @@ for crate::System::Text::InternalDecoderBestFitFallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+InternalDecoderBestFitFallback")]
+#[cfg(feature = "System+Text+InternalDecoderBestFitFallback")]
 impl std::ops::Deref for crate::System::Text::InternalDecoderBestFitFallback {
     type Target = crate::System::Text::DecoderFallback;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+InternalDecoderBestFitFallback")]
+#[cfg(feature = "System+Text+InternalDecoderBestFitFallback")]
 impl std::ops::DerefMut for crate::System::Text::InternalDecoderBestFitFallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

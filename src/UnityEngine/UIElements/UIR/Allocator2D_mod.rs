@@ -42,14 +42,14 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -485,14 +485,14 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Area")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -585,7 +585,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
@@ -594,7 +594,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D+Row")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRNetwork {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork")]
+#[cfg(feature = "OVRNetwork")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork")]
+#[cfg(feature = "OVRNetwork")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -387,14 +387,14 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpClient")]
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpClient")]
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -636,14 +636,14 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpServer")]
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpServer")]
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpServer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

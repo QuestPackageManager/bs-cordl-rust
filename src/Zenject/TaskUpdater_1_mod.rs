@@ -48,7 +48,7 @@ for crate::Zenject::TaskUpdater_1<TTask> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TaskUpdater_1")]
+#[cfg(feature = "Zenject+TaskUpdater_1")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1<TTask> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::Zenject::TaskUpdater_1<TTask> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TaskUpdater_1")]
+#[cfg(feature = "Zenject+TaskUpdater_1")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::TaskUpdater_1<TTask> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -581,7 +581,7 @@ for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TaskUpdater_1+TaskInfo")]
+#[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -589,7 +589,7 @@ for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TaskUpdater_1+TaskInfo")]
+#[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

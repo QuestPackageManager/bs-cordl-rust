@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchUnblockFlowRe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithLaunchUnblockFlowResult")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLaunchUnblockFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -79,7 +79,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperation_2<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,
@@ -95,7 +95,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperation_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperation_2")]
+#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperation_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TObjectDependency: quest_hook::libil2cpp::Type,

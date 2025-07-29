@@ -48,7 +48,7 @@ for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 impl<TAntecedentResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,
@@ -58,7 +58,7 @@ for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
+#[cfg(feature = "System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
 impl<TAntecedentResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::ContinuationTaskFromResultTask_1<
     TAntecedentResult,

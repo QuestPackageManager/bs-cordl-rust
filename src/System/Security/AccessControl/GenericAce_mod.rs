@@ -26,14 +26,14 @@ for crate::System::Security::AccessControl::GenericAce {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+GenericAce")]
+#[cfg(feature = "System+Security+AccessControl+GenericAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::GenericAce {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+GenericAce")]
+#[cfg(feature = "System+Security+AccessControl+GenericAce")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::GenericAce {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -93,7 +93,7 @@ for crate::Zenject::IPoolable_10<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+IPoolable_10")]
+#[cfg(feature = "Zenject+IPoolable_10")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -123,7 +123,7 @@ for crate::Zenject::IPoolable_10<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+IPoolable_10")]
+#[cfg(feature = "Zenject+IPoolable_10")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

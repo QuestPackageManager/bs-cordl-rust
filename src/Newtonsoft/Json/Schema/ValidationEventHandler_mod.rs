@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+ValidationEventHandler")]
+#[cfg(feature = "Newtonsoft+Json+Schema+ValidationEventHandler")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::ValidationEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

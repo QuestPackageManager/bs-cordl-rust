@@ -54,14 +54,14 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "OVRMixedRealityCaptureSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRMixedRealityCaptureSettings")]
+#[cfg(feature = "OVRMixedRealityCaptureSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

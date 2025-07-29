@@ -31,7 +31,7 @@ for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInst
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
+#[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::DerefMut
 for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

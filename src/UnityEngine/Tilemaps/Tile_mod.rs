@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::Tile {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::Tile {
     type Target = crate::UnityEngine::Tilemaps::TileBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Tilemaps+Tile")]
+#[cfg(feature = "UnityEngine+Tilemaps+Tile")]
 impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::Tile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

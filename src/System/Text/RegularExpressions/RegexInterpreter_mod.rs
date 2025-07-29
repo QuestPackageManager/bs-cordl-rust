@@ -32,14 +32,14 @@ for crate::System::Text::RegularExpressions::RegexInterpreter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexInterpreter {
     type Target = crate::System::Text::RegularExpressions::RegexRunner;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+RegexInterpreter")]
+#[cfg(feature = "System+Text+RegularExpressions+RegexInterpreter")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

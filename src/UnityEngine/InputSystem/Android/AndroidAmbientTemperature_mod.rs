@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     type Target = crate::UnityEngine::InputSystem::AmbientTemperatureSensor;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidAmbientTemperature")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidAmbientTemperature {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

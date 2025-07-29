@@ -31,9 +31,7 @@ for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
@@ -41,9 +39,7 @@ for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller"
-)]
+#[cfg(feature = "BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

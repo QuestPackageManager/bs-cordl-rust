@@ -31,14 +31,14 @@ for crate::System::Xml::Schema::XmlSchemaSimpleTypeList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeList")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeList")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleTypeList {
     type Target = crate::System::Xml::Schema::XmlSchemaSimpleTypeContent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaSimpleTypeList")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleTypeList")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleTypeList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

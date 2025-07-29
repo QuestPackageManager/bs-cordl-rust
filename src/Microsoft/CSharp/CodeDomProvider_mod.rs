@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Microsoft::CSharp::CodeDomPro
         false
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+CSharp+CodeDomProvider")]
+#[cfg(feature = "Microsoft+CSharp+CodeDomProvider")]
 impl std::ops::Deref for crate::Microsoft::CSharp::CodeDomProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+CSharp+CodeDomProvider")]
+#[cfg(feature = "Microsoft+CSharp+CodeDomProvider")]
 impl std::ops::DerefMut for crate::Microsoft::CSharp::CodeDomProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

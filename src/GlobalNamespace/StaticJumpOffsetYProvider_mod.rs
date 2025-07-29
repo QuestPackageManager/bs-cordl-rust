@@ -27,14 +27,14 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_StaticJumpOffsetYProvider")]
+#[cfg(feature = "StaticJumpOffsetYProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StaticJumpOffsetYProvider")]
+#[cfg(feature = "StaticJumpOffsetYProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StaticJumpOffsetYProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,14 +141,14 @@ for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_StaticJumpOffsetYProvider+InitData")]
+#[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StaticJumpOffsetYProvider+InitData")]
+#[cfg(feature = "StaticJumpOffsetYProvider+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StaticJumpOffsetYProvider_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

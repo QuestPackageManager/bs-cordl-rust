@@ -33,14 +33,14 @@ for crate::GlobalNamespace::NamedIntListController {
         false
     }
 }
-#[cfg(feature = "cordl_class_NamedIntListController")]
+#[cfg(feature = "NamedIntListController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedIntListController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NamedIntListController")]
+#[cfg(feature = "NamedIntListController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NamedIntListController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -331,14 +331,14 @@ for crate::GlobalNamespace::NamedIntListController_TextValuePair {
         false
     }
 }
-#[cfg(feature = "cordl_class_NamedIntListController+TextValuePair")]
+#[cfg(feature = "NamedIntListController+TextValuePair")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedIntListController_TextValuePair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NamedIntListController+TextValuePair")]
+#[cfg(feature = "NamedIntListController+TextValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NamedIntListController_TextValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

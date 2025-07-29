@@ -61,7 +61,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3")]
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -744,7 +744,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
@@ -762,7 +762,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
+    feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription+WriteDelegate"
 )]
 impl<
     TValueType: quest_hook::libil2cpp::Type,

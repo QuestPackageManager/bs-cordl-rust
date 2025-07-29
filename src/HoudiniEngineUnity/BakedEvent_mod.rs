@@ -31,7 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::BakedEven
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::BakedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
@@ -46,7 +46,7 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::BakedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+BakedEvent")]
+#[cfg(feature = "HoudiniEngineUnity+BakedEvent")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::BakedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvid
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvid
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

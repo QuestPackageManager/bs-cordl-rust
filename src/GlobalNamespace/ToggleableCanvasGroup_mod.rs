@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ToggleableCanvasGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
+#[cfg(feature = "ToggleableCanvasGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::ToggleableCanvasGroup {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ToggleableCanvasGroup")]
+#[cfg(feature = "ToggleableCanvasGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ToggleableCanvasGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

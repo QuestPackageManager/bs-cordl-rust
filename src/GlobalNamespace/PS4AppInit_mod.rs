@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PS4AppInit {
         false
     }
 }
-#[cfg(feature = "cordl_class_PS4AppInit")]
+#[cfg(feature = "PS4AppInit")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4AppInit {
     type Target = crate::BeatSaber::Init::BSAppInit;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PS4AppInit")]
+#[cfg(feature = "PS4AppInit")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS4AppInit {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

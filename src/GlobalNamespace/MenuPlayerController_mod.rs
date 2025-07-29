@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MenuPlayerController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MenuPlayerController")]
+#[cfg(feature = "MenuPlayerController")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuPlayerController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MenuPlayerController")]
+#[cfg(feature = "MenuPlayerController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuPlayerController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

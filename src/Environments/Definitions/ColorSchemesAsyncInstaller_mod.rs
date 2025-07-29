@@ -31,7 +31,7 @@ for crate::Environments::Definitions::ColorSchemesAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_Environments+Definitions+ColorSchemesAsyncInstaller")]
+#[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::ColorSchemesAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::Environments::Definitions::ColorSchemesAsyncInst
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Environments+Definitions+ColorSchemesAsyncInstaller")]
+#[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]
 impl std::ops::DerefMut
 for crate::Environments::Definitions::ColorSchemesAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

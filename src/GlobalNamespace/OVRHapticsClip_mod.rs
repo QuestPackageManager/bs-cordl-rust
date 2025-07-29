@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHapticsCl
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRHapticsClip")]
+#[cfg(feature = "OVRHapticsClip")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHapticsClip {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRHapticsClip")]
+#[cfg(feature = "OVRHapticsClip")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHapticsClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -41,7 +41,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
@@ -51,7 +51,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReques
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleRequestOptions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {

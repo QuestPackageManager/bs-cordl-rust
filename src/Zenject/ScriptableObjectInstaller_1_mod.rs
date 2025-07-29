@@ -41,7 +41,7 @@ for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_1")]
+#[cfg(feature = "Zenject+ScriptableObjectInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
     type Target = crate::Zenject::ScriptableObjectInstaller;
@@ -49,7 +49,7 @@ for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_1")]
+#[cfg(feature = "Zenject+ScriptableObjectInstaller_1")]
 impl<TDerived: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::ScriptableObjectInstaller_1<TDerived> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

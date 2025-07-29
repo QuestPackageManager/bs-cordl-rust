@@ -30,7 +30,7 @@ for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
         false
     }
 }
-#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
+#[cfg(feature = "PositionRectTransformViewStateTransition")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PositionRectTransformViewStateTransition")]
+#[cfg(feature = "PositionRectTransformViewStateTransition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

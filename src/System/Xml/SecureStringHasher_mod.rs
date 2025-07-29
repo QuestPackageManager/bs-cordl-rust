@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::SecureStringHash
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+SecureStringHasher")]
+#[cfg(feature = "System+Xml+SecureStringHasher")]
 impl std::ops::Deref for crate::System::Xml::SecureStringHasher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+SecureStringHasher")]
+#[cfg(feature = "System+Xml+SecureStringHasher")]
 impl std::ops::DerefMut for crate::System::Xml::SecureStringHasher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -255,7 +255,7 @@ for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
+#[cfg(feature = "System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 impl std::ops::Deref
 for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -263,7 +263,7 @@ for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
+#[cfg(feature = "System+Xml+SecureStringHasher+HashCodeOfStringDelegate")]
 impl std::ops::DerefMut
 for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

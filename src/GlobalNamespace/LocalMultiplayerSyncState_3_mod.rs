@@ -59,7 +59,7 @@ for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TSta
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalMultiplayerSyncState_3")]
+#[cfg(feature = "LocalMultiplayerSyncState_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -75,7 +75,7 @@ for crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TSta
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalMultiplayerSyncState_3")]
+#[cfg(feature = "LocalMultiplayerSyncState_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

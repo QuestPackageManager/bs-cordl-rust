@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SubMeshUI {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SubMeshUI")]
+#[cfg(feature = "TMPro+TMP_SubMeshUI")]
 impl std::ops::Deref for crate::TMPro::TMP_SubMeshUI {
     type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SubMeshUI")]
+#[cfg(feature = "TMPro+TMP_SubMeshUI")]
 impl std::ops::DerefMut for crate::TMPro::TMP_SubMeshUI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

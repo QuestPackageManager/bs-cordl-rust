@@ -58,14 +58,14 @@ for crate::GlobalNamespace::StandardLevelGameplayManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelGameplayManager")]
+#[cfg(feature = "StandardLevelGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelGameplayManager")]
+#[cfg(feature = "StandardLevelGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -745,14 +745,14 @@ for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelGameplayManager+InitData")]
+#[cfg(feature = "StandardLevelGameplayManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelGameplayManager+InitData")]
+#[cfg(feature = "StandardLevelGameplayManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardLevelGameplayManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

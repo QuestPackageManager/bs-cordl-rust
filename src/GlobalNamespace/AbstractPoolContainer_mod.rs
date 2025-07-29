@@ -24,14 +24,14 @@ for crate::GlobalNamespace::AbstractPoolContainer {
         false
     }
 }
-#[cfg(feature = "cordl_class_AbstractPoolContainer")]
+#[cfg(feature = "AbstractPoolContainer")]
 impl std::ops::Deref for crate::GlobalNamespace::AbstractPoolContainer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AbstractPoolContainer")]
+#[cfg(feature = "AbstractPoolContainer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AbstractPoolContainer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

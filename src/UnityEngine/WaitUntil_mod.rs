@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitUntil {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+WaitUntil")]
+#[cfg(feature = "UnityEngine+WaitUntil")]
 impl std::ops::Deref for crate::UnityEngine::WaitUntil {
     type Target = crate::UnityEngine::CustomYieldInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+WaitUntil")]
+#[cfg(feature = "UnityEngine+WaitUntil")]
 impl std::ops::DerefMut for crate::UnityEngine::WaitUntil {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

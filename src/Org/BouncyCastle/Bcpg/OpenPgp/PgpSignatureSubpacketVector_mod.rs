@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureSubpacketVector")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureSubpacketVector")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureSubpacketVector")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignatureSubpacketVector")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

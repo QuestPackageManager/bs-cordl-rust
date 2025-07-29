@@ -50,7 +50,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -58,7 +58,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Concurrent::ConcurrentQueue_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -930,7 +930,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -938,7 +938,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+Segment")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

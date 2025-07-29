@@ -44,7 +44,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Converter_2")]
+#[cfg(feature = "System+Converter_2")]
 impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Converter_2")]
+#[cfg(feature = "System+Converter_2")]
 impl<
     TInput: quest_hook::libil2cpp::Type,
     TOutput: quest_hook::libil2cpp::Type,

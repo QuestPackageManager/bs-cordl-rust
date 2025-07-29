@@ -28,9 +28,7 @@ for crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+CommonUnixIPGlobalProperties"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
     type Target = crate::System::Net::NetworkInformation::IPGlobalProperties;
@@ -38,9 +36,7 @@ for crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+CommonUnixIPGlobalProperties"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

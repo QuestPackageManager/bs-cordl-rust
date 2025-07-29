@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_MaterialManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager")]
+#[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -598,14 +598,14 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+FallbackMaterial")]
+#[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -682,14 +682,14 @@ for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_MaterialManager+MaskingMaterial")]
+#[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::DerefMut for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

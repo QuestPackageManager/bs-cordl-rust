@@ -26,7 +26,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::Vector3PropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Vector3,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::Vector3PropertyBag 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector3PropertyBag {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -117,7 +117,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>;
@@ -125,7 +125,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3PropertyBag_XProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -229,7 +229,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_YProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3PropertyBag_YProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>;
@@ -237,7 +237,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_YProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3PropertyBag_YProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -341,7 +341,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_ZProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector3PropertyBag_ZProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector3, f32>;
@@ -349,7 +349,7 @@ for crate::Unity::Properties::Internal::Vector3PropertyBag_ZProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
+#[cfg(feature = "Unity+Properties+Internal+Vector3PropertyBag+ZProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3PropertyBag_ZProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

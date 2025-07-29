@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::TargetExc
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+TargetException")]
+#[cfg(feature = "System+Reflection+TargetException")]
 impl std::ops::Deref for crate::System::Reflection::TargetException {
     type Target = crate::System::ApplicationException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+TargetException")]
+#[cfg(feature = "System+Reflection+TargetException")]
 impl std::ops::DerefMut for crate::System::Reflection::TargetException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

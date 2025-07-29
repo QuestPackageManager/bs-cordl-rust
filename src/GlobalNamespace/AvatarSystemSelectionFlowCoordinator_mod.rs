@@ -51,14 +51,14 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AvatarSystemSelectionFlowCoordinator")]
+#[cfg(feature = "AvatarSystemSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

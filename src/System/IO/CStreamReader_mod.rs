@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::CStreamReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+CStreamReader")]
+#[cfg(feature = "System+IO+CStreamReader")]
 impl std::ops::Deref for crate::System::IO::CStreamReader {
     type Target = crate::System::IO::StreamReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+CStreamReader")]
+#[cfg(feature = "System+IO+CStreamReader")]
 impl std::ops::DerefMut for crate::System::IO::CStreamReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

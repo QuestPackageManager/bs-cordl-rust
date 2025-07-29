@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Bcpg::CompressedDataPacket {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressedDataPacket")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressedDataPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::CompressedDataPacket {
     type Target = crate::Org::BouncyCastle::Bcpg::InputStreamPacket;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+CompressedDataPacket")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+CompressedDataPacket")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::CompressedDataPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

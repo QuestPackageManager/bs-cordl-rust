@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
+#[cfg(feature = "Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
     type Target = crate::Org::BouncyCastle::Cms::CmsPbeKey;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
+#[cfg(feature = "Org+BouncyCastle+Cms+Pkcs5Scheme2Utf8PbeKey")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::Pkcs5Scheme2Utf8PbeKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

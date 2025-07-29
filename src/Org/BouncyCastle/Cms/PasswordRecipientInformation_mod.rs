@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Cms::PasswordRecipientInformation {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+PasswordRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::PasswordRecipientInformation {
     type Target = crate::Org::BouncyCastle::Cms::RecipientInformation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+PasswordRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInformation")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::PasswordRecipientInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

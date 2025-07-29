@@ -31,14 +31,14 @@ for crate::UnityEngine::EventSystems::EventTrigger {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventTrigger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1083,14 +1083,14 @@ for crate::UnityEngine::EventSystems::EventTrigger_Entry {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+Entry")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_Entry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+Entry")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger+Entry")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventTrigger_Entry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1165,7 +1165,7 @@ for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
@@ -1174,7 +1174,7 @@ impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_TriggerE
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
+#[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

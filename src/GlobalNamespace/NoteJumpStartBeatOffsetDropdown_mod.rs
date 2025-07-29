@@ -24,14 +24,14 @@ for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteJumpStartBeatOffsetDropdown")]
+#[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteJumpStartBeatOffsetDropdown")]
+#[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

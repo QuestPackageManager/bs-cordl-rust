@@ -34,9 +34,7 @@ for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,9 +42,7 @@ for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+Field+GenericPolynomialExtensionField")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::Field::GenericPolynomialExtensionField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

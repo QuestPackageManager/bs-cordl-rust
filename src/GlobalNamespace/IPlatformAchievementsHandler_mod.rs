@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
+#[cfg(feature = "IPlatformAchievementsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::IPlatformAchievementsHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IPlatformAchievementsHandler")]
+#[cfg(feature = "IPlatformAchievementsHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IPlatformAchievementsHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -192,9 +192,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
-)]
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -202,9 +200,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler"
-)]
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -520,9 +516,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
-)]
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -530,9 +524,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_IPlatformAchievementsHandler+UnlockAchievementCompletionHandler"
-)]
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

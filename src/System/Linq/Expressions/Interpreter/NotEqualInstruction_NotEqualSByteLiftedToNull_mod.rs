@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
+    feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByteLiftedToNull"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByteLiftedToNull {

@@ -45,7 +45,7 @@ for crate::Zenject::MethodProvider_1<TReturn> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MethodProvider_1")]
+#[cfg(feature = "Zenject+MethodProvider_1")]
 impl<TReturn: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MethodProvider_1<TReturn> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -53,7 +53,7 @@ for crate::Zenject::MethodProvider_1<TReturn> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MethodProvider_1")]
+#[cfg(feature = "Zenject+MethodProvider_1")]
 impl<TReturn: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::MethodProvider_1<TReturn> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

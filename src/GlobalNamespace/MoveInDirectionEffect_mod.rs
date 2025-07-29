@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MoveInDirectionEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
+#[cfg(feature = "MoveInDirectionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::MoveInDirectionEffect {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MoveInDirectionEffect")]
+#[cfg(feature = "MoveInDirectionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MoveInDirectionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

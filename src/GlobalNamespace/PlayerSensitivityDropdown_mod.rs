@@ -26,7 +26,7 @@ for crate::GlobalNamespace::PlayerSensitivityDropdown {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
+#[cfg(feature = "PlayerSensitivityDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayerSensitivityDropdown")]
+#[cfg(feature = "PlayerSensitivityDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSensitivityDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,9 +28,7 @@ for crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationCollectionFixupCallback"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationCollectionFixupCallback")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback {
     type Target = crate::System::MulticastDelegate;
@@ -38,9 +36,7 @@ for crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationCollectionFixupCallback"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationCollectionFixupCallback")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

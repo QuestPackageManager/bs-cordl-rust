@@ -28,7 +28,7 @@ for crate::GlobalNamespace::VariableMovementDataProviderDebugWindow {
         false
     }
 }
-#[cfg(feature = "cordl_class_VariableMovementDataProviderDebugWindow")]
+#[cfg(feature = "VariableMovementDataProviderDebugWindow")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VariableMovementDataProviderDebugWindow {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::VariableMovementDataProviderDebugWindow {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VariableMovementDataProviderDebugWindow")]
+#[cfg(feature = "VariableMovementDataProviderDebugWindow")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VariableMovementDataProviderDebugWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

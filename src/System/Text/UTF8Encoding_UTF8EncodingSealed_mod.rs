@@ -24,14 +24,14 @@ for crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8EncodingSealed")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
 impl std::ops::Deref for crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed {
     type Target = crate::System::Text::UTF8Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8EncodingSealed")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8EncodingSealed")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UTF8Encoding_UTF8EncodingSealed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -30,14 +30,14 @@ for crate::UnityEngine::Timeline::AudioPlayableAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AudioPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AudioPlayableAsset")]
+#[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

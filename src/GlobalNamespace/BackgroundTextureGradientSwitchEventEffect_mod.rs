@@ -36,7 +36,7 @@ for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_BackgroundTextureGradientSwitchEventEffect")]
+#[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BackgroundTextureGradientSwitchEventEffect")]
+#[cfg(feature = "BackgroundTextureGradientSwitchEventEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BackgroundTextureGradientSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

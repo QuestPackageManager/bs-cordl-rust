@@ -49,14 +49,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -785,7 +785,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -793,7 +793,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -901,7 +901,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -909,7 +909,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1052,14 +1052,14 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1298,7 +1298,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1306,7 +1306,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

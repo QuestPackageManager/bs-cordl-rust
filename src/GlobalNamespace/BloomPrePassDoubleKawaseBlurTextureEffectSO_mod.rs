@@ -34,7 +34,7 @@ for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassDoubleKawaseBlurTextureEffectSO")]
+#[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
     type Target = crate::GlobalNamespace::BloomPrePassEffectSO;
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassDoubleKawaseBlurTextureEffectSO")]
+#[cfg(feature = "BloomPrePassDoubleKawaseBlurTextureEffectSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassDoubleKawaseBlurTextureEffectSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

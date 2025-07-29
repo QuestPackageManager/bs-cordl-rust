@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::StringFacetsChecker {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::StringFacetsChecker {
     type Target = crate::System::Xml::Schema::FacetsChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+StringFacetsChecker")]
+#[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::StringFacetsChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

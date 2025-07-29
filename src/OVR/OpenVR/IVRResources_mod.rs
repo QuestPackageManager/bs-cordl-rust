@@ -131,14 +131,14 @@ for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_GetResourceFullPath")]
+#[cfg(feature = "OVR+OpenVR+IVRResources+_GetResourceFullPath")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,14 +363,14 @@ for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRResources+_LoadSharedResource")]
+#[cfg(feature = "OVR+OpenVR+IVRResources+_LoadSharedResource")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

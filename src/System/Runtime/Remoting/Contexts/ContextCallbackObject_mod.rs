@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Contexts::ContextCallbackObject {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+ContextCallbackObject")]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+ContextCallbackObject")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::ContextCallbackObject {
     type Target = crate::System::ContextBoundObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Contexts::ContextCallbackObject {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+ContextCallbackObject")]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+ContextCallbackObject")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::ContextCallbackObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

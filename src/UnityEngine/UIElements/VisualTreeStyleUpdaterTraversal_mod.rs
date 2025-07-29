@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
     type Target = crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

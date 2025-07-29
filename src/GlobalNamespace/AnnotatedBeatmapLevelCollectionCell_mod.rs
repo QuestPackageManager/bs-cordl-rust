@@ -42,14 +42,14 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
         false
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 impl std::ops::Deref for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     type Target = crate::HMUI::SelectableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionCell")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

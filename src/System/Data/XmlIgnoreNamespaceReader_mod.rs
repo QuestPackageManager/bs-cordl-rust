@@ -29,14 +29,14 @@ for crate::System::Data::XmlIgnoreNamespaceReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+XmlIgnoreNamespaceReader")]
+#[cfg(feature = "System+Data+XmlIgnoreNamespaceReader")]
 impl std::ops::Deref for crate::System::Data::XmlIgnoreNamespaceReader {
     type Target = crate::System::Xml::XmlNodeReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+XmlIgnoreNamespaceReader")]
+#[cfg(feature = "System+Data+XmlIgnoreNamespaceReader")]
 impl std::ops::DerefMut for crate::System::Data::XmlIgnoreNamespaceReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

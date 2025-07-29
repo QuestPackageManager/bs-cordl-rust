@@ -24,14 +24,14 @@ for crate::Mono::Security::Cryptography::CryptoConvert {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+CryptoConvert")]
+#[cfg(feature = "Mono+Security+Cryptography+CryptoConvert")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::CryptoConvert {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+CryptoConvert")]
+#[cfg(feature = "Mono+Security+Cryptography+CryptoConvert")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::CryptoConvert {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

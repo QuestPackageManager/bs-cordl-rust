@@ -44,7 +44,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -52,7 +52,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2263,7 +2263,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
@@ -2279,7 +2279,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
 )]
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,

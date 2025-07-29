@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::Binder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+Binder")]
+#[cfg(feature = "System+Reflection+Binder")]
 impl std::ops::Deref for crate::System::Reflection::Binder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+Binder")]
+#[cfg(feature = "System+Reflection+Binder")]
 impl std::ops::DerefMut for crate::System::Reflection::Binder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

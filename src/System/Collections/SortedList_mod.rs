@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::SortedLi
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList")]
+#[cfg(feature = "System+Collections+SortedList")]
 impl std::ops::Deref for crate::System::Collections::SortedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList")]
+#[cfg(feature = "System+Collections+SortedList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1069,14 +1069,14 @@ for crate::System::Collections::SortedList_KeyList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
+#[cfg(feature = "System+Collections+SortedList+KeyList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_KeyList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+KeyList")]
+#[cfg(feature = "System+Collections+SortedList+KeyList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_KeyList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1594,14 +1594,14 @@ for crate::System::Collections::SortedList_SortedListDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListDebugView")]
+#[cfg(feature = "System+Collections+SortedList+SortedListDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_SortedListDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1654,14 +1654,14 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::Deref for crate::System::Collections::SortedList_SortedListEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SortedListEnumerator")]
+#[cfg(feature = "System+Collections+SortedList+SortedListEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_SortedListEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1969,14 +1969,14 @@ for crate::System::Collections::SortedList_ValueList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
+#[cfg(feature = "System+Collections+SortedList+ValueList")]
 impl std::ops::Deref for crate::System::Collections::SortedList_ValueList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+ValueList")]
+#[cfg(feature = "System+Collections+SortedList+ValueList")]
 impl std::ops::DerefMut for crate::System::Collections::SortedList_ValueList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

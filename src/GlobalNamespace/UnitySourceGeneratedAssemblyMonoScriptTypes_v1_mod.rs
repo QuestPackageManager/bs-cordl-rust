@@ -24,7 +24,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl std::ops::Deref
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

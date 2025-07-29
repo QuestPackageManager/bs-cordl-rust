@@ -35,9 +35,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalWriter"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
@@ -45,9 +43,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalWriter"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

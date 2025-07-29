@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Utilities::IO::Pem::PemGenerationException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemGenerationException")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemGenerationException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::IO::Pem::PemGenerationException {
     type Target = crate::System::Exception;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Utilities::IO::Pem::PemGenerationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+Pem+PemGenerationException")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemGenerationException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::IO::Pem::PemGenerationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

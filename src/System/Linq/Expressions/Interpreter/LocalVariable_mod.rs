@@ -26,14 +26,14 @@ for crate::System::Linq::Expressions::Interpreter::LocalVariable {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LocalVariable")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalVariable")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LocalVariable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

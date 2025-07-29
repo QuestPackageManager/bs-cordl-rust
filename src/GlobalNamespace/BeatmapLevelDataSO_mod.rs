@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO")]
+#[cfg(feature = "BeatmapLevelDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO")]
+#[cfg(feature = "BeatmapLevelDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -883,14 +883,14 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmap")]
+#[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmap")]
+#[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1310,7 +1310,7 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmapSet")]
+#[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1318,7 +1318,7 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelDataSO+DifficultyBeatmapSet")]
+#[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

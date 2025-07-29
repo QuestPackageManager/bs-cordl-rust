@@ -53,7 +53,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntim
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
@@ -63,7 +63,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntim
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
+    feature = "UnityEngine+AddressableAssets+Initialization+ResourceManagerRuntimeData"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {

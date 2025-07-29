@@ -42,7 +42,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActiveLevelFailController")]
+#[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

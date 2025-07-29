@@ -57,7 +57,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -65,7 +65,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1")]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -426,9 +426,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     type Target = crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>;
@@ -436,9 +434,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -662,9 +658,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     type Target = crate::System::MulticastDelegate;
@@ -672,9 +666,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -829,9 +821,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     type Target = crate::System::MulticastDelegate;
@@ -839,9 +829,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Enumeration+FileSystemEnumerable_1+FindTransform"
-)]
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

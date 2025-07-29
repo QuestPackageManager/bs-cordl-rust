@@ -29,7 +29,7 @@ for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT+Value"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {

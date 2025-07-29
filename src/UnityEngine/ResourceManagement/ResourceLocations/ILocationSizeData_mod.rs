@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ILocationSizeData"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ILocationSizeData")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+ILocationSizeData"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+ILocationSizeData")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceLocations::ILocationSizeData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

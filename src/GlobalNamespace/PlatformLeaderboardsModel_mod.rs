@@ -45,14 +45,14 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
+#[cfg(feature = "PlatformLeaderboardsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardsModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
+#[cfg(feature = "PlatformLeaderboardsModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardsModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -663,7 +663,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
         false
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -671,7 +671,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+GetScoresCompletionHandler")]
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -983,7 +983,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -991,7 +991,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
+#[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1340,7 +1340,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
         false
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     type Target = crate::System::MulticastDelegate;
@@ -1348,7 +1348,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

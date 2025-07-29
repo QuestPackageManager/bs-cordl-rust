@@ -24,14 +24,14 @@ for crate::GlobalNamespace::VRControllerTransformOffset {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
+#[cfg(feature = "VRControllerTransformOffset")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllerTransformOffset {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllerTransformOffset")]
+#[cfg(feature = "VRControllerTransformOffset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllerTransformOffset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

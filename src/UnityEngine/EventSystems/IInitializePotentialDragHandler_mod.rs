@@ -24,7 +24,7 @@ for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 impl std::ops::Deref
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+IInitializePotentialDragHandler")]
+#[cfg(feature = "UnityEngine+EventSystems+IInitializePotentialDragHandler")]
 impl std::ops::DerefMut
 for crate::UnityEngine::EventSystems::IInitializePotentialDragHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

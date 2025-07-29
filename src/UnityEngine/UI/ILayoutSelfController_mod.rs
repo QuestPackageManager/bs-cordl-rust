@@ -24,14 +24,14 @@ for crate::UnityEngine::UI::ILayoutSelfController {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutSelfController")]
+#[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
 impl std::ops::Deref for crate::UnityEngine::UI::ILayoutSelfController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+ILayoutSelfController")]
+#[cfg(feature = "UnityEngine+UI+ILayoutSelfController")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::ILayoutSelfController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -34,14 +34,14 @@ for crate::System::Xml::Schema::XmlSchemaComplexContentRestriction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentRestriction")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentRestriction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexContentRestriction {
     type Target = crate::System::Xml::Schema::XmlSchemaContent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContentRestriction")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContentRestriction")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaComplexContentRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

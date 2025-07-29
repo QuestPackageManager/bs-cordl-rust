@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::AvatarCore::Avatar
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+Avatar")]
+#[cfg(feature = "BeatSaber+AvatarCore+Avatar")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::Avatar {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+Avatar")]
+#[cfg(feature = "BeatSaber+AvatarCore+Avatar")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::Avatar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

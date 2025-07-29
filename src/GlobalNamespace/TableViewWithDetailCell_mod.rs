@@ -40,14 +40,14 @@ for crate::GlobalNamespace::TableViewWithDetailCell {
         false
     }
 }
-#[cfg(feature = "cordl_class_TableViewWithDetailCell")]
+#[cfg(feature = "TableViewWithDetailCell")]
 impl std::ops::Deref for crate::GlobalNamespace::TableViewWithDetailCell {
     type Target = crate::HMUI::TableView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TableViewWithDetailCell")]
+#[cfg(feature = "TableViewWithDetailCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TableViewWithDetailCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -495,14 +495,14 @@ for crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_TableViewWithDetailCell+IDataSource")]
+#[cfg(feature = "TableViewWithDetailCell+IDataSource")]
 impl std::ops::Deref for crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TableViewWithDetailCell+IDataSource")]
+#[cfg(feature = "TableViewWithDetailCell+IDataSource")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TableViewWithDetailCell_IDataSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

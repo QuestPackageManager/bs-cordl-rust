@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::MessageWith
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithParty")]
+#[cfg(feature = "Oculus+Platform+MessageWithParty")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithParty {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithParty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithParty")]
+#[cfg(feature = "Oculus+Platform+MessageWithParty")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithParty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

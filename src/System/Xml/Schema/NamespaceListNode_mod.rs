@@ -28,14 +28,14 @@ for crate::System::Xml::Schema::NamespaceListNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceListNode")]
+#[cfg(feature = "System+Xml+Schema+NamespaceListNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::NamespaceListNode {
     type Target = crate::System::Xml::Schema::SyntaxTreeNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+NamespaceListNode")]
+#[cfg(feature = "System+Xml+Schema+NamespaceListNode")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::NamespaceListNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

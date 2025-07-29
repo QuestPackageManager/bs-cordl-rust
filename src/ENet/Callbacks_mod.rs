@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::Callbacks {
         false
     }
 }
-#[cfg(feature = "cordl_class_ENet+Callbacks")]
+#[cfg(feature = "ENet+Callbacks")]
 impl std::ops::Deref for crate::ENet::Callbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ENet+Callbacks")]
+#[cfg(feature = "ENet+Callbacks")]
 impl std::ops::DerefMut for crate::ENet::Callbacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

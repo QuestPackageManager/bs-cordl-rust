@@ -28,9 +28,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+IResourceLocator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

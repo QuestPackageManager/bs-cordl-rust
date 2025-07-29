@@ -24,14 +24,14 @@ for crate::GlobalNamespace::SonyNetworkPlayerModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_SonyNetworkPlayerModel")]
+#[cfg(feature = "SonyNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyNetworkPlayerModel {
     type Target = crate::GlobalNamespace::PlatformNetworkPlayerModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SonyNetworkPlayerModel")]
+#[cfg(feature = "SonyNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyNetworkPlayerModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

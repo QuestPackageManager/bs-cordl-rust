@@ -26,14 +26,14 @@ for crate::GlobalNamespace::BloomPrePassLightTypeSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassLightTypeSO")]
+#[cfg(feature = "BloomPrePassLightTypeSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLightTypeSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassLightTypeSO")]
+#[cfg(feature = "BloomPrePassLightTypeSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLightTypeSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     type Target = crate::System::IO::Stream;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZDeflaterOutputStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Zlib::ZDeflaterOutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

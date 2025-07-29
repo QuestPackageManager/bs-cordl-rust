@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassLightsUpdateSystem")]
+#[cfg(feature = "BloomPrePassLightsUpdateSystem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLightsUpdateSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

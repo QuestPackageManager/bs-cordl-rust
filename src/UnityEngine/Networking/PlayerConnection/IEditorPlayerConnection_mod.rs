@@ -28,9 +28,7 @@ for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
-)]
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection"
-)]
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+IEditorPlayerConnection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::IEditorPlayerConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_NodeS
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_NodeSync")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_NodeSync {
     type Target = crate::HoudiniEngineUnity::HEU_BaseSync;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_NodeSync")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_NodeSync {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

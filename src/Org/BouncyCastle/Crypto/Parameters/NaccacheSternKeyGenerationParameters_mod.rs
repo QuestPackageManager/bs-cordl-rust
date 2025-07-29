@@ -31,7 +31,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {
@@ -41,7 +41,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationPara
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
+    feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternKeyGenerationParameters"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters {

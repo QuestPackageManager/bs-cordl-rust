@@ -29,9 +29,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     type Target = crate::System::Attribute;
@@ -39,9 +37,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

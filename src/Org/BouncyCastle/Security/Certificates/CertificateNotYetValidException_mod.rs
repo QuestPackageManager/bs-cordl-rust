@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidExce
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidExce
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
+    feature = "Org+BouncyCastle+Security+Certificates+CertificateNotYetValidException"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::Certificates::CertificateNotYetValidException {

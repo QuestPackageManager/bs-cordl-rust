@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
     type Target = crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012Digest;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Gost3411_2012_512Digest")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::AttachToPanelEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AttachToPanelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+AttachToPanelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::AttachToPanelEvent {
     type Target = crate::UnityEngine::UIElements::PanelChangedEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AttachToPanelEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::AttachToPanelEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+AttachToPanelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+AttachToPanelEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::AttachToPanelEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

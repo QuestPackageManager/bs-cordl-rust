@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Microsoft::Win32::NativeMetho
         false
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+NativeMethods")]
+#[cfg(feature = "Microsoft+Win32+NativeMethods")]
 impl std::ops::Deref for crate::Microsoft::Win32::NativeMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+NativeMethods")]
+#[cfg(feature = "Microsoft+Win32+NativeMethods")]
 impl std::ops::DerefMut for crate::Microsoft::Win32::NativeMethods {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

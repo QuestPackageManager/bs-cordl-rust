@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Smime+SmimeCapabilityVector")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::Smime::SmimeCapabilityVector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

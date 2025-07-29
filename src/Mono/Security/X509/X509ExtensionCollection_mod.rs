@@ -25,14 +25,14 @@ for crate::Mono::Security::X509::X509ExtensionCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509ExtensionCollection {
     type Target = crate::System::Collections::CollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509ExtensionCollection")]
+#[cfg(feature = "Mono+Security+X509+X509ExtensionCollection")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::X509ExtensionCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

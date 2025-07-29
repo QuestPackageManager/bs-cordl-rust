@@ -33,14 +33,14 @@ for crate::GlobalNamespace::GlobalShaderColorLightWithIds {
         false
     }
 }
-#[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds")]
+#[cfg(feature = "GlobalShaderColorLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::GlobalShaderColorLightWithIds {
     type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds")]
+#[cfg(feature = "GlobalShaderColorLightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GlobalShaderColorLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -184,7 +184,7 @@ for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId
         false
     }
 }
-#[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
+#[cfg(feature = "GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId {
     type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
@@ -192,7 +192,7 @@ for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
+#[cfg(feature = "GlobalShaderColorLightWithIds+LightIntensitiesWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GlobalShaderColorLightWithIds_LightIntensitiesWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

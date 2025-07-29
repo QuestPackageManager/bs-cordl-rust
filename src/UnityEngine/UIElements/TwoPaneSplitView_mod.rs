@@ -53,14 +53,14 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -541,7 +541,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TwoPaneSplitView>,
@@ -553,7 +553,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -638,14 +638,14 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

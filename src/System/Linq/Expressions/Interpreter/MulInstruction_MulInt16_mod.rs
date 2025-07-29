@@ -28,18 +28,14 @@ for crate::GlobalNamespace::MulInstruction_MulInt16 {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulInt16"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt16")]
 impl std::ops::Deref for crate::GlobalNamespace::MulInstruction_MulInt16 {
     type Target = crate::System::Linq::Expressions::Interpreter::MulInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+MulInstruction+MulInt16"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+MulInstruction+MulInt16")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MulInstruction_MulInt16 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

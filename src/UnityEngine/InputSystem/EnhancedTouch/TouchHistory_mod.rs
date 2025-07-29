@@ -423,9 +423,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -433,9 +431,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchHistory+Enumerator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

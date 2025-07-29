@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint {
     type Target = crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationConstraint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweepConstraint")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

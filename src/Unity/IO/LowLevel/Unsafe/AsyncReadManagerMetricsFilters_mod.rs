@@ -43,7 +43,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerMetricsFilters {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]
 impl std::ops::Deref
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerMetricsFilters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -51,7 +51,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerMetricsFilters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AsyncReadManagerMetricsFilters")]
 impl std::ops::DerefMut
 for crate::Unity::IO::LowLevel::Unsafe::AsyncReadManagerMetricsFilters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

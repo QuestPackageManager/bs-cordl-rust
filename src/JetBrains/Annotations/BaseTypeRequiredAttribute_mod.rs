@@ -25,14 +25,14 @@ for crate::JetBrains::Annotations::BaseTypeRequiredAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+BaseTypeRequiredAttribute")]
+#[cfg(feature = "JetBrains+Annotations+BaseTypeRequiredAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::BaseTypeRequiredAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+BaseTypeRequiredAttribute")]
+#[cfg(feature = "JetBrains+Annotations+BaseTypeRequiredAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::BaseTypeRequiredAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

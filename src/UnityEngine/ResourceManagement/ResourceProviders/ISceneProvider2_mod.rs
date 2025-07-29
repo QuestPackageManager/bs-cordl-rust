@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ISceneProvider2"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ISceneProvider2")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ISceneProvider2"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ISceneProvider2")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

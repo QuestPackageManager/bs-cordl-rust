@@ -42,14 +42,14 @@ for crate::UnityEngine::Timeline::AnimationTrack {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack")]
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2299,7 +2299,7 @@ for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2307,7 +2307,7 @@ for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
+#[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

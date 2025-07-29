@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::EventInfo
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+EventInfo")]
+#[cfg(feature = "System+Reflection+EventInfo")]
 impl std::ops::Deref for crate::System::Reflection::EventInfo {
     type Target = crate::System::Reflection::MemberInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+EventInfo")]
+#[cfg(feature = "System+Reflection+EventInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::EventInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -465,14 +465,14 @@ for crate::System::Reflection::EventInfo_AddEventAdapter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+EventInfo+AddEventAdapter")]
+#[cfg(feature = "System+Reflection+EventInfo+AddEventAdapter")]
 impl std::ops::Deref for crate::System::Reflection::EventInfo_AddEventAdapter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+EventInfo+AddEventAdapter")]
+#[cfg(feature = "System+Reflection+EventInfo+AddEventAdapter")]
 impl std::ops::DerefMut for crate::System::Reflection::EventInfo_AddEventAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

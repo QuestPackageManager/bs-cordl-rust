@@ -28,9 +28,7 @@ for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
-)]
+#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute"
-)]
+#[cfg(feature = "UnityEngine+Bindings+PreventReadOnlyInstanceModificationAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Bindings::PreventReadOnlyInstanceModificationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

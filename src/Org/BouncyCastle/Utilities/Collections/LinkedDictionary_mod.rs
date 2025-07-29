@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

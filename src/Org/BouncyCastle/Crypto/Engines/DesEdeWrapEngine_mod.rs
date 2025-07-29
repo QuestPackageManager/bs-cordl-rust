@@ -37,14 +37,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -30,7 +30,7 @@ for crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+ObjectHolderListEnumerator")]
+#[cfg(feature = "System+Runtime+Serialization+ObjectHolderListEnumerator")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,7 +38,7 @@ for crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+ObjectHolderListEnumerator")]
+#[cfg(feature = "System+Runtime+Serialization+ObjectHolderListEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

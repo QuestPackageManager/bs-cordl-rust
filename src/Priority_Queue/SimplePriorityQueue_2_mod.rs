@@ -78,7 +78,7 @@ for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2")]
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -88,7 +88,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2")]
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -1259,7 +1259,7 @@ for crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -1270,7 +1270,7 @@ for crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

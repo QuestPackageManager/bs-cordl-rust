@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile {
         false
     }
 }
-#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
+#[cfg(feature = "MidiParser+MidiFile")]
 impl std::ops::Deref for crate::MidiParser::MidiFile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MidiParser+MidiFile")]
+#[cfg(feature = "MidiParser+MidiFile")]
 impl std::ops::DerefMut for crate::MidiParser::MidiFile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,14 +228,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiFile_Reader {
         false
     }
 }
-#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
+#[cfg(feature = "MidiParser+MidiFile+Reader")]
 impl std::ops::Deref for crate::MidiParser::MidiFile_Reader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MidiParser+MidiFile+Reader")]
+#[cfg(feature = "MidiParser+MidiFile+Reader")]
 impl std::ops::DerefMut for crate::MidiParser::MidiFile_Reader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

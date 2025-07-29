@@ -30,14 +30,14 @@ for crate::GlobalNamespace::WindowResolutionSettingsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_WindowResolutionSettingsController")]
+#[cfg(feature = "WindowResolutionSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::WindowResolutionSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_WindowResolutionSettingsController")]
+#[cfg(feature = "WindowResolutionSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WindowResolutionSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

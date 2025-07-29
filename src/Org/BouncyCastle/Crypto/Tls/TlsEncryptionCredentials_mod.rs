@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsEncryptionCredentials")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsEncryptionCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsEncryptionCredentials")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsEncryptionCredentials")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsEncryptionCredentials {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

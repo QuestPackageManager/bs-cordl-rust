@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
     type Target = crate::Org::BouncyCastle::Crypto::BufferedCipherBase;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+BufferedAsymmetricBlockCipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::BufferedAsymmetricBlockCipher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

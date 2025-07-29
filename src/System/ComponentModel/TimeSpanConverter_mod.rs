@@ -24,14 +24,14 @@ for crate::System::ComponentModel::TimeSpanConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TimeSpanConverter")]
+#[cfg(feature = "System+ComponentModel+TimeSpanConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TimeSpanConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TimeSpanConverter")]
+#[cfg(feature = "System+ComponentModel+TimeSpanConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TimeSpanConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

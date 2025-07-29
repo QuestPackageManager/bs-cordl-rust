@@ -49,14 +49,14 @@ for crate::Org::BouncyCastle::Bcpg::SignaturePacket {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+SignaturePacket")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignaturePacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+SignaturePacket")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignaturePacket")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::SignaturePacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -49,14 +49,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameEnergyCo
         false
     }
 }
-#[cfg(feature = "cordl_class_GameEnergyCounter")]
+#[cfg(feature = "GameEnergyCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameEnergyCounter")]
+#[cfg(feature = "GameEnergyCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -741,14 +741,14 @@ for crate::GlobalNamespace::GameEnergyCounter_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
+#[cfg(feature = "GameEnergyCounter+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameEnergyCounter+InitData")]
+#[cfg(feature = "GameEnergyCounter+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameEnergyCounter_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

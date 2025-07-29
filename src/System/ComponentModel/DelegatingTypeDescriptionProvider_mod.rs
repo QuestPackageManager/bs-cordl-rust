@@ -25,7 +25,7 @@ for crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DelegatingTypeDescriptionProvider")]
+#[cfg(feature = "System+ComponentModel+DelegatingTypeDescriptionProvider")]
 impl std::ops::Deref
 for crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
@@ -33,7 +33,7 @@ for crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DelegatingTypeDescriptionProvider")]
+#[cfg(feature = "System+ComponentModel+DelegatingTypeDescriptionProvider")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::DelegatingTypeDescriptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

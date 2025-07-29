@@ -29,7 +29,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::InitializeLocalInstruction_Reference {
     type Target = crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::InitializeLocalInstruction_Refe
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::InitializeLocalInstruction_Reference {

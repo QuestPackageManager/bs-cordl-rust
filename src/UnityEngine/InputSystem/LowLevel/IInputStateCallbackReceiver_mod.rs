@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputStateCallbackReceiver"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateCallbackReceiver")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputStateCallbackReceiver"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputStateCallbackReceiver")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::IInputStateCallbackReceiver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

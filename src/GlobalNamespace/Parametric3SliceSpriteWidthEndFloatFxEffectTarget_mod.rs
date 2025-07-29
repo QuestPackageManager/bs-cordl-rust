@@ -29,7 +29,7 @@ for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
         false
     }
 }
-#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
+#[cfg(feature = "Parametric3SliceSpriteWidthEndFloatFxEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::Parametric3SliceSpriteWidthEndFloatFxEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

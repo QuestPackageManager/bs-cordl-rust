@@ -26,14 +26,14 @@ for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     type Target = crate::System::Runtime::Remoting::TypeEntry;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+ActivatedClientTypeEntry")]
+#[cfg(feature = "System+Runtime+Remoting+ActivatedClientTypeEntry")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::ActivatedClientTypeEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

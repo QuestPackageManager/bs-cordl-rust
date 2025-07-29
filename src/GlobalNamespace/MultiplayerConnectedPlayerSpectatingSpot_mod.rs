@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSpectatingSpot")]
+#[cfg(feature = "MultiplayerConnectedPlayerSpectatingSpot")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSpectatingSpot")]
+#[cfg(feature = "MultiplayerConnectedPlayerSpectatingSpot")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

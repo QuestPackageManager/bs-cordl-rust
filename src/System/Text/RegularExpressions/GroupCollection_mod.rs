@@ -33,14 +33,14 @@ for crate::System::Text::RegularExpressions::GroupCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+GroupCollection")]
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::GroupCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+GroupCollection")]
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::GroupCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1239,7 +1239,7 @@ for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+GroupCollection+Enumerator")]
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1247,7 +1247,7 @@ for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+GroupCollection+Enumerator")]
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

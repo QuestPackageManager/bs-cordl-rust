@@ -28,9 +28,7 @@ for crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Security+Interface+MonoLocalCertificateSelectionCallback"
-)]
+#[cfg(feature = "Mono+Security+Interface+MonoLocalCertificateSelectionCallback")]
 impl std::ops::Deref
 for crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback {
     type Target = crate::System::MulticastDelegate;
@@ -38,9 +36,7 @@ for crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Security+Interface+MonoLocalCertificateSelectionCallback"
-)]
+#[cfg(feature = "Mono+Security+Interface+MonoLocalCertificateSelectionCallback")]
 impl std::ops::DerefMut
 for crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

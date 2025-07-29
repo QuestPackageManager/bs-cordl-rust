@@ -34,14 +34,14 @@ for crate::GlobalNamespace::SimpleTemporalFiltering {
         false
     }
 }
-#[cfg(feature = "cordl_class_SimpleTemporalFiltering")]
+#[cfg(feature = "SimpleTemporalFiltering")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTemporalFiltering {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SimpleTemporalFiltering")]
+#[cfg(feature = "SimpleTemporalFiltering")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SimpleTemporalFiltering {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

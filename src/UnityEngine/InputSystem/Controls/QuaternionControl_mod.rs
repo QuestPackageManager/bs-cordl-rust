@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Controls::QuaternionControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+QuaternionControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+QuaternionControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::QuaternionControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::Quaternion,
@@ -47,7 +47,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::QuaternionCo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+QuaternionControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+QuaternionControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::QuaternionControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

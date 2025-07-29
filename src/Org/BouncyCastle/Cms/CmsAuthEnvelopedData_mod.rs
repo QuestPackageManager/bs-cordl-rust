@@ -39,14 +39,14 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -215,9 +215,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReada
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable"
-)]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -225,9 +223,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReada
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable"
-)]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthEnvelopedData+AuthEnvelopedSecureReadable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAuthEnvelopedData_AuthEnvelopedSecureReadable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -40,14 +40,14 @@ for crate::GlobalNamespace::FileBrowserTableView {
         false
     }
 }
-#[cfg(feature = "cordl_class_FileBrowserTableView")]
+#[cfg(feature = "FileBrowserTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::FileBrowserTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FileBrowserTableView")]
+#[cfg(feature = "FileBrowserTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileBrowserTableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

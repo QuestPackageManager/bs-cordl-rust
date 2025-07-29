@@ -59,14 +59,14 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LightCompiler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2992,9 +2992,7 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     type Target = crate::System::Linq::Expressions::ExpressionVisitor;
@@ -3002,9 +3000,7 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

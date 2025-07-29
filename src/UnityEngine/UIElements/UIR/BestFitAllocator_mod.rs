@@ -35,14 +35,14 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -329,7 +329,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -340,7 +340,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_B
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,7 +434,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
@@ -446,7 +446,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

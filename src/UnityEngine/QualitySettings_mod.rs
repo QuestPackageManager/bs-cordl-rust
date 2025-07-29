@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::QualitySettings 
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+QualitySettings")]
+#[cfg(feature = "UnityEngine+QualitySettings")]
 impl std::ops::Deref for crate::UnityEngine::QualitySettings {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+QualitySettings")]
+#[cfg(feature = "UnityEngine+QualitySettings")]
 impl std::ops::DerefMut for crate::UnityEngine::QualitySettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::AnimatorMoveHandlerM
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+AnimatorMoveHandlerManager")]
+#[cfg(feature = "Zenject+AnimatorMoveHandlerManager")]
 impl std::ops::Deref for crate::Zenject::AnimatorMoveHandlerManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+AnimatorMoveHandlerManager")]
+#[cfg(feature = "Zenject+AnimatorMoveHandlerManager")]
 impl std::ops::DerefMut for crate::Zenject::AnimatorMoveHandlerManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

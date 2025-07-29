@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Logge
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Logger")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_Logger")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_Logger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Logger")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_Logger")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_Logger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

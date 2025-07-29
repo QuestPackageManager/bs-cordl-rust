@@ -25,14 +25,14 @@ for crate::HoudiniEngineUnity::HEU_BakedEventData {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BakedEventData")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_BakedEventData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BakedEventData {
     type Target = crate::HoudiniEngineUnity::HEU_AssetEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_BakedEventData")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_BakedEventData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_BakedEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::RecordingToolInstallerSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolInstallerSO")]
+#[cfg(feature = "RecordingToolInstallerSO")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolInstallerSO {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolInstallerSO")]
+#[cfg(feature = "RecordingToolInstallerSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolInstallerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

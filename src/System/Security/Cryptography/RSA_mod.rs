@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Cryptograph
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RSA")]
+#[cfg(feature = "System+Security+Cryptography+RSA")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RSA {
     type Target = crate::System::Security::Cryptography::AsymmetricAlgorithm;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RSA")]
+#[cfg(feature = "System+Security+Cryptography+RSA")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::RSA {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

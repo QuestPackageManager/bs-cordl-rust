@@ -24,7 +24,7 @@ for crate::System::Threading::Tasks::SystemThreadingTasks_TaskDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_TaskDebugView")]
+#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_TaskDebugView")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::SystemThreadingTasks_TaskDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Threading::Tasks::SystemThreadingTasks_TaskDebugView {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+SystemThreadingTasks_TaskDebugView")]
+#[cfg(feature = "System+Threading+Tasks+SystemThreadingTasks_TaskDebugView")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::SystemThreadingTasks_TaskDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

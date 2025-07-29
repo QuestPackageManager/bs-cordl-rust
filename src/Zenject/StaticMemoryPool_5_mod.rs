@@ -57,7 +57,7 @@ for crate::Zenject::StaticMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValu
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+StaticMemoryPool_5")]
+#[cfg(feature = "Zenject+StaticMemoryPool_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ for crate::Zenject::StaticMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+StaticMemoryPool_5")]
+#[cfg(feature = "Zenject+StaticMemoryPool_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

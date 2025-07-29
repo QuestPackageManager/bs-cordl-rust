@@ -95,14 +95,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DiContainer {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DiContainer")]
+#[cfg(feature = "Zenject+DiContainer")]
 impl std::ops::Deref for crate::Zenject::DiContainer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DiContainer")]
+#[cfg(feature = "Zenject+DiContainer")]
 impl std::ops::DerefMut for crate::Zenject::DiContainer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9230,14 +9230,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::DiContainer_Provider
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DiContainer+ProviderInfo")]
+#[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
 impl std::ops::Deref for crate::Zenject::DiContainer_ProviderInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DiContainer+ProviderInfo")]
+#[cfg(feature = "Zenject+DiContainer+ProviderInfo")]
 impl std::ops::DerefMut for crate::Zenject::DiContainer_ProviderInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

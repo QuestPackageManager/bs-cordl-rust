@@ -25,7 +25,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     type Target = crate::System::Runtime::Remoting::Messaging::CADMessageBase;
@@ -33,7 +33,7 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodCallMessage")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

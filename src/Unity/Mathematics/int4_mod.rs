@@ -12206,14 +12206,14 @@ for crate::Unity::Mathematics::int4_DebuggerProxy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Mathematics+int4+DebuggerProxy")]
+#[cfg(feature = "Unity+Mathematics+int4+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::int4_DebuggerProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Mathematics+int4+DebuggerProxy")]
+#[cfg(feature = "Unity+Mathematics+int4+DebuggerProxy")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::int4_DebuggerProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

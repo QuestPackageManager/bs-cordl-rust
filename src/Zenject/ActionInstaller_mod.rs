@@ -28,7 +28,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ActionInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ActionInstaller")]
+#[cfg(feature = "Zenject+ActionInstaller")]
 impl std::ops::Deref for crate::Zenject::ActionInstaller {
     type Target = crate::Zenject::Installer_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>,
@@ -37,7 +37,7 @@ impl std::ops::Deref for crate::Zenject::ActionInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ActionInstaller")]
+#[cfg(feature = "Zenject+ActionInstaller")]
 impl std::ops::DerefMut for crate::Zenject::ActionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

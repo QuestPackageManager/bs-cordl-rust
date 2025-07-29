@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EmitParticle
         false
     }
 }
-#[cfg(feature = "cordl_class_EmitParticles")]
+#[cfg(feature = "EmitParticles")]
 impl std::ops::Deref for crate::GlobalNamespace::EmitParticles {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EmitParticles")]
+#[cfg(feature = "EmitParticles")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EmitParticles {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

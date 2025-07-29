@@ -34,14 +34,14 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
         false
     }
 }
-#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
+#[cfg(feature = "ShowTextOnGameEventController")]
 impl std::ops::Deref for crate::GlobalNamespace::ShowTextOnGameEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ShowTextOnGameEventController")]
+#[cfg(feature = "ShowTextOnGameEventController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ShowTextOnGameEventController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -164,7 +164,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
         false
     }
 }
-#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -172,7 +172,7 @@ for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ShowTextOnGameEventController+EventTextBinding")]
+#[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

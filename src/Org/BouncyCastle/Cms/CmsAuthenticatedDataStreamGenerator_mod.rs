@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -383,7 +383,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthen
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {
@@ -393,7 +393,7 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthen
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
+    feature = "Org+BouncyCastle+Cms+CmsAuthenticatedDataStreamGenerator+CmsAuthenticatedDataOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataStreamGenerator_CmsAuthenticatedDataOutputStream {

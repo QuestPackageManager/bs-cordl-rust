@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Console {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Console")]
+#[cfg(feature = "System+Console")]
 impl std::ops::Deref for crate::System::Console {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Console")]
+#[cfg(feature = "System+Console")]
 impl std::ops::DerefMut for crate::System::Console {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -462,14 +462,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Console_WindowsConsol
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
+#[cfg(feature = "System+Console+WindowsConsole")]
 impl std::ops::Deref for crate::System::Console_WindowsConsole {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Console+WindowsConsole")]
+#[cfg(feature = "System+Console+WindowsConsole")]
 impl std::ops::DerefMut for crate::System::Console_WindowsConsole {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -608,14 +608,14 @@ for crate::System::WindowsConsole_Console_WindowsCancelHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
 impl std::ops::Deref for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Console+WindowsConsole+WindowsCancelHandler")]
+#[cfg(feature = "System+Console+WindowsConsole+WindowsCancelHandler")]
 impl std::ops::DerefMut for crate::System::WindowsConsole_Console_WindowsCancelHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -40,14 +40,14 @@ for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
         false
     }
 }
-#[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer")]
+#[cfg(feature = "RumbleHapticFeedbackPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer")]
+#[cfg(feature = "RumbleHapticFeedbackPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -294,14 +294,14 @@ for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
         false
     }
 }
-#[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer+RumbleData")]
+#[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
 impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RumbleHapticFeedbackPlayer+RumbleData")]
+#[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

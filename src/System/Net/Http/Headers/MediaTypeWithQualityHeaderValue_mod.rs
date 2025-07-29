@@ -24,7 +24,7 @@ for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     type Target = crate::System::Net::Http::Headers::MediaTypeHeaderValue;
@@ -32,7 +32,7 @@ for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
+#[cfg(feature = "System+Net+Http+Headers+MediaTypeWithQualityHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

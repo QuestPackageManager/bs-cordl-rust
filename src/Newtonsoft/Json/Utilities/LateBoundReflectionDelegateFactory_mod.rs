@@ -28,9 +28,7 @@ for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory"
-)]
+#[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
     type Target = crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory;
@@ -38,9 +36,7 @@ for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory"
-)]
+#[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

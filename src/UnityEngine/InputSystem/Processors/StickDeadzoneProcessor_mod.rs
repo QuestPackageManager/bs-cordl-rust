@@ -28,7 +28,7 @@ for crate::UnityEngine::InputSystem::Processors::StickDeadzoneProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::StickDeadzoneProcessor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Processors::StickDeadzoneProcessor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+StickDeadzoneProcessor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::StickDeadzoneProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

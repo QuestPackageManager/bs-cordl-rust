@@ -32,9 +32,7 @@ for crate::Oculus::Platform::MessageWithNetSyncVoipAttenuationValueList {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Oculus+Platform+MessageWithNetSyncVoipAttenuationValueList"
-)]
+#[cfg(feature = "Oculus+Platform+MessageWithNetSyncVoipAttenuationValueList")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithNetSyncVoipAttenuationValueList {
     type Target = crate::Oculus::Platform::Message_1<
@@ -46,9 +44,7 @@ for crate::Oculus::Platform::MessageWithNetSyncVoipAttenuationValueList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Oculus+Platform+MessageWithNetSyncVoipAttenuationValueList"
-)]
+#[cfg(feature = "Oculus+Platform+MessageWithNetSyncVoipAttenuationValueList")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithNetSyncVoipAttenuationValueList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

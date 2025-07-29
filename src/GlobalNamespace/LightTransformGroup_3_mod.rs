@@ -66,7 +66,7 @@ for crate::GlobalNamespace::LightTransformGroup_3<TX, TY, TZ> {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightTransformGroup_3")]
+#[cfg(feature = "LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightTransformGroup_3")]
+#[cfg(feature = "LightTransformGroup_3")]
 impl<
     TX: quest_hook::libil2cpp::Type,
     TY: quest_hook::libil2cpp::Type,

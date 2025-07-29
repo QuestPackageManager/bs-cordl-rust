@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+IncrementInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+IncrementInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::IncrementInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

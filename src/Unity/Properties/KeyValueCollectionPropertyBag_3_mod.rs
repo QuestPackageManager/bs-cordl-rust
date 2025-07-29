@@ -62,7 +62,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -78,7 +78,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3")]
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -293,9 +293,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
-)]
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -314,9 +312,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty"
-)]
+#[cfg(feature = "Unity+Properties+KeyValueCollectionPropertyBag_3+KeyValuePairProperty")]
 impl<
     TDictionary: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

@@ -36,14 +36,14 @@ for crate::UnityEngine::UnitySynchronizationContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
 impl std::ops::Deref for crate::UnityEngine::UnitySynchronizationContext {
     type Target = crate::System::Threading::SynchronizationContext;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UnitySynchronizationContext")]
+#[cfg(feature = "UnityEngine+UnitySynchronizationContext")]
 impl std::ops::DerefMut for crate::UnityEngine::UnitySynchronizationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

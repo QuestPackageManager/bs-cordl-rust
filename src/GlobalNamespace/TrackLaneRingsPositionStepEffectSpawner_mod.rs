@@ -37,7 +37,7 @@ for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
         false
     }
 }
-#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TrackLaneRingsPositionStepEffectSpawner")]
+#[cfg(feature = "TrackLaneRingsPositionStepEffectSpawner")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TrackLaneRingsPositionStepEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -54,7 +54,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
     type Target = crate::System::Buffers::ArrayPool_1<T>;
@@ -62,7 +62,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -421,9 +421,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack"
-)]
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -431,9 +429,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack"
-)]
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -763,7 +759,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedS
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
+    feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
@@ -775,7 +771,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedS
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
+    feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+PerCoreLockedStacks"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<

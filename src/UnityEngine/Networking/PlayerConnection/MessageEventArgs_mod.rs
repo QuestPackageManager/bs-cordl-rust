@@ -26,7 +26,7 @@ for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 impl std::ops::Deref
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
+#[cfg(feature = "UnityEngine+Networking+PlayerConnection+MessageEventArgs")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

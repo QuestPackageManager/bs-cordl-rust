@@ -24,14 +24,14 @@ for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
 impl std::ops::Deref for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+CodeAnalysis+EmbeddedAttribute")]
+#[cfg(feature = "Microsoft+CodeAnalysis+EmbeddedAttribute")]
 impl std::ops::DerefMut for crate::Microsoft::CodeAnalysis::EmbeddedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

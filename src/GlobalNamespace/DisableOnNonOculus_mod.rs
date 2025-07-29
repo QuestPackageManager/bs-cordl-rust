@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DisableOnNon
         false
     }
 }
-#[cfg(feature = "cordl_class_DisableOnNonOculus")]
+#[cfg(feature = "DisableOnNonOculus")]
 impl std::ops::Deref for crate::GlobalNamespace::DisableOnNonOculus {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DisableOnNonOculus")]
+#[cfg(feature = "DisableOnNonOculus")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DisableOnNonOculus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

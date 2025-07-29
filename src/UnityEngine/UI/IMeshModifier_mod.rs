@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::IMeshModifie
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+IMeshModifier")]
+#[cfg(feature = "UnityEngine+UI+IMeshModifier")]
 impl std::ops::Deref for crate::UnityEngine::UI::IMeshModifier {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+IMeshModifier")]
+#[cfg(feature = "UnityEngine+UI+IMeshModifier")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::IMeshModifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

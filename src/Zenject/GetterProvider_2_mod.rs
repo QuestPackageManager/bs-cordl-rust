@@ -49,7 +49,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
+#[cfg(feature = "Zenject+GetterProvider_2")]
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GetterProvider_2")]
+#[cfg(feature = "Zenject+GetterProvider_2")]
 impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

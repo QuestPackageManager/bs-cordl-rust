@@ -28,14 +28,14 @@ for crate::GlobalNamespace::EulaDisplayViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_EulaDisplayViewController")]
+#[cfg(feature = "EulaDisplayViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaDisplayViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EulaDisplayViewController")]
+#[cfg(feature = "EulaDisplayViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EulaDisplayViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

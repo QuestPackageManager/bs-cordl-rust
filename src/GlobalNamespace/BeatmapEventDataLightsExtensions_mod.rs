@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions")]
+#[cfg(feature = "BeatmapEventDataLightsExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEventDataLightsExtensions")]
+#[cfg(feature = "BeatmapEventDataLightsExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,9 +219,7 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEff
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues"
-)]
+#[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -229,9 +227,7 @@ for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEff
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues"
-)]
+#[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

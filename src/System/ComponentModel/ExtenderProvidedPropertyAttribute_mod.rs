@@ -31,7 +31,7 @@ for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     type Target = crate::System::Attribute;
@@ -39,7 +39,7 @@ for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ExtenderProvidedPropertyAttribute")]
+#[cfg(feature = "System+ComponentModel+ExtenderProvidedPropertyAttribute")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ExtenderProvidedPropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

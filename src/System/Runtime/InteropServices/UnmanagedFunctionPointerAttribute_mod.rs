@@ -29,9 +29,7 @@ for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     type Target = crate::System::Attribute;
@@ -39,9 +37,7 @@ for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute"
-)]
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedFunctionPointerAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

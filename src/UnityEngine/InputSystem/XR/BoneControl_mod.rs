@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::XR::BoneControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+BoneControl")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+BoneControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::BoneControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::XR::Bone,
@@ -44,7 +44,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::BoneControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+BoneControl")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+BoneControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::BoneControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

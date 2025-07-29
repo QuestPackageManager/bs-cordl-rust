@@ -24,14 +24,14 @@ for crate::UnityEngine::Android::AndroidAssetPacks {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks")]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks")]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -128,7 +128,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
@@ -138,7 +138,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerDownloadStatusCallback"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
@@ -324,7 +324,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
@@ -334,7 +334,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerMobileDataConfirmationCallback"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
@@ -492,7 +492,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
@@ -502,7 +502,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
+    feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {

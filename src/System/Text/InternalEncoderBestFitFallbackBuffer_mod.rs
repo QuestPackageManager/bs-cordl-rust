@@ -30,14 +30,14 @@ for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     type Target = crate::System::Text::EncoderFallbackBuffer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+InternalEncoderBestFitFallbackBuffer")]
+#[cfg(feature = "System+Text+InternalEncoderBestFitFallbackBuffer")]
 impl std::ops::DerefMut for crate::System::Text::InternalEncoderBestFitFallbackBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

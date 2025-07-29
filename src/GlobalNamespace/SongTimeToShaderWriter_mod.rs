@@ -27,14 +27,14 @@ for crate::GlobalNamespace::SongTimeToShaderWriter {
         false
     }
 }
-#[cfg(feature = "cordl_class_SongTimeToShaderWriter")]
+#[cfg(feature = "SongTimeToShaderWriter")]
 impl std::ops::Deref for crate::GlobalNamespace::SongTimeToShaderWriter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SongTimeToShaderWriter")]
+#[cfg(feature = "SongTimeToShaderWriter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeToShaderWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

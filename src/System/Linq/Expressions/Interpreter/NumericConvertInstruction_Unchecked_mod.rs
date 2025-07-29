@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     type Target = crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_Unche
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
+    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+Unchecked"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::NumericConvertInstruction_Unchecked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

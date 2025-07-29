@@ -36,14 +36,14 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
+#[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

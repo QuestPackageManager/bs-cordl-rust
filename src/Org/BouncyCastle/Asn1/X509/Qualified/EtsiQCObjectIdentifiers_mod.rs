@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::EtsiQCObjectIdentifiers {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Qualified+EtsiQCObjectIdentifiers"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+EtsiQCObjectIdentifiers")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::Qualified::EtsiQCObjectIdentifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::EtsiQCObjectIdentifiers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Qualified+EtsiQCObjectIdentifiers"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+EtsiQCObjectIdentifiers")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::Qualified::EtsiQCObjectIdentifiers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

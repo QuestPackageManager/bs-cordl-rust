@@ -24,14 +24,14 @@ for crate::System::IO::UnexceptionalStreamReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+UnexceptionalStreamReader")]
+#[cfg(feature = "System+IO+UnexceptionalStreamReader")]
 impl std::ops::Deref for crate::System::IO::UnexceptionalStreamReader {
     type Target = crate::System::IO::StreamReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+UnexceptionalStreamReader")]
+#[cfg(feature = "System+IO+UnexceptionalStreamReader")]
 impl std::ops::DerefMut for crate::System::IO::UnexceptionalStreamReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

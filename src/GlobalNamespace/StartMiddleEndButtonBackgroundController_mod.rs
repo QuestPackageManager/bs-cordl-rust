@@ -28,7 +28,7 @@ for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
         false
     }
 }
-#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StartMiddleEndButtonBackgroundController")]
+#[cfg(feature = "StartMiddleEndButtonBackgroundController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StartMiddleEndButtonBackgroundController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

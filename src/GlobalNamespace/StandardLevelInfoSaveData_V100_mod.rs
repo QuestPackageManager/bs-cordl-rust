@@ -47,14 +47,14 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100")]
+#[cfg(feature = "StandardLevelInfoSaveData_V100")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100")]
+#[cfg(feature = "StandardLevelInfoSaveData_V100")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
+#[cfg(feature = "StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -504,7 +504,7 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
+#[cfg(feature = "StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

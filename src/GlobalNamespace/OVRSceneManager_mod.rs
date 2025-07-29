@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneMana
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager")]
+#[cfg(feature = "OVRSceneManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager")]
+#[cfg(feature = "OVRSceneManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1014,14 +1014,14 @@ for crate::GlobalNamespace::OVRSceneManager_Classification {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+Classification")]
+#[cfg(feature = "OVRSceneManager+Classification")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Classification {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+Classification")]
+#[cfg(feature = "OVRSceneManager+Classification")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager_Classification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1120,14 +1120,14 @@ for crate::GlobalNamespace::OVRSceneManager_Development {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+Development")]
+#[cfg(feature = "OVRSceneManager+Development")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Development {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+Development")]
+#[cfg(feature = "OVRSceneManager+Development")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager_Development {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1494,14 +1494,14 @@ for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+RoomLayoutInformation")]
+#[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSceneManager+RoomLayoutInformation")]
+#[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

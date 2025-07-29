@@ -510,7 +510,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -518,7 +518,7 @@ for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
+#[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1+RefCounted")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

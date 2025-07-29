@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

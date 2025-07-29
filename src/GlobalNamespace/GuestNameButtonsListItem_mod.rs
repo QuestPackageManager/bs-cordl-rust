@@ -27,14 +27,14 @@ for crate::GlobalNamespace::GuestNameButtonsListItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
+#[cfg(feature = "GuestNameButtonsListItem")]
 impl std::ops::Deref for crate::GlobalNamespace::GuestNameButtonsListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GuestNameButtonsListItem")]
+#[cfg(feature = "GuestNameButtonsListItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GuestNameButtonsListItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

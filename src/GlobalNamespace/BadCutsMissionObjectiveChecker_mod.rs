@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "BadCutsMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BadCutsMissionObjectiveChecker")]
+#[cfg(feature = "BadCutsMissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutsMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

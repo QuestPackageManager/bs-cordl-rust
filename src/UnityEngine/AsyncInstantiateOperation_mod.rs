@@ -29,14 +29,14 @@ for crate::UnityEngine::AsyncInstantiateOperation {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
 impl std::ops::Deref for crate::UnityEngine::AsyncInstantiateOperation {
     type Target = crate::UnityEngine::AsyncOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation")]
+#[cfg(feature = "UnityEngine+AsyncInstantiateOperation")]
 impl std::ops::DerefMut for crate::UnityEngine::AsyncInstantiateOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

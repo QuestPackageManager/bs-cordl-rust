@@ -25,14 +25,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexFilter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexFilter {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::PathFilter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -48,7 +48,7 @@ for crate::GlobalNamespace::IStateTable_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "cordl_class_IStateTable_3")]
+#[cfg(feature = "IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IStateTable_3")]
+#[cfg(feature = "IStateTable_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

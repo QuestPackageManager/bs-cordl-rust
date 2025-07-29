@@ -101,7 +101,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewContr
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {
@@ -111,7 +111,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewContr
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
+    feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController"
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {

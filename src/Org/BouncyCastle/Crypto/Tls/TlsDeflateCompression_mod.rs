@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -224,9 +224,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputSt
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream {
     type Target = crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream;
@@ -234,9 +232,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputSt
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDeflateCompression+DeflateOutputStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsDeflateCompression_DeflateOutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

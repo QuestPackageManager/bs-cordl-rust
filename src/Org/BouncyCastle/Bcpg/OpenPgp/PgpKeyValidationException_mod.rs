@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyValidationException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyValidationException")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyValidationException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyValidationException {
     type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyValidationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyValidationException")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyValidationException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyValidationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

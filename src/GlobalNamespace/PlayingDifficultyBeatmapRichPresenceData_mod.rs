@@ -32,7 +32,7 @@ for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayingDifficultyBeatmapRichPresenceData")]
+#[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

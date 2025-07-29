@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
+#[cfg(feature = "Oculus+Platform+Samples+SimplePlatformSample+DataEntry")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

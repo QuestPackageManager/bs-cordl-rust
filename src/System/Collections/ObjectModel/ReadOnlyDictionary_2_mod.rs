@@ -64,7 +64,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -75,7 +75,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2<TKey, TValue> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2")]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2158,9 +2158,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
-)]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2174,9 +2172,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_KeyCollection<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection"
-)]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+KeyCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2894,9 +2890,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollectio
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
-)]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2910,9 +2904,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_ValueCollectio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection"
-)]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+ValueCollection")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

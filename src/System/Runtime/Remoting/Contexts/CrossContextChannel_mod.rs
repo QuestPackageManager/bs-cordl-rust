@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Contexts::CrossContextChannel {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel")]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+CrossContextChannel")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::CrossContextChannel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Contexts::CrossContextChannel {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel")]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+CrossContextChannel")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::CrossContextChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -218,7 +218,7 @@ for crate::System::Runtime::Remoting::Contexts::CrossContextChannel_ContextResto
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"
+    feature = "System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::CrossContextChannel_ContextRestoreSink {
@@ -228,7 +228,7 @@ for crate::System::Runtime::Remoting::Contexts::CrossContextChannel_ContextResto
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"
+    feature = "System+Runtime+Remoting+Contexts+CrossContextChannel+ContextRestoreSink"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::CrossContextChannel_ContextRestoreSink {

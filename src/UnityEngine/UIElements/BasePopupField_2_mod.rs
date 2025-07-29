@@ -74,7 +74,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -85,7 +85,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2<TValueType, TValueChoice> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2")]
+#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -651,7 +651,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,
@@ -665,7 +665,7 @@ for crate::UnityEngine::UIElements::BasePopupField_2_PopupTextElement<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
+#[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+PopupTextElement")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueChoice: quest_hook::libil2cpp::Type,

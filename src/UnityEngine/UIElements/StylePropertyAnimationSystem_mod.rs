@@ -29,7 +29,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
@@ -269,14 +269,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem")]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem")]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2307,9 +2307,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2317,9 +2315,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2656,9 +2652,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
@@ -2668,9 +2662,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2804,7 +2796,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition {
@@ -2816,7 +2808,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundPosition"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition {
@@ -2953,7 +2945,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat {
@@ -2965,7 +2957,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundRepeat"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat {
@@ -3109,7 +3101,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize {
@@ -3121,7 +3113,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackgroundSize"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize {
@@ -3432,9 +3424,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -3444,9 +3434,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3722,9 +3710,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -3734,9 +3720,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3935,9 +3919,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -3947,9 +3929,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4172,9 +4152,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
@@ -4184,9 +4162,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4320,7 +4296,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition {
@@ -4332,7 +4308,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFontDefinition"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition {
@@ -4471,9 +4447,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -4483,9 +4457,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4715,9 +4687,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -4727,9 +4697,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5037,9 +5005,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -5049,9 +5015,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5319,9 +5283,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -5331,9 +5293,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5601,9 +5561,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -5613,9 +5571,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5884,7 +5840,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin {
@@ -5896,7 +5852,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTransformOrigin"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin {
@@ -6211,9 +6167,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
@@ -6223,9 +6177,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6566,9 +6518,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values;
@@ -6576,9 +6526,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7971,7 +7919,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Transi
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
@@ -7983,7 +7931,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Transi
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<

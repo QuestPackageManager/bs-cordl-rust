@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Gam
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Gamepad")]
+#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Gamepad {
     type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Gamepad")]
+#[cfg(feature = "UnityEngine+InputSystem+Gamepad")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Gamepad {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

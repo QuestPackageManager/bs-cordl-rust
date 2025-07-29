@@ -27,7 +27,7 @@ for crate::System::Linq::Expressions::InstanceMethodCallExpression3 {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+InstanceMethodCallExpression3")]
+#[cfg(feature = "System+Linq+Expressions+InstanceMethodCallExpression3")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::InstanceMethodCallExpression3 {
     type Target = crate::System::Linq::Expressions::InstanceMethodCallExpression;
@@ -35,7 +35,7 @@ for crate::System::Linq::Expressions::InstanceMethodCallExpression3 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+InstanceMethodCallExpression3")]
+#[cfg(feature = "System+Linq+Expressions+InstanceMethodCallExpression3")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::InstanceMethodCallExpression3 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

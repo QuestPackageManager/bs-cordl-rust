@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+SubOvfInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+SubOvfInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::SubOvfInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

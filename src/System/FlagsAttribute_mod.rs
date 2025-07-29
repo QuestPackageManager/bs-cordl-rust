@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::FlagsAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+FlagsAttribute")]
+#[cfg(feature = "System+FlagsAttribute")]
 impl std::ops::Deref for crate::System::FlagsAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+FlagsAttribute")]
+#[cfg(feature = "System+FlagsAttribute")]
 impl std::ops::DerefMut for crate::System::FlagsAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

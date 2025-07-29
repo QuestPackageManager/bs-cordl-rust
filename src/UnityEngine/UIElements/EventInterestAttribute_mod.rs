@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::EventInterestAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestAttribute")]
+#[cfg(feature = "UnityEngine+UIElements+EventInterestAttribute")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventInterestAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestAttribute")]
+#[cfg(feature = "UnityEngine+UIElements+EventInterestAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventInterestAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

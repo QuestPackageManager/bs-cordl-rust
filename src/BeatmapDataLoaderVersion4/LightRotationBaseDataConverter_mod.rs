@@ -24,7 +24,7 @@ for crate::BeatmapDataLoaderVersion4::LightRotationBaseDataConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationBaseDataConverter")]
+#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationBaseDataConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion4::LightRotationBaseDataConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::BeatmapDataLoaderVersion4::LightRotationBaseDataConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+LightRotationBaseDataConverter")]
+#[cfg(feature = "BeatmapDataLoaderVersion4+LightRotationBaseDataConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::LightRotationBaseDataConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

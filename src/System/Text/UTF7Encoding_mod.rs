@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding")]
+#[cfg(feature = "System+Text+UTF7Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding {
     type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding")]
+#[cfg(feature = "System+Text+UTF7Encoding")]
 impl std::ops::DerefMut for crate::System::Text::UTF7Encoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -885,14 +885,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_De
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Decoder")]
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_Decoder {
     type Target = crate::System::Text::DecoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Decoder")]
+#[cfg(feature = "System+Text+UTF7Encoding+Decoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Decoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1009,14 +1009,14 @@ for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
     type Target = crate::System::Text::DecoderFallback;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7Fallback")]
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7Fallback")]
 impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1181,14 +1181,14 @@ for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
     type Target = crate::System::Text::DecoderFallbackBuffer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
+#[cfg(feature = "System+Text+UTF7Encoding+DecoderUTF7FallbackBuffer")]
 impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1396,14 +1396,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_En
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Encoder")]
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
 impl std::ops::Deref for crate::System::Text::UTF7Encoding_Encoder {
     type Target = crate::System::Text::EncoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF7Encoding+Encoder")]
+#[cfg(feature = "System+Text+UTF7Encoding+Encoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF7Encoding_Encoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

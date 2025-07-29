@@ -26,7 +26,7 @@ for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         false
     }
 }
-#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "FixedUpdateVector3SmoothValue")]
 impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     type Target = crate::GlobalNamespace::FixedUpdateSmoothValue_1<
         crate::UnityEngine::Vector3,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
+#[cfg(feature = "FixedUpdateVector3SmoothValue")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

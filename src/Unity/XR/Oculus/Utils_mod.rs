@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Utils {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Utils")]
+#[cfg(feature = "Unity+XR+Oculus+Utils")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Utils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Utils")]
+#[cfg(feature = "Unity+XR+Oculus+Utils")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Utils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

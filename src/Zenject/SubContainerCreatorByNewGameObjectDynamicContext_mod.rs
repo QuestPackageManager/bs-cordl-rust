@@ -27,7 +27,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectDynamicContext")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectDynamicContext")]
 impl std::ops::Deref
 for crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext {
     type Target = crate::Zenject::SubContainerCreatorDynamicContext;
@@ -35,7 +35,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewGameObjectDynamicContext")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectDynamicContext")]
 impl std::ops::DerefMut
 for crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

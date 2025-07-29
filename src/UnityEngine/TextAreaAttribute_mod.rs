@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAreaAttribut
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextAreaAttribute")]
+#[cfg(feature = "UnityEngine+TextAreaAttribute")]
 impl std::ops::Deref for crate::UnityEngine::TextAreaAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextAreaAttribute")]
+#[cfg(feature = "UnityEngine+TextAreaAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::TextAreaAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

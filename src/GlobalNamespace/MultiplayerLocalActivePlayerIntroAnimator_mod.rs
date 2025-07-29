@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerIntroAnimator")]
+#[cfg(feature = "MultiplayerLocalActivePlayerIntroAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerIntroAnimator")]
+#[cfg(feature = "MultiplayerLocalActivePlayerIntroAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerIntroAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

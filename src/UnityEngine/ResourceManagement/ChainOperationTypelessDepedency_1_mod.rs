@@ -69,9 +69,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TO
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -81,9 +79,7 @@ for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TO
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ChainOperationTypelessDepedency_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ChainOperationTypelessDepedency_1<TObject> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF32Encoding {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF32Encoding")]
+#[cfg(feature = "System+Text+UTF32Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF32Encoding {
     type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF32Encoding")]
+#[cfg(feature = "System+Text+UTF32Encoding")]
 impl std::ops::DerefMut for crate::System::Text::UTF32Encoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1022,14 +1022,14 @@ for crate::System::Text::UTF32Encoding_UTF32Decoder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF32Encoding+UTF32Decoder")]
+#[cfg(feature = "System+Text+UTF32Encoding+UTF32Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF32Encoding_UTF32Decoder {
     type Target = crate::System::Text::DecoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF32Encoding+UTF32Decoder")]
+#[cfg(feature = "System+Text+UTF32Encoding+UTF32Decoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF32Encoding_UTF32Decoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

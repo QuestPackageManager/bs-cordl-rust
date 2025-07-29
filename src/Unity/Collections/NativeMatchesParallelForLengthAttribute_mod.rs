@@ -24,7 +24,7 @@ for crate::Unity::Collections::NativeMatchesParallelForLengthAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Collections+NativeMatchesParallelForLengthAttribute")]
+#[cfg(feature = "Unity+Collections+NativeMatchesParallelForLengthAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::NativeMatchesParallelForLengthAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::Unity::Collections::NativeMatchesParallelForLengthAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Collections+NativeMatchesParallelForLengthAttribute")]
+#[cfg(feature = "Unity+Collections+NativeMatchesParallelForLengthAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::NativeMatchesParallelForLengthAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

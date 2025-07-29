@@ -35,14 +35,14 @@ for crate::GlobalNamespace::MultiplierValuesRecorder {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
+#[cfg(feature = "MultiplierValuesRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplierValuesRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplierValuesRecorder")]
+#[cfg(feature = "MultiplierValuesRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplierValuesRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

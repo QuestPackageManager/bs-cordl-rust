@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1669,7 +1669,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorId
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {
@@ -1679,7 +1679,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorId
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
+    feature = "UnityEngine+UIElements+StyleSheets+StylePropertyReader+GetCursorIdFunction"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorIdFunction {

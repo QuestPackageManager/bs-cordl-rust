@@ -33,14 +33,14 @@ for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonFormatterConverter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonFormatterConverter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonFormatterConverter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonFormatterConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

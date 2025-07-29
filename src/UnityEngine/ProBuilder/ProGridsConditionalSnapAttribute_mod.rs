@@ -24,7 +24,7 @@ for crate::UnityEngine::ProBuilder::ProGridsConditionalSnapAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsConditionalSnapAttribute")]
+#[cfg(feature = "UnityEngine+ProBuilder+ProGridsConditionalSnapAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::ProGridsConditionalSnapAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ProBuilder::ProGridsConditionalSnapAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProGridsConditionalSnapAttribute")]
+#[cfg(feature = "UnityEngine+ProBuilder+ProGridsConditionalSnapAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::ProGridsConditionalSnapAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

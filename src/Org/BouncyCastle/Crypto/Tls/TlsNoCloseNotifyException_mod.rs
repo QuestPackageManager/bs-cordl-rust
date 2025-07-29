@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     type Target = crate::System::IO::EndOfStreamException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsNoCloseNotifyException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::TlsNoCloseNotifyException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

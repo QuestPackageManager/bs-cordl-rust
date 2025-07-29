@@ -81,9 +81,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -91,9 +89,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1523,7 +1519,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1533,7 +1529,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ColumnData"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
@@ -1908,9 +1904,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1918,9 +1912,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

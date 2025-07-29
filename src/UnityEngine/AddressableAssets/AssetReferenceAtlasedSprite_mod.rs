@@ -26,7 +26,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
@@ -36,7 +36,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

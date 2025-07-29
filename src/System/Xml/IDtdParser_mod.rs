@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::IDtdParser {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+IDtdParser")]
+#[cfg(feature = "System+Xml+IDtdParser")]
 impl std::ops::Deref for crate::System::Xml::IDtdParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+IDtdParser")]
+#[cfg(feature = "System+Xml+IDtdParser")]
 impl std::ops::DerefMut for crate::System::Xml::IDtdParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

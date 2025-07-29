@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Labe
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label")]
+#[cfg(feature = "UnityEngine+UIElements+Label")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Label {
     type Target = crate::UnityEngine::UIElements::TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label")]
+#[cfg(feature = "UnityEngine+UIElements+Label")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Label {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ for crate::UnityEngine::UIElements::Label_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Label+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Label_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
@@ -154,7 +154,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Label_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Label+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Label_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -227,14 +227,14 @@ for crate::UnityEngine::UIElements::Label_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Label+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Label_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Label+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Label+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Label_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

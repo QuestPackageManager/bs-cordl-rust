@@ -29,9 +29,7 @@ for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,9 +37,7 @@ for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult"
-)]
+#[cfg(feature = "UnityEngine+Android+AndroidAssetPackUseMobileDataRequestResult")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

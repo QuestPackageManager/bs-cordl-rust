@@ -148,14 +148,14 @@ for crate::UnityEngine::InputSystem::InputRemoting {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1014,14 +1014,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1131,14 +1131,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1212,14 +1212,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1595,14 +1595,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1711,14 +1711,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1891,14 +1891,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2235,14 +2235,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2350,14 +2350,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2432,14 +2432,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2520,14 +2520,14 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

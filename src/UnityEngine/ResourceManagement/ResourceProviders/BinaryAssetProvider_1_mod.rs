@@ -48,7 +48,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvid
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 impl<TAdapter: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<
@@ -60,7 +60,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvid
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryAssetProvider_1"
 )]
 impl<TAdapter: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryAssetProvider_1<

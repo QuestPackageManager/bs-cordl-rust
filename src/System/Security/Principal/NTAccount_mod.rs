@@ -25,14 +25,14 @@ for crate::System::Security::Principal::NTAccount {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+NTAccount")]
+#[cfg(feature = "System+Security+Principal+NTAccount")]
 impl std::ops::Deref for crate::System::Security::Principal::NTAccount {
     type Target = crate::System::Security::Principal::IdentityReference;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+NTAccount")]
+#[cfg(feature = "System+Security+Principal+NTAccount")]
 impl std::ops::DerefMut for crate::System::Security::Principal::NTAccount {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

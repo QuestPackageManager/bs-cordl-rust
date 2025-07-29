@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRRenderModels 
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRRenderModels {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels")]
+#[cfg(feature = "OVR+OpenVR+CVRRenderModels")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRRenderModels {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -922,14 +922,14 @@ for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
+#[cfg(feature = "OVR+OpenVR+CVRRenderModels+_GetComponentStatePacked")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::CVRRenderModels__GetComponentStatePacked {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

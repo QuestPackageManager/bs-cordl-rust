@@ -29,9 +29,7 @@ for crate::System::ComponentModel::DesignerSerializationVisibilityAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+DesignerSerializationVisibilityAttribute"
-)]
+#[cfg(feature = "System+ComponentModel+DesignerSerializationVisibilityAttribute")]
 impl std::ops::Deref
 for crate::System::ComponentModel::DesignerSerializationVisibilityAttribute {
     type Target = crate::System::Attribute;
@@ -39,9 +37,7 @@ for crate::System::ComponentModel::DesignerSerializationVisibilityAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+DesignerSerializationVisibilityAttribute"
-)]
+#[cfg(feature = "System+ComponentModel+DesignerSerializationVisibilityAttribute")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::DesignerSerializationVisibilityAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

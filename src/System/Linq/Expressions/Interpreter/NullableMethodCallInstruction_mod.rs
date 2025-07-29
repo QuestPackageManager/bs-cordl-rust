@@ -28,9 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -38,9 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

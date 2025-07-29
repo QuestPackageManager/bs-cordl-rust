@@ -28,9 +28,7 @@ for crate::System::Runtime::Remoting::Contexts::IContributeClientContextSink {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeClientContextSink"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeClientContextSink")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::IContributeClientContextSink {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::System::Runtime::Remoting::Contexts::IContributeClientContextSink {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Contexts+IContributeClientContextSink"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Contexts+IContributeClientContextSink")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Contexts::IContributeClientContextSink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

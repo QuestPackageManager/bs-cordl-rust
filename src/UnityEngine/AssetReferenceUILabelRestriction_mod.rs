@@ -30,14 +30,14 @@ for crate::UnityEngine::AssetReferenceUILabelRestriction {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AssetReferenceUILabelRestriction")]
+#[cfg(feature = "UnityEngine+AssetReferenceUILabelRestriction")]
 impl std::ops::Deref for crate::UnityEngine::AssetReferenceUILabelRestriction {
     type Target = crate::UnityEngine::AssetReferenceUIRestriction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AssetReferenceUILabelRestriction")]
+#[cfg(feature = "UnityEngine+AssetReferenceUILabelRestriction")]
 impl std::ops::DerefMut for crate::UnityEngine::AssetReferenceUILabelRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

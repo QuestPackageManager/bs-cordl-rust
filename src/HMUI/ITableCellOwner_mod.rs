@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ITableCellOwner {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ITableCellOwner")]
+#[cfg(feature = "HMUI+ITableCellOwner")]
 impl std::ops::Deref for crate::HMUI::ITableCellOwner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ITableCellOwner")]
+#[cfg(feature = "HMUI+ITableCellOwner")]
 impl std::ops::DerefMut for crate::HMUI::ITableCellOwner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

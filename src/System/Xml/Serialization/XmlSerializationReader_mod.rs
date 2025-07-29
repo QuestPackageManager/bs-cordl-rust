@@ -55,14 +55,14 @@ for crate::System::Xml::Serialization::XmlSerializationReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializationReader {
     type Target = crate::System::Xml::Serialization::XmlSerializationGeneratedCode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializationReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1668,9 +1668,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionFixup"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1678,9 +1676,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionFixup"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1926,9 +1922,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixu
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1936,9 +1930,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2109,7 +2101,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+Fixup")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2117,7 +2109,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+Fixup")]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2321,9 +2313,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2331,9 +2321,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SetSaberGlow
         false
     }
 }
-#[cfg(feature = "cordl_class_SetSaberGlowColor")]
+#[cfg(feature = "SetSaberGlowColor")]
 impl std::ops::Deref for crate::GlobalNamespace::SetSaberGlowColor {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SetSaberGlowColor")]
+#[cfg(feature = "SetSaberGlowColor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SetSaberGlowColor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -190,7 +190,7 @@ for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
         false
     }
 }
-#[cfg(feature = "cordl_class_SetSaberGlowColor+PropertyTintColorPair")]
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SetSaberGlowColor+PropertyTintColorPair")]
+#[cfg(feature = "SetSaberGlowColor+PropertyTintColorPair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SetSaberGlowColor_PropertyTintColorPair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

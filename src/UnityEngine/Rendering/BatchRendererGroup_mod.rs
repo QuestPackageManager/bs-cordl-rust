@@ -28,14 +28,14 @@ for crate::UnityEngine::Rendering::BatchRendererGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::BatchRendererGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup")]
+#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::BatchRendererGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -128,7 +128,7 @@ for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl std::ops::Deref
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     type Target = crate::System::MulticastDelegate;
@@ -136,7 +136,7 @@ for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
+#[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

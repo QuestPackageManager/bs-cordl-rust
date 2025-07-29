@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLivestreamingApplicationStatus {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
+#[cfg(feature = "Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithLivestreamingApplicationStatus {
     type Target = crate::Oculus::Platform::Message_1<
@@ -40,7 +40,7 @@ for crate::Oculus::Platform::MessageWithLivestreamingApplicationStatus {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
+#[cfg(feature = "Oculus+Platform+MessageWithLivestreamingApplicationStatus")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithLivestreamingApplicationStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Serialization::CamelCaseNamingStrategy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+CamelCaseNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+CamelCaseNamingStrategy")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::CamelCaseNamingStrategy {
     type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Serialization::CamelCaseNamingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+CamelCaseNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+CamelCaseNamingStrategy")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::CamelCaseNamingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

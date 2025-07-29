@@ -59,7 +59,7 @@ for crate::Zenject::BindSignalFromBinder_2<TObject, TSignal> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
@@ -69,7 +69,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+BindSignalFromBinder_2")]
+#[cfg(feature = "Zenject+BindSignalFromBinder_2")]
 impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,

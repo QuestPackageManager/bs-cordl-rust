@@ -25,14 +25,14 @@ for crate::System::Xml::Linq::XObjectChangeEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeEventArgs")]
+#[cfg(feature = "System+Xml+Linq+XObjectChangeEventArgs")]
 impl std::ops::Deref for crate::System::Xml::Linq::XObjectChangeEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeEventArgs")]
+#[cfg(feature = "System+Xml+Linq+XObjectChangeEventArgs")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::XObjectChangeEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

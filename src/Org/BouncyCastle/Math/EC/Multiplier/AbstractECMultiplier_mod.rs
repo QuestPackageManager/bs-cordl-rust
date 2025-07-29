@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+AbstractECMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollector")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

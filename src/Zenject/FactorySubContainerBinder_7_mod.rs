@@ -73,7 +73,7 @@ for crate::Zenject::FactorySubContainerBinder_7<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinder_7")]
+#[cfg(feature = "Zenject+FactorySubContainerBinder_7")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -97,7 +97,7 @@ for crate::Zenject::FactorySubContainerBinder_7<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinder_7")]
+#[cfg(feature = "Zenject+FactorySubContainerBinder_7")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

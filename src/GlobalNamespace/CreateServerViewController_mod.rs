@@ -37,14 +37,14 @@ for crate::GlobalNamespace::CreateServerViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_CreateServerViewController")]
+#[cfg(feature = "CreateServerViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreateServerViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CreateServerViewController")]
+#[cfg(feature = "CreateServerViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreateServerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

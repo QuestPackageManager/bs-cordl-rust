@@ -38,9 +38,7 @@ for crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
     type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
@@ -52,9 +50,7 @@ for crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

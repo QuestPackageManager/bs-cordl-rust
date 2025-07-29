@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::StencilMater
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial")]
+#[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial")]
+#[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::StencilMaterial {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -287,14 +287,14 @@ for crate::UnityEngine::UI::StencilMaterial_MatEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial+MatEntry")]
+#[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
 impl std::ops::Deref for crate::UnityEngine::UI::StencilMaterial_MatEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+StencilMaterial+MatEntry")]
+#[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::StencilMaterial_MatEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

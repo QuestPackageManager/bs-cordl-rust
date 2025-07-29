@@ -27,14 +27,14 @@ for crate::UnityEngine::InputSystem::HumiditySensor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HumiditySensor")]
+#[cfg(feature = "UnityEngine+InputSystem+HumiditySensor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HumiditySensor {
     type Target = crate::UnityEngine::InputSystem::Sensor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+HumiditySensor")]
+#[cfg(feature = "UnityEngine+InputSystem+HumiditySensor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HumiditySensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

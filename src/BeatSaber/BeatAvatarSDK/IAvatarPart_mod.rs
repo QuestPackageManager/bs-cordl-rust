@@ -24,14 +24,14 @@ for crate::BeatSaber::BeatAvatarSDK::IAvatarPart {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+IAvatarPart")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+IAvatarPart")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::IAvatarPart {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+IAvatarPart")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+IAvatarPart")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::IAvatarPart {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

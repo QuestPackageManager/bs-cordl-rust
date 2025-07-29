@@ -30,14 +30,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2 {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -173,14 +173,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+AudioSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -359,7 +359,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -367,7 +367,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ControllerSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -446,7 +446,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -454,7 +454,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+CustomServerSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -531,14 +531,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+DebugSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -726,14 +726,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+GraphicSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -921,14 +921,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+MainSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainSettings")]
 impl std::ops::DerefMut for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1209,14 +1209,14 @@ for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::Deref for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+PerformancePreset")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1404,7 +1404,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::Deref
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1412,7 +1412,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+SmoothCameraSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

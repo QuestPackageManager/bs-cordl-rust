@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitViewResizer")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
     type Target = crate::UnityEngine::UIElements::PointerManipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitViewResizer")]
+#[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitViewResizer")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TwoPaneSplitViewResizer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

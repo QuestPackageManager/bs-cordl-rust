@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     type Target = crate::System::Exception;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+ResourceManagerException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ResourceManagerException")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::ResourceManagerException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

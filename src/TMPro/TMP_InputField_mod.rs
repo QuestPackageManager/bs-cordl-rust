@@ -150,14 +150,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
+#[cfg(feature = "TMPro+TMP_InputField")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
+#[cfg(feature = "TMPro+TMP_InputField")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6323,7 +6323,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_OnChang
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6332,7 +6332,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnChangeEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_OnChangeEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6404,14 +6404,14 @@ for crate::TMPro::TMP_InputField_OnValidateInput {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnValidateInput {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+OnValidateInput")]
+#[cfg(feature = "TMPro+TMP_InputField+OnValidateInput")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_OnValidateInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6601,7 +6601,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Selecti
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6610,7 +6610,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SelectionEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_SelectionEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6683,7 +6683,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SubmitE
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6692,7 +6692,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+SubmitEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_SubmitEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6768,7 +6768,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6779,7 +6779,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TextSelectionEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_TextSelectionEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6854,7 +6854,7 @@ for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::TouchScreenKeyboard_Status,
@@ -6863,7 +6863,7 @@ impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
+#[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::DerefMut for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

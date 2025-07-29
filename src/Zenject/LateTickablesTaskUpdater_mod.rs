@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::LateTickablesTaskUpd
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
 impl std::ops::Deref for crate::Zenject::LateTickablesTaskUpdater {
     type Target = crate::Zenject::TaskUpdater_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Zenject::LateTickablesTaskUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+LateTickablesTaskUpdater")]
+#[cfg(feature = "Zenject+LateTickablesTaskUpdater")]
 impl std::ops::DerefMut for crate::Zenject::LateTickablesTaskUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

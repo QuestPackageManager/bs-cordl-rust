@@ -79,7 +79,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
     type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
@@ -88,7 +88,7 @@ impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+GraphyManager")]
+#[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

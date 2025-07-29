@@ -392,7 +392,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
+    feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
@@ -402,7 +402,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
+    feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+ContinuationWrapper"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
@@ -528,9 +528,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -538,9 +536,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

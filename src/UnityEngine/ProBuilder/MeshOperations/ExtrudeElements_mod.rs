@@ -24,7 +24,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
+#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
+#[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

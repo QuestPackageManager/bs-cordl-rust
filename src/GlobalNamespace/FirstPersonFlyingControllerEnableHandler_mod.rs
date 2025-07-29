@@ -28,7 +28,7 @@ for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FirstPersonFlyingControllerEnableHandler")]
+#[cfg(feature = "FirstPersonFlyingControllerEnableHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FirstPersonFlyingControllerEnableHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

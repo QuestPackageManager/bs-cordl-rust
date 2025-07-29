@@ -52,7 +52,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithM
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {
@@ -62,7 +62,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithM
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
+    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectWithMapTyped"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {

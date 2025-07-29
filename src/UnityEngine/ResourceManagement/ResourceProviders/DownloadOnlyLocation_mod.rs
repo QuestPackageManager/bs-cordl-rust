@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocat
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     type Target = crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

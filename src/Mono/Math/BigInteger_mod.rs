@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger")]
+#[cfg(feature = "Mono+Math+BigInteger")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger")]
+#[cfg(feature = "Mono+Math+BigInteger")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1248,14 +1248,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Kernel
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger+Kernel")]
+#[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_Kernel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger+Kernel")]
+#[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger_Kernel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1763,14 +1763,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Modulu
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger+ModulusRing")]
+#[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_ModulusRing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+BigInteger+ModulusRing")]
+#[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger_ModulusRing {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Hashtabl
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
+#[cfg(feature = "System+Collections+Hashtable")]
 impl std::ops::Deref for crate::System::Collections::Hashtable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable")]
+#[cfg(feature = "System+Collections+Hashtable")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1581,14 +1581,14 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableDebugView")]
+#[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1639,14 +1639,14 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+HashtableEnumerator")]
+#[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1947,14 +1947,14 @@ for crate::System::Collections::Hashtable_KeyCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_KeyCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+KeyCollection")]
+#[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_KeyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2182,14 +2182,14 @@ for crate::System::Collections::Hashtable_ValueCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_ValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Hashtable+ValueCollection")]
+#[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 impl std::ops::DerefMut for crate::System::Collections::Hashtable_ValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

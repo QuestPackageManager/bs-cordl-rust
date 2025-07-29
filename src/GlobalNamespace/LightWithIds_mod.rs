@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightWithIds
         false
     }
 }
-#[cfg(feature = "cordl_class_LightWithIds")]
+#[cfg(feature = "LightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIds {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightWithIds")]
+#[cfg(feature = "LightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -453,14 +453,14 @@ for crate::GlobalNamespace::LightWithIds_LightWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightWithIds+LightWithId")]
+#[cfg(feature = "LightWithIds+LightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::LightWithIds_LightWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightWithIds+LightWithId")]
+#[cfg(feature = "LightWithIds+LightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIds_LightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

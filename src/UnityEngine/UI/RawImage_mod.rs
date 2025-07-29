@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::RawImage {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+RawImage")]
+#[cfg(feature = "UnityEngine+UI+RawImage")]
 impl std::ops::Deref for crate::UnityEngine::UI::RawImage {
     type Target = crate::UnityEngine::UI::MaskableGraphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+RawImage")]
+#[cfg(feature = "UnityEngine+UI+RawImage")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::RawImage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

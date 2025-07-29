@@ -35,9 +35,7 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseReorderableDragAndDropController"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -45,9 +43,7 @@ for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseReorderableDragAndDropController"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseReorderableDragAndDropController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseReorderableDragAndDropController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

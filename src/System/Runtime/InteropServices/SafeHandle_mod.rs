@@ -28,14 +28,14 @@ for crate::System::Runtime::InteropServices::SafeHandle {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeHandle")]
+#[cfg(feature = "System+Runtime+InteropServices+SafeHandle")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::SafeHandle {
     type Target = crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+SafeHandle")]
+#[cfg(feature = "System+Runtime+InteropServices+SafeHandle")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::SafeHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

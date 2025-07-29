@@ -24,7 +24,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         false
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl std::ops::Deref
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     type Target = crate::System::Runtime::InteropServices::SafeHandle;
@@ -32,7 +32,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
+#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleMinusOneIsInvalid")]
 impl std::ops::DerefMut
 for crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -27,7 +27,7 @@ for crate::Oculus::Platform::Models::ChallengeEntryList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+ChallengeEntryList")]
+#[cfg(feature = "Oculus+Platform+Models+ChallengeEntryList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ChallengeEntryList {
     type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeEntry>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::Oculus::Platform::Models::ChallengeEntryList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+ChallengeEntryList")]
+#[cfg(feature = "Oculus+Platform+Models+ChallengeEntryList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::ChallengeEntryList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

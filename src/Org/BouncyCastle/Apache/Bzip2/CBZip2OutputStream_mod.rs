@@ -59,14 +59,14 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1206,9 +1206,7 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
-)]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1216,9 +1214,7 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem"
-)]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2OutputStream+StackElem")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream_StackElem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

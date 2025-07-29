@@ -34,7 +34,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -42,7 +42,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPropertyBlockColorSetter")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::AvatarPropertyBlockColorSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

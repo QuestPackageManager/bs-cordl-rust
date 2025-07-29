@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyDescriptor")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JPropertyDescriptor")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyDescriptor")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JPropertyDescriptor")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

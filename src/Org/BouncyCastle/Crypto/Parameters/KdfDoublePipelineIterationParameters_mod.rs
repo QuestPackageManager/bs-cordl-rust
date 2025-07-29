@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationPara
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
+    feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {
@@ -45,7 +45,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationPara
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
+    feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {

@@ -33,14 +33,14 @@ for crate::GlobalNamespace::SliderParticleInteractionEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderParticleInteractionEffect")]
+#[cfg(feature = "SliderParticleInteractionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderParticleInteractionEffect {
     type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderParticleInteractionEffect")]
+#[cfg(feature = "SliderParticleInteractionEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderParticleInteractionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

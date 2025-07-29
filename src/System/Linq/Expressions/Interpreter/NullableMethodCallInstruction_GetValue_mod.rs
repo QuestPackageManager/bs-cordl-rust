@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {
     type Target = crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NullableMethodCallInstruction_G
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValue"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValue {

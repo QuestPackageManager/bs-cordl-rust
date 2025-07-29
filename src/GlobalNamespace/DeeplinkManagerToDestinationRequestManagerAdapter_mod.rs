@@ -38,7 +38,7 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         false
     }
 }
-#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DeeplinkManagerToDestinationRequestManagerAdapter")]
+#[cfg(feature = "DeeplinkManagerToDestinationRequestManagerAdapter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DeeplinkManagerToDestinationRequestManagerAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

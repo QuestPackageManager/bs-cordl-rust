@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Common::UInt64S
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+UInt64Storage")]
+#[cfg(feature = "System+Data+Common+UInt64Storage")]
 impl std::ops::Deref for crate::System::Data::Common::UInt64Storage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+UInt64Storage")]
+#[cfg(feature = "System+Data+Common+UInt64Storage")]
 impl std::ops::DerefMut for crate::System::Data::Common::UInt64Storage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

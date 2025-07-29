@@ -60,7 +60,7 @@ for crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecon
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,
@@ -71,7 +71,7 @@ for crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<TFirst, TSecon
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+BidirectionalDictionary_2")]
 impl<
     TFirst: quest_hook::libil2cpp::Type,
     TSecond: quest_hook::libil2cpp::Type,

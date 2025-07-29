@@ -28,9 +28,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsReadOnlyAttrib
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsReadOnlyAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsReadOnlyAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsReadOnlyAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsReadOnlyAttrib
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerIsReadOnlyAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerIsReadOnlyAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsReadOnlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -31,14 +31,14 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -152,7 +152,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+MaterialPairs")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -242,7 +242,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
+#[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

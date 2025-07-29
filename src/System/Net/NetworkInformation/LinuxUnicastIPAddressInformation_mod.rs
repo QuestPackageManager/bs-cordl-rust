@@ -29,9 +29,7 @@ for crate::System::Net::NetworkInformation::LinuxUnicastIPAddressInformation {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+LinuxUnicastIPAddressInformation"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+LinuxUnicastIPAddressInformation")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::LinuxUnicastIPAddressInformation {
     type Target = crate::System::Net::NetworkInformation::UnicastIPAddressInformation;
@@ -39,9 +37,7 @@ for crate::System::Net::NetworkInformation::LinuxUnicastIPAddressInformation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+LinuxUnicastIPAddressInformation"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+LinuxUnicastIPAddressInformation")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::LinuxUnicastIPAddressInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

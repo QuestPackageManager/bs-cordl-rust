@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputState")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputState")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputState")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputState")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -620,7 +620,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
+    feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {
@@ -630,7 +630,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
+    feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate {

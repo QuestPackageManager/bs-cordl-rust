@@ -24,14 +24,14 @@ for crate::System::Reflection::Emit::MethodBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
 impl std::ops::Deref for crate::System::Reflection::Emit::MethodBuilder {
     type Target = crate::System::Reflection::MethodInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+Emit+MethodBuilder")]
+#[cfg(feature = "System+Reflection+Emit+MethodBuilder")]
 impl std::ops::DerefMut for crate::System::Reflection::Emit::MethodBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

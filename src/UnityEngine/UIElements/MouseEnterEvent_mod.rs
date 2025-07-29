@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::MouseEnterEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEnterEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseEnterEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseEnterEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseEnterEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MouseEnterEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseEnterEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseEnterEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseEnterEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

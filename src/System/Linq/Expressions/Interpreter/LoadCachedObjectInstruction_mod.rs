@@ -29,9 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -39,9 +37,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LoadCachedObjectInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LoadCachedObjectInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

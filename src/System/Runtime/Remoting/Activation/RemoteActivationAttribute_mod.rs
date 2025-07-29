@@ -29,9 +29,7 @@ for crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+RemoteActivationAttribute"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Activation+RemoteActivationAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
     type Target = crate::System::Attribute;
@@ -39,9 +37,7 @@ for crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+RemoteActivationAttribute"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Activation+RemoteActivationAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Activation::RemoteActivationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

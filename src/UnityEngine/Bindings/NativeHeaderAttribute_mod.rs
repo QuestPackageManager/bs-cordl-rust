@@ -27,14 +27,14 @@ for crate::UnityEngine::Bindings::NativeHeaderAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativeHeaderAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+NativeHeaderAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::NativeHeaderAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativeHeaderAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+NativeHeaderAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::NativeHeaderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

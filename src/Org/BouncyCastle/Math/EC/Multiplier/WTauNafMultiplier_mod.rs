@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -241,9 +241,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCal
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -251,9 +249,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCal
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

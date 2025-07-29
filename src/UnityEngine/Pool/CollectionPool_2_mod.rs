@@ -48,7 +48,7 @@ for crate::UnityEngine::Pool::CollectionPool_2<TCollection, TItem> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
 impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Pool+CollectionPool_2")]
+#[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
 impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,

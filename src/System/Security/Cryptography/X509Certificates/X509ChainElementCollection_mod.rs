@@ -30,7 +30,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCol
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {
@@ -40,7 +40,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCol
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection {

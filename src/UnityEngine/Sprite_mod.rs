@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Sprite {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Sprite")]
+#[cfg(feature = "UnityEngine+Sprite")]
 impl std::ops::Deref for crate::UnityEngine::Sprite {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Sprite")]
+#[cfg(feature = "UnityEngine+Sprite")]
 impl std::ops::DerefMut for crate::UnityEngine::Sprite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
     type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,9 +363,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -373,9 +371,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMesh")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -463,9 +459,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
     type Target = crate::HoudiniEngineUnity::HEU_InputData;
@@ -473,9 +467,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceMesh+HEU_InputDataMeshes")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

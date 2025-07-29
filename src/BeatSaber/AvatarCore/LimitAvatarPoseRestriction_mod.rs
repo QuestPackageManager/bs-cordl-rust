@@ -27,14 +27,14 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -219,9 +219,7 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters"
-)]
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -229,9 +227,7 @@ for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters"
-)]
+#[cfg(feature = "BeatSaber+AvatarCore+LimitAvatarPoseRestriction+Parameters")]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::LimitAvatarPoseRestriction_Parameters {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

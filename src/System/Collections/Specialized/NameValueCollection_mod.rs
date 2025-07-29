@@ -34,14 +34,14 @@ for crate::System::Collections::Specialized::NameValueCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+NameValueCollection")]
+#[cfg(feature = "System+Collections+Specialized+NameValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Specialized::NameValueCollection {
     type Target = crate::System::Collections::Specialized::NameObjectCollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+NameValueCollection")]
+#[cfg(feature = "System+Collections+Specialized+NameValueCollection")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

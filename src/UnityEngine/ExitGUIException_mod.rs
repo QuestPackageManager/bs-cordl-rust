@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExitGUIException
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ExitGUIException")]
+#[cfg(feature = "UnityEngine+ExitGUIException")]
 impl std::ops::Deref for crate::UnityEngine::ExitGUIException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ExitGUIException")]
+#[cfg(feature = "UnityEngine+ExitGUIException")]
 impl std::ops::DerefMut for crate::UnityEngine::ExitGUIException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

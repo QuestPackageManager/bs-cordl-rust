@@ -45,14 +45,14 @@ for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     type Target = crate::HoudiniEngineUnity::HEU_LoadBufferBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_LoadBufferInstancer")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_LoadBufferInstancer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

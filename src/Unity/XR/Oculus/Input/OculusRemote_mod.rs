@@ -33,14 +33,14 @@ for crate::Unity::XR::Oculus::Input::OculusRemote {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusRemote")]
+#[cfg(feature = "Unity+XR+Oculus+Input+OculusRemote")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::OculusRemote {
     type Target = crate::UnityEngine::InputSystem::InputDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Input+OculusRemote")]
+#[cfg(feature = "Unity+XR+Oculus+Input+OculusRemote")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Input::OculusRemote {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -26,14 +26,14 @@ for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TrackClipTypeAttribute")]
+#[cfg(feature = "UnityEngine+Timeline+TrackClipTypeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TrackClipTypeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

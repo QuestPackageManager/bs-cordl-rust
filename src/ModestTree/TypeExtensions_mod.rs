@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ModestTree::TypeExtensions {
         false
     }
 }
-#[cfg(feature = "cordl_class_ModestTree+TypeExtensions")]
+#[cfg(feature = "ModestTree+TypeExtensions")]
 impl std::ops::Deref for crate::ModestTree::TypeExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ModestTree+TypeExtensions")]
+#[cfg(feature = "ModestTree+TypeExtensions")]
 impl std::ops::DerefMut for crate::ModestTree::TypeExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

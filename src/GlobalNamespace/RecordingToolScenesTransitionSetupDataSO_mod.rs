@@ -24,7 +24,7 @@ for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolScenesTransitionSetupDataSO")]
+#[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolScenesTransitionSetupDataSO")]
+#[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

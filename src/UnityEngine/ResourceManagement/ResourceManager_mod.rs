@@ -157,14 +157,14 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager")]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::ResourceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2984,9 +2984,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -2998,9 +2996,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+CompletedOperation_1")]
 impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
@@ -3822,9 +3818,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -3834,9 +3828,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceManager+InstanceOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

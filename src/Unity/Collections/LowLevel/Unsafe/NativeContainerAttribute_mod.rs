@@ -28,9 +28,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerAttribute")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerAttribute"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

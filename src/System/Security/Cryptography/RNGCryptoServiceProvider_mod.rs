@@ -25,7 +25,7 @@ for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     type Target = crate::System::Security::Cryptography::RandomNumberGenerator;
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RNGCryptoServiceProvider")]
+#[cfg(feature = "System+Security+Cryptography+RNGCryptoServiceProvider")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RNGCryptoServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

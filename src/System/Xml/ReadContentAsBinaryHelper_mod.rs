@@ -28,14 +28,14 @@ for crate::System::Xml::ReadContentAsBinaryHelper {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+ReadContentAsBinaryHelper")]
+#[cfg(feature = "System+Xml+ReadContentAsBinaryHelper")]
 impl std::ops::Deref for crate::System::Xml::ReadContentAsBinaryHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+ReadContentAsBinaryHelper")]
+#[cfg(feature = "System+Xml+ReadContentAsBinaryHelper")]
 impl std::ops::DerefMut for crate::System::Xml::ReadContentAsBinaryHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

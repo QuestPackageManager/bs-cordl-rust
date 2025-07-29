@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithLinkedAccountList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLinkedAccountList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithLinkedAccountList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLinkedAccountList")]
+#[cfg(feature = "Oculus+Platform+MessageWithLinkedAccountList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLinkedAccountList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

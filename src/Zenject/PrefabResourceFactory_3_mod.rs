@@ -51,7 +51,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_3")]
+#[cfg(feature = "Zenject+PrefabResourceFactory_3")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,
@@ -62,7 +62,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PrefabResourceFactory_3")]
+#[cfg(feature = "Zenject+PrefabResourceFactory_3")]
 impl<
     P1: quest_hook::libil2cpp::Type,
     P2: quest_hook::libil2cpp::Type,

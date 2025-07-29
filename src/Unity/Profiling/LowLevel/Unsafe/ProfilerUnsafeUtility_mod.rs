@@ -24,7 +24,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerUnsafeUtility")]
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerUnsafeUtility")]
 impl std::ops::Deref
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Profiling+LowLevel+Unsafe+ProfilerUnsafeUtility")]
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerUnsafeUtility")]
 impl std::ops::DerefMut
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerUnsafeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

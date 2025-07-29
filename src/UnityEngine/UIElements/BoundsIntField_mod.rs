@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::BoundsIntField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::BoundsInt,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -273,7 +273,7 @@ for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BoundsIntField>,
@@ -285,7 +285,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlFact
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -378,7 +378,7 @@ for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::BoundsInt,
@@ -387,7 +387,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlTrai
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

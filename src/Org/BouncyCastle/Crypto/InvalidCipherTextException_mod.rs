@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::InvalidCipherTextException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+InvalidCipherTextException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+InvalidCipherTextException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::InvalidCipherTextException {
     type Target = crate::Org::BouncyCastle::Crypto::CryptoException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+InvalidCipherTextException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+InvalidCipherTextException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::InvalidCipherTextException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

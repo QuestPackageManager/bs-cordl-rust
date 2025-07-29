@@ -31,7 +31,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RuntimeVariables")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

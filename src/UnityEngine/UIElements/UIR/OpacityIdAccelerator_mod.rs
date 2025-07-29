@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,7 +24,7 @@ for crate::JetBrains::Annotations::AspMvcViewComponentViewAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcViewComponentViewAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcViewComponentViewAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcViewComponentViewAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::JetBrains::Annotations::AspMvcViewComponentViewAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcViewComponentViewAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcViewComponentViewAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcViewComponentViewAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

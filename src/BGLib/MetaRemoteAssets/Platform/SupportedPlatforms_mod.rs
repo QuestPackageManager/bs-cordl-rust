@@ -24,14 +24,14 @@ for crate::BGLib::MetaRemoteAssets::Platform::SupportedPlatforms {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+Platform+SupportedPlatforms")]
+#[cfg(feature = "BGLib+MetaRemoteAssets+Platform+SupportedPlatforms")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::Platform::SupportedPlatforms {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+Platform+SupportedPlatforms")]
+#[cfg(feature = "BGLib+MetaRemoteAssets+Platform+SupportedPlatforms")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::Platform::SupportedPlatforms {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

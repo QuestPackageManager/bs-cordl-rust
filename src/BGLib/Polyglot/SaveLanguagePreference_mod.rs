@@ -25,14 +25,14 @@ for crate::BGLib::Polyglot::SaveLanguagePreference {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
 impl std::ops::Deref for crate::BGLib::Polyglot::SaveLanguagePreference {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+SaveLanguagePreference")]
+#[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::SaveLanguagePreference {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

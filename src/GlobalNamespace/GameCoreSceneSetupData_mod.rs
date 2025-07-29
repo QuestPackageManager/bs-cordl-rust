@@ -24,14 +24,14 @@ for crate::GlobalNamespace::GameCoreSceneSetupData {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
+#[cfg(feature = "GameCoreSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameCoreSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameCoreSceneSetupData")]
+#[cfg(feature = "GameCoreSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameCoreSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::Unity::Profiling::ProfilerRecorderDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
 impl std::ops::Deref for crate::Unity::Profiling::ProfilerRecorderDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Profiling+ProfilerRecorderDebugView")]
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderDebugView")]
 impl std::ops::DerefMut for crate::Unity::Profiling::ProfilerRecorderDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

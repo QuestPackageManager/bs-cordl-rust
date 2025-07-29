@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
+#[cfg(feature = "HMUI+KeyboardBinder")]
 impl std::ops::Deref for crate::HMUI::KeyboardBinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+KeyboardBinder")]
+#[cfg(feature = "HMUI+KeyboardBinder")]
 impl std::ops::DerefMut for crate::HMUI::KeyboardBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

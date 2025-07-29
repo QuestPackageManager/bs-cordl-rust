@@ -47,7 +47,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+KeyedFactory_3")]
+#[cfg(feature = "Zenject+KeyedFactory_3")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+KeyedFactory_3")]
+#[cfg(feature = "Zenject+KeyedFactory_3")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

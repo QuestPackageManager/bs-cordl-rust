@@ -24,14 +24,14 @@ for crate::System::Buffers::ArrayPoolEventSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
 impl std::ops::Deref for crate::System::Buffers::ArrayPoolEventSource {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Buffers+ArrayPoolEventSource")]
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource")]
 impl std::ops::DerefMut for crate::System::Buffers::ArrayPoolEventSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

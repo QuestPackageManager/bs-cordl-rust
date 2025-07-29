@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BeatToTimeAndRotationConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatToTimeAndRotationConverter")]
+#[cfg(feature = "BeatToTimeAndRotationConverter")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatToTimeAndRotationConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatToTimeAndRotationConverter")]
+#[cfg(feature = "BeatToTimeAndRotationConverter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatToTimeAndRotationConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

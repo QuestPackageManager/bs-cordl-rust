@@ -53,7 +53,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_SortedList_2")]
+#[cfg(feature = "SortedList_2")]
 impl<T: quest_hook::libil2cpp::Type, TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::SortedList_2<T, TBase> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::SortedList_2<T, TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SortedList_2")]
+#[cfg(feature = "SortedList_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,

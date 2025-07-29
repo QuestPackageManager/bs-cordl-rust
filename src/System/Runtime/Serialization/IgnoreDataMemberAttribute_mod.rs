@@ -24,7 +24,7 @@ for crate::System::Runtime::Serialization::IgnoreDataMemberAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+IgnoreDataMemberAttribute")]
+#[cfg(feature = "System+Runtime+Serialization+IgnoreDataMemberAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::IgnoreDataMemberAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Serialization::IgnoreDataMemberAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+IgnoreDataMemberAttribute")]
+#[cfg(feature = "System+Runtime+Serialization+IgnoreDataMemberAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::IgnoreDataMemberAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

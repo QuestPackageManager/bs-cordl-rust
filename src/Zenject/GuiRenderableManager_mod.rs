@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::GuiRenderableManager
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GuiRenderableManager")]
+#[cfg(feature = "Zenject+GuiRenderableManager")]
 impl std::ops::Deref for crate::Zenject::GuiRenderableManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GuiRenderableManager")]
+#[cfg(feature = "Zenject+GuiRenderableManager")]
 impl std::ops::DerefMut for crate::Zenject::GuiRenderableManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -247,14 +247,14 @@ for crate::Zenject::GuiRenderableManager_RenderableInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GuiRenderableManager+RenderableInfo")]
+#[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
 impl std::ops::Deref for crate::Zenject::GuiRenderableManager_RenderableInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+GuiRenderableManager+RenderableInfo")]
+#[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
 impl std::ops::DerefMut for crate::Zenject::GuiRenderableManager_RenderableInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -29,14 +29,14 @@ for crate::Newtonsoft::Json::Converters::XElementWrapper {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XElementWrapper")]
+#[cfg(feature = "Newtonsoft+Json+Converters+XElementWrapper")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::XElementWrapper {
     type Target = crate::Newtonsoft::Json::Converters::XContainerWrapper;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+XElementWrapper")]
+#[cfg(feature = "Newtonsoft+Json+Converters+XElementWrapper")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::XElementWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

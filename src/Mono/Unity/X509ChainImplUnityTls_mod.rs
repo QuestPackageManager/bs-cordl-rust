@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::X509ChainImplUni
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+X509ChainImplUnityTls")]
+#[cfg(feature = "Mono+Unity+X509ChainImplUnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::X509ChainImplUnityTls {
     type Target = crate::System::Security::Cryptography::X509Certificates::X509ChainImpl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Unity+X509ChainImplUnityTls")]
+#[cfg(feature = "Mono+Unity+X509ChainImplUnityTls")]
 impl std::ops::DerefMut for crate::Mono::Unity::X509ChainImplUnityTls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

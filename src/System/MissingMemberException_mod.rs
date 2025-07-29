@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::MissingMemberExceptio
         false
     }
 }
-#[cfg(feature = "cordl_class_System+MissingMemberException")]
+#[cfg(feature = "System+MissingMemberException")]
 impl std::ops::Deref for crate::System::MissingMemberException {
     type Target = crate::System::MemberAccessException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+MissingMemberException")]
+#[cfg(feature = "System+MissingMemberException")]
 impl std::ops::DerefMut for crate::System::MissingMemberException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

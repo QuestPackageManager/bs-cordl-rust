@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::NetworkInformationException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInformationException")]
+#[cfg(feature = "System+Net+NetworkInformation+NetworkInformationException")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::NetworkInformationException {
     type Target = crate::System::ComponentModel::Win32Exception;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::NetworkInformationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+NetworkInformationException")]
+#[cfg(feature = "System+Net+NetworkInformation+NetworkInformationException")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::NetworkInformationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

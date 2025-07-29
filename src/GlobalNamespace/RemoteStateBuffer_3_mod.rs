@@ -70,7 +70,7 @@ for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
         false
     }
 }
-#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
+#[cfg(feature = "RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -82,7 +82,7 @@ for crate::GlobalNamespace::RemoteStateBuffer_3<TStateTable, TType, TState> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RemoteStateBuffer_3")]
+#[cfg(feature = "RemoteStateBuffer_3")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

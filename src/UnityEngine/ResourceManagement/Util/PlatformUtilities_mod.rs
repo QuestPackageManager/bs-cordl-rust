@@ -24,7 +24,7 @@ for crate::UnityEngine::ResourceManagement::Util::PlatformUtilities {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+PlatformUtilities")]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+PlatformUtilities")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::PlatformUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::Util::PlatformUtilities {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+Util+PlatformUtilities")]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+PlatformUtilities")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::PlatformUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

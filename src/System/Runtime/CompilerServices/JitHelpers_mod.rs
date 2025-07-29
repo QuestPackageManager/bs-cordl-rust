@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::JitHelpers {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::JitHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+JitHelpers")]
+#[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::JitHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

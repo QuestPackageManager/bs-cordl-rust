@@ -39,9 +39,7 @@ for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
-)]
+#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
 impl std::ops::Deref
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
@@ -53,9 +51,7 @@ for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller"
-)]
+#[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
 impl std::ops::DerefMut
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

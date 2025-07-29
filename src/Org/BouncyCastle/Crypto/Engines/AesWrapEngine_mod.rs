@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::AesWrapEngine {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::AesWrapEngine {
     type Target = crate::Org::BouncyCastle::Crypto::Engines::Rfc3394WrapEngine;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesWrapEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::AesWrapEngine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

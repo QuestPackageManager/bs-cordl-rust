@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     type Target = crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+KeyDerivationFunc")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::KeyDerivationFunc {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

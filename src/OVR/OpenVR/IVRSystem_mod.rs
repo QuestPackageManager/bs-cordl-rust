@@ -360,14 +360,14 @@ for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_Exiting")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_AcknowledgeQuit_Exiting")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_Exiting")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_AcknowledgeQuit_Exiting")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -535,14 +535,14 @@ for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_UserPrompt")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_AcknowledgeQuit_UserPrompt")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_AcknowledgeQuit_UserPrompt")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_AcknowledgeQuit_UserPrompt")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -710,14 +710,14 @@ for crate::OVR::OpenVR::IVRSystem__ApplyTransform {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ApplyTransform")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ApplyTransform")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__ApplyTransform {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ApplyTransform")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ApplyTransform")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__ApplyTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -949,14 +949,14 @@ for crate::OVR::OpenVR::IVRSystem__ComputeDistortion {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ComputeDistortion")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ComputeDistortion")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__ComputeDistortion {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ComputeDistortion")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ComputeDistortion")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__ComputeDistortion {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1166,14 +1166,14 @@ for crate::OVR::OpenVR::IVRSystem__DriverDebugRequest {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_DriverDebugRequest")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_DriverDebugRequest")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__DriverDebugRequest {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_DriverDebugRequest")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_DriverDebugRequest")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__DriverDebugRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1385,14 +1385,14 @@ for crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetArrayTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetArrayTrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetArrayTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetArrayTrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1623,14 +1623,14 @@ for crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetBoolTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetBoolTrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetBoolTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetBoolTrackedDeviceProperty")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1832,14 +1832,14 @@ for crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetButtonIdNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetButtonIdNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetButtonIdNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetButtonIdNameFromEnum")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2014,7 +2014,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerAxisTypeNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerAxisTypeNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum {
     type Target = crate::System::MulticastDelegate;
@@ -2022,7 +2022,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerAxisTypeNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerAxisTypeNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2202,9 +2202,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerRoleForTrackedDeviceIndex"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerRoleForTrackedDeviceIndex")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex {
     type Target = crate::System::MulticastDelegate;
@@ -2212,9 +2210,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerRoleForTrackedDeviceIndex"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerRoleForTrackedDeviceIndex")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2392,14 +2388,14 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerState {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerState")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetControllerState {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerState")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetControllerState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2614,14 +2610,14 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerStateWithPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerStateWithPose")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetControllerStateWithPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetControllerStateWithPose")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2867,14 +2863,14 @@ for crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetD3D9AdapterIndex")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetD3D9AdapterIndex")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetD3D9AdapterIndex")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetD3D9AdapterIndex")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3038,14 +3034,14 @@ for crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDXGIOutputInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetDXGIOutputInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDXGIOutputInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetDXGIOutputInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3224,14 +3220,14 @@ for crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDeviceToAbsoluteTrackingPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetDeviceToAbsoluteTrackingPose")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetDeviceToAbsoluteTrackingPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetDeviceToAbsoluteTrackingPose")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3465,14 +3461,14 @@ for crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEventTypeNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetEventTypeNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEventTypeNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetEventTypeNameFromEnum")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3647,14 +3643,14 @@ for crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEyeToHeadTransform")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetEyeToHeadTransform")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetEyeToHeadTransform")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetEyeToHeadTransform")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3829,14 +3825,14 @@ for crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetFloatTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetFloatTrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetFloatTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetFloatTrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4039,14 +4035,14 @@ for crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetHiddenAreaMesh")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetHiddenAreaMesh")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetHiddenAreaMesh")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetHiddenAreaMesh")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4228,14 +4224,14 @@ for crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetInt32TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetInt32TrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetInt32TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetInt32TrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4438,7 +4434,7 @@ for crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetMatrix34TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetMatrix34TrackedDeviceProperty")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
@@ -4446,7 +4442,7 @@ for crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetMatrix34TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetMatrix34TrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4649,14 +4645,14 @@ for crate::OVR::OpenVR::IVRSystem__GetOutputDevice {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetOutputDevice")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetOutputDevice")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetOutputDevice {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetOutputDevice")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetOutputDevice")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetOutputDevice {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4849,14 +4845,14 @@ for crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionMatrix")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetProjectionMatrix")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionMatrix")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetProjectionMatrix")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5038,14 +5034,14 @@ for crate::OVR::OpenVR::IVRSystem__GetProjectionRaw {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionRaw")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetProjectionRaw")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetProjectionRaw {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetProjectionRaw")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetProjectionRaw")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetProjectionRaw {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5254,14 +5250,14 @@ for crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetPropErrorNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetPropErrorNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetPropErrorNameFromEnum")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetPropErrorNameFromEnum")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5440,9 +5436,7 @@ for crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRawZeroPoseToStandingAbsoluteTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetRawZeroPoseToStandingAbsoluteTrackingPose")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose {
     type Target = crate::System::MulticastDelegate;
@@ -5450,9 +5444,7 @@ for crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRawZeroPoseToStandingAbsoluteTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetRawZeroPoseToStandingAbsoluteTrackingPose")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5627,14 +5619,14 @@ for crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRecommendedRenderTargetSize")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetRecommendedRenderTargetSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetRecommendedRenderTargetSize")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetRecommendedRenderTargetSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5827,9 +5819,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPo
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSeatedZeroPoseToStandingAbsoluteTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetSeatedZeroPoseToStandingAbsoluteTrackingPose")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose {
     type Target = crate::System::MulticastDelegate;
@@ -5837,9 +5827,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSeatedZeroPoseToStandingAbsoluteTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetSeatedZeroPoseToStandingAbsoluteTrackingPose")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6018,9 +6006,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSortedTrackedDeviceIndicesOfClass"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetSortedTrackedDeviceIndicesOfClass")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
     type Target = crate::System::MulticastDelegate;
@@ -6028,9 +6014,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetSortedTrackedDeviceIndicesOfClass"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetSortedTrackedDeviceIndicesOfClass")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6254,14 +6238,14 @@ for crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetStringTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetStringTrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetStringTrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetStringTrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6491,14 +6475,14 @@ for crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTimeSinceLastVsync")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTimeSinceLastVsync")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTimeSinceLastVsync")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTimeSinceLastVsync")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6694,14 +6678,14 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceActivityLevel")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceActivityLevel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceActivityLevel")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceActivityLevel")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6877,14 +6861,14 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceClass")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceClass")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceClass")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceClass")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7063,9 +7047,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceIndexForControllerRole"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceIndexForControllerRole")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole {
     type Target = crate::System::MulticastDelegate;
@@ -7073,9 +7055,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetTrackedDeviceIndexForControllerRole"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetTrackedDeviceIndexForControllerRole")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7253,14 +7233,14 @@ for crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetUint64TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetUint64TrackedDeviceProperty")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_GetUint64TrackedDeviceProperty")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_GetUint64TrackedDeviceProperty")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7463,14 +7443,14 @@ for crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsDisplayOnDesktop")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsDisplayOnDesktop")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsDisplayOnDesktop")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsDisplayOnDesktop")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7634,14 +7614,14 @@ for crate::OVR::OpenVR::IVRSystem__IsInputAvailable {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsInputAvailable")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsInputAvailable")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__IsInputAvailable {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsInputAvailable")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsInputAvailable")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__IsInputAvailable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7805,14 +7785,14 @@ for crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsSteamVRDrawingControllers")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsSteamVRDrawingControllers")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsSteamVRDrawingControllers")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsSteamVRDrawingControllers")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -7976,14 +7956,14 @@ for crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsTrackedDeviceConnected")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsTrackedDeviceConnected")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_IsTrackedDeviceConnected")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_IsTrackedDeviceConnected")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8151,14 +8131,14 @@ for crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PerformFirmwareUpdate")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PerformFirmwareUpdate")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PerformFirmwareUpdate")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PerformFirmwareUpdate")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8333,14 +8313,14 @@ for crate::OVR::OpenVR::IVRSystem__PollNextEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEvent")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PollNextEvent")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__PollNextEvent {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEvent")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PollNextEvent")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__PollNextEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8531,14 +8511,14 @@ for crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEventWithPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PollNextEventWithPose")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_PollNextEventWithPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_PollNextEventWithPose")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8760,14 +8740,14 @@ for crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ResetSeatedZeroPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ResetSeatedZeroPose")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ResetSeatedZeroPose")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ResetSeatedZeroPose")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -8935,14 +8915,14 @@ for crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_SetDisplayVisibility")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_SetDisplayVisibility")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_SetDisplayVisibility")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_SetDisplayVisibility")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9114,14 +9094,14 @@ for crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationPause")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ShouldApplicationPause")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationPause")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ShouldApplicationPause")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -9289,9 +9269,7 @@ for crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationReduceRenderingWork"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ShouldApplicationReduceRenderingWork")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork {
     type Target = crate::System::MulticastDelegate;
@@ -9299,9 +9277,7 @@ for crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRSystem+_ShouldApplicationReduceRenderingWork"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_ShouldApplicationReduceRenderingWork")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -9468,14 +9444,14 @@ for crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_TriggerHapticPulse")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_TriggerHapticPulse")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRSystem+_TriggerHapticPulse")]
+#[cfg(feature = "OVR+OpenVR+IVRSystem+_TriggerHapticPulse")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

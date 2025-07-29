@@ -82,14 +82,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView")]
+#[cfg(feature = "HMUI+TableView")]
 impl std::ops::Deref for crate::HMUI::TableView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView")]
+#[cfg(feature = "HMUI+TableView")]
 impl std::ops::DerefMut for crate::HMUI::TableView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1761,14 +1761,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_CellsGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
 impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
+#[cfg(feature = "HMUI+TableView+CellsGroup")]
 impl std::ops::DerefMut for crate::HMUI::TableView_CellsGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1903,14 +1903,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_IDataSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
+#[cfg(feature = "HMUI+TableView+IDataSource")]
 impl std::ops::Deref for crate::HMUI::TableView_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TableView+IDataSource")]
+#[cfg(feature = "HMUI+TableView+IDataSource")]
 impl std::ops::DerefMut for crate::HMUI::TableView_IDataSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

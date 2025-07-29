@@ -24,14 +24,14 @@ for crate::System::ComponentModel::ListChangedEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ListChangedEventHandler")]
+#[cfg(feature = "System+ComponentModel+ListChangedEventHandler")]
 impl std::ops::Deref for crate::System::ComponentModel::ListChangedEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+ListChangedEventHandler")]
+#[cfg(feature = "System+ComponentModel+ListChangedEventHandler")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ListChangedEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

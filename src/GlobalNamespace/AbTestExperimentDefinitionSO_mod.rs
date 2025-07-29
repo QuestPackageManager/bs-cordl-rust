@@ -30,14 +30,14 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
+#[cfg(feature = "AbTestExperimentDefinitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AbTestExperimentDefinitionSO")]
+#[cfg(feature = "AbTestExperimentDefinitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

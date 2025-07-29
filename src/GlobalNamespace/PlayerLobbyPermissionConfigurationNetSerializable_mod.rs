@@ -30,7 +30,7 @@ for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayerLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayerLobbyPermissionConfigurationNetSerializable")]
+#[cfg(feature = "PlayerLobbyPermissionConfigurationNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

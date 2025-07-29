@@ -72,14 +72,14 @@ for crate::GlobalNamespace::CampaignFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_CampaignFlowCoordinator")]
+#[cfg(feature = "CampaignFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::CampaignFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CampaignFlowCoordinator")]
+#[cfg(feature = "CampaignFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CampaignFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

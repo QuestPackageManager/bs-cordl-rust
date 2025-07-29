@@ -28,9 +28,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SHA512SignatureDescription {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription"
-)]
+#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SHA512SignatureDescription {
     type Target = crate::System::Security::Cryptography::RSAPKCS1SignatureDescription;
@@ -38,9 +36,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SHA512SignatureDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription"
-)]
+#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SHA512SignatureDescription")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RSAPKCS1SHA512SignatureDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

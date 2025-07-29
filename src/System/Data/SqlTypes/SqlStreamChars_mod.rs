@@ -24,14 +24,14 @@ for crate::System::Data::SqlTypes::SqlStreamChars {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlStreamChars")]
+#[cfg(feature = "System+Data+SqlTypes+SqlStreamChars")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlStreamChars {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlStreamChars")]
+#[cfg(feature = "System+Data+SqlTypes+SqlStreamChars")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlStreamChars {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

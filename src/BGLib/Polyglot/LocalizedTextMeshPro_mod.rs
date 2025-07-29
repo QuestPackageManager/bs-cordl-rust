@@ -26,7 +26,7 @@ for crate::BGLib::Polyglot::LocalizedTextMeshPro {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedTextMeshPro")]
+#[cfg(feature = "BGLib+Polyglot+LocalizedTextMeshPro")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedTextMeshPro {
     type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedTextMeshPro {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedTextMeshPro")]
+#[cfg(feature = "BGLib+Polyglot+LocalizedTextMeshPro")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizedTextMeshPro {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

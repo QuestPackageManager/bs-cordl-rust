@@ -24,14 +24,14 @@ for crate::System::Xml::Serialization::XmlTypeMapElementInfoList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapElementInfoList")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeMapElementInfoList")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapElementInfoList {
     type Target = crate::System::Collections::ArrayList;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapElementInfoList")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeMapElementInfoList")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlTypeMapElementInfoList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

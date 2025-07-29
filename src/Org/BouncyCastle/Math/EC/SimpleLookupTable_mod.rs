@@ -29,14 +29,14 @@ for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+SimpleLookupTable")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

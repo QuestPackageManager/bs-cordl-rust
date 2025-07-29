@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlAutoDetectWri
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlAutoDetectWriter {
     type Target = crate::System::Xml::XmlRawWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlAutoDetectWriter")]
+#[cfg(feature = "System+Xml+XmlAutoDetectWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlAutoDetectWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

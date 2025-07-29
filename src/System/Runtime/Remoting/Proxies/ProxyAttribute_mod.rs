@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+ProxyAttribute")]
+#[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Proxies+ProxyAttribute")]
+#[cfg(feature = "System+Runtime+Remoting+Proxies+ProxyAttribute")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

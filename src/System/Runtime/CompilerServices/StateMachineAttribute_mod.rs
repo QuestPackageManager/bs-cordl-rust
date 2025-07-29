@@ -27,7 +27,7 @@ for crate::System::Runtime::CompilerServices::StateMachineAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StateMachineAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+StateMachineAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::StateMachineAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +35,7 @@ for crate::System::Runtime::CompilerServices::StateMachineAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StateMachineAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+StateMachineAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::StateMachineAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

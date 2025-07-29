@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IFormatProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IFormatProvider")]
+#[cfg(feature = "System+IFormatProvider")]
 impl std::ops::Deref for crate::System::IFormatProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IFormatProvider")]
+#[cfg(feature = "System+IFormatProvider")]
 impl std::ops::DerefMut for crate::System::IFormatProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

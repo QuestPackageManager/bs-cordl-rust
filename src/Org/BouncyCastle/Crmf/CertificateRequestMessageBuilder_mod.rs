@@ -54,7 +54,7 @@ for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -62,7 +62,7 @@ for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crmf+CertificateRequestMessageBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crmf::CertificateRequestMessageBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

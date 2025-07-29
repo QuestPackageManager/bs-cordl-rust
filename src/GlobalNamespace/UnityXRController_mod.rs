@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityXRContr
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityXRController")]
+#[cfg(feature = "UnityXRController")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityXRController")]
+#[cfg(feature = "UnityXRController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -359,14 +359,14 @@ for crate::GlobalNamespace::UnityXRController_Configuration {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityXRController+Configuration")]
+#[cfg(feature = "UnityXRController+Configuration")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController_Configuration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityXRController+Configuration")]
+#[cfg(feature = "UnityXRController+Configuration")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRController_Configuration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

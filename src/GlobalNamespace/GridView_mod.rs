@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GridView {
         false
     }
 }
-#[cfg(feature = "cordl_class_GridView")]
+#[cfg(feature = "GridView")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GridView")]
+#[cfg(feature = "GridView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -470,14 +470,14 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GridView+GridViewCellsEnumerator")]
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -665,14 +665,14 @@ for crate::GlobalNamespace::GridView_IDataSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_GridView+IDataSource")]
+#[cfg(feature = "GridView+IDataSource")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_IDataSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GridView+IDataSource")]
+#[cfg(feature = "GridView+IDataSource")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView_IDataSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

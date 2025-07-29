@@ -24,14 +24,14 @@ for crate::System::Data::SqlTypes::SqlTypeException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlTypeException")]
+#[cfg(feature = "System+Data+SqlTypes+SqlTypeException")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlTypeException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+SqlTypes+SqlTypeException")]
+#[cfg(feature = "System+Data+SqlTypes+SqlTypeException")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlTypeException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

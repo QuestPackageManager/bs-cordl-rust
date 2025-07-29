@@ -53,7 +53,7 @@ for crate::UnityEngine::UIElements::EventCallbackFunctor_2<TEventType, TCallback
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackFunctor_2")]
+#[cfg(feature = "UnityEngine+UIElements+EventCallbackFunctor_2")]
 impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,
@@ -64,7 +64,7 @@ for crate::UnityEngine::UIElements::EventCallbackFunctor_2<TEventType, TCallback
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackFunctor_2")]
+#[cfg(feature = "UnityEngine+UIElements+EventCallbackFunctor_2")]
 impl<
     TEventType: quest_hook::libil2cpp::Type,
     TCallbackArgs: quest_hook::libil2cpp::Type,

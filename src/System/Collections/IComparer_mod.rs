@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::ICompare
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+IComparer")]
+#[cfg(feature = "System+Collections+IComparer")]
 impl std::ops::Deref for crate::System::Collections::IComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+IComparer")]
+#[cfg(feature = "System+Collections+IComparer")]
 impl std::ops::DerefMut for crate::System::Collections::IComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

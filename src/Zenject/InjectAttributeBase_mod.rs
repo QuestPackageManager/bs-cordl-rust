@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::InjectAttributeBase 
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+InjectAttributeBase")]
+#[cfg(feature = "Zenject+InjectAttributeBase")]
 impl std::ops::Deref for crate::Zenject::InjectAttributeBase {
     type Target = crate::Zenject::Internal::PreserveAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+InjectAttributeBase")]
+#[cfg(feature = "Zenject+InjectAttributeBase")]
 impl std::ops::DerefMut for crate::Zenject::InjectAttributeBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

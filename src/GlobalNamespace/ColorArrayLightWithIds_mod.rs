@@ -52,14 +52,14 @@ for crate::GlobalNamespace::ColorArrayLightWithIds {
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
+#[cfg(feature = "ColorArrayLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorArrayLightWithIds {
     type Target = crate::GlobalNamespace::LightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorArrayLightWithIds")]
+#[cfg(feature = "ColorArrayLightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorArrayLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
@@ -383,7 +383,7 @@ for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
+#[cfg(feature = "ColorArrayLightWithIds+ColorArrayLightWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

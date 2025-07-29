@@ -28,18 +28,14 @@ for crate::GlobalNamespace::DivInstruction_DivInt64 {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+DivInstruction+DivInt64"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+DivInstruction+DivInt64")]
 impl std::ops::Deref for crate::GlobalNamespace::DivInstruction_DivInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::DivInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+DivInstruction+DivInt64"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+DivInstruction+DivInt64")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DivInstruction_DivInt64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

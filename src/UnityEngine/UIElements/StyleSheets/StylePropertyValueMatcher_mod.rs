@@ -33,9 +33,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     type Target = crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher;
@@ -43,9 +41,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher"
-)]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyValueMatcher")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

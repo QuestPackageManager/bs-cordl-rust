@@ -25,14 +25,14 @@ for crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
     type Target = crate::System::Dynamic::GetMemberBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowGetBinderMember")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::NoThrowGetBinderMember {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

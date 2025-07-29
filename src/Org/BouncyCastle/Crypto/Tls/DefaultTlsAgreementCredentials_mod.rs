@@ -38,9 +38,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsAgreementCredentials;
@@ -48,9 +46,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DefaultTlsAgreementCredentials")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsAgreementCredentials {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

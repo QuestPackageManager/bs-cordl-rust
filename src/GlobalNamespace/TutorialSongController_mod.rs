@@ -188,14 +188,14 @@ for crate::GlobalNamespace::TutorialSongController {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController")]
+#[cfg(feature = "TutorialSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController {
     type Target = crate::GlobalNamespace::SongController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController")]
+#[cfg(feature = "TutorialSongController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSongController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -860,14 +860,14 @@ for crate::GlobalNamespace::TutorialSongController_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+InitData")]
+#[cfg(feature = "TutorialSongController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+InitData")]
+#[cfg(feature = "TutorialSongController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSongController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -962,14 +962,14 @@ for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+SequenceCutInfo")]
+#[cfg(feature = "TutorialSongController+SequenceCutInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+SequenceCutInfo")]
+#[cfg(feature = "TutorialSongController+SequenceCutInfo")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1163,7 +1163,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialArcSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
@@ -1171,7 +1171,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialArcSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialArcSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1274,7 +1274,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialBasicNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData;
@@ -1282,7 +1282,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialBasicNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialBasicNoteSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1406,7 +1406,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialBombNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData;
@@ -1414,7 +1414,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialBombNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialBombNoteSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1524,7 +1524,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialChainSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialChainSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
@@ -1532,7 +1532,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialChainSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialChainSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1699,7 +1699,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialJumpingNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
@@ -1707,7 +1707,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialJumpingNoteSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialJumpingNoteSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1813,7 +1813,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialObjectSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1821,7 +1821,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialObjectSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialObjectSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1920,7 +1920,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialObstacleSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
     type Target = crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData;
@@ -1928,7 +1928,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialSongController+TutorialObstacleSpawnData")]
+#[cfg(feature = "TutorialSongController+TutorialObstacleSpawnData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

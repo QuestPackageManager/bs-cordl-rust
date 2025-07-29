@@ -25,14 +25,14 @@ for crate::Zenject::AddToExistingGameObjectComponentProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+AddToExistingGameObjectComponentProvider")]
+#[cfg(feature = "Zenject+AddToExistingGameObjectComponentProvider")]
 impl std::ops::Deref for crate::Zenject::AddToExistingGameObjectComponentProvider {
     type Target = crate::Zenject::AddToGameObjectComponentProviderBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+AddToExistingGameObjectComponentProvider")]
+#[cfg(feature = "Zenject+AddToExistingGameObjectComponentProvider")]
 impl std::ops::DerefMut for crate::Zenject::AddToExistingGameObjectComponentProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

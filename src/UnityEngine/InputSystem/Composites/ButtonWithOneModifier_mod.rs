@@ -27,7 +27,7 @@ for crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithOneModifier")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithOneModifier")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
@@ -35,7 +35,7 @@ for crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+ButtonWithOneModifier")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+ButtonWithOneModifier")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

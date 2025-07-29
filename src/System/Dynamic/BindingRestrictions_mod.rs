@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::BindingRestr
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions")]
+#[cfg(feature = "System+Dynamic+BindingRestrictions")]
 impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -319,9 +319,7 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
-)]
+#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 impl std::ops::Deref
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -329,9 +327,7 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Dynamic+BindingRestrictions+BindingRestrictionsProxy"
-)]
+#[cfg(feature = "System+Dynamic+BindingRestrictions+BindingRestrictionsProxy")]
 impl std::ops::DerefMut
 for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -388,14 +384,14 @@ for crate::System::Dynamic::BindingRestrictions_TestBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::Deref for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder")]
 impl std::ops::DerefMut for crate::System::Dynamic::BindingRestrictions_TestBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

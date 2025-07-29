@@ -24,14 +24,14 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
         false
     }
 }
-#[cfg(feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 impl std::ops::Deref for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents")]
 impl std::ops::DerefMut for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -84,9 +84,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes"
-)]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 impl std::ops::Deref
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -94,9 +92,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes"
-)]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+AnnotationTypes")]
 impl std::ops::DerefMut
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_AnnotationTypes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -154,9 +150,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes"
-)]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 impl std::ops::Deref
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -164,9 +158,7 @@ for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes"
-)]
+#[cfg(feature = "Meta+XR+Samples+Telemetry+SampleTelemetryEvents+EventTypes")]
 impl std::ops::DerefMut
 for crate::Meta::XR::Samples::Telemetry::SampleTelemetryEvents_EventTypes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

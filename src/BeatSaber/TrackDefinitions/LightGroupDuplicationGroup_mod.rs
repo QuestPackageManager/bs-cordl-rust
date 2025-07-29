@@ -32,14 +32,14 @@ for crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
+#[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
 impl std::ops::Deref for crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
+#[cfg(feature = "BeatSaber+TrackDefinitions+LightGroupDuplicationGroup")]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

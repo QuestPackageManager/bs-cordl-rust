@@ -36,7 +36,7 @@ for crate::GlobalNamespace::ControllersTransformSettingsViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
+#[cfg(feature = "ControllersTransformSettingsViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     type Target = crate::HMUI::ViewController;
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::ControllersTransformSettingsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ControllersTransformSettingsViewController")]
+#[cfg(feature = "ControllersTransformSettingsViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ControllersTransformSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

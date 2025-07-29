@@ -30,14 +30,14 @@ for crate::System::Collections::ListDictionaryInternal {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl std::ops::Deref for crate::System::Collections::ListDictionaryInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl std::ops::DerefMut for crate::System::Collections::ListDictionaryInternal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -570,7 +570,7 @@ for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+DictionaryNode")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -578,7 +578,7 @@ for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+DictionaryNode")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -660,7 +660,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeEnumerator")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -668,7 +668,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeEnumerator")]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -935,9 +935,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection"
-)]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -945,9 +943,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection"
-)]
+#[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1216,7 +1212,7 @@ for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_No
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
@@ -1226,7 +1222,7 @@ for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_No
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
+    feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection+NodeKeyValueEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {

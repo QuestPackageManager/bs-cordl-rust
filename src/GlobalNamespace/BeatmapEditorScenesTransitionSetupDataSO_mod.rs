@@ -32,7 +32,7 @@ for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEditorScenesTransitionSetupDataSO")]
+#[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

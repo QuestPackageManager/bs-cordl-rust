@@ -24,14 +24,14 @@ for crate::System::Linq::Expressions::Interpreter::AndInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::AndInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::AndInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+LivestreamingApplicationStatus")]
+#[cfg(feature = "Oculus+Platform+Models+LivestreamingApplicationStatus")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Models::LivestreamingApplicationStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

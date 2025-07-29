@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerOffsetPositionByLocalPlayerPosition")]
+#[cfg(feature = "MultiplayerOffsetPositionByLocalPlayerPosition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerOffsetPositionByLocalPlayerPosition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

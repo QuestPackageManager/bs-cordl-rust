@@ -47,14 +47,14 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarManager")]
+#[cfg(feature = "MultiplayerLobbyAvatarManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarManager")]
+#[cfg(feature = "MultiplayerLobbyAvatarManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

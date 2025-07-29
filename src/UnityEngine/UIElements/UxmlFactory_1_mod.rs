@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -59,7 +59,7 @@ for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFactory_1")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlFactory_1")]
 impl<TCreatedType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
     type Target = crate::System::Linq::Expressions::Interpreter::NumericConvertInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NumericConvertInstruction_ToUnd
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
+    feature = "System+Linq+Expressions+Interpreter+NumericConvertInstruction+ToUnderlying"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {

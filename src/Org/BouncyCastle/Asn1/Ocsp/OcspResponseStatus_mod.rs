@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponseStatus {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Ocsp+OcspResponseStatus")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+OcspResponseStatus")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponseStatus {
     type Target = crate::Org::BouncyCastle::Asn1::DerEnumerated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Ocsp+OcspResponseStatus")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Ocsp+OcspResponseStatus")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponseStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

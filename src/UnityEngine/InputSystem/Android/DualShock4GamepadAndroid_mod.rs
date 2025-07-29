@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::DualShock4GamepadAndroid {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::DualShock4GamepadAndroid {
     type Target = crate::UnityEngine::InputSystem::DualShock::DualShockGamepad;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::DualShock4GamepadAndroid {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+DualShock4GamepadAndroid")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::DualShock4GamepadAndroid {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

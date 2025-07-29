@@ -24,14 +24,14 @@ for crate::UnityEngine::Rendering::GraphicsSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsSettings")]
+#[cfg(feature = "UnityEngine+Rendering+GraphicsSettings")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::GraphicsSettings {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+GraphicsSettings")]
+#[cfg(feature = "UnityEngine+Rendering+GraphicsSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::GraphicsSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

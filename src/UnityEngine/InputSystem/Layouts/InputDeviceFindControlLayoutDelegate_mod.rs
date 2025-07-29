@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelega
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelega
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceFindControlLayoutDelegate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceFindControlLayoutDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

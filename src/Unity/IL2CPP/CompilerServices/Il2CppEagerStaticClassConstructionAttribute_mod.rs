@@ -29,7 +29,7 @@ for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAt
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAt
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
+    feature = "Unity+IL2CPP+CompilerServices+Il2CppEagerStaticClassConstructionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::IL2CPP::CompilerServices::Il2CppEagerStaticClassConstructionAttribute {

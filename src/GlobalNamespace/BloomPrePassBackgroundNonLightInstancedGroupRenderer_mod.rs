@@ -70,7 +70,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -475,7 +475,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
     }
 }
 #[cfg(
-    feature = "cordl_class_BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
+    feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
@@ -485,7 +485,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
     }
 }
 #[cfg(
-    feature = "cordl_class_BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
+    feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+SupportedProperty"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {

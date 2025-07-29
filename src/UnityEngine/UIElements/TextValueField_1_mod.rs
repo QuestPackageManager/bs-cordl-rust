@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>;
@@ -54,7 +54,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -752,7 +752,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
@@ -762,7 +762,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueField_1+TextValueInput")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

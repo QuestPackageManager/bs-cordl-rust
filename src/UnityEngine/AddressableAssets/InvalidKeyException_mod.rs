@@ -34,14 +34,14 @@ for crate::UnityEngine::AddressableAssets::InvalidKeyException {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException")]
+#[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
 impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

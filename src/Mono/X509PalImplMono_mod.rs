@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::X509PalImplMono {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+X509PalImplMono")]
+#[cfg(feature = "Mono+X509PalImplMono")]
 impl std::ops::Deref for crate::Mono::X509PalImplMono {
     type Target = crate::Mono::X509PalImpl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+X509PalImplMono")]
+#[cfg(feature = "Mono+X509PalImplMono")]
 impl std::ops::DerefMut for crate::Mono::X509PalImplMono {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,7 +24,7 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
 impl std::ops::Deref
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_INoteControllerNoteDidStartDissolvingEvent")]
+#[cfg(feature = "INoteControllerNoteDidStartDissolvingEvent")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

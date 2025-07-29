@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::MergeFailedEven
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+MergeFailedEventArgs")]
+#[cfg(feature = "System+Data+MergeFailedEventArgs")]
 impl std::ops::Deref for crate::System::Data::MergeFailedEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+MergeFailedEventArgs")]
+#[cfg(feature = "System+Data+MergeFailedEventArgs")]
 impl std::ops::DerefMut for crate::System::Data::MergeFailedEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

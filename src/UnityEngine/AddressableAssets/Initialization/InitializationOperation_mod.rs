@@ -52,9 +52,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -66,9 +64,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+InitializationOperation"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

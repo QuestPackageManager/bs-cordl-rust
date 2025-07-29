@@ -24,14 +24,14 @@ for crate::Mono::Net::Security::AsyncReadRequest {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadRequest")]
+#[cfg(feature = "Mono+Net+Security+AsyncReadRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncReadRequest {
     type Target = crate::Mono::Net::Security::AsyncReadOrWriteRequest;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+AsyncReadRequest")]
+#[cfg(feature = "Mono+Net+Security+AsyncReadRequest")]
 impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncReadRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

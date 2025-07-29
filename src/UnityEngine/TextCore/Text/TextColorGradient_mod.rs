@@ -29,14 +29,14 @@ for crate::UnityEngine::TextCore::Text::TextColorGradient {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextColorGradient {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextColorGradient")]
+#[cfg(feature = "UnityEngine+TextCore+Text+TextColorGradient")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextColorGradient {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

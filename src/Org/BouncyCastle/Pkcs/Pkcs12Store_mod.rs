@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Pkcs::Pkcs
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1072,14 +1072,14 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+CertId")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1276,7 +1276,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1284,7 +1284,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -70,7 +70,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
     type Target = crate::GlobalNamespace::BeatmapObjectManager;
@@ -78,7 +78,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -699,7 +699,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitD
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -707,7 +707,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitD
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

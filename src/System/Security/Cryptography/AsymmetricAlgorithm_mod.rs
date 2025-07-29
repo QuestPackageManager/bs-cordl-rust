@@ -30,14 +30,14 @@ for crate::System::Security::Cryptography::AsymmetricAlgorithm {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+AsymmetricAlgorithm")]
+#[cfg(feature = "System+Security+Cryptography+AsymmetricAlgorithm")]
 impl std::ops::Deref for crate::System::Security::Cryptography::AsymmetricAlgorithm {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+AsymmetricAlgorithm")]
+#[cfg(feature = "System+Security+Cryptography+AsymmetricAlgorithm")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::AsymmetricAlgorithm {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

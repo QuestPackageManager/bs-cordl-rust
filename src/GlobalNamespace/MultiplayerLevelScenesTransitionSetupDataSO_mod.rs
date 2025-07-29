@@ -66,7 +66,7 @@ for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "MultiplayerLevelScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

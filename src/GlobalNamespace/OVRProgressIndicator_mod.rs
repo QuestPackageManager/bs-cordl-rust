@@ -26,14 +26,14 @@ for crate::GlobalNamespace::OVRProgressIndicator {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRProgressIndicator")]
+#[cfg(feature = "OVRProgressIndicator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRProgressIndicator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRProgressIndicator")]
+#[cfg(feature = "OVRProgressIndicator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRProgressIndicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

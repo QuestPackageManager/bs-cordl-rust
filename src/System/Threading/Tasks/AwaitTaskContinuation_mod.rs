@@ -28,14 +28,14 @@ for crate::System::Threading::Tasks::AwaitTaskContinuation {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
 impl std::ops::Deref for crate::System::Threading::Tasks::AwaitTaskContinuation {
     type Target = crate::System::Threading::Tasks::TaskContinuation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+AwaitTaskContinuation")]
+#[cfg(feature = "System+Threading+Tasks+AwaitTaskContinuation")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::AwaitTaskContinuation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -30,7 +30,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue {
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
+    feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue {

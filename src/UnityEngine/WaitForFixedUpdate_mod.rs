@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitForFixedUpda
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+WaitForFixedUpdate")]
+#[cfg(feature = "UnityEngine+WaitForFixedUpdate")]
 impl std::ops::Deref for crate::UnityEngine::WaitForFixedUpdate {
     type Target = crate::UnityEngine::YieldInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+WaitForFixedUpdate")]
+#[cfg(feature = "UnityEngine+WaitForFixedUpdate")]
 impl std::ops::DerefMut for crate::UnityEngine::WaitForFixedUpdate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioReverbZone 
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
+#[cfg(feature = "UnityEngine+AudioReverbZone")]
 impl std::ops::Deref for crate::UnityEngine::AudioReverbZone {
     type Target = crate::UnityEngine::Behaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioReverbZone")]
+#[cfg(feature = "UnityEngine+AudioReverbZone")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioReverbZone {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

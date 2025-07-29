@@ -26,7 +26,7 @@ for crate::Unity::Properties::Internal::RectPropertyBag {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::RectPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Rect,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::RectPropertyBag {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::RectPropertyBag {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -116,7 +116,7 @@ for crate::Unity::Properties::Internal::RectPropertyBag_HeightProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+HeightProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+HeightProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectPropertyBag_HeightProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Rect, f32>;
@@ -124,7 +124,7 @@ for crate::Unity::Properties::Internal::RectPropertyBag_HeightProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+HeightProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+HeightProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::RectPropertyBag_HeightProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -225,7 +225,7 @@ for crate::Unity::Properties::Internal::RectPropertyBag_WidthProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+WidthProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+WidthProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::RectPropertyBag_WidthProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Rect, f32>;
@@ -233,7 +233,7 @@ for crate::Unity::Properties::Internal::RectPropertyBag_WidthProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+WidthProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+WidthProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::RectPropertyBag_WidthProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -334,14 +334,14 @@ for crate::Unity::Properties::Internal::RectPropertyBag_XProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+XProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+XProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::RectPropertyBag_XProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Rect, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+XProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::RectPropertyBag_XProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -442,14 +442,14 @@ for crate::Unity::Properties::Internal::RectPropertyBag_YProperty {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+YProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+YProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::RectPropertyBag_YProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Rect, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+RectPropertyBag+YProperty")]
+#[cfg(feature = "Unity+Properties+Internal+RectPropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::RectPropertyBag_YProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

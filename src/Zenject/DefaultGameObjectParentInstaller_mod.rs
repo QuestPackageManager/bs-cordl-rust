@@ -28,7 +28,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
     type Target = crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller")]
+#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::DerefMut for crate::Zenject::DefaultGameObjectParentInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -214,9 +214,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroye
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
-)]
+#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 impl std::ops::Deref
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -224,9 +222,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroye
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer"
-)]
+#[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 impl std::ops::DerefMut
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

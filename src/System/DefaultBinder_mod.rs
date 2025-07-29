@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+DefaultBinder")]
+#[cfg(feature = "System+DefaultBinder")]
 impl std::ops::Deref for crate::System::DefaultBinder {
     type Target = crate::System::Reflection::Binder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+DefaultBinder")]
+#[cfg(feature = "System+DefaultBinder")]
 impl std::ops::DerefMut for crate::System::DefaultBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1234,14 +1234,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_BinderS
         false
     }
 }
-#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
+#[cfg(feature = "System+DefaultBinder+BinderState")]
 impl std::ops::Deref for crate::System::DefaultBinder_BinderState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+DefaultBinder+BinderState")]
+#[cfg(feature = "System+DefaultBinder+BinderState")]
 impl std::ops::DerefMut for crate::System::DefaultBinder_BinderState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

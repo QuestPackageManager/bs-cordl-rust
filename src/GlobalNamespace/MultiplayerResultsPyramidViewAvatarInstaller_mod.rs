@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatarInstaller")]
+#[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     type Target = crate::Zenject::MonoInstaller;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatarInstaller")]
+#[cfg(feature = "MultiplayerResultsPyramidViewAvatarInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatarInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

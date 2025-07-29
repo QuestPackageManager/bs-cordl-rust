@@ -42,14 +42,14 @@ for crate::Newtonsoft::Json::JsonValidatingReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader")]
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1572,14 +1572,14 @@ for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
+#[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

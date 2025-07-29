@@ -24,14 +24,14 @@ for crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+Prime+Generator+PrimeGeneratorBase")]
+#[cfg(feature = "Mono+Math+Prime+Generator+PrimeGeneratorBase")]
 impl std::ops::Deref for crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Math+Prime+Generator+PrimeGeneratorBase")]
+#[cfg(feature = "Mono+Math+Prime+Generator+PrimeGeneratorBase")]
 impl std::ops::DerefMut for crate::Mono::Math::Prime::Generator::PrimeGeneratorBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -25,14 +25,14 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

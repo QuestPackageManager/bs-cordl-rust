@@ -50,14 +50,14 @@ for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelNoTransitionInstaller")]
+#[cfg(feature = "MissionLevelNoTransitionInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelNoTransitionInstaller")]
+#[cfg(feature = "MissionLevelNoTransitionInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

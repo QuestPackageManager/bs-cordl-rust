@@ -29,9 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruct
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::IndexedBranchInstruction;
@@ -39,9 +37,7 @@ for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruct
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

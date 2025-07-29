@@ -71,14 +71,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPassthrou
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
+#[cfg(feature = "OVRPassthroughLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer")]
+#[cfg(feature = "OVRPassthroughLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1156,14 +1156,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+BCSStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+BCSStyleHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1302,7 +1302,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1310,7 +1310,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+BaseGeneratedStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1685,14 +1685,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+ColorLutHandler")]
+#[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2281,14 +2281,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+IStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+IStyleHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2438,7 +2438,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler;
@@ -2446,7 +2446,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+InterpolatedColorLutHandler")]
+#[cfg(feature = "OVRPassthroughLayer+InterpolatedColorLutHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2694,7 +2694,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
@@ -2702,7 +2702,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToMonoStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+MonoToMonoStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2871,7 +2871,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     type Target = crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler;
@@ -2879,7 +2879,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+MonoToRgbaStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+MonoToRgbaStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3098,14 +3098,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+NoneStyleHandler")]
+#[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3784,14 +3784,14 @@ for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughLayer+StylesHandler")]
+#[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

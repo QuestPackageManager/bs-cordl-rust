@@ -78,7 +78,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -89,7 +89,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2")]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -284,9 +284,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -300,9 +298,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -481,9 +477,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -497,9 +491,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+GetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -682,9 +674,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -698,9 +688,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetClassValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -884,9 +872,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -900,9 +886,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction"
-)]
+#[cfg(feature = "Unity+Properties+ReflectedMemberProperty_2+SetStructValueAction")]
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

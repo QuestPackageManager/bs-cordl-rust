@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IAsymmetricBlockCipher")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+IAsymmetricBlockCipher")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IAsymmetricBlockCipher")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+IAsymmetricBlockCipher")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

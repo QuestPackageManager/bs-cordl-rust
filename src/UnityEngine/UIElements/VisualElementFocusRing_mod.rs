@@ -33,14 +33,14 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing")]
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementFocusRing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing")]
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementFocusRing {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -705,9 +705,7 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord"
-)]
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -715,9 +713,7 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord"
-)]
+#[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -80,7 +80,7 @@ for crate::System::Func_13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TR
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Func_13")]
+#[cfg(feature = "System+Func_13")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -102,7 +102,7 @@ for crate::System::Func_13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TR
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Func_13")]
+#[cfg(feature = "System+Func_13")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

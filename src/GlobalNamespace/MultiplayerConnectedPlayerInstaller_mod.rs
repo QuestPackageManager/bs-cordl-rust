@@ -55,14 +55,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerInstaller")]
+#[cfg(feature = "MultiplayerConnectedPlayerInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerConnectedPlayerInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

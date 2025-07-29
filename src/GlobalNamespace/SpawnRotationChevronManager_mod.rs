@@ -75,14 +75,14 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
+#[cfg(feature = "SpawnRotationChevronManager")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnRotationChevronManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SpawnRotationChevronManager")]
+#[cfg(feature = "SpawnRotationChevronManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnRotationChevronManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -309,7 +309,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         false
     }
 }
-#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -317,7 +317,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SpawnRotationChevronManager+DirectionData")]
+#[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

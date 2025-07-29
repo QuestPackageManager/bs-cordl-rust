@@ -25,7 +25,7 @@ for crate::System::Security::Cryptography::RC2CryptoServiceProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2CryptoServiceProvider")]
+#[cfg(feature = "System+Security+Cryptography+RC2CryptoServiceProvider")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RC2CryptoServiceProvider {
     type Target = crate::System::Security::Cryptography::RC2;
@@ -33,7 +33,7 @@ for crate::System::Security::Cryptography::RC2CryptoServiceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RC2CryptoServiceProvider")]
+#[cfg(feature = "System+Security+Cryptography+RC2CryptoServiceProvider")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RC2CryptoServiceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

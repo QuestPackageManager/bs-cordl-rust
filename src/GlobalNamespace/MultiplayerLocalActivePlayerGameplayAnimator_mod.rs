@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayAnimator")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
     type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayAnimator")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

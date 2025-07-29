@@ -53,14 +53,14 @@ for crate::GlobalNamespace::MultiplayerScoreProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerScoreProvider")]
+#[cfg(feature = "MultiplayerScoreProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerScoreProvider")]
+#[cfg(feature = "MultiplayerScoreProvider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -429,14 +429,14 @@ for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerScoreProvider+RankedPlayer")]
+#[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerScoreProvider+RankedPlayer")]
+#[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

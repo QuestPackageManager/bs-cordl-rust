@@ -28,9 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::OffsetInstruction;
@@ -38,9 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+BranchFalseInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+BranchFalseInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::BranchFalseInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

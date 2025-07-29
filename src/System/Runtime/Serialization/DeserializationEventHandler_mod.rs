@@ -24,7 +24,7 @@ for crate::System::Runtime::Serialization::DeserializationEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+DeserializationEventHandler")]
+#[cfg(feature = "System+Runtime+Serialization+DeserializationEventHandler")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::DeserializationEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Serialization::DeserializationEventHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+DeserializationEventHandler")]
+#[cfg(feature = "System+Runtime+Serialization+DeserializationEventHandler")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::DeserializationEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

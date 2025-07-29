@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::UxmlRootElementTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlRootElementTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlRootElementTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlRootElementTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlRootElementTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlRootElementTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlRootElementTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

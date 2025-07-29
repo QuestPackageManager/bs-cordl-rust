@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LocalizedTex
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalizedTextAsset")]
+#[cfg(feature = "LocalizedTextAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedTextAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalizedTextAsset")]
+#[cfg(feature = "LocalizedTextAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -186,14 +186,14 @@ for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "LocalizedTextAsset+TextInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalizedTextAsset+TextInfo")]
+#[cfg(feature = "LocalizedTextAsset+TextInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedTextAsset_TextInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ModalView {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ModalView")]
+#[cfg(feature = "HMUI+ModalView")]
 impl std::ops::Deref for crate::HMUI::ModalView {
     type Target = crate::HMUI::ModalViewBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ModalView")]
+#[cfg(feature = "HMUI+ModalView")]
 impl std::ops::DerefMut for crate::HMUI::ModalView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

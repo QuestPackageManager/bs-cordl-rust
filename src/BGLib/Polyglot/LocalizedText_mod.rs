@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LocalizedTex
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
     type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedText {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizedText")]
+#[cfg(feature = "BGLib+Polyglot+LocalizedText")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizedText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

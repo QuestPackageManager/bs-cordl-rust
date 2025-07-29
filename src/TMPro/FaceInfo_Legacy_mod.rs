@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FaceInfo_Legacy {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FaceInfo_Legacy")]
+#[cfg(feature = "TMPro+FaceInfo_Legacy")]
 impl std::ops::Deref for crate::TMPro::FaceInfo_Legacy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FaceInfo_Legacy")]
+#[cfg(feature = "TMPro+FaceInfo_Legacy")]
 impl std::ops::DerefMut for crate::TMPro::FaceInfo_Legacy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

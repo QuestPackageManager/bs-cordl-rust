@@ -61,7 +61,7 @@ for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_DisappearingArrowControllerBase_1")]
+#[cfg(feature = "DisappearingArrowControllerBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -69,7 +69,7 @@ for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DisappearingArrowControllerBase_1")]
+#[cfg(feature = "DisappearingArrowControllerBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::DisappearingArrowControllerBase_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

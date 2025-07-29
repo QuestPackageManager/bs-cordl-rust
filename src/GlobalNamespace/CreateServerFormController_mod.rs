@@ -28,14 +28,14 @@ for crate::GlobalNamespace::CreateServerFormController {
         false
     }
 }
-#[cfg(feature = "cordl_class_CreateServerFormController")]
+#[cfg(feature = "CreateServerFormController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreateServerFormController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CreateServerFormController")]
+#[cfg(feature = "CreateServerFormController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreateServerFormController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

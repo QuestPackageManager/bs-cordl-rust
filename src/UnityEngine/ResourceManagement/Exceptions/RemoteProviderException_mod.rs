@@ -31,9 +31,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     type Target = crate::UnityEngine::ResourceManagement::Exceptions::ProviderException;
@@ -41,9 +39,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+RemoteProviderException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

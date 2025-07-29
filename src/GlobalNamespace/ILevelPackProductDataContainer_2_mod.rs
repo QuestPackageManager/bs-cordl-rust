@@ -53,7 +53,7 @@ for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         false
     }
 }
-#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
+#[cfg(feature = "ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::GlobalNamespace::ILevelPackProductDataContainer_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ILevelPackProductDataContainer_2")]
+#[cfg(feature = "ILevelPackProductDataContainer_2")]
 impl<
     TLevelPackProductData: quest_hook::libil2cpp::Type,
     TLevelProductData: quest_hook::libil2cpp::Type,

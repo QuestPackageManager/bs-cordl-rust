@@ -37,14 +37,14 @@ for crate::System::Linq::Expressions::Interpreter::LightLambda {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LightLambda {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::LightLambda {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3875,9 +3875,7 @@ for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3885,9 +3883,7 @@ for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LightLambda+DebugViewPrinter")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LightLambda_DebugViewPrinter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

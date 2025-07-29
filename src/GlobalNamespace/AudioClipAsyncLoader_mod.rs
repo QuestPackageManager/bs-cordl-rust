@@ -37,14 +37,14 @@ for crate::GlobalNamespace::AudioClipAsyncLoader {
         false
     }
 }
-#[cfg(feature = "cordl_class_AudioClipAsyncLoader")]
+#[cfg(feature = "AudioClipAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioClipAsyncLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AudioClipAsyncLoader")]
+#[cfg(feature = "AudioClipAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -769,7 +769,7 @@ for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_AudioClipAsyncLoader+LoadMethodDelegate")]
+#[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -777,7 +777,7 @@ for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AudioClipAsyncLoader+LoadMethodDelegate")]
+#[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -52,7 +52,7 @@ for crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+CheckCatalogsOperation")]
+#[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
@@ -65,7 +65,7 @@ impl std::ops::Deref for crate::UnityEngine::AddressableAssets::CheckCatalogsOpe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+CheckCatalogsOperation")]
+#[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

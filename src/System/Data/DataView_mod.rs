@@ -74,14 +74,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataView")]
+#[cfg(feature = "System+Data+DataView")]
 impl std::ops::Deref for crate::System::Data::DataView {
     type Target = crate::System::ComponentModel::MarshalByValueComponent;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataView")]
+#[cfg(feature = "System+Data+DataView")]
 impl std::ops::DerefMut for crate::System::Data::DataView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2475,14 +2475,14 @@ for crate::System::Data::DataView_DataRowReferenceComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 impl std::ops::Deref for crate::System::Data::DataView_DataRowReferenceComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataView+DataRowReferenceComparer")]
+#[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 impl std::ops::DerefMut for crate::System::Data::DataView_DataRowReferenceComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

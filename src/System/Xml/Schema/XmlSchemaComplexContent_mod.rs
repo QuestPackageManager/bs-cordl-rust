@@ -27,14 +27,14 @@ for crate::System::Xml::Schema::XmlSchemaComplexContent {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContent")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaComplexContent {
     type Target = crate::System::Xml::Schema::XmlSchemaContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaComplexContent")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaComplexContent")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaComplexContent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

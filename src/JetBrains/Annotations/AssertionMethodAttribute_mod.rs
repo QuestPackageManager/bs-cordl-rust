@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::AssertionMethodAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionMethodAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AssertionMethodAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AssertionMethodAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AssertionMethodAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AssertionMethodAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::AssertionMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

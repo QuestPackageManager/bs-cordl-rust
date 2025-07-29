@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::RethrowException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RethrowException")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RethrowException")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::RethrowException {
     type Target = crate::System::Exception;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::RethrowException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+RethrowException")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+RethrowException")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::RethrowException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

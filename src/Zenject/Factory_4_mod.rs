@@ -56,7 +56,7 @@ for crate::Zenject::Factory_4<TParam1, TParam2, TParam3, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+Factory_4")]
+#[cfg(feature = "Zenject+Factory_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+Factory_4")]
+#[cfg(feature = "Zenject+Factory_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

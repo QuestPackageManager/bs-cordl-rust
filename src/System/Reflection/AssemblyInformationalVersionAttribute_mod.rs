@@ -27,7 +27,7 @@ for crate::System::Reflection::AssemblyInformationalVersionAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyInformationalVersionAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyInformationalVersionAttribute")]
 impl std::ops::Deref
 for crate::System::Reflection::AssemblyInformationalVersionAttribute {
     type Target = crate::System::Attribute;
@@ -35,7 +35,7 @@ for crate::System::Reflection::AssemblyInformationalVersionAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyInformationalVersionAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyInformationalVersionAttribute")]
 impl std::ops::DerefMut
 for crate::System::Reflection::AssemblyInformationalVersionAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

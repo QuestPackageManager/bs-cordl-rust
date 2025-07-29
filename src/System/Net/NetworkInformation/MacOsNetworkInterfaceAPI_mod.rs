@@ -25,7 +25,7 @@ for crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
+#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
     type Target = crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI;
@@ -33,7 +33,7 @@ for crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
+#[cfg(feature = "System+Net+NetworkInformation+MacOsNetworkInterfaceAPI")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

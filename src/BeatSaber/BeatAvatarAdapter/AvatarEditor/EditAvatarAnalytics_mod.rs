@@ -38,9 +38,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
-)]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -48,9 +46,7 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics"
-)]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+EditAvatarAnalytics")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarAnalytics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

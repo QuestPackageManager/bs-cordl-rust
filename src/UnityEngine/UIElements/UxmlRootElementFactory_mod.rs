@@ -27,7 +27,7 @@ for crate::UnityEngine::UIElements::UxmlRootElementFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlRootElementFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlRootElementFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlRootElementFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -37,7 +37,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlRootElementFactory 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlRootElementFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlRootElementFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlRootElementFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

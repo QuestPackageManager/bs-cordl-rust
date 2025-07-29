@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::StackLayoutGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
+#[cfg(feature = "HMUI+StackLayoutGroup")]
 impl std::ops::Deref for crate::HMUI::StackLayoutGroup {
     type Target = crate::UnityEngine::UI::LayoutGroup;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+StackLayoutGroup")]
+#[cfg(feature = "HMUI+StackLayoutGroup")]
 impl std::ops::DerefMut for crate::HMUI::StackLayoutGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -39,14 +39,14 @@ for crate::System::Linq::Expressions::TryExpression {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+TryExpression")]
+#[cfg(feature = "System+Linq+Expressions+TryExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::TryExpression {
     type Target = crate::System::Linq::Expressions::Expression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+TryExpression")]
+#[cfg(feature = "System+Linq+Expressions+TryExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::TryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

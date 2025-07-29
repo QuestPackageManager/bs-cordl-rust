@@ -29,7 +29,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimePr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
@@ -39,7 +39,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimePr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
+    feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {

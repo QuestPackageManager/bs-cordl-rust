@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MissionNodeConnection {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissionNodeConnection")]
+#[cfg(feature = "MissionNodeConnection")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodeConnection {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissionNodeConnection")]
+#[cfg(feature = "MissionNodeConnection")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodeConnection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

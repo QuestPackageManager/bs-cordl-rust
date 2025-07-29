@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     type Target = crate::UnityEngine::InputSystem::Android::AndroidGamepad;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidGamepadWithDpadAxes")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidGamepadWithDpadAxes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

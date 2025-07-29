@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
+#[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
     type Target = crate::UnityEngine::UIElements::ReusableListViewItem;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
+#[cfg(feature = "UnityEngine+UIElements+ReusableMultiColumnListViewItem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ReusableMultiColumnListViewItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

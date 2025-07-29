@@ -31,9 +31,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -41,9 +39,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax"
-)]
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

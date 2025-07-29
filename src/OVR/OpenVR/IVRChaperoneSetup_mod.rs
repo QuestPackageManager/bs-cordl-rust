@@ -232,14 +232,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_CommitWorkingCopy")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -414,14 +414,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ExportLiveToBuffer")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -611,7 +611,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -619,7 +619,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -830,9 +830,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -840,9 +838,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveCollisionBoundsTagsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1043,7 +1039,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -1051,7 +1047,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLivePhysicalBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1262,9 +1258,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     type Target = crate::System::MulticastDelegate;
@@ -1272,9 +1266,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetLiveSeatedZeroPoseToRawTrackingPose")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPose {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1478,9 +1470,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -1488,9 +1478,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingCollisionBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1699,14 +1687,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaRect")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1890,14 +1878,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingPlayAreaSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2090,7 +2078,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2100,7 +2088,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -2308,7 +2296,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2318,7 +2306,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_GetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTrackingPose {
@@ -2521,7 +2509,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     type Target = crate::System::MulticastDelegate;
@@ -2529,7 +2517,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ImportFromBufferToWorking")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2716,14 +2704,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_ReloadFromDisk")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2898,14 +2886,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_RevertWorkingCopy")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3077,9 +3065,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3087,9 +3073,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3298,9 +3282,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3308,9 +3290,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingCollisionBoundsTagsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3511,9 +3491,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     type Target = crate::System::MulticastDelegate;
@@ -3521,9 +3499,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPhysicalBoundsInfo")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3728,14 +3704,14 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
+#[cfg(feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingPlayAreaSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3919,7 +3895,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -3929,7 +3905,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingSeatedZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTrackingPose {
@@ -4137,7 +4113,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {
@@ -4147,7 +4123,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTracki
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
+    feature = "OVR+OpenVR+IVRChaperoneSetup+_SetWorkingStandingZeroPoseToRawTrackingPose"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTrackingPose {

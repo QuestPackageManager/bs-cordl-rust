@@ -64,9 +64,7 @@ for crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesSettingsViewController"
-)]
+#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesSettingsViewController")]
 impl std::ops::Deref
 for crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     type Target = crate::HMUI::ViewController;
@@ -74,9 +72,7 @@ for crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesSettingsViewController"
-)]
+#[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesSettingsViewController")]
 impl std::ops::DerefMut
 for crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

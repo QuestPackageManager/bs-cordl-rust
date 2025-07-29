@@ -287,7 +287,7 @@ for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::Deref
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -295,7 +295,7 @@ for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::DerefMut
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

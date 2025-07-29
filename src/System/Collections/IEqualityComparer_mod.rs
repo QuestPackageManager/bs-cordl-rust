@@ -24,14 +24,14 @@ for crate::System::Collections::IEqualityComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+IEqualityComparer")]
+#[cfg(feature = "System+Collections+IEqualityComparer")]
 impl std::ops::Deref for crate::System::Collections::IEqualityComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+IEqualityComparer")]
+#[cfg(feature = "System+Collections+IEqualityComparer")]
 impl std::ops::DerefMut for crate::System::Collections::IEqualityComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

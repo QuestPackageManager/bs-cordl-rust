@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Asn1::Asn1
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1Set {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -556,14 +556,14 @@ for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+Asn1SetParserImpl")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1Set_Asn1SetParserImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -731,14 +731,14 @@ for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Asn1Set+DerComparer")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Asn1Set_DerComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

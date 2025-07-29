@@ -35,14 +35,14 @@ for crate::GlobalNamespace::FriendsViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_FriendsViewController")]
+#[cfg(feature = "FriendsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::FriendsViewController {
     type Target = crate::GlobalNamespace::NetworkPlayersViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FriendsViewController")]
+#[cfg(feature = "FriendsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FriendsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_PDGAs
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGAssetLink")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGAssetLink")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1598,14 +1598,14 @@ for crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+UpdateUIDelegate")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

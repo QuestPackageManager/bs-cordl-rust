@@ -27,7 +27,7 @@ for crate::UnityEngine::UIElements::Hash128Field {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
         crate::UnityEngine::Hash128,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -363,7 +363,7 @@ for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+Hash128Input")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         crate::UnityEngine::Hash128,
@@ -372,7 +372,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_Hash128Inp
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+Hash128Input")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -547,7 +547,7 @@ for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Hash128Field>,
@@ -559,7 +559,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -637,7 +637,7 @@ for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         crate::UnityEngine::Hash128,
@@ -649,7 +649,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Hash128Field+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

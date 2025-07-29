@@ -31,14 +31,14 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
         false
     }
 }
-#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
 impl std::ops::Deref for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets")]
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         false
     }
 }
-#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     type Target = crate::GlobalNamespace::NamedPreset;
@@ -212,7 +212,7 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MirrorRendererGraphicsSettingsPresets+Preset")]
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

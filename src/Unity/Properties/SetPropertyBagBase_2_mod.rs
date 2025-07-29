@@ -51,7 +51,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2")]
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -223,7 +223,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -234,7 +234,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
+#[cfg(feature = "Unity+Properties+SetPropertyBagBase_2+SetElementProperty")]
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

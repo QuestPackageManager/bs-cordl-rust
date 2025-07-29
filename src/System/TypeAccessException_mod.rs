@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeAccessException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+TypeAccessException")]
+#[cfg(feature = "System+TypeAccessException")]
 impl std::ops::Deref for crate::System::TypeAccessException {
     type Target = crate::System::TypeLoadException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+TypeAccessException")]
+#[cfg(feature = "System+TypeAccessException")]
 impl std::ops::DerefMut for crate::System::TypeAccessException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

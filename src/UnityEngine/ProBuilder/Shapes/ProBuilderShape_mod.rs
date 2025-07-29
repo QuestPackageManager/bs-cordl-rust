@@ -37,14 +37,14 @@ for crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
+#[cfg(feature = "UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
+#[cfg(feature = "UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

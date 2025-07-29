@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Controls::DoubleControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::DoubleControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

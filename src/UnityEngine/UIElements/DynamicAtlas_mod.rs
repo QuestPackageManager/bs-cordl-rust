@@ -51,14 +51,14 @@ for crate::UnityEngine::UIElements::DynamicAtlas {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas {
     type Target = crate::UnityEngine::UIElements::AtlasBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas")]
+#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -615,7 +615,7 @@ for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -626,7 +626,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInf
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
+#[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

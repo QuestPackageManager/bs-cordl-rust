@@ -25,7 +25,7 @@ for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -38,14 +38,14 @@ for crate::System::IObserver_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IObserver_1")]
+#[cfg(feature = "System+IObserver_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::System::IObserver_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IObserver_1")]
+#[cfg(feature = "System+IObserver_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IObserver_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

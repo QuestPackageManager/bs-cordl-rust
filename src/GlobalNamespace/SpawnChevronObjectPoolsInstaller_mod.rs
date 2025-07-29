@@ -27,14 +27,14 @@ for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SpawnChevronObjectPoolsInstaller")]
+#[cfg(feature = "SpawnChevronObjectPoolsInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SpawnChevronObjectPoolsInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

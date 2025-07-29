@@ -45,14 +45,14 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -282,7 +282,7 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+GroupLightData")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry+GroupLightData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_GroupLightData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -450,7 +450,7 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithI
         false
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -458,7 +458,7 @@ for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithI
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
+#[cfg(feature = "LightmapLightWithIdsGroupEntry+LightIntensitiesWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightmapLightWithIdsGroupEntry_LightIntensitiesWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

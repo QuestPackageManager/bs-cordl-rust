@@ -68,7 +68,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_4<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_4")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -86,7 +86,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_4<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod_4")]
+#[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabMethod_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

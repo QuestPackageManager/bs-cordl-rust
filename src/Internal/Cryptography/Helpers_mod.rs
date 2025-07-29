@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Internal::Cryptography::Helpe
         false
     }
 }
-#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
+#[cfg(feature = "Internal+Cryptography+Helpers")]
 impl std::ops::Deref for crate::Internal::Cryptography::Helpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Internal+Cryptography+Helpers")]
+#[cfg(feature = "Internal+Cryptography+Helpers")]
 impl std::ops::DerefMut for crate::Internal::Cryptography::Helpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

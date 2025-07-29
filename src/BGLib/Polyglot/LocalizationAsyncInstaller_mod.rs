@@ -34,7 +34,7 @@ for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -43,7 +43,7 @@ impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
+#[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

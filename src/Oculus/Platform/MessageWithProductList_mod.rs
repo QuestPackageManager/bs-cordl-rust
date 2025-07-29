@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithProductList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithProductList")]
+#[cfg(feature = "Oculus+Platform+MessageWithProductList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithProductList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithProductList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithProductList")]
+#[cfg(feature = "Oculus+Platform+MessageWithProductList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithProductList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -26,14 +26,14 @@ for crate::GlobalNamespace::ColorAlphaVariationSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
+#[cfg(feature = "ColorAlphaVariationSO")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorAlphaVariationSO {
     type Target = crate::GlobalNamespace::ColorSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorAlphaVariationSO")]
+#[cfg(feature = "ColorAlphaVariationSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorAlphaVariationSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

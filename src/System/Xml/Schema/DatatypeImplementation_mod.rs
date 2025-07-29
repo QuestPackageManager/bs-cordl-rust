@@ -37,14 +37,14 @@ for crate::System::Xml::Schema::DatatypeImplementation {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DatatypeImplementation")]
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
 impl std::ops::Deref for crate::System::Xml::Schema::DatatypeImplementation {
     type Target = crate::System::Xml::Schema::XmlSchemaDatatype;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DatatypeImplementation")]
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DatatypeImplementation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1419,9 +1419,7 @@ for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap"
-)]
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1429,9 +1427,7 @@ for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap"
-)]
+#[cfg(feature = "System+Xml+Schema+DatatypeImplementation+SchemaDatatypeMap")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

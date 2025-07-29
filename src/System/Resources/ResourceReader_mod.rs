@@ -54,14 +54,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceRe
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+ResourceReader")]
+#[cfg(feature = "System+Resources+ResourceReader")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+ResourceReader")]
+#[cfg(feature = "System+Resources+ResourceReader")]
 impl std::ops::DerefMut for crate::System::Resources::ResourceReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -882,14 +882,14 @@ for crate::System::Resources::ResourceReader_ResourceEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+ResourceReader+ResourceEnumerator")]
+#[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
 impl std::ops::Deref for crate::System::Resources::ResourceReader_ResourceEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+ResourceReader+ResourceEnumerator")]
+#[cfg(feature = "System+Resources+ResourceReader+ResourceEnumerator")]
 impl std::ops::DerefMut for crate::System::Resources::ResourceReader_ResourceEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

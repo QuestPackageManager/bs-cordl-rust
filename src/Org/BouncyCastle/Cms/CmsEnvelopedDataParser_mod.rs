@@ -37,14 +37,14 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
     type Target = crate::Org::BouncyCastle::Cms::CmsContentInfoParser;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataParser")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

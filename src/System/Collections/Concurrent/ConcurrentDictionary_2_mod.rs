@@ -66,7 +66,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue>
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -77,7 +77,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue>
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -2656,7 +2656,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnu
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
+    feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -2672,7 +2672,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnu
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
+    feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -3065,7 +3065,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TV
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3076,7 +3076,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TV
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Node")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3250,9 +3250,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+Tables"
-)]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3263,9 +3261,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Concurrent+ConcurrentDictionary_2+Tables"
-)]
+#[cfg(feature = "System+Collections+Concurrent+ConcurrentDictionary_2+Tables")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SinglePositi
         false
     }
 }
-#[cfg(feature = "cordl_class_SinglePositionTween")]
+#[cfg(feature = "SinglePositionTween")]
 impl std::ops::Deref for crate::GlobalNamespace::SinglePositionTween {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SinglePositionTween")]
+#[cfg(feature = "SinglePositionTween")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SinglePositionTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

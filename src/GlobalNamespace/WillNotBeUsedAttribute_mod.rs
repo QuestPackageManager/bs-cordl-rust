@@ -24,14 +24,14 @@ for crate::GlobalNamespace::WillNotBeUsedAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_WillNotBeUsedAttribute")]
+#[cfg(feature = "WillNotBeUsedAttribute")]
 impl std::ops::Deref for crate::GlobalNamespace::WillNotBeUsedAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_WillNotBeUsedAttribute")]
+#[cfg(feature = "WillNotBeUsedAttribute")]
 impl std::ops::DerefMut for crate::GlobalNamespace::WillNotBeUsedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -132,14 +132,14 @@ for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_CreateNotification")]
+#[cfg(feature = "OVR+OpenVR+IVRNotifications+_CreateNotification")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -388,14 +388,14 @@ for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRNotifications+_RemoveNotification")]
+#[cfg(feature = "OVR+OpenVR+IVRNotifications+_RemoveNotification")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

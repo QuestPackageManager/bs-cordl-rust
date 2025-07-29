@@ -28,9 +28,7 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u64>;
@@ -38,9 +36,7 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

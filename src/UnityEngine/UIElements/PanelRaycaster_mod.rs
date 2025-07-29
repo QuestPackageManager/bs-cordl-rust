@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::PanelRaycaster {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PanelRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelRaycaster")]
+#[cfg(feature = "UnityEngine+UIElements+PanelRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelRaycaster {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

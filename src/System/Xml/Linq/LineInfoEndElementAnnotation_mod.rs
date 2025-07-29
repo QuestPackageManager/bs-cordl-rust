@@ -24,14 +24,14 @@ for crate::System::Xml::Linq::LineInfoEndElementAnnotation {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+LineInfoEndElementAnnotation")]
+#[cfg(feature = "System+Xml+Linq+LineInfoEndElementAnnotation")]
 impl std::ops::Deref for crate::System::Xml::Linq::LineInfoEndElementAnnotation {
     type Target = crate::System::Xml::Linq::LineInfoAnnotation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+LineInfoEndElementAnnotation")]
+#[cfg(feature = "System+Xml+Linq+LineInfoEndElementAnnotation")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::LineInfoEndElementAnnotation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

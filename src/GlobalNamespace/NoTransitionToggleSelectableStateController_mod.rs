@@ -26,7 +26,7 @@ for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoTransitionToggleSelectableStateController")]
+#[cfg(feature = "NoTransitionToggleSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
     type Target = crate::GlobalNamespace::SelectableStateController_1<
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoTransitionToggleSelectableStateController")]
+#[cfg(feature = "NoTransitionToggleSelectableStateController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NoTransitionToggleSelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

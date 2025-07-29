@@ -28,9 +28,7 @@ for crate::System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverageAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Diagnostics+CodeAnalysis+ExcludeFromCodeCoverageAttribute"
-)]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+ExcludeFromCodeCoverageAttribute")]
 impl std::ops::Deref
 for crate::System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverageAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverageAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Diagnostics+CodeAnalysis+ExcludeFromCodeCoverageAttribute"
-)]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+ExcludeFromCodeCoverageAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverageAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

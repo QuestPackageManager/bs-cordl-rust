@@ -24,14 +24,14 @@ for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
+#[cfg(feature = "UnityEngine+Scripting+AlwaysLinkAssemblyAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Scripting::AlwaysLinkAssemblyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -30,7 +30,7 @@ for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerSpectatingSpotPickerViewController")]
+#[cfg(feature = "MultiplayerSpectatingSpotPickerViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerSpectatingSpotPickerViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

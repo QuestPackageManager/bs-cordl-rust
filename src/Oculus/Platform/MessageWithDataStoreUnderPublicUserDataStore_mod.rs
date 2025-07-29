@@ -35,9 +35,7 @@ for crate::Oculus::Platform::MessageWithDataStoreUnderPublicUserDataStore {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPublicUserDataStore"
-)]
+#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPublicUserDataStore")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithDataStoreUnderPublicUserDataStore {
     type Target = crate::Oculus::Platform::Message_1<
@@ -52,9 +50,7 @@ for crate::Oculus::Platform::MessageWithDataStoreUnderPublicUserDataStore {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Oculus+Platform+MessageWithDataStoreUnderPublicUserDataStore"
-)]
+#[cfg(feature = "Oculus+Platform+MessageWithDataStoreUnderPublicUserDataStore")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithDataStoreUnderPublicUserDataStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

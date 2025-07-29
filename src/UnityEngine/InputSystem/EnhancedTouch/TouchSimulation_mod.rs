@@ -60,7 +60,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -68,7 +68,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

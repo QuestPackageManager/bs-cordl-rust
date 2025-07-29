@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapIdentifierNetSerializableHelper")]
+#[cfg(feature = "BeatmapIdentifierNetSerializableHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapIdentifierNetSerializableHelper")]
+#[cfg(feature = "BeatmapIdentifierNetSerializableHelper")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

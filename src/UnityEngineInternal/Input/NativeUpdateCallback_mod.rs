@@ -24,14 +24,14 @@ for crate::UnityEngineInternal::Input::NativeUpdateCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeUpdateCallback")]
+#[cfg(feature = "UnityEngineInternal+Input+NativeUpdateCallback")]
 impl std::ops::Deref for crate::UnityEngineInternal::Input::NativeUpdateCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngineInternal+Input+NativeUpdateCallback")]
+#[cfg(feature = "UnityEngineInternal+Input+NativeUpdateCallback")]
 impl std::ops::DerefMut for crate::UnityEngineInternal::Input::NativeUpdateCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

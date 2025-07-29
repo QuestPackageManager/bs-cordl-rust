@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Cms::SignerInformationStore {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+SignerInformationStore")]
+#[cfg(feature = "Org+BouncyCastle+Cms+SignerInformationStore")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::SignerInformationStore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+SignerInformationStore")]
+#[cfg(feature = "Org+BouncyCastle+Cms+SignerInformationStore")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::SignerInformationStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

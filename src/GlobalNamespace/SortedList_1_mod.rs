@@ -38,7 +38,7 @@ for crate::GlobalNamespace::SortedList_1<TBase> {
         false
     }
 }
-#[cfg(feature = "cordl_class_SortedList_1")]
+#[cfg(feature = "SortedList_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::SortedList_1<TBase> {
     type Target = crate::GlobalNamespace::SortedList_2<TBase, TBase>;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::SortedList_1<TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SortedList_1")]
+#[cfg(feature = "SortedList_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::SortedList_1<TBase> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

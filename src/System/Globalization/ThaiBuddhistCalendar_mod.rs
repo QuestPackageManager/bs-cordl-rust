@@ -27,14 +27,14 @@ for crate::System::Globalization::ThaiBuddhistCalendar {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+ThaiBuddhistCalendar")]
+#[cfg(feature = "System+Globalization+ThaiBuddhistCalendar")]
 impl std::ops::Deref for crate::System::Globalization::ThaiBuddhistCalendar {
     type Target = crate::System::Globalization::Calendar;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+ThaiBuddhistCalendar")]
+#[cfg(feature = "System+Globalization+ThaiBuddhistCalendar")]
 impl std::ops::DerefMut for crate::System::Globalization::ThaiBuddhistCalendar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

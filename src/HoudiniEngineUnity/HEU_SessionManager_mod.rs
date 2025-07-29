@@ -24,14 +24,14 @@ for crate::HoudiniEngineUnity::HEU_SessionManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionManager")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_SessionManager")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_SessionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_SessionManager")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_SessionManager")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_SessionManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1554,9 +1554,7 @@ for crate::HoudiniEngineUnity::HEU_SessionManager_CreateSessionFromTypeDelegate 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_SessionManager+CreateSessionFromTypeDelegate"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_SessionManager+CreateSessionFromTypeDelegate")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_SessionManager_CreateSessionFromTypeDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -1564,9 +1562,7 @@ for crate::HoudiniEngineUnity::HEU_SessionManager_CreateSessionFromTypeDelegate 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_HoudiniEngineUnity+HEU_SessionManager+CreateSessionFromTypeDelegate"
-)]
+#[cfg(feature = "HoudiniEngineUnity+HEU_SessionManager+CreateSessionFromTypeDelegate")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_SessionManager_CreateSessionFromTypeDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

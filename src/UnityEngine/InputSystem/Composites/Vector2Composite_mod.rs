@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector2Composite")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector2Composite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<
         crate::UnityEngine::Vector2,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::Vector2Com
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+Vector2Composite")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector2Composite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

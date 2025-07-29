@@ -27,7 +27,7 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     type Target = crate::System::Threading::CancellationCallbackInfo;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+CancellationCallbackInfo+WithSyncContext")]
+#[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::ItemNotNullAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+ItemNotNullAttribute")]
+#[cfg(feature = "JetBrains+Annotations+ItemNotNullAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ItemNotNullAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+ItemNotNullAttribute")]
+#[cfg(feature = "JetBrains+Annotations+ItemNotNullAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::ItemNotNullAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioListener {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioListener")]
+#[cfg(feature = "UnityEngine+AudioListener")]
 impl std::ops::Deref for crate::UnityEngine::AudioListener {
     type Target = crate::UnityEngine::AudioBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioListener")]
+#[cfg(feature = "UnityEngine+AudioListener")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

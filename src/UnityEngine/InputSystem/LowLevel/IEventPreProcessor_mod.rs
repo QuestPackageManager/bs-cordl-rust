@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IEventPreProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IEventPreProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IEventPreProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IEventPreProcessor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::IEventPreProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

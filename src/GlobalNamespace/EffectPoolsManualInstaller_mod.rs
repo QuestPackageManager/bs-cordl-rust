@@ -43,14 +43,14 @@ for crate::GlobalNamespace::EffectPoolsManualInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_EffectPoolsManualInstaller")]
+#[cfg(feature = "EffectPoolsManualInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::EffectPoolsManualInstaller {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EffectPoolsManualInstaller")]
+#[cfg(feature = "EffectPoolsManualInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EffectPoolsManualInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

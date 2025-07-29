@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Gost3410DigestSigner {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Gost3410DigestSigner")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410DigestSigner")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::Gost3410DigestSigner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Gost3410DigestSigner {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Gost3410DigestSigner")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Gost3410DigestSigner")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Signers::Gost3410DigestSigner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

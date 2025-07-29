@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebUtility")]
+#[cfg(feature = "System+Net+WebUtility")]
 impl std::ops::Deref for crate::System::Net::WebUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebUtility")]
+#[cfg(feature = "System+Net+WebUtility")]
 impl std::ops::DerefMut for crate::System::Net::WebUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -307,14 +307,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebUtility_UrlDe
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
 impl std::ops::Deref for crate::System::Net::WebUtility_UrlDecoder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebUtility+UrlDecoder")]
+#[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
 impl std::ops::DerefMut for crate::System::Net::WebUtility_UrlDecoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

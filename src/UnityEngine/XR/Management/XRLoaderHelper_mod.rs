@@ -30,14 +30,14 @@ for crate::UnityEngine::XR::Management::XRLoaderHelper {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoaderHelper")]
+#[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRLoaderHelper {
     type Target = crate::UnityEngine::XR::Management::XRLoader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoaderHelper")]
+#[cfg(feature = "UnityEngine+XR+Management+XRLoaderHelper")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRLoaderHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

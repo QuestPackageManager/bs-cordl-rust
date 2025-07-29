@@ -42,14 +42,14 @@ for crate::GlobalNamespace::RunLevelMenuDestination {
         false
     }
 }
-#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
+#[cfg(feature = "RunLevelMenuDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::RunLevelMenuDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RunLevelMenuDestination")]
+#[cfg(feature = "RunLevelMenuDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RunLevelMenuDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

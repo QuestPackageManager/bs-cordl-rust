@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -43,7 +43,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -473,9 +473,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -483,9 +481,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -676,7 +672,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -686,7 +682,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HMacDrbgProvider"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
@@ -865,7 +861,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
@@ -875,7 +871,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
+    feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+HashDrbgProvider"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {

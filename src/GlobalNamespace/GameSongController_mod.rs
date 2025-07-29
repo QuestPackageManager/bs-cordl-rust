@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameSongCont
         false
     }
 }
-#[cfg(feature = "cordl_class_GameSongController")]
+#[cfg(feature = "GameSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameSongController {
     type Target = crate::GlobalNamespace::SongController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameSongController")]
+#[cfg(feature = "GameSongController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameSongController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

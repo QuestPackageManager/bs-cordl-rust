@@ -24,14 +24,14 @@ for crate::GlobalNamespace::ICertificateValidator {
         false
     }
 }
-#[cfg(feature = "cordl_class_ICertificateValidator")]
+#[cfg(feature = "ICertificateValidator")]
 impl std::ops::Deref for crate::GlobalNamespace::ICertificateValidator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ICertificateValidator")]
+#[cfg(feature = "ICertificateValidator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ICertificateValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

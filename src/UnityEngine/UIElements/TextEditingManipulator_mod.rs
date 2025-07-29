@@ -37,14 +37,14 @@ for crate::UnityEngine::UIElements::TextEditingManipulator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditingManipulator")]
+#[cfg(feature = "UnityEngine+UIElements+TextEditingManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextEditingManipulator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextEditingManipulator")]
+#[cfg(feature = "UnityEngine+UIElements+TextEditingManipulator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextEditingManipulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

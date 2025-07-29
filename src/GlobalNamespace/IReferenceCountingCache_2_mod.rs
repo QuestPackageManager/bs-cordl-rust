@@ -45,7 +45,7 @@ for crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
+#[cfg(feature = "IReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -55,7 +55,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IReferenceCountingCache_2")]
+#[cfg(feature = "IReferenceCountingCache_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -26,14 +26,14 @@ for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

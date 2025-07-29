@@ -31,14 +31,14 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
+#[cfg(feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
 impl std::ops::Deref for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
+#[cfg(feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFor
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
+    feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
 )]
 impl std::ops::Deref
 for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
@@ -204,7 +204,7 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFor
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
+    feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword {

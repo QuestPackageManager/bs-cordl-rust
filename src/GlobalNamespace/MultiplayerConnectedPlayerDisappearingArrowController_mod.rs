@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowControlle
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowControlle
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerDisappearingArrowController")]
+#[cfg(feature = "MultiplayerConnectedPlayerDisappearingArrowController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

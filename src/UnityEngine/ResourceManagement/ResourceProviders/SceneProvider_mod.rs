@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -403,7 +399,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -415,7 +411,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+SceneOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
@@ -942,7 +938,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
@@ -954,7 +950,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider+UnloadSceneOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {

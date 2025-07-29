@@ -24,14 +24,14 @@ for crate::System::Net::Security::LocalCertSelectionCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+LocalCertSelectionCallback")]
+#[cfg(feature = "System+Net+Security+LocalCertSelectionCallback")]
 impl std::ops::Deref for crate::System::Net::Security::LocalCertSelectionCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+LocalCertSelectionCallback")]
+#[cfg(feature = "System+Net+Security+LocalCertSelectionCallback")]
 impl std::ops::DerefMut for crate::System::Net::Security::LocalCertSelectionCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -39,14 +39,14 @@ for crate::System::Xml::Schema::XmlSchemaAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAttribute")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaAttribute")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaAttribute {
     type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaAttribute")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaAttribute")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

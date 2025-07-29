@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Tree
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TreeView {
     type Target = crate::UnityEngine::UIElements::BaseTreeView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -486,7 +486,7 @@ for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView>,
@@ -496,7 +496,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -569,14 +569,14 @@ for crate::UnityEngine::UIElements::TreeView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TreeView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseTreeView_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TreeView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferred
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferred
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeferredConvertListToArray"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeferredConvertListToArray {

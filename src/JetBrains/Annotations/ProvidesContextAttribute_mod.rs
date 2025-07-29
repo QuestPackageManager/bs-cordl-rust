@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::ProvidesContextAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::ProvidesContextAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+ProvidesContextAttribute")]
+#[cfg(feature = "JetBrains+Annotations+ProvidesContextAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::ProvidesContextAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

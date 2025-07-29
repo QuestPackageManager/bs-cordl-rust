@@ -26,7 +26,7 @@ for crate::System::Security::Principal::WindowsImpersonationContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
 impl std::ops::Deref
 for crate::System::Security::Principal::WindowsImpersonationContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::System::Security::Principal::WindowsImpersonationContext {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+WindowsImpersonationContext")]
+#[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
 impl std::ops::DerefMut
 for crate::System::Security::Principal::WindowsImpersonationContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -63,14 +63,14 @@ for crate::System::Diagnostics::ProcessStartInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
 impl std::ops::Deref for crate::System::Diagnostics::ProcessStartInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+ProcessStartInfo")]
+#[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
 impl std::ops::DerefMut for crate::System::Diagnostics::ProcessStartInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

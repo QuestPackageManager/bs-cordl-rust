@@ -29,7 +29,7 @@ for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLaz
     }
 }
 #[cfg(
-    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 impl std::ops::Deref
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
@@ -39,7 +39,7 @@ for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLaz
     }
 }
 #[cfg(
-    feature = "cordl_class_Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
+    feature = "Zenject+WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder"
 )]
 impl std::ops::DerefMut
 for crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {

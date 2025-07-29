@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Serialization::L
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+ListMap")]
+#[cfg(feature = "System+Xml+Serialization+ListMap")]
 impl std::ops::Deref for crate::System::Xml::Serialization::ListMap {
     type Target = crate::System::Xml::Serialization::ObjectMap;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+ListMap")]
+#[cfg(feature = "System+Xml+Serialization+ListMap")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::ListMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

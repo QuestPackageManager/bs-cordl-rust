@@ -26,14 +26,14 @@ for crate::System::Security::Principal::GenericIdentity {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+GenericIdentity")]
+#[cfg(feature = "System+Security+Principal+GenericIdentity")]
 impl std::ops::Deref for crate::System::Security::Principal::GenericIdentity {
     type Target = crate::System::Security::Claims::ClaimsIdentity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Principal+GenericIdentity")]
+#[cfg(feature = "System+Security+Principal+GenericIdentity")]
 impl std::ops::DerefMut for crate::System::Security::Principal::GenericIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

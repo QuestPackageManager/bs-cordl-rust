@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     type Target = crate::System::Collections::ObjectModel::Collection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

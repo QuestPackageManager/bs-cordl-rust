@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FPSCounter {
         false
     }
 }
-#[cfg(feature = "cordl_class_FPSCounter")]
+#[cfg(feature = "FPSCounter")]
 impl std::ops::Deref for crate::GlobalNamespace::FPSCounter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FPSCounter")]
+#[cfg(feature = "FPSCounter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FPSCounter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

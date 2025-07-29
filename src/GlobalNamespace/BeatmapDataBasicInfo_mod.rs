@@ -29,14 +29,14 @@ for crate::GlobalNamespace::BeatmapDataBasicInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataBasicInfo")]
+#[cfg(feature = "BeatmapDataBasicInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataBasicInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataBasicInfo")]
+#[cfg(feature = "BeatmapDataBasicInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataBasicInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

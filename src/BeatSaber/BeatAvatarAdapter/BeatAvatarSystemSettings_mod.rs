@@ -42,14 +42,14 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystemSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystemSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

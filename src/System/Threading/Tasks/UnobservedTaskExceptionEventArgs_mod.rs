@@ -26,7 +26,7 @@ for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     type Target = crate::System::EventArgs;
@@ -34,7 +34,7 @@ for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
+#[cfg(feature = "System+Threading+Tasks+UnobservedTaskExceptionEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

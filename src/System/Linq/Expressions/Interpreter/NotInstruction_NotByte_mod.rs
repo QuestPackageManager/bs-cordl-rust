@@ -28,18 +28,14 @@ for crate::GlobalNamespace::NotInstruction_NotByte {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
 impl std::ops::Deref for crate::GlobalNamespace::NotInstruction_NotByte {
     type Target = crate::System::Linq::Expressions::Interpreter::NotInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotInstruction+NotByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NotInstruction+NotByte")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NotInstruction_NotByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

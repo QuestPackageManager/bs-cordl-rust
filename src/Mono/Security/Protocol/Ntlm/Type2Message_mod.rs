@@ -27,14 +27,14 @@ for crate::Mono::Security::Protocol::Ntlm::Type2Message {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+Type2Message")]
+#[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
 impl std::ops::Deref for crate::Mono::Security::Protocol::Ntlm::Type2Message {
     type Target = crate::Mono::Security::Protocol::Ntlm::MessageBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Protocol+Ntlm+Type2Message")]
+#[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
 impl std::ops::DerefMut for crate::Mono::Security::Protocol::Ntlm::Type2Message {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

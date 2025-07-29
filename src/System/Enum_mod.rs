@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Enum")]
+#[cfg(feature = "System+Enum")]
 impl std::ops::Deref for crate::System::Enum {
     type Target = crate::System::ValueType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Enum")]
+#[cfg(feature = "System+Enum")]
 impl std::ops::DerefMut for crate::System::Enum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2182,14 +2182,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Enum_ValuesAndNames {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
+#[cfg(feature = "System+Enum+ValuesAndNames")]
 impl std::ops::Deref for crate::System::Enum_ValuesAndNames {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Enum+ValuesAndNames")]
+#[cfg(feature = "System+Enum+ValuesAndNames")]
 impl std::ops::DerefMut for crate::System::Enum_ValuesAndNames {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

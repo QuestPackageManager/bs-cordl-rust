@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
         false
     }
 }
-#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "SelectMultiplayerLobbyDestination")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     type Target = crate::GlobalNamespace::MenuDestination;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SelectMultiplayerLobbyDestination")]
+#[cfg(feature = "SelectMultiplayerLobbyDestination")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

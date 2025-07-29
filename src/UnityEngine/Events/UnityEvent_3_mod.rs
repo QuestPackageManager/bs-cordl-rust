@@ -55,7 +55,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_3")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_3")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

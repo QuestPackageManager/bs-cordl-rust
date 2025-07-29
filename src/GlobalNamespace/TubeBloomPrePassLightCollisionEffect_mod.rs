@@ -39,14 +39,14 @@ for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TubeBloomPrePassLightCollisionEffect")]
+#[cfg(feature = "TubeBloomPrePassLightCollisionEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TubeBloomPrePassLightCollisionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,14 +26,14 @@ for crate::Org::BouncyCastle::Cms::CmsTypedStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsTypedStream {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsTypedStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -278,14 +278,14 @@ for crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::FilterStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream+FullReaderStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsTypedStream_FullReaderStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

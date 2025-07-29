@@ -30,14 +30,14 @@ for crate::GlobalNamespace::RecordingUIController {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingUIController")]
+#[cfg(feature = "RecordingUIController")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingUIController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingUIController")]
+#[cfg(feature = "RecordingUIController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingUIController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -155,14 +155,14 @@ for crate::GlobalNamespace::RecordingUIController_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingUIController+InitData")]
+#[cfg(feature = "RecordingUIController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingUIController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingUIController+InitData")]
+#[cfg(feature = "RecordingUIController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingUIController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

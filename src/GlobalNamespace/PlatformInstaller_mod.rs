@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInst
         false
     }
 }
-#[cfg(feature = "cordl_class_PlatformInstaller")]
+#[cfg(feature = "PlatformInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
     type Target = crate::Zenject::Installer_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
@@ -46,7 +46,7 @@ impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlatformInstaller")]
+#[cfg(feature = "PlatformInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

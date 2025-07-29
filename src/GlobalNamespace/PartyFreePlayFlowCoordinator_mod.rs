@@ -46,14 +46,14 @@ for crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_PartyFreePlayFlowCoordinator")]
+#[cfg(feature = "PartyFreePlayFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     type Target = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PartyFreePlayFlowCoordinator")]
+#[cfg(feature = "PartyFreePlayFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -29,7 +29,7 @@ for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::IncrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::IncrementInstruction_IncrementU
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
+    feature = "System+Linq+Expressions+Interpreter+IncrementInstruction+IncrementUInt64"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IncrementInstruction_IncrementUInt64 {

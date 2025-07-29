@@ -35,9 +35,7 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
@@ -45,9 +43,7 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater"
-)]
+#[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

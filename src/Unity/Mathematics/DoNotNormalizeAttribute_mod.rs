@@ -24,14 +24,14 @@ for crate::Unity::Mathematics::DoNotNormalizeAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
 impl std::ops::Deref for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Mathematics+DoNotNormalizeAttribute")]
+#[cfg(feature = "Unity+Mathematics+DoNotNormalizeAttribute")]
 impl std::ops::DerefMut for crate::Unity::Mathematics::DoNotNormalizeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

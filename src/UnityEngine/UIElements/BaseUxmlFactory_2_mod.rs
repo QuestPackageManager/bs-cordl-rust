@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::BaseUxmlFactory_2<TCreatedType, TTraits> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseUxmlFactory_2")]
+#[cfg(feature = "UnityEngine+UIElements+BaseUxmlFactory_2")]
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,
@@ -60,7 +60,7 @@ for crate::UnityEngine::UIElements::BaseUxmlFactory_2<TCreatedType, TTraits> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseUxmlFactory_2")]
+#[cfg(feature = "UnityEngine+UIElements+BaseUxmlFactory_2")]
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
     TTraits: quest_hook::libil2cpp::Type,

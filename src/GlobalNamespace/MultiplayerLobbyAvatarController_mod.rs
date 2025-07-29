@@ -38,14 +38,14 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
+#[cfg(feature = "MultiplayerLobbyAvatarController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController")]
+#[cfg(feature = "MultiplayerLobbyAvatarController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
@@ -303,7 +303,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyAvatarController+Factory")]
+#[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

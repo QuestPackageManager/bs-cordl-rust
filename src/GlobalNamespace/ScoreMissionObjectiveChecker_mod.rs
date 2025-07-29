@@ -27,14 +27,14 @@ for crate::GlobalNamespace::ScoreMissionObjectiveChecker {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoreMissionObjectiveChecker")]
+#[cfg(feature = "ScoreMissionObjectiveChecker")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreMissionObjectiveChecker {
     type Target = crate::GlobalNamespace::SimpleValueMissionObjectiveChecker;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoreMissionObjectiveChecker")]
+#[cfg(feature = "ScoreMissionObjectiveChecker")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreMissionObjectiveChecker {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

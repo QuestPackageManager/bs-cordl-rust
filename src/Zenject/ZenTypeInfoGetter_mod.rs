@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenTypeInfoGetter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ZenTypeInfoGetter")]
+#[cfg(feature = "Zenject+ZenTypeInfoGetter")]
 impl std::ops::Deref for crate::Zenject::ZenTypeInfoGetter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ZenTypeInfoGetter")]
+#[cfg(feature = "Zenject+ZenTypeInfoGetter")]
 impl std::ops::DerefMut for crate::Zenject::ZenTypeInfoGetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

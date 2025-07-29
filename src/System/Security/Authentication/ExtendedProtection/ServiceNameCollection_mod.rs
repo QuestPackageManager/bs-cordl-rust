@@ -29,7 +29,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ServiceNameColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {
@@ -39,7 +39,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ServiceNameColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
+    feature = "System+Security+Authentication+ExtendedProtection+ServiceNameCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection {

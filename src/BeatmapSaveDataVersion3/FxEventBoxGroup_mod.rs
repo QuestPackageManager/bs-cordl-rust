@@ -27,7 +27,7 @@ for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventBoxGroup")]
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
     type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventBoxGroup")]
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

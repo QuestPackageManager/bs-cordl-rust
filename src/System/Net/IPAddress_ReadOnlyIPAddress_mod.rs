@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
 impl std::ops::Deref for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     type Target = crate::System::Net::IPAddress;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+IPAddress+ReadOnlyIPAddress")]
+#[cfg(feature = "System+Net+IPAddress+ReadOnlyIPAddress")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IPAddress_ReadOnlyIPAddress {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

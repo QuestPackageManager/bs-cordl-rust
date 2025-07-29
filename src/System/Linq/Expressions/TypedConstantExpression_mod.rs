@@ -25,14 +25,14 @@ for crate::System::Linq::Expressions::TypedConstantExpression {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::TypedConstantExpression {
     type Target = crate::System::Linq::Expressions::ConstantExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+TypedConstantExpression")]
+#[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::TypedConstantExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

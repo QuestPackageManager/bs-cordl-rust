@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PS5LevelProductPacksSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_PS5LevelProductPacksSO")]
+#[cfg(feature = "PS5LevelProductPacksSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5LevelProductPacksSO {
     type Target = crate::GlobalNamespace::SonyLevelProductPackSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PS5LevelProductPacksSO")]
+#[cfg(feature = "PS5LevelProductPacksSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5LevelProductPacksSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

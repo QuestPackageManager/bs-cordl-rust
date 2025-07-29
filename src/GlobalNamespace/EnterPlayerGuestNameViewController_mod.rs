@@ -38,14 +38,14 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
+#[cfg(feature = "EnterPlayerGuestNameViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController")]
+#[cfg(feature = "EnterPlayerGuestNameViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -237,7 +237,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -245,7 +245,7 @@ for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EnterPlayerGuestNameViewController+FinishDelegate")]
+#[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

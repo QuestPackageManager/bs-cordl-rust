@@ -24,14 +24,14 @@ for crate::System::ComponentModel::DecimalConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DecimalConverter")]
+#[cfg(feature = "System+ComponentModel+DecimalConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::DecimalConverter {
     type Target = crate::System::ComponentModel::BaseNumberConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+DecimalConverter")]
+#[cfg(feature = "System+ComponentModel+DecimalConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::DecimalConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

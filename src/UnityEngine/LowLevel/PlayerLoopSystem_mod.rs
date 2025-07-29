@@ -167,14 +167,14 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl std::ops::Deref for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystem+UpdateFunction")]
 impl std::ops::DerefMut
 for crate::UnityEngine::LowLevel::PlayerLoopSystem_UpdateFunction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

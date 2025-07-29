@@ -24,14 +24,14 @@ for crate::UnityEngine::ExcludeFromObjectFactoryAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ExcludeFromObjectFactoryAttribute")]
+#[cfg(feature = "UnityEngine+ExcludeFromObjectFactoryAttribute")]
 impl std::ops::Deref for crate::UnityEngine::ExcludeFromObjectFactoryAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ExcludeFromObjectFactoryAttribute")]
+#[cfg(feature = "UnityEngine+ExcludeFromObjectFactoryAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::ExcludeFromObjectFactoryAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

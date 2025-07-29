@@ -32,9 +32,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     type Target = crate::System::Xml::Serialization::XmlSerializationWriter;
@@ -42,9 +40,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1130,7 +1126,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callbac
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {
@@ -1140,7 +1136,7 @@ for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_Callbac
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationWriterInterpreter+CallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationWriterInterpreter_CallbackInfo {

@@ -53,7 +53,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -61,7 +61,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -456,7 +456,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -464,7 +464,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerGameplayManager+InitData")]
+#[cfg(feature = "MultiplayerLocalActivePlayerGameplayManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerGameplayManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,18 +28,14 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByte {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByte")]
 impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByte {
     type Target = crate::System::Linq::Expressions::Interpreter::NotEqualInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualSByte")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NotEqualInstruction_NotEqualSByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

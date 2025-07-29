@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
+#[cfg(feature = "System+Xml+XmlTextWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlTextWriter {
     type Target = crate::System::Xml::XmlWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlTextWriter")]
+#[cfg(feature = "System+Xml+XmlTextWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

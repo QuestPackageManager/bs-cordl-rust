@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+RevokedStatus")]
+#[cfg(feature = "Org+BouncyCastle+Ocsp+RevokedStatus")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::RevokedStatus {
     type Target = crate::Org::BouncyCastle::Ocsp::CertificateStatus;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Ocsp+RevokedStatus")]
+#[cfg(feature = "Org+BouncyCastle+Ocsp+RevokedStatus")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::RevokedStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

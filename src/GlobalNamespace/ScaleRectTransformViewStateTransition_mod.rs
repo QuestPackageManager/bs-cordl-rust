@@ -30,7 +30,7 @@ for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "ScaleRectTransformViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ScaleRectTransformViewStateTran
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScaleRectTransformViewStateTransition")]
+#[cfg(feature = "ScaleRectTransformViewStateTransition")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ScaleRectTransformViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

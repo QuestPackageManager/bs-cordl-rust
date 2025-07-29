@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapDataTransformHelper {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataTransformHelper")]
+#[cfg(feature = "BeatmapDataTransformHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataTransformHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataTransformHelper")]
+#[cfg(feature = "BeatmapDataTransformHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataTransformHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

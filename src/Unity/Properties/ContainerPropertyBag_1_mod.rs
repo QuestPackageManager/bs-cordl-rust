@@ -52,7 +52,7 @@ for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     type Target = crate::Unity::Properties::PropertyBag_1<TContainer>;
@@ -60,7 +60,7 @@ for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+ContainerPropertyBag_1")]
+#[cfg(feature = "Unity+Properties+ContainerPropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::ContainerPropertyBag_1<TContainer> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

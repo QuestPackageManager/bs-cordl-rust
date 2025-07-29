@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "OVRHandTest+BoolMonitor+BoolGenerator")]
 impl std::ops::Deref for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor+BoolGenerator")]
+#[cfg(feature = "OVRHandTest+BoolMonitor+BoolGenerator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -212,14 +212,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHandTest 
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest")]
+#[cfg(feature = "OVRHandTest")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHandTest {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest")]
+#[cfg(feature = "OVRHandTest")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHandTest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -344,14 +344,14 @@ for crate::GlobalNamespace::OVRHandTest_BoolMonitor {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor")]
+#[cfg(feature = "OVRHandTest+BoolMonitor")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHandTest_BoolMonitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRHandTest+BoolMonitor")]
+#[cfg(feature = "OVRHandTest+BoolMonitor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHandTest_BoolMonitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

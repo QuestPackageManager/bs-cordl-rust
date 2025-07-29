@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignedAttributeTableGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::DefaultSignedAttributeTableGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

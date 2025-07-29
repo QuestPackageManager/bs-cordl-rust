@@ -28,9 +28,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightmapperUtils"
-)]
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightmapperUtils")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+GlobalIllumination+LightmapperUtils"
-)]
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightmapperUtils")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::GlobalIllumination::LightmapperUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

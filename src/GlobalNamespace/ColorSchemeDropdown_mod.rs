@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorSchemeD
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorSchemeDropdown")]
+#[cfg(feature = "ColorSchemeDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSchemeDropdown {
     type Target = crate::HMUI::DropdownWithTableView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorSchemeDropdown")]
+#[cfg(feature = "ColorSchemeDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

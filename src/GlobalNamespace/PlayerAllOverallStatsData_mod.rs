@@ -54,14 +54,14 @@ for crate::GlobalNamespace::PlayerAllOverallStatsData {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayerAllOverallStatsData")]
+#[cfg(feature = "PlayerAllOverallStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerAllOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayerAllOverallStatsData")]
+#[cfg(feature = "PlayerAllOverallStatsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerAllOverallStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -770,7 +770,7 @@ for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayerAllOverallStatsData+PlayerOverallStatsData")]
+#[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -778,7 +778,7 @@ for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayerAllOverallStatsData+PlayerOverallStatsData")]
+#[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -34,7 +34,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
@@ -46,7 +46,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+UnityWebRequestOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {

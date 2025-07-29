@@ -35,9 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -45,9 +43,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SimulatedTlsSrpIdentityManager")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

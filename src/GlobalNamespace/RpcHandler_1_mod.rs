@@ -48,7 +48,7 @@ for crate::GlobalNamespace::RpcHandler_1<TType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_RpcHandler_1")]
+#[cfg(feature = "RpcHandler_1")]
 impl<TType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RpcHandler_1<TType> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::GlobalNamespace::RpcHandler_1<TType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RpcHandler_1")]
+#[cfg(feature = "RpcHandler_1")]
 impl<TType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::RpcHandler_1<TType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

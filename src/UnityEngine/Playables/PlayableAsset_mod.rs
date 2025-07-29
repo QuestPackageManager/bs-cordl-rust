@@ -24,14 +24,14 @@ for crate::UnityEngine::Playables::PlayableAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableAsset")]
+#[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Playables::PlayableAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableAsset")]
+#[cfg(feature = "UnityEngine+Playables+PlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Playables::PlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

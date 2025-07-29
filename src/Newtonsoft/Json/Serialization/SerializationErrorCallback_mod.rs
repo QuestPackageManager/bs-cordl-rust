@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationErrorCallback")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationErrorCallback")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationErrorCallback")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationErrorCallback")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::SerializationErrorCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -27,7 +27,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+SerializationBinderAdapter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::SerializationBinderAdapter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

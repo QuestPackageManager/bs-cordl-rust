@@ -32,14 +32,14 @@ for crate::System::Net::Security::SslServerAuthenticationOptions {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
 impl std::ops::Deref for crate::System::Net::Security::SslServerAuthenticationOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Security+SslServerAuthenticationOptions")]
+#[cfg(feature = "System+Net+Security+SslServerAuthenticationOptions")]
 impl std::ops::DerefMut
 for crate::System::Net::Security::SslServerAuthenticationOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

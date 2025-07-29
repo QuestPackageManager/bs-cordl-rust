@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mFieldElement;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT163FieldElement")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163FieldElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

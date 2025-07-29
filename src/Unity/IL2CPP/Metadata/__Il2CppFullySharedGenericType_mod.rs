@@ -24,14 +24,14 @@ for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
 impl std::ops::Deref for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType {
     type Target = crate::System::ValueType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericType")]
 impl std::ops::DerefMut
 for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

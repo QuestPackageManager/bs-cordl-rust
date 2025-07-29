@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHKeyPairGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::DHKeyPairGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Vect
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+VectorHash")]
+#[cfg(feature = "UnityEngine+ProBuilder+VectorHash")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::VectorHash {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+VectorHash")]
+#[cfg(feature = "UnityEngine+ProBuilder+VectorHash")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::VectorHash {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

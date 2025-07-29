@@ -40,7 +40,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationByte
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {
@@ -50,7 +50,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationByte
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
+    feature = "Org+BouncyCastle+Crypto+Generators+KdfDoublePipelineIterationBytesGenerator"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::KdfDoublePipelineIterationBytesGenerator {

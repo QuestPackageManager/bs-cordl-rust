@@ -28,14 +28,14 @@ for crate::UnityEngine::Timeline::ActivationTrack {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationTrack")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationTrack")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

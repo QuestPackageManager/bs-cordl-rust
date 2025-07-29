@@ -60,14 +60,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongPreviewP
         false
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer")]
+#[cfg(feature = "SongPreviewPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer {
     type Target = crate::GlobalNamespace::AudioPlayerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer")]
+#[cfg(feature = "SongPreviewPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -576,14 +576,14 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         false
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceParams")]
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceParams")]
+#[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -735,7 +735,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         false
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceVolumeController")]
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -743,7 +743,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+AudioSourceVolumeController")]
+#[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -911,14 +911,14 @@ for crate::GlobalNamespace::SongPreviewPlayer_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+InitData")]
+#[cfg(feature = "SongPreviewPlayer+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SongPreviewPlayer+InitData")]
+#[cfg(feature = "SongPreviewPlayer+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SongPreviewPlayer_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

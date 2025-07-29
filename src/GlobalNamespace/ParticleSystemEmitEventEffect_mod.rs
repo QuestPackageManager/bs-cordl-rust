@@ -34,14 +34,14 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect")]
+#[cfg(feature = "ParticleSystemEmitEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect")]
+#[cfg(feature = "ParticleSystemEmitEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemEmitEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -169,9 +169,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleS
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior"
-)]
+#[cfg(feature = "ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleSystemEmitBehavior {
     type Target = crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior;
@@ -179,9 +177,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleS
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior"
-)]
+#[cfg(feature = "ParticleSystemEmitEventEffect+BeatmapEditorParticleSystemEmitBehavior")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_BeatmapEditorParticleSystemEmitBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -393,9 +389,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystem
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior"
-)]
+#[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior {
     type Target = crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior;
@@ -403,9 +397,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystem
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior"
-)]
+#[cfg(feature = "ParticleSystemEmitEventEffect+GameplayParticleSystemEmitBehavior")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_GameplayParticleSystemEmitBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -687,7 +679,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeha
         false
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
+#[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -695,7 +687,7 @@ for crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBeha
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
+#[cfg(feature = "ParticleSystemEmitEventEffect+ParticleSystemEmitBehavior")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

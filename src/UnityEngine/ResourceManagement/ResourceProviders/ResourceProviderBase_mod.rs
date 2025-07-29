@@ -30,9 +30,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -40,9 +38,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -456,7 +452,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
@@ -468,7 +464,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {

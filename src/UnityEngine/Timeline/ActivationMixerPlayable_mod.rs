@@ -27,14 +27,14 @@ for crate::UnityEngine::Timeline::ActivationMixerPlayable {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationMixerPlayable")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationMixerPlayable")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationMixerPlayable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

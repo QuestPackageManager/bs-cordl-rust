@@ -48,7 +48,7 @@ for crate::System::Threading::ThreadLocal_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
+#[cfg(feature = "System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::System::Threading::ThreadLocal_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1")]
+#[cfg(feature = "System+Threading+ThreadLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -577,7 +577,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -585,7 +585,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+FinalizationHelper")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+FinalizationHelper")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -741,7 +741,7 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -749,7 +749,7 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+IdManager")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -911,7 +911,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -919,7 +919,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlot")]
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlot")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

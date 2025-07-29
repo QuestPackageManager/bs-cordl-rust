@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsException")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

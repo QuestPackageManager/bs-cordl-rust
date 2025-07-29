@@ -54,7 +54,7 @@ for crate::Zenject::KeyedFactory_5<TBase, TKey, TParam1, TParam2, TParam3> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
+#[cfg(feature = "Zenject+KeyedFactory_5")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ for crate::Zenject::KeyedFactory_5<TBase, TKey, TParam1, TParam2, TParam3> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+KeyedFactory_5")]
+#[cfg(feature = "Zenject+KeyedFactory_5")]
 impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

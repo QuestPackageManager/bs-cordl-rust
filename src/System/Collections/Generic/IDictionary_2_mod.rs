@@ -48,7 +48,7 @@ for crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+IDictionary_2")]
+#[cfg(feature = "System+Collections+Generic+IDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+IDictionary_2")]
+#[cfg(feature = "System+Collections+Generic+IDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

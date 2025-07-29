@@ -46,14 +46,14 @@ for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+AvatarSystemCollection")]
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

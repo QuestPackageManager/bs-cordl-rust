@@ -55,14 +55,14 @@ for crate::UnityEngine::UIElements::DefaultEventSystem {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DefaultEventSystem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -972,14 +972,14 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+IInput")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+IInput")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+IInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1324,14 +1324,14 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+Input")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+Input")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1715,14 +1715,14 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+NoInput")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultEventSystem+NoInput")]
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

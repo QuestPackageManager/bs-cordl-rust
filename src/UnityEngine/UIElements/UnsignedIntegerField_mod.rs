@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedIntegerField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<u32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UnsignedIntegerField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,9 +299,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u32>;
@@ -309,9 +307,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UnsignedIntegerInput")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -534,7 +530,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
@@ -547,7 +543,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -626,7 +622,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
@@ -639,7 +635,7 @@ for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+UnsignedIntegerField+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedIntegerField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

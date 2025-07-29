@@ -68,14 +68,14 @@ for crate::GlobalNamespace::EventsTestGameplayManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
+#[cfg(feature = "EventsTestGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EventsTestGameplayManager")]
+#[cfg(feature = "EventsTestGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EventsTestGameplayManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -294,7 +294,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EventsTestGameplayManager+MockBeatToTimeConverter")]
+#[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

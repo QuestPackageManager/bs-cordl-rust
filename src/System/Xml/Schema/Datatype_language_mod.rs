@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_language {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "System+Xml+Schema+Datatype_language")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_language {
     type Target = crate::System::Xml::Schema::Datatype_token;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_language")]
+#[cfg(feature = "System+Xml+Schema+Datatype_language")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_language {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

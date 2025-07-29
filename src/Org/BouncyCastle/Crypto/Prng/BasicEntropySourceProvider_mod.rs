@@ -28,7 +28,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +36,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -189,7 +189,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntr
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
+    feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntropySource {
@@ -199,7 +199,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntr
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
+    feature = "Org+BouncyCastle+Crypto+Prng+BasicEntropySourceProvider+BasicEntropySource"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::BasicEntropySourceProvider_BasicEntropySource {

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRReadOnlyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRReadOnlyAttribute")]
+#[cfg(feature = "OVRReadOnlyAttribute")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRReadOnlyAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRReadOnlyAttribute")]
+#[cfg(feature = "OVRReadOnlyAttribute")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRReadOnlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::ConsoleLogger
         false
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+ConsoleLogger")]
+#[cfg(feature = "BGNet+Logging+ConsoleLogger")]
 impl std::ops::Deref for crate::BGNet::Logging::ConsoleLogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+ConsoleLogger")]
+#[cfg(feature = "BGNet+Logging+ConsoleLogger")]
 impl std::ops::DerefMut for crate::BGNet::Logging::ConsoleLogger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

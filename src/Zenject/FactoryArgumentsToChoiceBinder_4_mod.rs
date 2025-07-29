@@ -64,7 +64,7 @@ for crate::Zenject::FactoryArgumentsToChoiceBinder_4<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -87,7 +87,7 @@ for crate::Zenject::FactoryArgumentsToChoiceBinder_4<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactoryArgumentsToChoiceBinder_4")]
+#[cfg(feature = "Zenject+FactoryArgumentsToChoiceBinder_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

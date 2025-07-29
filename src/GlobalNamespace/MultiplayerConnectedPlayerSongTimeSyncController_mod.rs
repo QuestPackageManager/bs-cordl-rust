@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController")]
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -414,7 +414,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_Ini
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -422,7 +422,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_Ini
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
+#[cfg(feature = "MultiplayerConnectedPlayerSongTimeSyncController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

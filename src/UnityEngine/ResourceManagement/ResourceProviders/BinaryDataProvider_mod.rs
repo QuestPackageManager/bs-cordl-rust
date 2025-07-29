@@ -29,9 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -39,9 +37,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -242,7 +238,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {
@@ -252,7 +248,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+BinaryDataProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {

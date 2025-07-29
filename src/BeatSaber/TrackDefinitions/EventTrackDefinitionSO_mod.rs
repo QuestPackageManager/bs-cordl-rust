@@ -28,14 +28,14 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl std::ops::Deref for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO")]
 impl std::ops::DerefMut for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

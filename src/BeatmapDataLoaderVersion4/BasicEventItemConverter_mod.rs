@@ -33,14 +33,14 @@ for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BasicEventItemConverter")]
+#[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+BasicEventItemConverter")]
+#[cfg(feature = "BeatmapDataLoaderVersion4+BasicEventItemConverter")]
 impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::BasicEventItemConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

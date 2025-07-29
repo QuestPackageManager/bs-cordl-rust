@@ -52,14 +52,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Timeline::Timeli
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip")]
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2400,14 +2400,14 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

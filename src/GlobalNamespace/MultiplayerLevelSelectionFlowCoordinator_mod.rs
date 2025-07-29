@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     type Target = crate::GlobalNamespace::LevelSelectionFlowCoordinator;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLevelSelectionFlowCoordinator")]
+#[cfg(feature = "MultiplayerLevelSelectionFlowCoordinator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

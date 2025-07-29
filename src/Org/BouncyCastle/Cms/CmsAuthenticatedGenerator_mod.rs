@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAuthenticatedGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsAuthenticatedGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

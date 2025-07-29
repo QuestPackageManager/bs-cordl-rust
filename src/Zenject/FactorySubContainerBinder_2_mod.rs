@@ -48,7 +48,7 @@ for crate::Zenject::FactorySubContainerBinder_2<TParam1, TContract> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinder_2")]
+#[cfg(feature = "Zenject+FactorySubContainerBinder_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinder_2")]
+#[cfg(feature = "Zenject+FactorySubContainerBinder_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,

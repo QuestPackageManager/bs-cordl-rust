@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AvatarColorA
         false
     }
 }
-#[cfg(feature = "cordl_class_AvatarColorAsset")]
+#[cfg(feature = "AvatarColorAsset")]
 impl std::ops::Deref for crate::GlobalNamespace::AvatarColorAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AvatarColorAsset")]
+#[cfg(feature = "AvatarColorAsset")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AvatarColorAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

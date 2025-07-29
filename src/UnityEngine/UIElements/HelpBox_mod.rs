@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Help
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -261,7 +261,7 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::HelpBox>,
@@ -271,7 +271,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -352,14 +352,14 @@ for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+HelpBox+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+HelpBox+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::HelpBox_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

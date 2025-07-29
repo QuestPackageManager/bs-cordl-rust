@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SpriteCharacter {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SpriteCharacter")]
+#[cfg(feature = "TMPro+TMP_SpriteCharacter")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteCharacter {
     type Target = crate::TMPro::TMP_TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SpriteCharacter")]
+#[cfg(feature = "TMPro+TMP_SpriteCharacter")]
 impl std::ops::DerefMut for crate::TMPro::TMP_SpriteCharacter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

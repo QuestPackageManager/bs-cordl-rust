@@ -26,14 +26,14 @@ for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+UsedImplicitlyAttribute")]
+#[cfg(feature = "JetBrains+Annotations+UsedImplicitlyAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::UsedImplicitlyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

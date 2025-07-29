@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure"
-)]
+#[cfg(feature = "Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
     type Target = crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure"
-)]
+#[cfg(feature = "Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

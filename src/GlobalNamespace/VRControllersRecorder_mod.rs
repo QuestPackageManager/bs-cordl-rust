@@ -46,7 +46,7 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+SavedData+KeyframeSerializable")]
+#[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -54,7 +54,7 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+SavedData+KeyframeSerializable")]
+#[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -163,14 +163,14 @@ for crate::GlobalNamespace::VRControllersRecorder {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder")]
+#[cfg(feature = "VRControllersRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder")]
+#[cfg(feature = "VRControllersRecorder")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1181,14 +1181,14 @@ for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+Keyframe")]
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+Keyframe")]
+#[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1774,14 +1774,14 @@ for crate::GlobalNamespace::VRControllersRecorder_SavedData {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+SavedData")]
+#[cfg(feature = "VRControllersRecorder+SavedData")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_SavedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+SavedData")]
+#[cfg(feature = "VRControllersRecorder+SavedData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_SavedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1866,14 +1866,14 @@ for crate::GlobalNamespace::VRControllersRecorder_State {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+State")]
+#[cfg(feature = "VRControllersRecorder+State")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_State {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+State")]
+#[cfg(feature = "VRControllersRecorder+State")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_State {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2380,7 +2380,7 @@ for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+TypeSerializationBinder")]
+#[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
     type Target = crate::System::Runtime::Serialization::SerializationBinder;
@@ -2388,7 +2388,7 @@ for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VRControllersRecorder+TypeSerializationBinder")]
+#[cfg(feature = "VRControllersRecorder+TypeSerializationBinder")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

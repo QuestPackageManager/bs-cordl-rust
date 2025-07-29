@@ -41,7 +41,7 @@ for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     type Target = crate::System::MulticastDelegate;
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallback_1")]
+#[cfg(feature = "UnityEngine+UIElements+EventCallback_1")]
 impl<TEventType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::EventCallback_1<TEventType> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

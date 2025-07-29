@@ -31,9 +31,7 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider"
-)]
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
 impl std::ops::Deref
 for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,9 +39,7 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider"
-)]
+#[cfg(feature = "BeatSaber+AvatarCore+ConnectedPlayerAvatarVisualDataProvider")]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarVisualDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

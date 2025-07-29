@@ -25,14 +25,14 @@ for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     type Target = crate::GlobalNamespace::SliderMeshConstructor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderMeshConstructorCrossedStrips")]
+#[cfg(feature = "SliderMeshConstructorCrossedStrips")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderMeshConstructorCrossedStrips {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

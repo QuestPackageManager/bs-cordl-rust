@@ -27,14 +27,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+QueryFilter")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryFilter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::PathFilter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+QueryFilter")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryFilter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::QueryFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

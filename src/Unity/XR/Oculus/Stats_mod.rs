@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats")]
+#[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats")]
+#[cfg(feature = "Unity+XR+Oculus+Stats")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -160,14 +160,14 @@ for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+AdaptivePerformance")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+AdaptivePerformance")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+AdaptivePerformance")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -385,14 +385,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats_AppM
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+AppMetrics")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_AppMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+AppMetrics")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+AppMetrics")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats_AppMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -579,14 +579,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::XR::Oculus::Stats_Perf
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+PerfMetrics")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Stats_PerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+XR+Oculus+Stats+PerfMetrics")]
+#[cfg(feature = "Unity+XR+Oculus+Stats+PerfMetrics")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Stats_PerfMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

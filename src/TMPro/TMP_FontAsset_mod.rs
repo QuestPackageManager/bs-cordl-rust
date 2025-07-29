@@ -149,14 +149,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
+#[cfg(feature = "TMPro+TMP_FontAsset")]
 impl std::ops::Deref for crate::TMPro::TMP_FontAsset {
     type Target = crate::TMPro::TMP_Asset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
+#[cfg(feature = "TMPro+TMP_FontAsset")]
 impl std::ops::DerefMut for crate::TMPro::TMP_FontAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

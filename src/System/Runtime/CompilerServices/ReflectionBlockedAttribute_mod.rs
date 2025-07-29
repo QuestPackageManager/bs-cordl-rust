@@ -28,9 +28,7 @@ for crate::System::Runtime::CompilerServices::ReflectionBlockedAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ReflectionBlockedAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+ReflectionBlockedAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::ReflectionBlockedAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::System::Runtime::CompilerServices::ReflectionBlockedAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ReflectionBlockedAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+ReflectionBlockedAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::ReflectionBlockedAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

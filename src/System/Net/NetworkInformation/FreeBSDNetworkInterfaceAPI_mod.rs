@@ -24,7 +24,7 @@ for crate::System::Net::NetworkInformation::FreeBSDNetworkInterfaceAPI {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
+#[cfg(feature = "System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::FreeBSDNetworkInterfaceAPI {
     type Target = crate::System::Net::NetworkInformation::MacOsNetworkInterfaceAPI;
@@ -32,7 +32,7 @@ for crate::System::Net::NetworkInformation::FreeBSDNetworkInterfaceAPI {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
+#[cfg(feature = "System+Net+NetworkInformation+FreeBSDNetworkInterfaceAPI")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::FreeBSDNetworkInterfaceAPI {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

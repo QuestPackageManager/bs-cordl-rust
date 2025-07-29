@@ -60,14 +60,14 @@ for crate::GlobalNamespace::LightSwitchEventEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightSwitchEventEffect")]
+#[cfg(feature = "LightSwitchEventEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightSwitchEventEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightSwitchEventEffect")]
+#[cfg(feature = "LightSwitchEventEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightSwitchEventEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

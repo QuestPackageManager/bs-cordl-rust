@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Layers::Crc32cLay
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+Layers+Crc32cLayer")]
+#[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]
 impl std::ops::Deref for crate::LiteNetLib::Layers::Crc32cLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+Layers+Crc32cLayer")]
+#[cfg(feature = "LiteNetLib+Layers+Crc32cLayer")]
 impl std::ops::DerefMut for crate::LiteNetLib::Layers::Crc32cLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

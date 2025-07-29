@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StringExtens
         false
     }
 }
-#[cfg(feature = "cordl_class_StringExtensions")]
+#[cfg(feature = "StringExtensions")]
 impl std::ops::Deref for crate::GlobalNamespace::StringExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StringExtensions")]
+#[cfg(feature = "StringExtensions")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StringExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

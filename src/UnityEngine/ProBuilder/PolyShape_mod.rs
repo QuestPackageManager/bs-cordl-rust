@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Poly
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::PolyShape {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PolyShape")]
+#[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PolyShape {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

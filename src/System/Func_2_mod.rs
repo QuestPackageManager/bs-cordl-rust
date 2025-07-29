@@ -41,7 +41,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Func_2")]
+#[cfg(feature = "System+Func_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -51,7 +51,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Func_2")]
+#[cfg(feature = "System+Func_2")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

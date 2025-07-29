@@ -25,14 +25,14 @@ for crate::System::Diagnostics::SwitchLevelAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+SwitchLevelAttribute")]
+#[cfg(feature = "System+Diagnostics+SwitchLevelAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::SwitchLevelAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+SwitchLevelAttribute")]
+#[cfg(feature = "System+Diagnostics+SwitchLevelAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::SwitchLevelAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

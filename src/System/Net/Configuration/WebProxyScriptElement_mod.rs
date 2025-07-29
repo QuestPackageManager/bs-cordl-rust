@@ -24,14 +24,14 @@ for crate::System::Net::Configuration::WebProxyScriptElement {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Configuration+WebProxyScriptElement")]
+#[cfg(feature = "System+Net+Configuration+WebProxyScriptElement")]
 impl std::ops::Deref for crate::System::Net::Configuration::WebProxyScriptElement {
     type Target = crate::System::Configuration::ConfigurationElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Configuration+WebProxyScriptElement")]
+#[cfg(feature = "System+Net+Configuration+WebProxyScriptElement")]
 impl std::ops::DerefMut for crate::System::Net::Configuration::WebProxyScriptElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

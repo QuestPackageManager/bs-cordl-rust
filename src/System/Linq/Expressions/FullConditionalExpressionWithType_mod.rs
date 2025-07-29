@@ -25,7 +25,7 @@ for crate::System::Linq::Expressions::FullConditionalExpressionWithType {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FullConditionalExpressionWithType")]
+#[cfg(feature = "System+Linq+Expressions+FullConditionalExpressionWithType")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::FullConditionalExpressionWithType {
     type Target = crate::System::Linq::Expressions::FullConditionalExpression;
@@ -33,7 +33,7 @@ for crate::System::Linq::Expressions::FullConditionalExpressionWithType {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FullConditionalExpressionWithType")]
+#[cfg(feature = "System+Linq+Expressions+FullConditionalExpressionWithType")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::FullConditionalExpressionWithType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

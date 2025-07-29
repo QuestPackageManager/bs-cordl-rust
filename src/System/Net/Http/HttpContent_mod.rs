@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::HttpConten
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+HttpContent")]
+#[cfg(feature = "System+Net+Http+HttpContent")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+HttpContent")]
+#[cfg(feature = "System+Net+Http+HttpContent")]
 impl std::ops::DerefMut for crate::System::Net::Http::HttpContent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -542,14 +542,14 @@ for crate::System::Net::Http::HttpContent_FixedMemoryStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+HttpContent+FixedMemoryStream")]
+#[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent_FixedMemoryStream {
     type Target = crate::System::IO::MemoryStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+HttpContent+FixedMemoryStream")]
+#[cfg(feature = "System+Net+Http+HttpContent+FixedMemoryStream")]
 impl std::ops::DerefMut for crate::System::Net::Http::HttpContent_FixedMemoryStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

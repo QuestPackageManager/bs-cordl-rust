@@ -29,14 +29,14 @@ for crate::System::Xml::Serialization::XmlTypeSerializationSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     type Target = crate::System::Xml::Serialization::SerializationSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeSerializationSource")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlTypeSerializationSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

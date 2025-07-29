@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoringEleme
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoringElement")]
+#[cfg(feature = "ScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoringElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoringElement")]
+#[cfg(feature = "ScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoringElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -539,7 +539,7 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
+#[cfg(feature = "ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     type Target = crate::Zenject::MemoryPool_1<T>;
@@ -547,7 +547,7 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
+#[cfg(feature = "ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

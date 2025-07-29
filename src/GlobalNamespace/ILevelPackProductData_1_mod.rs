@@ -38,7 +38,7 @@ for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
         false
     }
 }
-#[cfg(feature = "cordl_class_ILevelPackProductData_1")]
+#[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ILevelPackProductData_1")]
+#[cfg(feature = "ILevelPackProductData_1")]
 impl<TLevelProductData: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::ILevelPackProductData_1<TLevelProductData> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

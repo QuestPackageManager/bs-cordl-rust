@@ -25,14 +25,14 @@ for crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
+#[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
 impl std::ops::Deref for crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
     type Target = crate::UnityEngine::Scripting::PreserveAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
+#[cfg(feature = "UnityEngine+RuntimeInitializeOnLoadMethodAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::RuntimeInitializeOnLoadMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

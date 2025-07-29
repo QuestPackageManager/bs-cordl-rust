@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::MS::Internal::Xml::XPath::Fun
         false
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Function")]
+#[cfg(feature = "MS+Internal+Xml+XPath+Function")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::Function {
     type Target = crate::MS::Internal::Xml::XPath::AstNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+Function")]
+#[cfg(feature = "MS+Internal+Xml+XPath+Function")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Function {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

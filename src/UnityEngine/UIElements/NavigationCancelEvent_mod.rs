@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::NavigationCancelEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+NavigationCancelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationCancelEvent {
     type Target = crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationCancelEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationCancelEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+NavigationCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+NavigationCancelEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigationCancelEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

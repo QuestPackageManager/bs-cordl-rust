@@ -25,14 +25,14 @@ for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CustomLevelsSettingsAsyncInstaller")]
+#[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

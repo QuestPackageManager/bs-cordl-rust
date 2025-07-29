@@ -29,7 +29,7 @@ for crate::GlobalNamespace::MirroredDisappearingArrowController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MirroredDisappearingArrowController")]
+#[cfg(feature = "MirroredDisappearingArrowController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredDisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredDisappearingArrowContro
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MirroredDisappearingArrowController")]
+#[cfg(feature = "MirroredDisappearingArrowController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

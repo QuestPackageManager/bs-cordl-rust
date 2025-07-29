@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithGroupPresenceJoinIntent {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
+#[cfg(feature = "Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithGroupPresenceJoinIntent {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithGroupPresenceJoinIn
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
+#[cfg(feature = "Oculus+Platform+MessageWithGroupPresenceJoinIntent")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithGroupPresenceJoinIntent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

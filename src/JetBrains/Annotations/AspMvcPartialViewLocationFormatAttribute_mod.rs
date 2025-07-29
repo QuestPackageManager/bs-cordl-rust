@@ -31,9 +31,7 @@ for crate::JetBrains::Annotations::AspMvcPartialViewLocationFormatAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewLocationFormatAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewLocationFormatAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcPartialViewLocationFormatAttribute {
     type Target = crate::System::Attribute;
@@ -41,9 +39,7 @@ for crate::JetBrains::Annotations::AspMvcPartialViewLocationFormatAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+AspMvcPartialViewLocationFormatAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+AspMvcPartialViewLocationFormatAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcPartialViewLocationFormatAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

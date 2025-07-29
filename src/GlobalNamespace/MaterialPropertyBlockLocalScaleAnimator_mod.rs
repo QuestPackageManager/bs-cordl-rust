@@ -25,7 +25,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockLocalScaleAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockLocalScaleAnimator")]
+#[cfg(feature = "MaterialPropertyBlockLocalScaleAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyBlockLocalScaleAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockLocalScaleAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockLocalScaleAnimator")]
+#[cfg(feature = "MaterialPropertyBlockLocalScaleAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyBlockLocalScaleAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

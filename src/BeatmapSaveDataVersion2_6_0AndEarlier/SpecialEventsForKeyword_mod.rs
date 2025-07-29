@@ -34,9 +34,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword"
-)]
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
 impl std::ops::Deref
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -44,9 +42,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword"
-)]
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SpecialEventsForKeyword")]
 impl std::ops::DerefMut
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

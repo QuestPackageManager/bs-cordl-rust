@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         false
     }
 }
-#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<f32>;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OpenXRRuntimeBasedActionBindingComposite")]
+#[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,7 +28,7 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
@@ -40,7 +40,7 @@ for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
+#[cfg(feature = "BGLib+UnityExtension+BezierCurves+ObjectBasedBezierCurve")]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

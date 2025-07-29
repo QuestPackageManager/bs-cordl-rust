@@ -24,14 +24,14 @@ for crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "Zenject+ScopeConcreteIdArgConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
     type Target = crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScopeConcreteIdArgConditionCopyNonLazyBinder")]
+#[cfg(feature = "Zenject+ScopeConcreteIdArgConditionCopyNonLazyBinder")]
 impl std::ops::DerefMut
 for crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::Screen {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+Screen")]
+#[cfg(feature = "HMUI+Screen")]
 impl std::ops::Deref for crate::HMUI::Screen {
     type Target = crate::HMUI::ScreenBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+Screen")]
+#[cfg(feature = "HMUI+Screen")]
 impl std::ops::DerefMut for crate::HMUI::Screen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

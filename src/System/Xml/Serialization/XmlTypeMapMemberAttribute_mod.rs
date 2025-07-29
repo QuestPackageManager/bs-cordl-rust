@@ -30,14 +30,14 @@ for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     type Target = crate::System::Xml::Serialization::XmlTypeMapMember;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlTypeMapMemberAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlTypeMapMemberAttribute")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlTypeMapMemberAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

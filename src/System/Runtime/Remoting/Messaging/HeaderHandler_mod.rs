@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+HeaderHandler")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+HeaderHandler")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::HeaderHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -25,14 +25,14 @@ for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     type Target = crate::GlobalNamespace::MaterialPropertyBlockAnimator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockVectorAnimator")]
+#[cfg(feature = "MaterialPropertyBlockVectorAnimator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyBlockVectorAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

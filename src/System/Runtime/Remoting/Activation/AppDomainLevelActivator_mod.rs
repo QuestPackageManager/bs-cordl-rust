@@ -32,9 +32,7 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -42,9 +40,7 @@ for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Activation+AppDomainLevelActivator"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Activation+AppDomainLevelActivator")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Activation::AppDomainLevelActivator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestricti
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestricti
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableUnsafePtrRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableUnsafePtrRestrictionAttribute {

@@ -31,7 +31,7 @@ for crate::GlobalNamespace::TextMeshProInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_TextMeshProInstaller")]
+#[cfg(feature = "TextMeshProInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::TextMeshProInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::GlobalNamespace::TextMeshProInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TextMeshProInstaller")]
+#[cfg(feature = "TextMeshProInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TextMeshProInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

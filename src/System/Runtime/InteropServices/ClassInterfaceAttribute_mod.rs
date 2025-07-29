@@ -25,7 +25,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+ClassInterfaceAttribute")]
+#[cfg(feature = "System+Runtime+InteropServices+ClassInterfaceAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::ClassInterfaceAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

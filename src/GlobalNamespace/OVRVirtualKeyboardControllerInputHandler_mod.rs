@@ -24,7 +24,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardControllerInputHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRVirtualKeyboardControllerInputHandler")]
+#[cfg(feature = "OVRVirtualKeyboardControllerInputHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRVirtualKeyboardControllerInputHandler {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboardControllerInputHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRVirtualKeyboardControllerInputHandler")]
+#[cfg(feature = "OVRVirtualKeyboardControllerInputHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRVirtualKeyboardControllerInputHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

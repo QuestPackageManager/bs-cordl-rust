@@ -24,14 +24,14 @@ for crate::GlobalNamespace::X509CertificateUtility {
         false
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility")]
+#[cfg(feature = "X509CertificateUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility")]
+#[cfg(feature = "X509CertificateUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::X509CertificateUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -414,14 +414,14 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
         false
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility+PasswordFinder")]
+#[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -583,7 +583,7 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
         false
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::Deref
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -591,7 +591,7 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_X509CertificateUtility+RSACertificateEncryptionProvider")]
+#[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::ComputedTransitionUtils {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionUtils")]
+#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ComputedTransitionUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionUtils")]
+#[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ComputedTransitionUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

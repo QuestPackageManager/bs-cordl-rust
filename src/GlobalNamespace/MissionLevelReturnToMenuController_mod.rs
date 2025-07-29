@@ -33,14 +33,14 @@ for crate::GlobalNamespace::MissionLevelReturnToMenuController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelReturnToMenuController")]
+#[cfg(feature = "MissionLevelReturnToMenuController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionLevelReturnToMenuController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissionLevelReturnToMenuController")]
+#[cfg(feature = "MissionLevelReturnToMenuController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelReturnToMenuController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

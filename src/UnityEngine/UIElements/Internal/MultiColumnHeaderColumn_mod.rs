@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -53,7 +53,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

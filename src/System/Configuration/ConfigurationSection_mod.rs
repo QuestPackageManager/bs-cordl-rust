@@ -24,14 +24,14 @@ for crate::System::Configuration::ConfigurationSection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSection")]
+#[cfg(feature = "System+Configuration+ConfigurationSection")]
 impl std::ops::Deref for crate::System::Configuration::ConfigurationSection {
     type Target = crate::System::Configuration::ConfigurationElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Configuration+ConfigurationSection")]
+#[cfg(feature = "System+Configuration+ConfigurationSection")]
 impl std::ops::DerefMut for crate::System::Configuration::ConfigurationSection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

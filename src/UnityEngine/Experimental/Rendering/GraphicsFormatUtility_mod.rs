@@ -24,7 +24,7 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
+#[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormatUtility")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

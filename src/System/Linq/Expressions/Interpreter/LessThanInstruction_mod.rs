@@ -25,7 +25,7 @@ for crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -33,7 +33,7 @@ for crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

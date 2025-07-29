@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::PathList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+PathList")]
+#[cfg(feature = "System+Net+PathList")]
 impl std::ops::Deref for crate::System::Net::PathList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+PathList")]
+#[cfg(feature = "System+Net+PathList")]
 impl std::ops::DerefMut for crate::System::Net::PathList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -286,14 +286,14 @@ for crate::System::Net::PathList_PathListComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+PathList+PathListComparer")]
+#[cfg(feature = "System+Net+PathList+PathListComparer")]
 impl std::ops::Deref for crate::System::Net::PathList_PathListComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+PathList+PathListComparer")]
+#[cfg(feature = "System+Net+PathList+PathListComparer")]
 impl std::ops::DerefMut for crate::System::Net::PathList_PathListComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

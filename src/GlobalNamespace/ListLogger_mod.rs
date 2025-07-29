@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger {
         false
     }
 }
-#[cfg(feature = "cordl_class_ListLogger")]
+#[cfg(feature = "ListLogger")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ListLogger")]
+#[cfg(feature = "ListLogger")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -405,14 +405,14 @@ for crate::GlobalNamespace::ListLogger_LogMessage {
         false
     }
 }
-#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
+#[cfg(feature = "ListLogger+LogMessage")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger_LogMessage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ListLogger+LogMessage")]
+#[cfg(feature = "ListLogger+LogMessage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger_LogMessage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

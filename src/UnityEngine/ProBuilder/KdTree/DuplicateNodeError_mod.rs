@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+DuplicateNodeError")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::KdTree::DuplicateNodeError {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -41,7 +41,7 @@ for crate::Oculus::Platform::Request_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Request_1")]
+#[cfg(feature = "Oculus+Platform+Request_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Request_1<T> {
     type Target = crate::Oculus::Platform::Request;
@@ -49,7 +49,7 @@ for crate::Oculus::Platform::Request_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Request_1")]
+#[cfg(feature = "Oculus+Platform+Request_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Oculus::Platform::Request_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

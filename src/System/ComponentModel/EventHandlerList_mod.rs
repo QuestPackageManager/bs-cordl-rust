@@ -28,14 +28,14 @@ for crate::System::ComponentModel::EventHandlerList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "System+ComponentModel+EventHandlerList")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList")]
+#[cfg(feature = "System+ComponentModel+EventHandlerList")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -147,14 +147,14 @@ for crate::System::ComponentModel::EventHandlerList_ListEntry {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList_ListEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+EventHandlerList+ListEntry")]
+#[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventHandlerList_ListEntry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

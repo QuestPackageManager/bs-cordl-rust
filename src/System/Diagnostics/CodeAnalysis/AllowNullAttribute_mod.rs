@@ -24,14 +24,14 @@ for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+AllowNullAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::AllowNullAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,14 +26,14 @@ for crate::Oculus::Platform::Models::SupplementaryMetric {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+SupplementaryMetric")]
+#[cfg(feature = "Oculus+Platform+Models+SupplementaryMetric")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::SupplementaryMetric {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+SupplementaryMetric")]
+#[cfg(feature = "Oculus+Platform+Models+SupplementaryMetric")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Models::SupplementaryMetric {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

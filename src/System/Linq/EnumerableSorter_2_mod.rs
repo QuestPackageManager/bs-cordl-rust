@@ -57,7 +57,7 @@ for crate::System::Linq::EnumerableSorter_2<TElement, TKey> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "System+Linq+EnumerableSorter_2")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+EnumerableSorter_2")]
+#[cfg(feature = "System+Linq+EnumerableSorter_2")]
 impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

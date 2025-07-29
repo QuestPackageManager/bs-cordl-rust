@@ -28,9 +28,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+CommandGenerator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+CommandGenerator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+Implementation+CommandGenerator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+CommandGenerator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,7 +25,7 @@ for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -33,7 +33,7 @@ for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
+#[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

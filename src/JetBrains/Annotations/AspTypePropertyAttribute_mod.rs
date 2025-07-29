@@ -25,14 +25,14 @@ for crate::JetBrains::Annotations::AspTypePropertyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspTypePropertyAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspTypePropertyAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::AspTypePropertyAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspTypePropertyAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspTypePropertyAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::AspTypePropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::ExtensionDataSetter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ExtensionDataSetter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+ExtensionDataSetter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::ExtensionDataSetter {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ExtensionDataSetter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+ExtensionDataSetter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ExtensionDataSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

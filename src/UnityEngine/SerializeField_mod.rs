@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SerializeField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+SerializeField")]
+#[cfg(feature = "UnityEngine+SerializeField")]
 impl std::ops::Deref for crate::UnityEngine::SerializeField {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+SerializeField")]
+#[cfg(feature = "UnityEngine+SerializeField")]
 impl std::ops::DerefMut for crate::UnityEngine::SerializeField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

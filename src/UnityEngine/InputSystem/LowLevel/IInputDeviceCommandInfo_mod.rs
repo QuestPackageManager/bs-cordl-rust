@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputDeviceCommandInfo")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputDeviceCommandInfo")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+IInputDeviceCommandInfo")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+IInputDeviceCommandInfo")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::IInputDeviceCommandInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

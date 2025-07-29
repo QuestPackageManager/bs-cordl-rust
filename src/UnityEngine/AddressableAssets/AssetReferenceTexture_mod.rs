@@ -26,7 +26,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceTexture {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTexture {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTe
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceTexture")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceTexture {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

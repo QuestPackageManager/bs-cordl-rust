@@ -26,7 +26,7 @@ for crate::UnityEngine::InputSystem::Controls::TouchPhaseControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPhaseControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPhaseControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchPhaseControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::TouchPhase,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchPhaseCo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+TouchPhaseControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+TouchPhaseControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::TouchPhaseControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

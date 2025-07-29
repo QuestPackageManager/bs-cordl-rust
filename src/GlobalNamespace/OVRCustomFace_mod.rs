@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRCustomFac
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRCustomFace")]
+#[cfg(feature = "OVRCustomFace")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRCustomFace {
     type Target = crate::GlobalNamespace::OVRFace;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRCustomFace")]
+#[cfg(feature = "OVRCustomFace")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRCustomFace {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

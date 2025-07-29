@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider {
@@ -193,7 +193,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
@@ -203,7 +203,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+LegacyResourcesProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {

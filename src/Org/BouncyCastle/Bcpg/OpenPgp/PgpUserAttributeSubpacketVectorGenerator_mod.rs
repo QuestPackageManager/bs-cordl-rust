@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGene
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {
@@ -40,7 +40,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGene
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
+    feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpUserAttributeSubpacketVectorGenerator"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVectorGenerator {

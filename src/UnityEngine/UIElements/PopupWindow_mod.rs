@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Popu
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow {
     type Target = crate::UnityEngine::UIElements::TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -141,7 +141,7 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow>,
@@ -151,7 +151,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -224,14 +224,14 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PopupWindow+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PopupWindow_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

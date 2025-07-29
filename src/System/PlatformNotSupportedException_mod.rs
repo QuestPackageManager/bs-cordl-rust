@@ -24,14 +24,14 @@ for crate::System::PlatformNotSupportedException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+PlatformNotSupportedException")]
+#[cfg(feature = "System+PlatformNotSupportedException")]
 impl std::ops::Deref for crate::System::PlatformNotSupportedException {
     type Target = crate::System::NotSupportedException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+PlatformNotSupportedException")]
+#[cfg(feature = "System+PlatformNotSupportedException")]
 impl std::ops::DerefMut for crate::System::PlatformNotSupportedException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

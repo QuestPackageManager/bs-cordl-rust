@@ -545,7 +545,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -556,7 +556,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2+Enumerator")]
 impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,

@@ -47,14 +47,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SceneDecoratorContex
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SceneDecoratorContext")]
+#[cfg(feature = "Zenject+SceneDecoratorContext")]
 impl std::ops::Deref for crate::Zenject::SceneDecoratorContext {
     type Target = crate::Zenject::Context;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SceneDecoratorContext")]
+#[cfg(feature = "Zenject+SceneDecoratorContext")]
 impl std::ops::DerefMut for crate::Zenject::SceneDecoratorContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

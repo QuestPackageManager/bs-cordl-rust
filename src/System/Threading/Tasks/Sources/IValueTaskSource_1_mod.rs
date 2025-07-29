@@ -41,7 +41,7 @@ for crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource_1")]
+#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +49,7 @@ for crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Sources+IValueTaskSource_1")]
+#[cfg(feature = "System+Threading+Tasks+Sources+IValueTaskSource_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

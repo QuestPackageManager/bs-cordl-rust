@@ -24,14 +24,14 @@ for crate::System::Data::DataRowCreatedEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRowCreatedEventHandler")]
+#[cfg(feature = "System+Data+DataRowCreatedEventHandler")]
 impl std::ops::Deref for crate::System::Data::DataRowCreatedEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRowCreatedEventHandler")]
+#[cfg(feature = "System+Data+DataRowCreatedEventHandler")]
 impl std::ops::DerefMut for crate::System::Data::DataRowCreatedEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

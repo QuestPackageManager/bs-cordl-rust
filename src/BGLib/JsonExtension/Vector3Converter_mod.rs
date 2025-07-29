@@ -26,14 +26,14 @@ for crate::BGLib::JsonExtension::Vector3Converter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::Vector3Converter {
     type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Vector3>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
+#[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::Vector3Converter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

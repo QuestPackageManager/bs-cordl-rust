@@ -94,14 +94,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DlcPromoPane
         false
     }
 }
-#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
+#[cfg(feature = "DlcPromoPanelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DlcPromoPanelModel")]
+#[cfg(feature = "DlcPromoPanelModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1044,14 +1044,14 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DlcPromoPanelModel+PromoInfo")]
+#[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

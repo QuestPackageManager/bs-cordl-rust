@@ -30,9 +30,7 @@ for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
-)]
+#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     type Target = crate::System::Attribute;
@@ -40,9 +38,7 @@ for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+ConstrainedExecution+ReliabilityContractAttribute"
-)]
+#[cfg(feature = "System+Runtime+ConstrainedExecution+ReliabilityContractAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::ConstrainedExecution::ReliabilityContractAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

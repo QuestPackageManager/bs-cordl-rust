@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyConfigurationAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyConfigurationAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyConfigurationAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyConfigurationAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyConfigurationAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyConfigurationAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyConfigurationAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

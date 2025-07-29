@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     type Target = crate::System::Runtime::Remoting::Metadata::SoapAttribute;
@@ -40,7 +40,7 @@ for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
+#[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

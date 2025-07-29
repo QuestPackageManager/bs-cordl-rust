@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XmlAtomi
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlAtomicValue {
     type Target = crate::System::Xml::XPath::XPathItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue")]
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAtomicValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -814,7 +814,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -822,7 +822,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+NamespacePrefixForQName")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlAtomicValue_NamespacePrefixForQName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

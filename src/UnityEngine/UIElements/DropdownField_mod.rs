@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::DropdownField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField {
     type Target = crate::UnityEngine::UIElements::PopupField_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -152,7 +152,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownField>,
@@ -164,7 +164,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlFacto
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -245,7 +245,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -254,7 +254,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlTrait
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownField+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

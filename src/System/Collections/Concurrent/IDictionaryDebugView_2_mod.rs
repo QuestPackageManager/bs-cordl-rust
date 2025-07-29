@@ -48,7 +48,7 @@ for crate::System::Collections::Concurrent::IDictionaryDebugView_2<K, V> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+IDictionaryDebugView_2")]
+#[cfg(feature = "System+Collections+Concurrent+IDictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Concurrent::IDictionaryDebugView_2<K, V> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::System::Collections::Concurrent::IDictionaryDebugView_2<K, V> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+IDictionaryDebugView_2")]
+#[cfg(feature = "System+Collections+Concurrent+IDictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Concurrent::IDictionaryDebugView_2<K, V> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

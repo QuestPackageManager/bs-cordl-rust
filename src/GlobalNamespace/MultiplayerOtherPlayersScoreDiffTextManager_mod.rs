@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerOtherPlayersScoreDiffTextManager")]
+#[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

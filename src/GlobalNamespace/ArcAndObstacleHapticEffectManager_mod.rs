@@ -45,14 +45,14 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager")]
+#[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager")]
+#[cfg(feature = "ArcAndObstacleHapticEffectManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -443,7 +443,7 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         false
     }
 }
-#[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager+EffectState")]
+#[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -451,7 +451,7 @@ for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ArcAndObstacleHapticEffectManager+EffectState")]
+#[cfg(feature = "ArcAndObstacleHapticEffectManager+EffectState")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

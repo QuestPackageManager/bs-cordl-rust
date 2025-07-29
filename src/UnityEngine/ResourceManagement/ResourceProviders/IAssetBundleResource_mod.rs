@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResou
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+IAssetBundleResource"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+IAssetBundleResource")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResou
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+IAssetBundleResource"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+IAssetBundleResource")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::IAssetBundleResource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

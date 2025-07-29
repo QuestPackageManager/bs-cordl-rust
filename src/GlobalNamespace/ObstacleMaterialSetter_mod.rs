@@ -35,14 +35,14 @@ for crate::GlobalNamespace::ObstacleMaterialSetter {
         false
     }
 }
-#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
+#[cfg(feature = "ObstacleMaterialSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::ObstacleMaterialSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ObstacleMaterialSetter")]
+#[cfg(feature = "ObstacleMaterialSetter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleMaterialSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

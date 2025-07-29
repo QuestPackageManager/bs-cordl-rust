@@ -26,14 +26,14 @@ for crate::BGLib::UnityExtension::InfoBoxAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::InfoBoxAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+UnityExtension+InfoBoxAttribute")]
+#[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
 impl std::ops::DerefMut for crate::BGLib::UnityExtension::InfoBoxAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

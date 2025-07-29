@@ -55,14 +55,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter {
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter")]
+#[cfg(feature = "MaterialPropertyValuesSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter")]
+#[cfg(feature = "MaterialPropertyValuesSetter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -238,7 +238,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValueP
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
@@ -246,7 +246,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValueP
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValueP
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
@@ -329,7 +329,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValueP
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -404,7 +404,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePai
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
@@ -412,7 +412,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePai
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -487,7 +487,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
@@ -495,7 +495,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -571,7 +571,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyValuePairBase")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -579,7 +579,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyValuesSetter+PropertyValuePairBase")]
+#[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

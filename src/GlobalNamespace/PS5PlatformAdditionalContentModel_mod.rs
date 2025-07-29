@@ -24,14 +24,14 @@ for crate::GlobalNamespace::PS5PlatformAdditionalContentModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_PS5PlatformAdditionalContentModel")]
+#[cfg(feature = "PS5PlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PS5PlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::SonyPlatformAdditionalContentModel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PS5PlatformAdditionalContentModel")]
+#[cfg(feature = "PS5PlatformAdditionalContentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS5PlatformAdditionalContentModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -53,14 +53,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
+#[cfg(feature = "HMUI+AnimatedSwitchView")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView")]
+#[cfg(feature = "HMUI+AnimatedSwitchView")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -499,14 +499,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView_Colo
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_ColorBlock {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+ColorBlock")]
+#[cfg(feature = "HMUI+AnimatedSwitchView+ColorBlock")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView_ColorBlock {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -578,14 +578,14 @@ for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl std::ops::Deref for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AnimatedSwitchView+GetColorDelegate")]
+#[cfg(feature = "HMUI+AnimatedSwitchView+GetColorDelegate")]
 impl std::ops::DerefMut for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

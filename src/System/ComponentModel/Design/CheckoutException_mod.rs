@@ -24,14 +24,14 @@ for crate::System::ComponentModel::Design::CheckoutException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+Design+CheckoutException")]
+#[cfg(feature = "System+ComponentModel+Design+CheckoutException")]
 impl std::ops::Deref for crate::System::ComponentModel::Design::CheckoutException {
     type Target = crate::System::Runtime::InteropServices::ExternalException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+Design+CheckoutException")]
+#[cfg(feature = "System+ComponentModel+Design+CheckoutException")]
 impl std::ops::DerefMut for crate::System::ComponentModel::Design::CheckoutException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

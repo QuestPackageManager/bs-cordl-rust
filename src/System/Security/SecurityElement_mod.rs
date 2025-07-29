@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::SecurityEle
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
+#[cfg(feature = "System+Security+SecurityElement")]
 impl std::ops::Deref for crate::System::Security::SecurityElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+SecurityElement")]
+#[cfg(feature = "System+Security+SecurityElement")]
 impl std::ops::DerefMut for crate::System::Security::SecurityElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -636,14 +636,14 @@ for crate::System::Security::SecurityElement_SecurityAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
 impl std::ops::Deref for crate::System::Security::SecurityElement_SecurityAttribute {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+SecurityElement+SecurityAttribute")]
+#[cfg(feature = "System+Security+SecurityElement+SecurityAttribute")]
 impl std::ops::DerefMut for crate::System::Security::SecurityElement_SecurityAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

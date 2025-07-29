@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ResultsTable
         false
     }
 }
-#[cfg(feature = "cordl_class_ResultsTableCell")]
+#[cfg(feature = "ResultsTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::ResultsTableCell {
     type Target = crate::GlobalNamespace::TableCellWithSeparator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ResultsTableCell")]
+#[cfg(feature = "ResultsTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ResultsTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

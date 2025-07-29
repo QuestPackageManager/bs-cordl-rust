@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SimpleTextTa
         false
     }
 }
-#[cfg(feature = "cordl_class_SimpleTextTableCell")]
+#[cfg(feature = "SimpleTextTableCell")]
 impl std::ops::Deref for crate::GlobalNamespace::SimpleTextTableCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SimpleTextTableCell")]
+#[cfg(feature = "SimpleTextTableCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SimpleTextTableCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

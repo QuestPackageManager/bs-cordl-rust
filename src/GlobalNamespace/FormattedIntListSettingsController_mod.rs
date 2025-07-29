@@ -38,14 +38,14 @@ for crate::GlobalNamespace::FormattedIntListSettingsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
+#[cfg(feature = "FormattedIntListSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::FormattedIntListSettingsController {
     type Target = crate::GlobalNamespace::ListSettingsController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FormattedIntListSettingsController")]
+#[cfg(feature = "FormattedIntListSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FormattedIntListSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

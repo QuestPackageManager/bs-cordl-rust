@@ -127,14 +127,14 @@ for crate::UnityEngine::InputSystem::PlayerInput {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2458,7 +2458,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
@@ -2467,7 +2467,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEven
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ActionEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2675,7 +2675,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -2685,7 +2685,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2761,7 +2761,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
@@ -2770,7 +2770,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLost
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2846,7 +2846,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -2856,7 +2856,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

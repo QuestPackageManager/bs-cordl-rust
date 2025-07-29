@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::Shapes::Prism {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Shapes::Prism {
     type Target = crate::UnityEngine::ProBuilder::Shapes::Shape;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+Prism")]
+#[cfg(feature = "UnityEngine+ProBuilder+Shapes+Prism")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::Prism {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

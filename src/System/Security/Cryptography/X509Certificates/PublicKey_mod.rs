@@ -31,7 +31,7 @@ for crate::System::Security::Cryptography::X509Certificates::PublicKey {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+PublicKey")]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::PublicKey {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::X509Certificates::PublicKey {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+X509Certificates+PublicKey")]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::PublicKey {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

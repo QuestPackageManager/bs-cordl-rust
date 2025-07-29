@@ -24,7 +24,7 @@ for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+StringFreezingAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+StringFreezingAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::StringFreezingAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

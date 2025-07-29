@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyTrademarkAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyTrademarkAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyTrademarkAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyTrademarkAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyTrademarkAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyTrademarkAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyTrademarkAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

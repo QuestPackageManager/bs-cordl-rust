@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Cms::CmsStreamException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsStreamException")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsStreamException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsStreamException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsStreamException")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsStreamException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsStreamException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
         false
     }
 }
-#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
 impl std::ops::Deref for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DuplicateMirrorForReflectionProbe")]
+#[cfg(feature = "DuplicateMirrorForReflectionProbe")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DuplicateMirrorForReflectionProbe {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

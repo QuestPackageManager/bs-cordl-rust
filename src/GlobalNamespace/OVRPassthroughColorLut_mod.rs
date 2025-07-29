@@ -449,14 +449,14 @@ for crate::GlobalNamespace::OVRPassthroughColorLut {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
+#[cfg(feature = "OVRPassthroughColorLut")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughColorLut {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughColorLut")]
+#[cfg(feature = "OVRPassthroughColorLut")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRPassthroughColorLut {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1724,7 +1724,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1732,7 +1732,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRPassthroughColorLut+ColorLutTextureConverter")]
+#[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

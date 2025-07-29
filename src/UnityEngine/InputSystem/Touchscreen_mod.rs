@@ -32,14 +32,14 @@ for crate::UnityEngine::InputSystem::Touchscreen {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Touchscreen")]
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Touchscreen {
     type Target = crate::UnityEngine::InputSystem::Pointer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Touchscreen")]
+#[cfg(feature = "UnityEngine+InputSystem+Touchscreen")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Touchscreen {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

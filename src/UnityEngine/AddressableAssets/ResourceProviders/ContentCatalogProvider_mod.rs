@@ -44,7 +44,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -54,7 +54,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider {
@@ -346,7 +346,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -356,7 +356,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
@@ -798,7 +798,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Content
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
@@ -808,7 +808,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Content
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+InternalOp+BundledCatalog"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {

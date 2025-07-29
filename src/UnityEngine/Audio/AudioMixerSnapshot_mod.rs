@@ -24,14 +24,14 @@ for crate::UnityEngine::Audio::AudioMixerSnapshot {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
 impl std::ops::Deref for crate::UnityEngine::Audio::AudioMixerSnapshot {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Audio+AudioMixerSnapshot")]
+#[cfg(feature = "UnityEngine+Audio+AudioMixerSnapshot")]
 impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioMixerSnapshot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

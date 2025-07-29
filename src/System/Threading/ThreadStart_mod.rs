@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::ThreadStar
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadStart")]
+#[cfg(feature = "System+Threading+ThreadStart")]
 impl std::ops::Deref for crate::System::Threading::ThreadStart {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+ThreadStart")]
+#[cfg(feature = "System+Threading+ThreadStart")]
 impl std::ops::DerefMut for crate::System::Threading::ThreadStart {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

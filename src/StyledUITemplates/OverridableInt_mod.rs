@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::Overridabl
         false
     }
 }
-#[cfg(feature = "cordl_class_StyledUITemplates+OverridableInt")]
+#[cfg(feature = "StyledUITemplates+OverridableInt")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableInt {
     type Target = crate::StyledUITemplates::OverridableData_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StyledUITemplates+OverridableInt")]
+#[cfg(feature = "StyledUITemplates+OverridableInt")]
 impl std::ops::DerefMut for crate::StyledUITemplates::OverridableInt {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

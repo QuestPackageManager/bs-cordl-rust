@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonR
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader")]
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1024,14 +1024,14 @@ for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+ContainerContext")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

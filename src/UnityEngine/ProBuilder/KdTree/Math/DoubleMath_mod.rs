@@ -24,14 +24,14 @@ for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     type Target = crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+DoubleMath")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::KdTree::Math::DoubleMath {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

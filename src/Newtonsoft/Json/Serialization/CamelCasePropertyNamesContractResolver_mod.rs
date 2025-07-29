@@ -28,9 +28,7 @@ for crate::Newtonsoft::Json::Serialization::CamelCasePropertyNamesContractResolv
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+CamelCasePropertyNamesContractResolver"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+CamelCasePropertyNamesContractResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::CamelCasePropertyNamesContractResolver {
     type Target = crate::Newtonsoft::Json::Serialization::DefaultContractResolver;
@@ -38,9 +36,7 @@ for crate::Newtonsoft::Json::Serialization::CamelCasePropertyNamesContractResolv
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+CamelCasePropertyNamesContractResolver"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+CamelCasePropertyNamesContractResolver")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::CamelCasePropertyNamesContractResolver {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

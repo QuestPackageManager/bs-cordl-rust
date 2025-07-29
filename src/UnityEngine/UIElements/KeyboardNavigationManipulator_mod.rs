@@ -30,14 +30,14 @@ for crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationManipulator")]
+#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     type Target = crate::UnityEngine::UIElements::Manipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationManipulator")]
+#[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

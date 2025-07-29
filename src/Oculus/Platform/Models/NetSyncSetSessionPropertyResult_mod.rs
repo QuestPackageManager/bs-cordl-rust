@@ -27,7 +27,7 @@ for crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSetSessionPropertyResult")]
+#[cfg(feature = "Oculus+Platform+Models+NetSyncSetSessionPropertyResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+Models+NetSyncSetSessionPropertyResult")]
+#[cfg(feature = "Oculus+Platform+Models+NetSyncSetSessionPropertyResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

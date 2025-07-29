@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextContainer {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TextContainer")]
+#[cfg(feature = "TMPro+TextContainer")]
 impl std::ops::Deref for crate::TMPro::TextContainer {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TextContainer")]
+#[cfg(feature = "TMPro+TextContainer")]
 impl std::ops::DerefMut for crate::TMPro::TextContainer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

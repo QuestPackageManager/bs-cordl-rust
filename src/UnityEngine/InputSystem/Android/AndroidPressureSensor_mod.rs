@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidPressureSensor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidPressureSensor")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidPressureSensor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidPressureSensor {
     type Target = crate::UnityEngine::InputSystem::PressureSensor;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidPressureSensor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidPressureSensor")]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidPressureSensor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidPressureSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

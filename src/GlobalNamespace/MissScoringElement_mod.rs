@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissScoringE
         false
     }
 }
-#[cfg(feature = "cordl_class_MissScoringElement")]
+#[cfg(feature = "MissScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::MissScoringElement {
     type Target = crate::GlobalNamespace::ScoringElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissScoringElement")]
+#[cfg(feature = "MissScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissScoringElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -223,7 +223,7 @@ for crate::GlobalNamespace::MissScoringElement_Pool {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissScoringElement+Pool")]
+#[cfg(feature = "MissScoringElement+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MissScoringElement_Pool {
     type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissScoringElement>,
@@ -232,7 +232,7 @@ impl std::ops::Deref for crate::GlobalNamespace::MissScoringElement_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissScoringElement+Pool")]
+#[cfg(feature = "MissScoringElement+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissScoringElement_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

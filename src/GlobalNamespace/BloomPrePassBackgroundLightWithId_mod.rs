@@ -27,14 +27,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundLightWithId")]
+#[cfg(feature = "BloomPrePassBackgroundLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassBackgroundLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

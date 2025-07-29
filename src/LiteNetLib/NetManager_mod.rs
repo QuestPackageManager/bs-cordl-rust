@@ -99,14 +99,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
+#[cfg(feature = "LiteNetLib+NetManager")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetManager")]
+#[cfg(feature = "LiteNetLib+NetManager")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2475,14 +2475,14 @@ for crate::LiteNetLib::NetManager_IPEndPointComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager_IPEndPointComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetManager+IPEndPointComparer")]
+#[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetManager_IPEndPointComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

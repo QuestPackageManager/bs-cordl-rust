@@ -56,7 +56,7 @@ for crate::System::Dynamic::Utils::CacheDict_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+Utils+CacheDict_2")]
+#[cfg(feature = "System+Dynamic+Utils+CacheDict_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+Utils+CacheDict_2")]
+#[cfg(feature = "System+Dynamic+Utils+CacheDict_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -316,7 +316,7 @@ for crate::System::Dynamic::Utils::CacheDict_2_Entry<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+Utils+CacheDict_2+Entry")]
+#[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -326,7 +326,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+Utils+CacheDict_2+Entry")]
+#[cfg(feature = "System+Dynamic+Utils+CacheDict_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

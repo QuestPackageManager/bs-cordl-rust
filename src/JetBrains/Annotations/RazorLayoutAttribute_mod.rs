@@ -24,14 +24,14 @@ for crate::JetBrains::Annotations::RazorLayoutAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
 impl std::ops::Deref for crate::JetBrains::Annotations::RazorLayoutAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorLayoutAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorLayoutAttribute")]
 impl std::ops::DerefMut for crate::JetBrains::Annotations::RazorLayoutAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

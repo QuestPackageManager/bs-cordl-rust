@@ -30,7 +30,7 @@ for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     type Target = crate::System::EventArgs;
@@ -38,7 +38,7 @@ for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SafeSerializationEventArgs")]
+#[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

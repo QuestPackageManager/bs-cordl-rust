@@ -101,7 +101,7 @@ for crate::Zenject::PoolableMemoryPool_9<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPool_9")]
+#[cfg(feature = "Zenject+PoolableMemoryPool_9")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -139,7 +139,7 @@ for crate::Zenject::PoolableMemoryPool_9<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPool_9")]
+#[cfg(feature = "Zenject+PoolableMemoryPool_9")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

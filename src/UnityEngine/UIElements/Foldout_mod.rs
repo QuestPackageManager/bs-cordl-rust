@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Fold
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout {
     type Target = crate::UnityEngine::UIElements::BindableElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -400,7 +400,7 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
@@ -410,7 +410,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -489,14 +489,14 @@ for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Foldout+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Foldout_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

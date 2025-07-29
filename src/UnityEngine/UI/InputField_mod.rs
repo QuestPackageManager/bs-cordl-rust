@@ -85,14 +85,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
+#[cfg(feature = "UnityEngine+UI+InputField")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField")]
+#[cfg(feature = "UnityEngine+UI+InputField")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4647,7 +4647,7 @@ for crate::UnityEngine::UI::InputField_EndEditEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4656,7 +4656,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+EndEditEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_EndEditEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4916,7 +4916,7 @@ for crate::UnityEngine::UI::InputField_OnChangeEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4925,7 +4925,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnChangeEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_OnChangeEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4998,14 +4998,14 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnValidateInput {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+OnValidateInput")]
+#[cfg(feature = "UnityEngine+UI+InputField+OnValidateInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_OnValidateInput {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5197,7 +5197,7 @@ for crate::UnityEngine::UI::InputField_SubmitEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5206,7 +5206,7 @@ impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+InputField+SubmitEvent")]
+#[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_SubmitEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

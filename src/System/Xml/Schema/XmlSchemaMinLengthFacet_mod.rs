@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::XmlSchemaMinLengthFacet {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaMinLengthFacet")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaMinLengthFacet")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaMinLengthFacet {
     type Target = crate::System::Xml::Schema::XmlSchemaNumericFacet;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaMinLengthFacet")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaMinLengthFacet")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaMinLengthFacet {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -30,9 +30,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     type Target = crate::System::Security::Cryptography::AsnEncodedData;
@@ -40,9 +38,7 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X500DistinguishedName"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

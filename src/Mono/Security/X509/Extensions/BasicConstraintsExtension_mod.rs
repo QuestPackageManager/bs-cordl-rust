@@ -26,7 +26,7 @@ for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     type Target = crate::Mono::Security::X509::X509Extension;
@@ -34,7 +34,7 @@ for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+Extensions+BasicConstraintsExtension")]
+#[cfg(feature = "Mono+Security+X509+Extensions+BasicConstraintsExtension")]
 impl std::ops::DerefMut
 for crate::Mono::Security::X509::Extensions::BasicConstraintsExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,7 +24,7 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
+#[cfg(feature = "System+Runtime+Remoting+Channels+CrossAppDomainChannel")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

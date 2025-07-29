@@ -28,9 +28,7 @@ for crate::System::Net::Configuration::ConnectionManagementElementCollection {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
-)]
+#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
 impl std::ops::Deref
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     type Target = crate::System::Configuration::ConfigurationElementCollection;
@@ -38,9 +36,7 @@ for crate::System::Net::Configuration::ConnectionManagementElementCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Configuration+ConnectionManagementElementCollection"
-)]
+#[cfg(feature = "System+Net+Configuration+ConnectionManagementElementCollection")]
 impl std::ops::DerefMut
 for crate::System::Net::Configuration::ConnectionManagementElementCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

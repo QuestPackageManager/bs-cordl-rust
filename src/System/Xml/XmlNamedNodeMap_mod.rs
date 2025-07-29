@@ -30,9 +30,7 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
-)]
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 impl std::ops::Deref
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -40,9 +38,7 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator"
-)]
+#[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -205,14 +201,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlNamedNodeMap 
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
 impl std::ops::Deref for crate::System::Xml::XmlNamedNodeMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlNamedNodeMap")]
+#[cfg(feature = "System+Xml+XmlNamedNodeMap")]
 impl std::ops::DerefMut for crate::System::Xml::XmlNamedNodeMap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

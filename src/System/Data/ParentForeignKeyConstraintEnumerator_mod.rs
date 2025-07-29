@@ -25,14 +25,14 @@ for crate::System::Data::ParentForeignKeyConstraintEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
 impl std::ops::Deref for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     type Target = crate::System::Data::ForeignKeyConstraintEnumerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+ParentForeignKeyConstraintEnumerator")]
+#[cfg(feature = "System+Data+ParentForeignKeyConstraintEnumerator")]
 impl std::ops::DerefMut for crate::System::Data::ParentForeignKeyConstraintEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -26,7 +26,7 @@ for crate::GlobalNamespace::Pool_SliderController_Long {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Long")]
+#[cfg(feature = "SliderController+Pool+Long")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Long {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Long {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Long")]
+#[cfg(feature = "SliderController+Pool+Long")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Long {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -110,7 +110,7 @@ for crate::GlobalNamespace::Pool_SliderController_Medium {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Medium")]
+#[cfg(feature = "SliderController+Pool+Medium")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Medium {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -119,7 +119,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Medium {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Medium")]
+#[cfg(feature = "SliderController+Pool+Medium")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Medium {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -194,7 +194,7 @@ for crate::GlobalNamespace::Pool_SliderController_Short {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Short")]
+#[cfg(feature = "SliderController+Pool+Short")]
 impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Short {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
@@ -203,7 +203,7 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Short {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool+Short")]
+#[cfg(feature = "SliderController+Pool+Short")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Short {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -340,14 +340,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderContro
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderController")]
+#[cfg(feature = "SliderController")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController {
     type Target = crate::GlobalNamespace::SliderControllerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderController")]
+#[cfg(feature = "SliderController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1616,14 +1616,14 @@ for crate::GlobalNamespace::SliderController_Pool {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool")]
+#[cfg(feature = "SliderController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController_Pool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderController+Pool")]
+#[cfg(feature = "SliderController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

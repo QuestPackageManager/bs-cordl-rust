@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::InputTrackin
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+InputTracking")]
+#[cfg(feature = "UnityEngine+XR+InputTracking")]
 impl std::ops::Deref for crate::UnityEngine::XR::InputTracking {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+InputTracking")]
+#[cfg(feature = "UnityEngine+XR+InputTracking")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::InputTracking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

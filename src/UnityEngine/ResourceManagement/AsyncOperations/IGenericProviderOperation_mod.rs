@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOpe
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOpe
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+IGenericProviderOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOperation {

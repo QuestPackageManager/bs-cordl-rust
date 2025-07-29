@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions")]
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1839,7 +1839,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -1849,7 +1849,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
@@ -3351,7 +3351,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
@@ -3361,7 +3361,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {

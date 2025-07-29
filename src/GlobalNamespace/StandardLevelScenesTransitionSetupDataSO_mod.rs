@@ -60,7 +60,7 @@ for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
@@ -68,7 +68,7 @@ for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardLevelScenesTransitionSetupDataSO")]
+#[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

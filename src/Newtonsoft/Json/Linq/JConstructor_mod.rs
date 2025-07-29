@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JCons
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JConstructor")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JConstructor")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JConstructor {
     type Target = crate::Newtonsoft::Json::Linq::JContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JConstructor")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JConstructor")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JConstructor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

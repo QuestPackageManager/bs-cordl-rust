@@ -63,7 +63,7 @@ for crate::Zenject::ScriptableObjectInstaller_5<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_5")]
+#[cfg(feature = "Zenject+ScriptableObjectInstaller_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -83,7 +83,7 @@ for crate::Zenject::ScriptableObjectInstaller_5<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ScriptableObjectInstaller_5")]
+#[cfg(feature = "Zenject+ScriptableObjectInstaller_5")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

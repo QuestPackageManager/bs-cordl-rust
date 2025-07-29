@@ -35,14 +35,14 @@ for crate::GlobalNamespace::LightmappingSceneSetup {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightmappingSceneSetup")]
+#[cfg(feature = "LightmappingSceneSetup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmappingSceneSetup {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightmappingSceneSetup")]
+#[cfg(feature = "LightmappingSceneSetup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmappingSceneSetup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

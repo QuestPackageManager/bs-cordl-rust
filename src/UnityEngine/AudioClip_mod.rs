@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioClip {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip")]
+#[cfg(feature = "UnityEngine+AudioClip")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip {
     type Target = crate::UnityEngine::Object;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip")]
+#[cfg(feature = "UnityEngine+AudioClip")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1061,14 +1061,14 @@ for crate::UnityEngine::AudioClip_PCMReaderCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMReaderCallback")]
+#[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMReaderCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMReaderCallback")]
+#[cfg(feature = "UnityEngine+AudioClip+PCMReaderCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioClip_PCMReaderCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1183,14 +1183,14 @@ for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMSetPositionCallback")]
+#[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
 impl std::ops::Deref for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioClip+PCMSetPositionCallback")]
+#[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioClip_PCMSetPositionCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

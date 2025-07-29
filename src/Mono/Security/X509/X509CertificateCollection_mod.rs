@@ -24,14 +24,14 @@ for crate::Mono::Security::X509::X509CertificateCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509CertificateCollection")]
+#[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509CertificateCollection {
     type Target = crate::System::Collections::CollectionBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+X509+X509CertificateCollection")]
+#[cfg(feature = "Mono+Security+X509+X509CertificateCollection")]
 impl std::ops::DerefMut for crate::Mono::Security::X509::X509CertificateCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -383,7 +383,7 @@ for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumer
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::Deref
 for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {
@@ -393,7 +393,7 @@ for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumer
     }
 }
 #[cfg(
-    feature = "cordl_class_Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "Mono+Security+X509+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::Mono::Security::X509::X509CertificateCollection_X509CertificateEnumerator {

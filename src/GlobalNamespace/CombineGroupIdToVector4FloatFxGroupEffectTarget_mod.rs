@@ -43,7 +43,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         false
     }
 }
-#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -51,7 +51,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CombineGroupIdToVector4FloatFxGroupEffectTarget")]
+#[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

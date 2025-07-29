@@ -25,14 +25,14 @@ for crate::UnityEngine::InputSystem::Processors::ScaleProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Processors::ScaleProcessor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleProcessor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Processors::ScaleProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

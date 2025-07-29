@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroups {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroups"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroups")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroups {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroups {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroups"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakePrimeOrderGroups")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakePrimeOrderGroups {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

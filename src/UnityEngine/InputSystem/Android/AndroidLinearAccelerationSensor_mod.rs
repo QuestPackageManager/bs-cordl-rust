@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     type Target = crate::UnityEngine::InputSystem::LinearAccelerationSensor;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidLinearAccelerationSensor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidLinearAccelerationSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

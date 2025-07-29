@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::LazyAsyncResult 
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+LazyAsyncResult")]
+#[cfg(feature = "System+Net+LazyAsyncResult")]
 impl std::ops::Deref for crate::System::Net::LazyAsyncResult {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+LazyAsyncResult")]
+#[cfg(feature = "System+Net+LazyAsyncResult")]
 impl std::ops::DerefMut for crate::System::Net::LazyAsyncResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -616,14 +616,14 @@ for crate::System::Net::LazyAsyncResult_ThreadContext {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+LazyAsyncResult+ThreadContext")]
+#[cfg(feature = "System+Net+LazyAsyncResult+ThreadContext")]
 impl std::ops::Deref for crate::System::Net::LazyAsyncResult_ThreadContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+LazyAsyncResult+ThreadContext")]
+#[cfg(feature = "System+Net+LazyAsyncResult+ThreadContext")]
 impl std::ops::DerefMut for crate::System::Net::LazyAsyncResult_ThreadContext {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

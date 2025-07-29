@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IVerifierFactoryProvider")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+IVerifierFactoryProvider")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+IVerifierFactoryProvider")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+IVerifierFactoryProvider")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

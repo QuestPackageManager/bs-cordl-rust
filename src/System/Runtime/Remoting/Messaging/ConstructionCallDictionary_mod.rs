@@ -28,9 +28,7 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     type Target = crate::System::Runtime::Remoting::Messaging::MessageDictionary;
@@ -38,9 +36,7 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Remoting+Messaging+ConstructionCallDictionary"
-)]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+ConstructionCallDictionary")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,14 +29,14 @@ for crate::Mono::Security::Cryptography::ARC4Managed {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::ARC4Managed {
     type Target = crate::Mono::Security::Cryptography::RC4;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+ARC4Managed")]
+#[cfg(feature = "Mono+Security+Cryptography+ARC4Managed")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::ARC4Managed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

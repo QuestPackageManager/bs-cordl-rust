@@ -49,7 +49,7 @@ for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstall
     }
 }
 #[cfg(
-    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
@@ -59,7 +59,7 @@ for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstall
     }
 }
 #[cfg(
-    feature = "cordl_class_BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
+    feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {

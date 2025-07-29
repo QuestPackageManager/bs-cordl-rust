@@ -26,14 +26,14 @@ for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerBadgeDataMinMaxFloatSO")]
+#[cfg(feature = "MultiplayerBadgeDataMinMaxFloatSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     type Target = crate::GlobalNamespace::MultiplayerBadgeDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerBadgeDataMinMaxFloatSO")]
+#[cfg(feature = "MultiplayerBadgeDataMinMaxFloatSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

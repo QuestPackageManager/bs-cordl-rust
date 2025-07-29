@@ -39,7 +39,7 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     type Target = crate::BeatSaber::AvatarCore::AbstractAdapterInstallerSO;
@@ -47,7 +47,7 @@ for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarAdapterInstallerSO")]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarAdapterInstallerSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

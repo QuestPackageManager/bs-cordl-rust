@@ -30,9 +30,7 @@ for crate::System::Linq::Expressions::Interpreter::NewArrayInitInstruction {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NewArrayInitInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NewArrayInitInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::NewArrayInitInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
@@ -40,9 +38,7 @@ for crate::System::Linq::Expressions::Interpreter::NewArrayInitInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NewArrayInitInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+NewArrayInitInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::NewArrayInitInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

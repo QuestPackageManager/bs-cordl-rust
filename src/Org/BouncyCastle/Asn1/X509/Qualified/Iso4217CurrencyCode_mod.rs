@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Qualified+Iso4217CurrencyCode")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+Iso4217CurrencyCode")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+Qualified+Iso4217CurrencyCode")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+Iso4217CurrencyCode")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::Qualified::Iso4217CurrencyCode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

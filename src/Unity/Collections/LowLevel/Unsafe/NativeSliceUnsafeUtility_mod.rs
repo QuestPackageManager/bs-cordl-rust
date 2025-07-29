@@ -28,9 +28,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility"
-)]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

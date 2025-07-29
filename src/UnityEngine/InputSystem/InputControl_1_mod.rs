@@ -49,7 +49,7 @@ for crate::UnityEngine::InputSystem::InputControl_1<TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl_1")]
+#[cfg(feature = "UnityEngine+InputSystem+InputControl_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::InputControl_1<TValue> {
     type Target = crate::UnityEngine::InputSystem::InputControl;
@@ -57,7 +57,7 @@ for crate::UnityEngine::InputSystem::InputControl_1<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputControl_1")]
+#[cfg(feature = "UnityEngine+InputSystem+InputControl_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::InputSystem::InputControl_1<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

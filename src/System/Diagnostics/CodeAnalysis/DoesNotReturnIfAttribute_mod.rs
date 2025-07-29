@@ -25,7 +25,7 @@ for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl std::ops::Deref
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
+#[cfg(feature = "System+Diagnostics+CodeAnalysis+DoesNotReturnIfAttribute")]
 impl std::ops::DerefMut
 for crate::System::Diagnostics::CodeAnalysis::DoesNotReturnIfAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

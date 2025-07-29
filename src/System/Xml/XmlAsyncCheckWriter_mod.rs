@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlAsyncCheckWri
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckWriter")]
+#[cfg(feature = "System+Xml+XmlAsyncCheckWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlAsyncCheckWriter {
     type Target = crate::System::Xml::XmlWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlAsyncCheckWriter")]
+#[cfg(feature = "System+Xml+XmlAsyncCheckWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlAsyncCheckWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

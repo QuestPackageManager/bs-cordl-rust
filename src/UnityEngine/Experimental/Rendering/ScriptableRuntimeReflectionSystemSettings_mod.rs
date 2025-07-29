@@ -29,7 +29,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {
@@ -39,7 +39,7 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
+    feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {

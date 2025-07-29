@@ -65,14 +65,14 @@ for crate::BeatmapSaveDataVersion3::BeatmapLightshowSaveData {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BeatmapLightshowSaveData")]
+#[cfg(feature = "BeatmapSaveDataVersion3+BeatmapLightshowSaveData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BeatmapLightshowSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BeatmapLightshowSaveData")]
+#[cfg(feature = "BeatmapSaveDataVersion3+BeatmapLightshowSaveData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BeatmapLightshowSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

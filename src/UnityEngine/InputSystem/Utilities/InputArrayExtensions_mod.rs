@@ -24,7 +24,7 @@ for crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+InputArrayExtensions")]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InputArrayExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+InputArrayExtensions")]
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InputArrayExtensions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::InputArrayExtensions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

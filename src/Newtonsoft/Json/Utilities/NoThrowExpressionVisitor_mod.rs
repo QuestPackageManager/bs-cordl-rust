@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     type Target = crate::System::Linq::Expressions::ExpressionVisitor;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
+#[cfg(feature = "Newtonsoft+Json+Utilities+NoThrowExpressionVisitor")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Utilities::NoThrowExpressionVisitor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

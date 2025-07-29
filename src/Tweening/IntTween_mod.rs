@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween {
         false
     }
 }
-#[cfg(feature = "cordl_class_Tweening+IntTween")]
+#[cfg(feature = "Tweening+IntTween")]
 impl std::ops::Deref for crate::Tweening::IntTween {
     type Target = crate::Tweening::Tween_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Tweening+IntTween")]
+#[cfg(feature = "Tweening+IntTween")]
 impl std::ops::DerefMut for crate::Tweening::IntTween {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

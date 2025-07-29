@@ -27,14 +27,14 @@ for crate::System::Runtime::Remoting::Messaging::CADObjRef {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADObjRef")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CADObjRef")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::CADObjRef {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+CADObjRef")]
+#[cfg(feature = "System+Runtime+Remoting+Messaging+CADObjRef")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::CADObjRef {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

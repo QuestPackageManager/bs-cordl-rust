@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+ShorthandApplicator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

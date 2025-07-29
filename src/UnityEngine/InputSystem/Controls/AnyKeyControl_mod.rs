@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Controls::AnyKeyControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AnyKeyControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+AnyKeyControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::AnyKeyControl {
     type Target = crate::UnityEngine::InputSystem::Controls::ButtonControl;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+AnyKeyControl")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+AnyKeyControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::AnyKeyControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

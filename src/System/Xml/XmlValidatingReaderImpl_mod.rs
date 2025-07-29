@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlValidatingRea
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlValidatingReaderImpl")]
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 impl std::ops::Deref for crate::System::Xml::XmlValidatingReaderImpl {
     type Target = crate::System::Xml::XmlReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlValidatingReaderImpl")]
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl")]
 impl std::ops::DerefMut for crate::System::Xml::XmlValidatingReaderImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1805,9 +1805,7 @@ for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+XmlValidatingReaderImpl+ValidationEventHandling"
-)]
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
 impl std::ops::Deref
 for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1815,9 +1813,7 @@ for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+XmlValidatingReaderImpl+ValidationEventHandling"
-)]
+#[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ValidationEventHandling")]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlValidatingReaderImpl_ValidationEventHandling {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

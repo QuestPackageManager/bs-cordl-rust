@@ -29,14 +29,14 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConditionalActiveByLayout")]
+#[cfg(feature = "MultiplayerConditionalActiveByLayout")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

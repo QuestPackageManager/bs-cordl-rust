@@ -58,14 +58,14 @@ for crate::GlobalNamespace::SelectAvatarSystemCell {
         false
     }
 }
-#[cfg(feature = "cordl_class_SelectAvatarSystemCell")]
+#[cfg(feature = "SelectAvatarSystemCell")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectAvatarSystemCell {
     type Target = crate::HMUI::TableCell;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SelectAvatarSystemCell")]
+#[cfg(feature = "SelectAvatarSystemCell")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemCell {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

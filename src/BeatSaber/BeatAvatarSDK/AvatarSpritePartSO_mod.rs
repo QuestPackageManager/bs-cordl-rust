@@ -26,7 +26,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSpritePartSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSpritePartSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO {
     type Target = crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarSpritePartSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSpritePartSO")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

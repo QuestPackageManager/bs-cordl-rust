@@ -55,7 +55,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2")]
+#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -598,7 +598,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -614,7 +614,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
+    feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
 )]
 impl<
     TKey: quest_hook::libil2cpp::Type,
@@ -798,9 +798,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -814,9 +812,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+Enumerator")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

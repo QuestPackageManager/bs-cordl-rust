@@ -49,14 +49,14 @@ for crate::GlobalNamespace::LocalLeaderboardViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
+#[cfg(feature = "LocalLeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardViewController {
     type Target = crate::GlobalNamespace::LeaderboardViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalLeaderboardViewController")]
+#[cfg(feature = "LocalLeaderboardViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

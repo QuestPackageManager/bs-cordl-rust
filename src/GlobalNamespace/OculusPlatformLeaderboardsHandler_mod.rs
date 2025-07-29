@@ -33,14 +33,14 @@ for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     type Target = crate::GlobalNamespace::PlatformLeaderboardsHandler;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusPlatformLeaderboardsHandler")]
+#[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

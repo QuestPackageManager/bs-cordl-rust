@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IAsyncOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+IAsyncOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+IAsyncOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+IAsyncOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

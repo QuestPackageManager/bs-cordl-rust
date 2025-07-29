@@ -36,14 +36,14 @@ for crate::System::Net::Sockets::SafeSocketHandle {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SafeSocketHandle")]
+#[cfg(feature = "System+Net+Sockets+SafeSocketHandle")]
 impl std::ops::Deref for crate::System::Net::Sockets::SafeSocketHandle {
     type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+SafeSocketHandle")]
+#[cfg(feature = "System+Net+Sockets+SafeSocketHandle")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::SafeSocketHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

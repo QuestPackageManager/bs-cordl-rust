@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -788,7 +788,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
@@ -798,7 +798,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+ConfigureBasepointCallback"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
@@ -960,9 +960,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -970,9 +968,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1136,9 +1132,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1146,9 +1140,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1390,7 +1382,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
@@ -1400,7 +1392,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
+    feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {

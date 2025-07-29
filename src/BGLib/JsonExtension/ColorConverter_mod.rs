@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::ColorCo
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::ColorConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
+#[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
 impl std::ops::DerefMut for crate::BGLib::JsonExtension::ColorConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

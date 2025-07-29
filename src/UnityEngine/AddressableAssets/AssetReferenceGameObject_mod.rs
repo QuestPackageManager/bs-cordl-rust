@@ -26,7 +26,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceGameObject {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceGameObject")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceGameObject")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AssetReferenceGameObject {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
@@ -36,7 +36,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceGameObject {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AssetReferenceGameObject")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceGameObject")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceGameObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

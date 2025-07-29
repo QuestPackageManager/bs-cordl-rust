@@ -28,9 +28,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
-)]
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
 impl std::ops::Deref
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     type Target = crate::BGLib::UnityExtension::ShaderPropertyIDAttribute;
@@ -38,9 +36,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute"
-)]
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyIDFromGameObjectAttribute")]
 impl std::ops::DerefMut
 for crate::BGLib::UnityExtension::ShaderPropertyIDFromGameObjectAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

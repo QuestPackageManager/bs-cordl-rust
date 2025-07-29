@@ -29,9 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase;
@@ -39,9 +37,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -242,7 +238,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {
@@ -252,7 +248,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+TextDataProvider+InternalOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider_InternalOp {

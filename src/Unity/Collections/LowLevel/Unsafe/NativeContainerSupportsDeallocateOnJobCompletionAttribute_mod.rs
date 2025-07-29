@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDealloca
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDealloca
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsDeallocateOnJobCompletionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsDeallocateOnJobCompletionAttribute {

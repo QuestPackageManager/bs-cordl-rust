@@ -46,14 +46,14 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer")]
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -379,7 +379,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -387,7 +387,7 @@ for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
+#[cfg(feature = "OculusAdvancedHapticFeedbackPlayer+HapticPlayerState")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

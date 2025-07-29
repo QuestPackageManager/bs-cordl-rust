@@ -49,14 +49,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EulaViewCont
         false
     }
 }
-#[cfg(feature = "cordl_class_EulaViewController")]
+#[cfg(feature = "EulaViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EulaViewController")]
+#[cfg(feature = "EulaViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EulaViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -507,14 +507,14 @@ for crate::GlobalNamespace::EulaViewController_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_EulaViewController+InitData")]
+#[cfg(feature = "EulaViewController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaViewController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EulaViewController+InitData")]
+#[cfg(feature = "EulaViewController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EulaViewController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

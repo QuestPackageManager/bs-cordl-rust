@@ -42,14 +42,14 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
         false
     }
 }
-#[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown")]
+#[cfg(feature = "QuickPlaySongPacksDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown")]
+#[cfg(feature = "QuickPlaySongPacksDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -428,7 +428,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown+SongPackMaskItem")]
+#[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -436,7 +436,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_QuickPlaySongPacksDropdown+SongPackMaskItem")]
+#[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

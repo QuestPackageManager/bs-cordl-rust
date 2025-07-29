@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Security::SecureRandom {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::SecureRandom {
     type Target = crate::System::Random;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+SecureRandom")]
+#[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::SecureRandom {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

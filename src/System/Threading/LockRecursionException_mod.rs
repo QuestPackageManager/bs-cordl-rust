@@ -24,14 +24,14 @@ for crate::System::Threading::LockRecursionException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
+#[cfg(feature = "System+Threading+LockRecursionException")]
 impl std::ops::Deref for crate::System::Threading::LockRecursionException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+LockRecursionException")]
+#[cfg(feature = "System+Threading+LockRecursionException")]
 impl std::ops::DerefMut for crate::System::Threading::LockRecursionException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

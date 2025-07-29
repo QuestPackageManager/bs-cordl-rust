@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlStringAttributeDescription")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlStringAttributeDesc
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlStringAttributeDescription")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

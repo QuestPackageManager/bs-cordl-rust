@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Math::EC::ECPointBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECPointBase")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ECPointBase")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECPointBase {
     type Target = crate::Org::BouncyCastle::Math::EC::ECPoint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+ECPointBase")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+ECPointBase")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECPointBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

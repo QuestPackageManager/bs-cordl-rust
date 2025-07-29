@@ -54,14 +54,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsKeyExchange;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

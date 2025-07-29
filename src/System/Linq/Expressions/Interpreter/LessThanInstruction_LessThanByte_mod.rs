@@ -28,18 +28,14 @@ for crate::GlobalNamespace::LessThanInstruction_LessThanByte {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte")]
 impl std::ops::Deref for crate::GlobalNamespace::LessThanInstruction_LessThanByte {
     type Target = crate::System::Linq::Expressions::Interpreter::LessThanInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanByte")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LessThanInstruction_LessThanByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

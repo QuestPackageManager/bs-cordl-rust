@@ -24,7 +24,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl std::ops::Deref
 for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
+#[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl std::ops::DerefMut
 for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

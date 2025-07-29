@@ -42,7 +42,7 @@ for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     type Target = crate::Zenject::MonoInstaller;
@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MainSettingsMenuViewControllersInstaller")]
+#[cfg(feature = "MainSettingsMenuViewControllersInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MainSettingsMenuViewControllersInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

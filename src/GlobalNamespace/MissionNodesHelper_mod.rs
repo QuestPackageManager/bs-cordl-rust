@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionNodes
         false
     }
 }
-#[cfg(feature = "cordl_class_MissionNodesHelper")]
+#[cfg(feature = "MissionNodesHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionNodesHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissionNodesHelper")]
+#[cfg(feature = "MissionNodesHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionNodesHelper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

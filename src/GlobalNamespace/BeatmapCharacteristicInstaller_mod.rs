@@ -28,7 +28,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapCharacteristicInstaller")]
+#[cfg(feature = "BeatmapCharacteristicInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
     type Target = crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicInstaller 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapCharacteristicInstaller")]
+#[cfg(feature = "BeatmapCharacteristicInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

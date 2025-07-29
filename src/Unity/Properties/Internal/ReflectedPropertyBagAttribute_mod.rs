@@ -24,7 +24,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
+#[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagAttribute")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ReflectedPropertyBagAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

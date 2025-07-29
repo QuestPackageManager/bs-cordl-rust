@@ -28,9 +28,7 @@ for crate::UnityEngine::_Scripting::APIUpdating::APIUpdaterRuntimeHelpers {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+_Scripting+APIUpdating+APIUpdaterRuntimeHelpers"
-)]
+#[cfg(feature = "UnityEngine+_Scripting+APIUpdating+APIUpdaterRuntimeHelpers")]
 impl std::ops::Deref
 for crate::UnityEngine::_Scripting::APIUpdating::APIUpdaterRuntimeHelpers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::_Scripting::APIUpdating::APIUpdaterRuntimeHelpers {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+_Scripting+APIUpdating+APIUpdaterRuntimeHelpers"
-)]
+#[cfg(feature = "UnityEngine+_Scripting+APIUpdating+APIUpdaterRuntimeHelpers")]
 impl std::ops::DerefMut
 for crate::UnityEngine::_Scripting::APIUpdating::APIUpdaterRuntimeHelpers {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+BasicPlayableBehaviour")]
+#[cfg(feature = "UnityEngine+Timeline+BasicPlayableBehaviour")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DIContainerS
         false
     }
 }
-#[cfg(feature = "cordl_class_DIContainerSignal")]
+#[cfg(feature = "DIContainerSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::DIContainerSignal {
     type Target = crate::GlobalNamespace::GenericSignal_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::GlobalNamespace::DIContainerSignal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DIContainerSignal")]
+#[cfg(feature = "DIContainerSignal")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DIContainerSignal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

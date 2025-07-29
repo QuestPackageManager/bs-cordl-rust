@@ -25,14 +25,14 @@ for crate::System::Diagnostics::TraceListenerCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+TraceListenerCollection")]
+#[cfg(feature = "System+Diagnostics+TraceListenerCollection")]
 impl std::ops::Deref for crate::System::Diagnostics::TraceListenerCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+TraceListenerCollection")]
+#[cfg(feature = "System+Diagnostics+TraceListenerCollection")]
 impl std::ops::DerefMut for crate::System::Diagnostics::TraceListenerCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

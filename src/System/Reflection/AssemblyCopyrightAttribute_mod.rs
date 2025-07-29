@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyCopyrightAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyCopyrightAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyCopyrightAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyCopyrightAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyCopyrightAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyCopyrightAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyCopyrightAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

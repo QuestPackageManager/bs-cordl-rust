@@ -33,14 +33,14 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable {
     type Target = crate::Newtonsoft::Json::JsonNameTable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable")]
+#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::DefaultJsonNameTable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -276,14 +276,14 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+DefaultJsonNameTable+Entry")]
+#[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

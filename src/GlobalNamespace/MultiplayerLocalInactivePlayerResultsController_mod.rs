@@ -27,7 +27,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerResultsController")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerResultsController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerResultsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

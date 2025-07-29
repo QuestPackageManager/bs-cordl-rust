@@ -25,7 +25,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundNonLightDynamicRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundNonLightDynamicRenderer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightDynamicRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

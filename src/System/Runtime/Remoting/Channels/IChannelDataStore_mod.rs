@@ -24,14 +24,14 @@ for crate::System::Runtime::Remoting::Channels::IChannelDataStore {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelDataStore")]
+#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelDataStore")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::IChannelDataStore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+Channels+IChannelDataStore")]
+#[cfg(feature = "System+Runtime+Remoting+Channels+IChannelDataStore")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Channels::IChannelDataStore {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

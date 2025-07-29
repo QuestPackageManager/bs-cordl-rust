@@ -44,7 +44,7 @@ for crate::UnityEngine::InputSystem::XR::PoseControl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::PoseControl {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::XR::PoseState,
@@ -53,7 +53,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::PoseControl {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+PoseControl")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::PoseControl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

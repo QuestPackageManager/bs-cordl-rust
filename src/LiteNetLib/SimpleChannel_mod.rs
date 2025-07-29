@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::SimpleChannel {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+SimpleChannel")]
+#[cfg(feature = "LiteNetLib+SimpleChannel")]
 impl std::ops::Deref for crate::LiteNetLib::SimpleChannel {
     type Target = crate::LiteNetLib::BaseChannel;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+SimpleChannel")]
+#[cfg(feature = "LiteNetLib+SimpleChannel")]
 impl std::ops::DerefMut for crate::LiteNetLib::SimpleChannel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

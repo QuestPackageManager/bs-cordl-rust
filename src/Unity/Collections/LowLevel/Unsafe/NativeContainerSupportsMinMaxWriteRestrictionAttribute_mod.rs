@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWr
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWr
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerSupportsMinMaxWriteRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerSupportsMinMaxWriteRestrictionAttribute {

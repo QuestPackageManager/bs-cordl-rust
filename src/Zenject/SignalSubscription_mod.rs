@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalSubscription {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SignalSubscription")]
+#[cfg(feature = "Zenject+SignalSubscription")]
 impl std::ops::Deref for crate::Zenject::SignalSubscription {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SignalSubscription")]
+#[cfg(feature = "Zenject+SignalSubscription")]
 impl std::ops::DerefMut for crate::Zenject::SignalSubscription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -433,7 +433,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalSubscription_P
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SignalSubscription+Pool")]
+#[cfg(feature = "Zenject+SignalSubscription+Pool")]
 impl std::ops::Deref for crate::Zenject::SignalSubscription_Pool {
     type Target = crate::Zenject::PoolableMemoryPool_3<
         quest_hook::libil2cpp::Gc<
@@ -448,7 +448,7 @@ impl std::ops::Deref for crate::Zenject::SignalSubscription_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+SignalSubscription+Pool")]
+#[cfg(feature = "Zenject+SignalSubscription+Pool")]
 impl std::ops::DerefMut for crate::Zenject::SignalSubscription_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

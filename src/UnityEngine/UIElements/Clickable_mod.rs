@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Clic
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Clickable")]
+#[cfg(feature = "UnityEngine+UIElements+Clickable")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Clickable {
     type Target = crate::UnityEngine::UIElements::PointerManipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Clickable")]
+#[cfg(feature = "UnityEngine+UIElements+Clickable")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Clickable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

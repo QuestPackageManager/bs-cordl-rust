@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MaterialLigh
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialLightWithId")]
+#[cfg(feature = "MaterialLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialLightWithId")]
+#[cfg(feature = "MaterialLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

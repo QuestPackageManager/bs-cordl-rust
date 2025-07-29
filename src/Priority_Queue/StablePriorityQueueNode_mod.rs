@@ -25,14 +25,14 @@ for crate::Priority_Queue::StablePriorityQueueNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
 impl std::ops::Deref for crate::Priority_Queue::StablePriorityQueueNode {
     type Target = crate::Priority_Queue::FastPriorityQueueNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+StablePriorityQueueNode")]
+#[cfg(feature = "Priority_Queue+StablePriorityQueueNode")]
 impl std::ops::DerefMut for crate::Priority_Queue::StablePriorityQueueNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

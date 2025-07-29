@@ -26,7 +26,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression;
@@ -34,7 +34,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

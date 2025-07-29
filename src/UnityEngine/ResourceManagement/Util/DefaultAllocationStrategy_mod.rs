@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DefaultAllocationStrategy")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::DefaultAllocationStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

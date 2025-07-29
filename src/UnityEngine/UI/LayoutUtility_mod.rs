@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::LayoutUtilit
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutUtility")]
+#[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 impl std::ops::Deref for crate::UnityEngine::UI::LayoutUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+LayoutUtility")]
+#[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

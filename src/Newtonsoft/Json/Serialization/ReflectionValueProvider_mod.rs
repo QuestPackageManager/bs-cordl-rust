@@ -25,7 +25,7 @@ for crate::Newtonsoft::Json::Serialization::ReflectionValueProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionValueProvider")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionValueProvider")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::ReflectionValueProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Newtonsoft::Json::Serialization::ReflectionValueProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+ReflectionValueProvider")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+ReflectionValueProvider")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::ReflectionValueProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

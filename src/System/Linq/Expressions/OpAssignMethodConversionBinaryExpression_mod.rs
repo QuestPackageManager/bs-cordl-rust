@@ -31,9 +31,7 @@ for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
-)]
+#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     type Target = crate::System::Linq::Expressions::MethodBinaryExpression;
@@ -41,9 +39,7 @@ for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+OpAssignMethodConversionBinaryExpression"
-)]
+#[cfg(feature = "System+Linq+Expressions+OpAssignMethodConversionBinaryExpression")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::OpAssignMethodConversionBinaryExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

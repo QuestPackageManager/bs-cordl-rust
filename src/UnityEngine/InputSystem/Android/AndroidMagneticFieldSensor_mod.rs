@@ -28,9 +28,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidMagneticFieldSensor {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::AndroidMagneticFieldSensor {
     type Target = crate::UnityEngine::InputSystem::MagneticFieldSensor;
@@ -38,9 +36,7 @@ for crate::UnityEngine::InputSystem::Android::AndroidMagneticFieldSensor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+Android+AndroidMagneticFieldSensor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::AndroidMagneticFieldSensor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

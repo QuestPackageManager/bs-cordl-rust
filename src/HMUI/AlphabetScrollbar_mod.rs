@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AlphabetScrollbar {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
+#[cfg(feature = "HMUI+AlphabetScrollbar")]
 impl std::ops::Deref for crate::HMUI::AlphabetScrollbar {
     type Target = crate::HMUI::Interactable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+AlphabetScrollbar")]
+#[cfg(feature = "HMUI+AlphabetScrollbar")]
 impl std::ops::DerefMut for crate::HMUI::AlphabetScrollbar {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

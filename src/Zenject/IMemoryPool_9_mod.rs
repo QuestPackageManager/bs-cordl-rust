@@ -88,7 +88,7 @@ for crate::Zenject::IMemoryPool_9<
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+IMemoryPool_9")]
+#[cfg(feature = "Zenject+IMemoryPool_9")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -116,7 +116,7 @@ for crate::Zenject::IMemoryPool_9<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+IMemoryPool_9")]
+#[cfg(feature = "Zenject+IMemoryPool_9")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

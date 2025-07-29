@@ -41,14 +41,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::XR:
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRHMD {
     type Target = crate::UnityEngine::InputSystem::TrackedDevice;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRHMD")]
+#[cfg(feature = "UnityEngine+InputSystem+XR+XRHMD")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRHMD {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

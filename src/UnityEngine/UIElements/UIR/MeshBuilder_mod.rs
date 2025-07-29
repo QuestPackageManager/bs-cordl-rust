@@ -28,9 +28,7 @@ for crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData+Allocator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData+Allocator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
     type Target = crate::System::MulticastDelegate;
@@ -38,9 +36,7 @@ for crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData+Allocator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData+Allocator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -173,14 +169,14 @@ for crate::UnityEngine::UIElements::UIR::MeshBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshBuilder")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::MeshBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+MeshBuilder")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::MeshBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

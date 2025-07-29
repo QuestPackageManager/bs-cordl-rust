@@ -28,14 +28,14 @@ for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
+#[cfg(feature = "BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
 impl std::ops::DerefMut
 for crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

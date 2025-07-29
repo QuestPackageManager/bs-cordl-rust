@@ -29,9 +29,7 @@ for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
-)]
+#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
 impl std::ops::Deref
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     type Target = crate::Mono::Security::X509::X509Extension;
@@ -39,9 +37,7 @@ for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension"
-)]
+#[cfg(feature = "Mono+Security+X509+Extensions+AuthorityKeyIdentifierExtension")]
 impl std::ops::DerefMut
 for crate::Mono::Security::X509::Extensions::AuthorityKeyIdentifierExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

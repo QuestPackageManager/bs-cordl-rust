@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils")]
+#[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

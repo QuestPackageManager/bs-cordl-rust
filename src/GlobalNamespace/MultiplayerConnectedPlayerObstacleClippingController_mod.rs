@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleClippingController")]
+#[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObstacleClippingController")]
+#[cfg(feature = "MultiplayerConnectedPlayerObstacleClippingController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleClippingController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

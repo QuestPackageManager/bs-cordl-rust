@@ -44,14 +44,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoSetupCon
         false
     }
 }
-#[cfg(feature = "cordl_class_AutoSetupController")]
+#[cfg(feature = "AutoSetupController")]
 impl std::ops::Deref for crate::GlobalNamespace::AutoSetupController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AutoSetupController")]
+#[cfg(feature = "AutoSetupController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AutoSetupController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

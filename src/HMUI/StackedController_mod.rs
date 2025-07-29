@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::StackedController {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+StackedController")]
+#[cfg(feature = "HMUI+StackedController")]
 impl std::ops::Deref for crate::HMUI::StackedController {
     type Target = crate::HMUI::ContainerViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+StackedController")]
+#[cfg(feature = "HMUI+StackedController")]
 impl std::ops::DerefMut for crate::HMUI::StackedController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

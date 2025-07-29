@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebCompletionSou
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource")]
+#[cfg(feature = "System+Net+WebCompletionSource")]
 impl std::ops::Deref for crate::System::Net::WebCompletionSource {
     type Target = crate::System::Net::WebCompletionSource_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::System::Net::WebCompletionSource {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource")]
+#[cfg(feature = "System+Net+WebCompletionSource")]
 impl std::ops::DerefMut for crate::System::Net::WebCompletionSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

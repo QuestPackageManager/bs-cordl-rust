@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetValueOrDefault1"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetValueOrDefault1 {

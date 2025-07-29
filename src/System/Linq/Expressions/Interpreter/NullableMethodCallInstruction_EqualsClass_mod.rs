@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+EqualsClass"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_EqualsClass {

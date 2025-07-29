@@ -28,14 +28,14 @@ for crate::GlobalNamespace::DropdownSettingsController {
         false
     }
 }
-#[cfg(feature = "cordl_class_DropdownSettingsController")]
+#[cfg(feature = "DropdownSettingsController")]
 impl std::ops::Deref for crate::GlobalNamespace::DropdownSettingsController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DropdownSettingsController")]
+#[cfg(feature = "DropdownSettingsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DropdownSettingsController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

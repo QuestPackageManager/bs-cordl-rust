@@ -32,14 +32,14 @@ for crate::GlobalNamespace::MaterialLightWithIds {
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialLightWithIds")]
+#[cfg(feature = "MaterialLightWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialLightWithIds {
     type Target = crate::GlobalNamespace::RuntimeLightWithIds;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialLightWithIds")]
+#[cfg(feature = "MaterialLightWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

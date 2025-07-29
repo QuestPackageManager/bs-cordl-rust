@@ -78,14 +78,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Colu
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Columns {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns")]
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Columns {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1713,7 +1713,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectFactory_2<
@@ -1726,7 +1726,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1847,7 +1847,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     type Target = crate::UnityEngine::UIElements::UxmlObjectTraits_1<T>;
@@ -1855,7 +1855,7 @@ for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectTraits_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

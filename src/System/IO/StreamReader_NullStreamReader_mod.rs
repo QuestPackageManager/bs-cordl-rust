@@ -24,14 +24,14 @@ for crate::GlobalNamespace::StreamReader_NullStreamReader {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+StreamReader+NullStreamReader")]
+#[cfg(feature = "System+IO+StreamReader+NullStreamReader")]
 impl std::ops::Deref for crate::GlobalNamespace::StreamReader_NullStreamReader {
     type Target = crate::System::IO::StreamReader;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+StreamReader+NullStreamReader")]
+#[cfg(feature = "System+IO+StreamReader+NullStreamReader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StreamReader_NullStreamReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

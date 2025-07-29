@@ -81,14 +81,14 @@ for crate::UnityEngine::InputSystem::DefaultInputActions {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::DefaultInputActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions")]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::DefaultInputActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -912,9 +912,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -922,9 +920,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IPlayerActions"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IPlayerActions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1055,7 +1051,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1063,7 +1059,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+IUIActions")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

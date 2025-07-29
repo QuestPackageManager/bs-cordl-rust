@@ -28,9 +28,7 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
-)]
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
 impl std::ops::Deref
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     type Target = crate::System::Exception;
@@ -38,9 +36,7 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParseException"
-)]
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
 impl std::ops::DerefMut
 for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

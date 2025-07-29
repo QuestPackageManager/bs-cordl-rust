@@ -25,14 +25,14 @@ for crate::GlobalNamespace::HEU_ScriptCallbackExample {
         false
     }
 }
-#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
+#[cfg(feature = "HEU_ScriptCallbackExample")]
 impl std::ops::Deref for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HEU_ScriptCallbackExample")]
+#[cfg(feature = "HEU_ScriptCallbackExample")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptCallbackExample {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

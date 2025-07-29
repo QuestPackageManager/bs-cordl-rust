@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockComboCon
         false
     }
 }
-#[cfg(feature = "cordl_class_MockComboController")]
+#[cfg(feature = "MockComboController")]
 impl std::ops::Deref for crate::GlobalNamespace::MockComboController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MockComboController")]
+#[cfg(feature = "MockComboController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockComboController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

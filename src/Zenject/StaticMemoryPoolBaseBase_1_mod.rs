@@ -46,7 +46,7 @@ for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+StaticMemoryPoolBaseBase_1")]
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -54,7 +54,7 @@ for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+StaticMemoryPoolBaseBase_1")]
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::System::CannotUnloadAppDomainException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+CannotUnloadAppDomainException")]
+#[cfg(feature = "System+CannotUnloadAppDomainException")]
 impl std::ops::Deref for crate::System::CannotUnloadAppDomainException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+CannotUnloadAppDomainException")]
+#[cfg(feature = "System+CannotUnloadAppDomainException")]
 impl std::ops::DerefMut for crate::System::CannotUnloadAppDomainException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

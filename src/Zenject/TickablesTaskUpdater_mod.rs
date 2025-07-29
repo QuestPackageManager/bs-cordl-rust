@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::TickablesTaskUpdater
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TickablesTaskUpdater")]
+#[cfg(feature = "Zenject+TickablesTaskUpdater")]
 impl std::ops::Deref for crate::Zenject::TickablesTaskUpdater {
     type Target = crate::Zenject::TaskUpdater_1<
         quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::Zenject::TickablesTaskUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+TickablesTaskUpdater")]
+#[cfg(feature = "Zenject+TickablesTaskUpdater")]
 impl std::ops::DerefMut for crate::Zenject::TickablesTaskUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

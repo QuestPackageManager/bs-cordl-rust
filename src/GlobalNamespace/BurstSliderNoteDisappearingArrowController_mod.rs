@@ -29,7 +29,7 @@ for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
         false
     }
 }
-#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     type Target = crate::GlobalNamespace::DisappearingArrowControllerBase_1<
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BurstSliderNoteDisappearingArrowController")]
+#[cfg(feature = "BurstSliderNoteDisappearingArrowController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BurstSliderNoteDisappearingArrowController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

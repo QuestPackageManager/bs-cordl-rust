@@ -26,7 +26,7 @@ for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteJumpSpeedEventDataProcessor")]
+#[cfg(feature = "NoteJumpSpeedEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJumpSpeedEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteJumpSpeedEventDataProcessor")]
+#[cfg(feature = "NoteJumpSpeedEventDataProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -270,7 +270,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {
@@ -280,7 +280,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState_Variants {

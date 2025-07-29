@@ -50,9 +50,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
@@ -66,9 +64,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+GroupOperation"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

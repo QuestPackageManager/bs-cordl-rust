@@ -27,14 +27,14 @@ for crate::System::ComponentModel::AddingNewEventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
 impl std::ops::Deref for crate::System::ComponentModel::AddingNewEventArgs {
     type Target = crate::System::EventArgs;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+AddingNewEventArgs")]
+#[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
 impl std::ops::DerefMut for crate::System::ComponentModel::AddingNewEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

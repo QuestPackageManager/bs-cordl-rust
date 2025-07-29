@@ -29,7 +29,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesF
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

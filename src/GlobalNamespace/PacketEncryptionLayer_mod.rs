@@ -49,14 +49,14 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
         false
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
+#[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer")]
+#[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PacketEncryptionLayer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -920,7 +920,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         false
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -928,7 +928,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer+EncryptionStatistics")]
+#[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1356,7 +1356,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         false
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1364,7 +1364,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PacketEncryptionLayer+PendingEncryptionStateList")]
+#[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::System::Diagnostics::StackTraceHiddenAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+StackTraceHiddenAttribute")]
+#[cfg(feature = "System+Diagnostics+StackTraceHiddenAttribute")]
 impl std::ops::Deref for crate::System::Diagnostics::StackTraceHiddenAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Diagnostics+StackTraceHiddenAttribute")]
+#[cfg(feature = "System+Diagnostics+StackTraceHiddenAttribute")]
 impl std::ops::DerefMut for crate::System::Diagnostics::StackTraceHiddenAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

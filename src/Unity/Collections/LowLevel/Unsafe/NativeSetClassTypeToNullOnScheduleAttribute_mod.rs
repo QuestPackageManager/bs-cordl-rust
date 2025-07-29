@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnSched
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnSched
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeSetClassTypeToNullOnScheduleAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSetClassTypeToNullOnScheduleAttribute {

@@ -35,14 +35,14 @@ for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     type Target = crate::UnityEngine::EventSystems::PointerEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
+#[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

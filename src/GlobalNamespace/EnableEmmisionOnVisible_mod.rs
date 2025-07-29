@@ -34,14 +34,14 @@ for crate::GlobalNamespace::EnableEmmisionOnVisible {
         false
     }
 }
-#[cfg(feature = "cordl_class_EnableEmmisionOnVisible")]
+#[cfg(feature = "EnableEmmisionOnVisible")]
 impl std::ops::Deref for crate::GlobalNamespace::EnableEmmisionOnVisible {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EnableEmmisionOnVisible")]
+#[cfg(feature = "EnableEmmisionOnVisible")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnableEmmisionOnVisible {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

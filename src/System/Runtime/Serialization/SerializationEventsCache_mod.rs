@@ -24,7 +24,7 @@ for crate::System::Runtime::Serialization::SerializationEventsCache {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventsCache")]
+#[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SerializationEventsCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Runtime::Serialization::SerializationEventsCache {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEventsCache")]
+#[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SerializationEventsCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

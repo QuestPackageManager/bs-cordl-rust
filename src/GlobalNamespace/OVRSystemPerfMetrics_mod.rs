@@ -24,14 +24,14 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
+#[cfg(feature = "OVRSystemPerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics")]
+#[cfg(feature = "OVRSystemPerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -115,7 +115,7 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -123,7 +123,7 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
+#[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -326,14 +326,14 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSystemPerfMetrics+PerfMetrics")]
+#[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

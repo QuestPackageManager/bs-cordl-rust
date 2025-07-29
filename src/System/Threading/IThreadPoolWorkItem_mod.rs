@@ -24,14 +24,14 @@ for crate::System::Threading::IThreadPoolWorkItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+IThreadPoolWorkItem")]
+#[cfg(feature = "System+Threading+IThreadPoolWorkItem")]
 impl std::ops::Deref for crate::System::Threading::IThreadPoolWorkItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+IThreadPoolWorkItem")]
+#[cfg(feature = "System+Threading+IThreadPoolWorkItem")]
 impl std::ops::DerefMut for crate::System::Threading::IThreadPoolWorkItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

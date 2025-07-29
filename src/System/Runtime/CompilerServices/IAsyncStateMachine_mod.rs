@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+IAsyncStateMachine")]
+#[cfg(feature = "System+Runtime+CompilerServices+IAsyncStateMachine")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::IAsyncStateMachine {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

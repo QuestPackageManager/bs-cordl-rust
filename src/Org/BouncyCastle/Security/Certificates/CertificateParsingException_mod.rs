@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateParsingExceptio
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateParsingException"
-)]
+#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CertificateParsingException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::Certificates::CertificateParsingException {
     type Target = crate::Org::BouncyCastle::Security::Certificates::CertificateException;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateParsingExceptio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateParsingException"
-)]
+#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CertificateParsingException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::Certificates::CertificateParsingException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

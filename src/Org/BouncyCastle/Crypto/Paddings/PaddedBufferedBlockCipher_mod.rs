@@ -31,9 +31,7 @@ for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     type Target = crate::Org::BouncyCastle::Crypto::BufferedBlockCipher;
@@ -41,9 +39,7 @@ for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Paddings+PaddedBufferedBlockCipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Paddings::PaddedBufferedBlockCipher {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

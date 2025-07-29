@@ -125,14 +125,14 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     type Target = crate::UnityEngine::EventSystems::BaseInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
+#[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Processors::ScaleVector3Processor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleVector3Processor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleVector3Processor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::ScaleVector3Processor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::Processors::ScaleVector3Processor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleVector3Processor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleVector3Processor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::ScaleVector3Processor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

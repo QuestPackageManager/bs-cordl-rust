@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ComponentModel::Compo
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+Component")]
+#[cfg(feature = "System+ComponentModel+Component")]
 impl std::ops::Deref for crate::System::ComponentModel::Component {
     type Target = crate::System::MarshalByRefObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+Component")]
+#[cfg(feature = "System+ComponentModel+Component")]
 impl std::ops::DerefMut for crate::System::ComponentModel::Component {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

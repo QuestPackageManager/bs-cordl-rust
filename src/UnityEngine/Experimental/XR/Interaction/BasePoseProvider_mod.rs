@@ -24,7 +24,7 @@ for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -32,7 +32,7 @@ for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
+#[cfg(feature = "UnityEngine+Experimental+XR+Interaction+BasePoseProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

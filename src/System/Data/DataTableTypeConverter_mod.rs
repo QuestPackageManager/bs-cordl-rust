@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataTableTypeCo
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
+#[cfg(feature = "System+Data+DataTableTypeConverter")]
 impl std::ops::Deref for crate::System::Data::DataTableTypeConverter {
     type Target = crate::System::ComponentModel::ReferenceConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataTableTypeConverter")]
+#[cfg(feature = "System+Data+DataTableTypeConverter")]
 impl std::ops::DerefMut for crate::System::Data::DataTableTypeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

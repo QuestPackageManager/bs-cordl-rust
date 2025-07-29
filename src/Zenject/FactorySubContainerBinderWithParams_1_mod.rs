@@ -43,7 +43,7 @@ for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinderWithParams_1")]
+#[cfg(feature = "Zenject+FactorySubContainerBinderWithParams_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
     type Target = crate::Zenject::FactorySubContainerBinderBase_1<TContract>;
@@ -51,7 +51,7 @@ for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinderWithParams_1")]
+#[cfg(feature = "Zenject+FactorySubContainerBinderWithParams_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

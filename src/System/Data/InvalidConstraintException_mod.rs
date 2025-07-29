@@ -24,14 +24,14 @@ for crate::System::Data::InvalidConstraintException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+InvalidConstraintException")]
+#[cfg(feature = "System+Data+InvalidConstraintException")]
 impl std::ops::Deref for crate::System::Data::InvalidConstraintException {
     type Target = crate::System::Data::DataException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+InvalidConstraintException")]
+#[cfg(feature = "System+Data+InvalidConstraintException")]
 impl std::ops::DerefMut for crate::System::Data::InvalidConstraintException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

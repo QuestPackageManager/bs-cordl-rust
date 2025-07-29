@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Cms::KekRecipientInformation {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KekRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::KekRecipientInformation {
     type Target = crate::Org::BouncyCastle::Cms::RecipientInformation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KekRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInformation")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KekRecipientInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

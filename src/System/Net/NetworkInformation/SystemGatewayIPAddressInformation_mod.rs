@@ -29,9 +29,7 @@ for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     type Target = crate::System::Net::NetworkInformation::GatewayIPAddressInformation;
@@ -39,9 +37,7 @@ for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+SystemGatewayIPAddressInformation"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+SystemGatewayIPAddressInformation")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::SystemGatewayIPAddressInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::DecoderFallback
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+DecoderFallbackBuffer")]
+#[cfg(feature = "System+Text+DecoderFallbackBuffer")]
 impl std::ops::Deref for crate::System::Text::DecoderFallbackBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+DecoderFallbackBuffer")]
+#[cfg(feature = "System+Text+DecoderFallbackBuffer")]
 impl std::ops::DerefMut for crate::System::Text::DecoderFallbackBuffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

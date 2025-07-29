@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::Compute_DT_EventArgs {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
 impl std::ops::Deref for crate::TMPro::Compute_DT_EventArgs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+Compute_DT_EventArgs")]
+#[cfg(feature = "TMPro+Compute_DT_EventArgs")]
 impl std::ops::DerefMut for crate::TMPro::Compute_DT_EventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

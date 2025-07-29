@@ -27,14 +27,14 @@ for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_PS4ActivePublisherSKUSettingsSO")]
+#[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PS4ActivePublisherSKUSettingsSO")]
+#[cfg(feature = "PS4ActivePublisherSKUSettingsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PS4ActivePublisherSKUSettingsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -32,14 +32,14 @@ for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     type Target = crate::GlobalNamespace::SliderInteractionEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SliderHapticFeedbackInteractionEffect")]
+#[cfg(feature = "SliderHapticFeedbackInteractionEffect")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SliderHapticFeedbackInteractionEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::Experimental::PointerUpLinkTagEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerUpLinkTagEvent")]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerUpLinkTagEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerUpLinkTagEvent {
     type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
@@ -46,7 +46,7 @@ for crate::UnityEngine::UIElements::Experimental::PointerUpLinkTagEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+PointerUpLinkTagEvent")]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+PointerUpLinkTagEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Experimental::PointerUpLinkTagEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointPreCompInfo")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

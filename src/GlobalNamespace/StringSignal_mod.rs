@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::StringSignal
         false
     }
 }
-#[cfg(feature = "cordl_class_StringSignal")]
+#[cfg(feature = "StringSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::StringSignal {
     type Target = crate::GlobalNamespace::GenericSignal_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::GlobalNamespace::StringSignal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StringSignal")]
+#[cfg(feature = "StringSignal")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StringSignal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

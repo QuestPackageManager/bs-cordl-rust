@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile {
         false
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
+#[cfg(feature = "Ice+FloorLightTile")]
 impl std::ops::Deref for crate::Ice::FloorLightTile {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightTile")]
+#[cfg(feature = "Ice+FloorLightTile")]
 impl std::ops::DerefMut for crate::Ice::FloorLightTile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -266,7 +266,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile_Pool {
         false
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
+#[cfg(feature = "Ice+FloorLightTile+Pool")]
 impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
@@ -275,7 +275,7 @@ impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightTile+Pool")]
+#[cfg(feature = "Ice+FloorLightTile+Pool")]
 impl std::ops::DerefMut for crate::Ice::FloorLightTile_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
+#[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

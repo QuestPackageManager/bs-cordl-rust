@@ -30,7 +30,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDom
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainMap"
+    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainMap"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainMap {
@@ -40,7 +40,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDom
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainMap"
+    feature = "System+Runtime+Serialization+Formatters+Binary+BinaryCrossAppDomainMap"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainMap {

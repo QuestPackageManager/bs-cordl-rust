@@ -24,14 +24,14 @@ for crate::System::Net::AuthenticationSchemeSelector {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+AuthenticationSchemeSelector")]
+#[cfg(feature = "System+Net+AuthenticationSchemeSelector")]
 impl std::ops::Deref for crate::System::Net::AuthenticationSchemeSelector {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+AuthenticationSchemeSelector")]
+#[cfg(feature = "System+Net+AuthenticationSchemeSelector")]
 impl std::ops::DerefMut for crate::System::Net::AuthenticationSchemeSelector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

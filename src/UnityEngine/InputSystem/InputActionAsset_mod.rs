@@ -47,14 +47,14 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionAsset")]
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

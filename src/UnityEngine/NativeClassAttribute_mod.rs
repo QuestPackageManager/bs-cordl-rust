@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::NativeClassAttri
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+NativeClassAttribute")]
+#[cfg(feature = "UnityEngine+NativeClassAttribute")]
 impl std::ops::Deref for crate::UnityEngine::NativeClassAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+NativeClassAttribute")]
+#[cfg(feature = "UnityEngine+NativeClassAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::NativeClassAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Xml::SmallXmlParser {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser")]
 impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -671,14 +671,14 @@ for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+AttrListImpl")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+AttrListImpl")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
 impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -998,14 +998,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Xml::SmallXmlParser_IAt
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IAttrList")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_IAttrList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IAttrList")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+IAttrList")]
 impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser_IAttrList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1233,14 +1233,14 @@ for crate::Mono::Xml::SmallXmlParser_IContentHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IContentHandler")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_IContentHandler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+IContentHandler")]
+#[cfg(feature = "Mono+Xml+SmallXmlParser+IContentHandler")]
 impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser_IContentHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

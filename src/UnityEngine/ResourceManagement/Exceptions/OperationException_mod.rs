@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     type Target = crate::System::Exception;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+OperationException"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+OperationException")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::OperationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

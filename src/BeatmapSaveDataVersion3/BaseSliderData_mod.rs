@@ -31,14 +31,14 @@ for crate::BeatmapSaveDataVersion3::BaseSliderData {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::BaseSliderData {
     type Target = crate::BeatmapSaveDataVersion3::BeatmapSaveDataItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+BaseSliderData")]
+#[cfg(feature = "BeatmapSaveDataVersion3+BaseSliderData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::BaseSliderData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

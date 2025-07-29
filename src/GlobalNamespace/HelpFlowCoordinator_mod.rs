@@ -46,14 +46,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::HelpFlowCoor
         false
     }
 }
-#[cfg(feature = "cordl_class_HelpFlowCoordinator")]
+#[cfg(feature = "HelpFlowCoordinator")]
 impl std::ops::Deref for crate::GlobalNamespace::HelpFlowCoordinator {
     type Target = crate::HMUI::FlowCoordinator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HelpFlowCoordinator")]
+#[cfg(feature = "HelpFlowCoordinator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HelpFlowCoordinator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

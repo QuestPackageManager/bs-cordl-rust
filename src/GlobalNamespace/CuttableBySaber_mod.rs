@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CuttableBySa
         false
     }
 }
-#[cfg(feature = "cordl_class_CuttableBySaber")]
+#[cfg(feature = "CuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CuttableBySaber")]
+#[cfg(feature = "CuttableBySaber")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CuttableBySaber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -297,14 +297,14 @@ for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_CuttableBySaber+WasCutBySaberDelegate")]
+#[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
 impl std::ops::Deref for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_CuttableBySaber+WasCutBySaberDelegate")]
+#[cfg(feature = "CuttableBySaber+WasCutBySaberDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CuttableBySaber_WasCutBySaberDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

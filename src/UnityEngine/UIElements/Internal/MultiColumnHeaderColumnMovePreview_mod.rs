@@ -28,9 +28,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMovePreview
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMovePreview"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMovePreview")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMovePreview {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -38,9 +36,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMovePreview
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMovePreview"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMovePreview")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMovePreview {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

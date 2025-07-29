@@ -42,14 +42,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NatPunchModule {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule")]
+#[cfg(feature = "LiteNetLib+NatPunchModule")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -468,14 +468,14 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -663,14 +663,14 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -907,14 +907,14 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NatPunchModule+NatPunchPacket")]
+#[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl std::ops::DerefMut for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

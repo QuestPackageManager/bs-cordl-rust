@@ -25,7 +25,7 @@ for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     type Target = crate::System::Runtime::CompilerServices::CustomConstantAttribute;
@@ -33,7 +33,7 @@ for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+DateTimeConstantAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+DateTimeConstantAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::DateTimeConstantAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

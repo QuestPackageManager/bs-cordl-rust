@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

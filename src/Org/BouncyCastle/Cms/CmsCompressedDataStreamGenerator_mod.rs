@@ -25,7 +25,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -33,7 +33,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -228,7 +228,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompresse
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {
@@ -238,7 +238,7 @@ for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompresse
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
+    feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator+CmsCompressedOutputStream"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompressedOutputStream {

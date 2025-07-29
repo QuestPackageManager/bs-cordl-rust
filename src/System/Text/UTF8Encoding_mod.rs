@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF8Encoding {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
+#[cfg(feature = "System+Text+UTF8Encoding")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding {
     type Target = crate::System::Text::Encoding;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding")]
+#[cfg(feature = "System+Text+UTF8Encoding")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1170,14 +1170,14 @@ for crate::System::Text::UTF8Encoding_UTF8Decoder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Decoder {
     type Target = crate::System::Text::DecoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Decoder")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8Decoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding_UTF8Decoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1296,14 +1296,14 @@ for crate::System::Text::UTF8Encoding_UTF8Encoder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
 impl std::ops::Deref for crate::System::Text::UTF8Encoding_UTF8Encoder {
     type Target = crate::System::Text::EncoderNLS;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+UTF8Encoding+UTF8Encoder")]
+#[cfg(feature = "System+Text+UTF8Encoding+UTF8Encoder")]
 impl std::ops::DerefMut for crate::System::Text::UTF8Encoding_UTF8Encoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

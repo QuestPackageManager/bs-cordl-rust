@@ -24,14 +24,14 @@ for crate::UnityEngine::Timeline::ActivationPlayableAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Timeline+ActivationPlayableAsset")]
+#[cfg(feature = "UnityEngine+Timeline+ActivationPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::ActivationPlayableAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

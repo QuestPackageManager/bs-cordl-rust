@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XPath::XPathNavi
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNavigator")]
+#[cfg(feature = "System+Xml+XPath+XPathNavigator")]
 impl std::ops::Deref for crate::System::Xml::XPath::XPathNavigator {
     type Target = crate::System::Xml::XPath::XPathItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XPath+XPathNavigator")]
+#[cfg(feature = "System+Xml+XPath+XPathNavigator")]
 impl std::ops::DerefMut for crate::System::Xml::XPath::XPathNavigator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

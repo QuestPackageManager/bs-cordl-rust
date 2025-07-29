@@ -31,14 +31,14 @@ for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
+#[cfg(feature = "EventsTestScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsSignedGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1091,7 +1091,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1099,7 +1099,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataGenerator+SignerInf")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataGenerator_SignerInf {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

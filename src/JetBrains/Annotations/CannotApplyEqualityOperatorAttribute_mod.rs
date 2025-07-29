@@ -28,9 +28,7 @@ for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+CannotApplyEqualityOperatorAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+CannotApplyEqualityOperatorAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::CannotApplyEqualityOperatorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs10CertificationRequestDelaySigned"
-)]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs10CertificationRequestDelaySigned")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
     type Target = crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequest;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Pkcs+Pkcs10CertificationRequestDelaySigned"
-)]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs10CertificationRequestDelaySigned")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequestDelaySigned {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -1145,14 +1145,14 @@ for crate::System::ComponentModel::TypeDescriptor {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2644,9 +2644,7 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2654,9 +2652,7 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2802,14 +2798,14 @@ for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+FilterCacheItem")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2937,14 +2933,14 @@ for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+IUnimplemented")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+IUnimplemented")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2999,9 +2995,7 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3009,9 +3003,7 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+MemberDescriptorComparer"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3141,7 +3133,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3149,7 +3141,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3649,7 +3641,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
@@ -3657,7 +3649,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3985,9 +3977,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3995,9 +3985,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorComObject"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4048,9 +4036,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -4058,9 +4044,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+ComponentModel+TypeDescriptor+TypeDescriptorInterface"
-)]
+#[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

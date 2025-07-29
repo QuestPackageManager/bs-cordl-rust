@@ -74,14 +74,14 @@ for crate::GlobalNamespace::LevelCollectionViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_LevelCollectionViewController")]
+#[cfg(feature = "LevelCollectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LevelCollectionViewController")]
+#[cfg(feature = "LevelCollectionViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

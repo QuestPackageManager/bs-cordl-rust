@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SphereCuttableBySaber {
         false
     }
 }
-#[cfg(feature = "cordl_class_SphereCuttableBySaber")]
+#[cfg(feature = "SphereCuttableBySaber")]
 impl std::ops::Deref for crate::GlobalNamespace::SphereCuttableBySaber {
     type Target = crate::GlobalNamespace::CuttableBySaber;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SphereCuttableBySaber")]
+#[cfg(feature = "SphereCuttableBySaber")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SphereCuttableBySaber {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

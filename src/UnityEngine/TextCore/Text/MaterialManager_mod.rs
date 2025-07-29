@@ -24,14 +24,14 @@ for crate::UnityEngine::TextCore::Text::MaterialManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+MaterialManager")]
+#[cfg(feature = "UnityEngine+TextCore+Text+MaterialManager")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::MaterialManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+MaterialManager")]
+#[cfg(feature = "UnityEngine+TextCore+Text+MaterialManager")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::MaterialManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

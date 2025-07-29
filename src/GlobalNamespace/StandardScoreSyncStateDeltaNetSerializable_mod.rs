@@ -27,7 +27,7 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
         false
     }
 }
-#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StandardScoreSyncStateDeltaNetSerializable")]
+#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

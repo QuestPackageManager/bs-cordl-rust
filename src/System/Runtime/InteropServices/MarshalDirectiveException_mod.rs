@@ -24,7 +24,7 @@ for crate::System::Runtime::InteropServices::MarshalDirectiveException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+MarshalDirectiveException")]
+#[cfg(feature = "System+Runtime+InteropServices+MarshalDirectiveException")]
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::MarshalDirectiveException {
     type Target = crate::System::SystemException;
@@ -32,7 +32,7 @@ for crate::System::Runtime::InteropServices::MarshalDirectiveException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+InteropServices+MarshalDirectiveException")]
+#[cfg(feature = "System+Runtime+InteropServices+MarshalDirectiveException")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::MarshalDirectiveException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

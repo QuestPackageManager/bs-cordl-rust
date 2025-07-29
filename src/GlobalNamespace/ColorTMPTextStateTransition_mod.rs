@@ -27,7 +27,7 @@ for crate::GlobalNamespace::ColorTMPTextStateTransition {
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
+#[cfg(feature = "ColorTMPTextStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorTMPTextStateTransition {
     type Target = crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -36,7 +36,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ColorTMPTextStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorTMPTextStateTransition")]
+#[cfg(feature = "ColorTMPTextStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorTMPTextStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

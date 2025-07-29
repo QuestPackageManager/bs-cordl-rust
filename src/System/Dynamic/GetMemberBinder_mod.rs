@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::GetMemberBin
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+GetMemberBinder")]
+#[cfg(feature = "System+Dynamic+GetMemberBinder")]
 impl std::ops::Deref for crate::System::Dynamic::GetMemberBinder {
     type Target = crate::System::Dynamic::DynamicMetaObjectBinder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+GetMemberBinder")]
+#[cfg(feature = "System+Dynamic+GetMemberBinder")]
 impl std::ops::DerefMut for crate::System::Dynamic::GetMemberBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

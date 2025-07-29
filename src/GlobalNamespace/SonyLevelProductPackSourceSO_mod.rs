@@ -34,14 +34,14 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO")]
+#[cfg(feature = "SonyLevelProductPackSourceSO")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO")]
+#[cfg(feature = "SonyLevelProductPackSourceSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelProductPackSourceSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -235,7 +235,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
         false
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductPackSource")]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -243,7 +243,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductPackSource")]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -469,9 +469,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirection
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductRedirectionSource"
-)]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -479,9 +477,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirection
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductRedirectionSource"
-)]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductRedirectionSource")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -644,7 +640,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
         false
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductSource")]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -652,7 +648,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SonyLevelProductPackSourceSO+LevelProductSource")]
+#[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductSource")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BakedLightTexturePacking {
         false
     }
 }
-#[cfg(feature = "cordl_class_BakedLightTexturePacking")]
+#[cfg(feature = "BakedLightTexturePacking")]
 impl std::ops::Deref for crate::GlobalNamespace::BakedLightTexturePacking {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BakedLightTexturePacking")]
+#[cfg(feature = "BakedLightTexturePacking")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightTexturePacking {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

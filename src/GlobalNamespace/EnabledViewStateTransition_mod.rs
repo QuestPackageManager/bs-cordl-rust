@@ -29,7 +29,7 @@ for crate::GlobalNamespace::EnabledViewStateTransition {
         false
     }
 }
-#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
+#[cfg(feature = "EnabledViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EnabledViewStateTransition")]
+#[cfg(feature = "EnabledViewStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnabledViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

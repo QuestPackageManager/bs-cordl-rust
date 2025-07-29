@@ -49,7 +49,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_ModestTree+Util+ValuePair_2")]
+#[cfg(feature = "ModestTree+Util+ValuePair_2")]
 impl<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::ModestTree::Util::ValuePair_2<T1, T2> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -57,7 +57,7 @@ for crate::ModestTree::Util::ValuePair_2<T1, T2> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ModestTree+Util+ValuePair_2")]
+#[cfg(feature = "ModestTree+Util+ValuePair_2")]
 impl<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::ModestTree::Util::ValuePair_2<T1, T2> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

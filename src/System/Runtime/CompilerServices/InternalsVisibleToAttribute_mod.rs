@@ -30,9 +30,7 @@ for crate::System::Runtime::CompilerServices::InternalsVisibleToAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+InternalsVisibleToAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+InternalsVisibleToAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::InternalsVisibleToAttribute {
     type Target = crate::System::Attribute;
@@ -40,9 +38,7 @@ for crate::System::Runtime::CompilerServices::InternalsVisibleToAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+InternalsVisibleToAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+InternalsVisibleToAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::InternalsVisibleToAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -62,7 +62,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
+#[cfg(feature = "TMPro+FastAction_3")]
 impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,
@@ -73,7 +73,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FastAction_3")]
+#[cfg(feature = "TMPro+FastAction_3")]
 impl<
     A: quest_hook::libil2cpp::Type,
     B: quest_hook::libil2cpp::Type,

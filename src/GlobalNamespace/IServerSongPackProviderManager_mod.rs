@@ -24,14 +24,14 @@ for crate::GlobalNamespace::IServerSongPackProviderManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_IServerSongPackProviderManager")]
+#[cfg(feature = "IServerSongPackProviderManager")]
 impl std::ops::Deref for crate::GlobalNamespace::IServerSongPackProviderManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IServerSongPackProviderManager")]
+#[cfg(feature = "IServerSongPackProviderManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::IServerSongPackProviderManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

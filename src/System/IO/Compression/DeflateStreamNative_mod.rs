@@ -35,14 +35,14 @@ for crate::System::IO::Compression::DeflateStreamNative {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStreamNative")]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStreamNative {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+Compression+DeflateStreamNative")]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStreamNative {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -591,9 +591,7 @@ for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle"
-)]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle {
     type Target = crate::System::Runtime::InteropServices::SafeHandle;
@@ -601,9 +599,7 @@ for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle"
-)]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative+SafeDeflateStreamHandle")]
 impl std::ops::DerefMut
 for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -717,9 +713,7 @@ for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite"
-)]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 impl std::ops::Deref
 for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
     type Target = crate::System::MulticastDelegate;
@@ -727,9 +721,7 @@ for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite"
-)]
+#[cfg(feature = "System+IO+Compression+DeflateStreamNative+UnmanagedReadOrWrite")]
 impl std::ops::DerefMut
 for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

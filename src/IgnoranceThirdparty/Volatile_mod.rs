@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceThirdparty::Volatile
         false
     }
 }
-#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
 impl std::ops::Deref for crate::IgnoranceThirdparty::Volatile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IgnoranceThirdparty+Volatile")]
+#[cfg(feature = "IgnoranceThirdparty+Volatile")]
 impl std::ops::DerefMut for crate::IgnoranceThirdparty::Volatile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

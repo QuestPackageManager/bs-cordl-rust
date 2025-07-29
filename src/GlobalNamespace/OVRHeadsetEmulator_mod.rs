@@ -39,14 +39,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHeadsetEm
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
+#[cfg(feature = "OVRHeadsetEmulator")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRHeadsetEmulator {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRHeadsetEmulator")]
+#[cfg(feature = "OVRHeadsetEmulator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRHeadsetEmulator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

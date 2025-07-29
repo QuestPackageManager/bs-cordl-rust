@@ -67,14 +67,14 @@ for crate::UnityEngine::InputSystem::PlayerInputManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInputManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager")]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInputManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1296,9 +1296,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1308,9 +1306,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1392,9 +1388,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
@@ -1404,9 +1398,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

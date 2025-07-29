@@ -24,14 +24,14 @@ for crate::UnityEngine::InputSystem::Processors::InvertProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Processors::InvertProcessor {
     type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+InvertProcessor")]
+#[cfg(feature = "UnityEngine+InputSystem+Processors+InvertProcessor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Processors::InvertProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -549,7 +549,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     type Target = crate::UnityEngine::UIElements::UQuery_UQueryMatcher;
@@ -557,7 +557,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1058,7 +1058,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<T, TElement
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -1069,7 +1069,7 @@ for crate::UnityEngine::UIElements::UQueryState_1_ListQueryMatcher_1<T, TElement
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

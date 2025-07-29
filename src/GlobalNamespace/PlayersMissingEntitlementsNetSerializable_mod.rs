@@ -29,7 +29,7 @@ for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     type Target = crate::GlobalNamespace::PoolableSerializable;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayersMissingEntitlementsNetSerializable")]
+#[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

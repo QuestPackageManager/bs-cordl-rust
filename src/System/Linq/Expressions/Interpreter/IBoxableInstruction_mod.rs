@@ -24,7 +24,7 @@ for crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+IBoxableInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+IBoxableInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+IBoxableInstruction")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+IBoxableInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::IBoxableInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

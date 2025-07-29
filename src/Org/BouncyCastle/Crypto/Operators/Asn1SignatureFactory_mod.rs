@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -42,7 +42,7 @@ for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -49,7 +49,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_2")]
+#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_2")]
 impl<
     TContract: quest_hook::libil2cpp::Type,
     TMemoryPool: quest_hook::libil2cpp::Type,
@@ -60,7 +60,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_2<TContract, TMemoryPool> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+PoolableMemoryPoolProvider_2")]
+#[cfg(feature = "Zenject+PoolableMemoryPoolProvider_2")]
 impl<
     TContract: quest_hook::libil2cpp::Type,
     TMemoryPool: quest_hook::libil2cpp::Type,

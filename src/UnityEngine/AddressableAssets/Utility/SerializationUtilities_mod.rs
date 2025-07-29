@@ -28,9 +28,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Utility+SerializationUtilities"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

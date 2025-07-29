@@ -25,14 +25,14 @@ for crate::GlobalNamespace::NullableScriptableObjectInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_NullableScriptableObjectInstaller")]
+#[cfg(feature = "NullableScriptableObjectInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::NullableScriptableObjectInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NullableScriptableObjectInstaller")]
+#[cfg(feature = "NullableScriptableObjectInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NullableScriptableObjectInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

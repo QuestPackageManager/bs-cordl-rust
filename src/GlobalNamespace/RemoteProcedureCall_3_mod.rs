@@ -57,7 +57,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_3<T0, T1, T2> {
         false
     }
 }
-#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
+#[cfg(feature = "RemoteProcedureCall_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
@@ -68,7 +68,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RemoteProcedureCall_3")]
+#[cfg(feature = "RemoteProcedureCall_3")]
 impl<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,

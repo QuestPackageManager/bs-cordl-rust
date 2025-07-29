@@ -24,14 +24,14 @@ for crate::System::IO::DirectoryNotFoundException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+IO+DirectoryNotFoundException")]
+#[cfg(feature = "System+IO+DirectoryNotFoundException")]
 impl std::ops::Deref for crate::System::IO::DirectoryNotFoundException {
     type Target = crate::System::IO::IOException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+IO+DirectoryNotFoundException")]
+#[cfg(feature = "System+IO+DirectoryNotFoundException")]
 impl std::ops::DerefMut for crate::System::IO::DirectoryNotFoundException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

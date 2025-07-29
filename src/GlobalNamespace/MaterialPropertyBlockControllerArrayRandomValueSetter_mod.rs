@@ -40,7 +40,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSette
         false
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -48,7 +48,7 @@ for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSette
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MaterialPropertyBlockControllerArrayRandomValueSetter")]
+#[cfg(feature = "MaterialPropertyBlockControllerArrayRandomValueSetter")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyBlockControllerArrayRandomValueSetter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoolSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BoolSO")]
+#[cfg(feature = "BoolSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BoolSO {
     type Target = crate::GlobalNamespace::ObservableVariableSO_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BoolSO")]
+#[cfg(feature = "BoolSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BoolSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

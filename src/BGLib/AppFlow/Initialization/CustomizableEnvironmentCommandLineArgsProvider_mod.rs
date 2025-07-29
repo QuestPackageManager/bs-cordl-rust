@@ -29,7 +29,7 @@ for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArg
     }
 }
 #[cfg(
-    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 impl std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {
@@ -39,7 +39,7 @@ for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArg
     }
 }
 #[cfg(
-    feature = "cordl_class_BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
+    feature = "BGLib+AppFlow+Initialization+CustomizableEnvironmentCommandLineArgsProvider"
 )]
 impl std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineArgsProvider {

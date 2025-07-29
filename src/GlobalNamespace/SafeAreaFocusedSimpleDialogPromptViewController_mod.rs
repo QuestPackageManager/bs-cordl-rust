@@ -24,7 +24,7 @@ for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_SafeAreaFocusedSimpleDialogPromptViewController")]
+#[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
     type Target = crate::GlobalNamespace::SimpleDialogPromptViewController;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SafeAreaFocusedSimpleDialogPromptViewController")]
+#[cfg(feature = "SafeAreaFocusedSimpleDialogPromptViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SafeAreaFocusedSimpleDialogPromptViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

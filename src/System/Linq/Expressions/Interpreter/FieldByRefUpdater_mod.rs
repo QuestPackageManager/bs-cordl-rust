@@ -28,7 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::FieldByRefUpdater {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+FieldByRefUpdater")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+FieldByRefUpdater")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::FieldByRefUpdater {
     type Target = crate::System::Linq::Expressions::Interpreter::ByRefUpdater;
@@ -36,7 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::FieldByRefUpdater {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+Interpreter+FieldByRefUpdater")]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+FieldByRefUpdater")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::FieldByRefUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

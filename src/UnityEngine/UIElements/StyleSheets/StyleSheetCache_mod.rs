@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -354,7 +354,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
@@ -364,7 +364,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
+    feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LightmappingSongController {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightmappingSongController")]
+#[cfg(feature = "LightmappingSongController")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmappingSongController {
     type Target = crate::GlobalNamespace::SongController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightmappingSongController")]
+#[cfg(feature = "LightmappingSongController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmappingSongController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_yearMonthDuration {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_yearMonthDuration")]
+#[cfg(feature = "System+Xml+Schema+Datatype_yearMonthDuration")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_yearMonthDuration {
     type Target = crate::System::Xml::Schema::Datatype_duration;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_yearMonthDuration")]
+#[cfg(feature = "System+Xml+Schema+Datatype_yearMonthDuration")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_yearMonthDuration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

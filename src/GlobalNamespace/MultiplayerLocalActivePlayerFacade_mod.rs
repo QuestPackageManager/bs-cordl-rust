@@ -62,14 +62,14 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerFacade")]
+#[cfg(feature = "MultiplayerLocalActivePlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerFacade")]
+#[cfg(feature = "MultiplayerLocalActivePlayerFacade")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -662,7 +662,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerFacade+Factory")]
+#[cfg(feature = "MultiplayerLocalActivePlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
@@ -675,7 +675,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalActivePlayerFacade+Factory")]
+#[cfg(feature = "MultiplayerLocalActivePlayerFacade+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

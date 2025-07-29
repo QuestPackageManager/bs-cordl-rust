@@ -24,7 +24,7 @@ for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
+#[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

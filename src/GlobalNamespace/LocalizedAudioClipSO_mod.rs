@@ -34,14 +34,14 @@ for crate::GlobalNamespace::LocalizedAudioClipSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalizedAudioClipSO")]
+#[cfg(feature = "LocalizedAudioClipSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalizedAudioClipSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalizedAudioClipSO")]
+#[cfg(feature = "LocalizedAudioClipSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedAudioClipSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -144,7 +144,7 @@ for crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalizedAudioClipSO+LocalizedAudioClipInfo")]
+#[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -152,7 +152,7 @@ for crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalizedAudioClipSO+LocalizedAudioClipInfo")]
+#[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

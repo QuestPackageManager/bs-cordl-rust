@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
@@ -36,7 +36,7 @@ for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlHash128AttributeDescription")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

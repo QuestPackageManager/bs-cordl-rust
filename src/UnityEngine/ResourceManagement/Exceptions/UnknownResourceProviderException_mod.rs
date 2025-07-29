@@ -32,7 +32,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {
@@ -42,7 +42,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
+    feature = "UnityEngine+ResourceManagement+Exceptions+UnknownResourceProviderException"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Exceptions::UnknownResourceProviderException {

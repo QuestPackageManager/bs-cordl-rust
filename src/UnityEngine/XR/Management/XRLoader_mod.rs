@@ -24,14 +24,14 @@ for crate::UnityEngine::XR::Management::XRLoader {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRLoader {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRLoader")]
+#[cfg(feature = "UnityEngine+XR+Management+XRLoader")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

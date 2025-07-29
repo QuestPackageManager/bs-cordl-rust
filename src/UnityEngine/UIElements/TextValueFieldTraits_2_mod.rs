@@ -62,7 +62,7 @@ for crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueFieldTraits_2")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
@@ -79,7 +79,7 @@ for crate::UnityEngine::UIElements::TextValueFieldTraits_2<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TextValueFieldTraits_2")]
+#[cfg(feature = "UnityEngine+UIElements+TextValueFieldTraits_2")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,

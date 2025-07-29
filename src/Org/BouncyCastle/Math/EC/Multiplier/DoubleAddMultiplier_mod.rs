@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::DoubleAddMultiplier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+DoubleAddMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+DoubleAddMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::DoubleAddMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::DoubleAddMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+DoubleAddMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+DoubleAddMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::DoubleAddMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

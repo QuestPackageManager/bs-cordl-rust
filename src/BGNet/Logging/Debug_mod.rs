@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
+#[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug")]
+#[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -262,14 +262,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug_ILogger
         false
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_ILogger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug+ILogger")]
+#[cfg(feature = "BGNet+Logging+Debug+ILogger")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug_ILogger {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -430,14 +430,14 @@ for crate::BGNet::Logging::Debug_LoggerLinkedList {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGNet+Logging+Debug+LoggerLinkedList")]
+#[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug_LoggerLinkedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

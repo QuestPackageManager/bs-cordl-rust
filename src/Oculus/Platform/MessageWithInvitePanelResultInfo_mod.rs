@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithInvitePanelResultInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInvitePanelResultInfo")]
+#[cfg(feature = "Oculus+Platform+MessageWithInvitePanelResultInfo")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithInvitePanelResultInfo {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::InvitePanelResultInfo>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithInvitePanelResultIn
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithInvitePanelResultInfo")]
+#[cfg(feature = "Oculus+Platform+MessageWithInvitePanelResultInfo")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithInvitePanelResultInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

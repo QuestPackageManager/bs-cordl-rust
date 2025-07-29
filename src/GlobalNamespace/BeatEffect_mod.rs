@@ -48,14 +48,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatEffect")]
+#[cfg(feature = "BeatEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatEffect")]
+#[cfg(feature = "BeatEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -228,7 +228,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffect_P
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatEffect+Pool")]
+#[cfg(feature = "BeatEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffect_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
@@ -237,7 +237,7 @@ impl std::ops::Deref for crate::GlobalNamespace::BeatEffect_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatEffect+Pool")]
+#[cfg(feature = "BeatEffect+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatEffect_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

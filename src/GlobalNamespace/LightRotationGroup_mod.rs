@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightRotatio
         false
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroup")]
+#[cfg(feature = "LightRotationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
     type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightRotationGroup")]
+#[cfg(feature = "LightRotationGroup")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,18 +28,14 @@ for crate::GlobalNamespace::ModuloInstruction_ModuloSingle {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle")]
 impl std::ops::Deref for crate::GlobalNamespace::ModuloInstruction_ModuloSingle {
     type Target = crate::System::Linq::Expressions::Interpreter::ModuloInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+ModuloInstruction+ModuloSingle")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ModuloInstruction_ModuloSingle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

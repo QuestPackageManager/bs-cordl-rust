@@ -26,7 +26,7 @@ for crate::GlobalNamespace::SelectableCellSelectableStateController {
         false
     }
 }
-#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
+#[cfg(feature = "SelectableCellSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     type Target = crate::GlobalNamespace::SelectableStateController_1<
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::SelectableCellSelectableStateController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SelectableCellSelectableStateController")]
+#[cfg(feature = "SelectableCellSelectableStateController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SelectableCellSelectableStateController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

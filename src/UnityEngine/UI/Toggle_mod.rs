@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
+#[cfg(feature = "UnityEngine+UI+Toggle")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle")]
+#[cfg(feature = "UnityEngine+UI+Toggle")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -670,14 +670,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle_Toggl
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle_ToggleEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Toggle_ToggleEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

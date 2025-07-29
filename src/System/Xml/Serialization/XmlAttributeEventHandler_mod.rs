@@ -24,14 +24,14 @@ for crate::System::Xml::Serialization::XmlAttributeEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlAttributeEventHandler")]
+#[cfg(feature = "System+Xml+Serialization+XmlAttributeEventHandler")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlAttributeEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlAttributeEventHandler")]
+#[cfg(feature = "System+Xml+Serialization+XmlAttributeEventHandler")]
 impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlAttributeEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

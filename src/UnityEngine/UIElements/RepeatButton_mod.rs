@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::RepeatButton {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton {
     type Target = crate::UnityEngine::UIElements::TextElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RepeatButton {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -208,7 +208,7 @@ for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RepeatButton>,
@@ -220,7 +220,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RepeatButton_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -299,14 +299,14 @@ for crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RepeatButton+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RepeatButton+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RepeatButton_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

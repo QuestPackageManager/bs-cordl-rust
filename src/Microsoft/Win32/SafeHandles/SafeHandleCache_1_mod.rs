@@ -41,7 +41,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
+#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -49,7 +49,7 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
+#[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -24,7 +24,7 @@ for crate::System::Xml::Serialization::UnreferencedObjectEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+UnreferencedObjectEventHandler")]
+#[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventHandler")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::UnreferencedObjectEventHandler {
     type Target = crate::System::MulticastDelegate;
@@ -32,7 +32,7 @@ for crate::System::Xml::Serialization::UnreferencedObjectEventHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+UnreferencedObjectEventHandler")]
+#[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventHandler")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::UnreferencedObjectEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,7 +26,7 @@ for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_FloatFxBeatmapEventDataProcessor")]
+#[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataProcesso
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FloatFxBeatmapEventDataProcessor")]
+#[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

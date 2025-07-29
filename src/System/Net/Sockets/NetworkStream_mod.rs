@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Network
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+NetworkStream")]
+#[cfg(feature = "System+Net+Sockets+NetworkStream")]
 impl std::ops::Deref for crate::System::Net::Sockets::NetworkStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Sockets+NetworkStream")]
+#[cfg(feature = "System+Net+Sockets+NetworkStream")]
 impl std::ops::DerefMut for crate::System::Net::Sockets::NetworkStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

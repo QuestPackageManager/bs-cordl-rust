@@ -29,7 +29,7 @@ for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     type Target = crate::System::Linq::Expressions::Interpreter::LessThanInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::LessThanInstruction_LessThanUIn
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
+    feature = "System+Linq+Expressions+Interpreter+LessThanInstruction+LessThanUInt64"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -46,14 +46,14 @@ for crate::GlobalNamespace::DropdownDialogPromptViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_DropdownDialogPromptViewController")]
+#[cfg(feature = "DropdownDialogPromptViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::DropdownDialogPromptViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DropdownDialogPromptViewController")]
+#[cfg(feature = "DropdownDialogPromptViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DropdownDialogPromptViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -384,7 +384,7 @@ for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
         false
     }
 }
-#[cfg(feature = "cordl_class_DropdownDialogPromptViewController+ButtonAndLabel")]
+#[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -392,7 +392,7 @@ for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_DropdownDialogPromptViewController+ButtonAndLabel")]
+#[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Sprite {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Sprite")]
+#[cfg(feature = "TMPro+TMP_Sprite")]
 impl std::ops::Deref for crate::TMPro::TMP_Sprite {
     type Target = crate::TMPro::TMP_TextElement_Legacy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Sprite")]
+#[cfg(feature = "TMPro+TMP_Sprite")]
 impl std::ops::DerefMut for crate::TMPro::TMP_Sprite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

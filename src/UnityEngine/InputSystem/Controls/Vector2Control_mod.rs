@@ -32,7 +32,7 @@ for crate::UnityEngine::InputSystem::Controls::Vector2Control {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::Vector2,
@@ -41,7 +41,7 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::Vector2Contr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+Vector2Control")]
+#[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::Vector2Control {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

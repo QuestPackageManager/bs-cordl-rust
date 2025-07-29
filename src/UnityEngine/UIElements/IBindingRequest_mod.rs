@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::IBindingRequest {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IBindingRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+IBindingRequest")]
+#[cfg(feature = "UnityEngine+UIElements+IBindingRequest")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IBindingRequest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

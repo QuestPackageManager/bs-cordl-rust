@@ -66,7 +66,7 @@ for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -74,7 +74,7 @@ for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataSortedListForTypeAndIds_1")]
+#[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

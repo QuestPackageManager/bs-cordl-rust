@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ContextStaticAttribut
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ContextStaticAttribute")]
+#[cfg(feature = "System+ContextStaticAttribute")]
 impl std::ops::Deref for crate::System::ContextStaticAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ContextStaticAttribute")]
+#[cfg(feature = "System+ContextStaticAttribute")]
 impl std::ops::DerefMut for crate::System::ContextStaticAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

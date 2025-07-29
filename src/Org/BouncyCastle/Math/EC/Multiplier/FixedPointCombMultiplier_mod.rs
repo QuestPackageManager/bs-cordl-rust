@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointCombMultiplier {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointCombMultiplier"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointCombMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointCombMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointCombMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+FixedPointCombMultiplier"
-)]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointCombMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointCombMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

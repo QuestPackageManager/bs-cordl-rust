@@ -46,7 +46,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObject
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
@@ -58,7 +58,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObject
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
+    feature = "UnityEngine+ResourceManagement+AsyncOperations+InitalizationObjectsOperation"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {

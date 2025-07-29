@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::NoMemoryCallback {
         false
     }
 }
-#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
+#[cfg(feature = "ENet+NoMemoryCallback")]
 impl std::ops::Deref for crate::ENet::NoMemoryCallback {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ENet+NoMemoryCallback")]
+#[cfg(feature = "ENet+NoMemoryCallback")]
 impl std::ops::DerefMut for crate::ENet::NoMemoryCallback {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

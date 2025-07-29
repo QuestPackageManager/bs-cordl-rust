@@ -25,14 +25,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::LikeNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+LikeNode")]
+#[cfg(feature = "System+Data+LikeNode")]
 impl std::ops::Deref for crate::System::Data::LikeNode {
     type Target = crate::System::Data::BinaryNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+LikeNode")]
+#[cfg(feature = "System+Data+LikeNode")]
 impl std::ops::DerefMut for crate::System::Data::LikeNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

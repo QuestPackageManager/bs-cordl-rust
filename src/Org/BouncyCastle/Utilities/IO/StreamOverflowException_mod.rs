@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     type Target = crate::System::IO::IOException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+StreamOverflowException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::IO::StreamOverflowException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

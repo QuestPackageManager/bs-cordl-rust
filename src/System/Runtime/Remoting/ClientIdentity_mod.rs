@@ -25,14 +25,14 @@ for crate::System::Runtime::Remoting::ClientIdentity {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+ClientIdentity")]
+#[cfg(feature = "System+Runtime+Remoting+ClientIdentity")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ClientIdentity {
     type Target = crate::System::Runtime::Remoting::Identity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Remoting+ClientIdentity")]
+#[cfg(feature = "System+Runtime+Remoting+ClientIdentity")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::ClientIdentity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

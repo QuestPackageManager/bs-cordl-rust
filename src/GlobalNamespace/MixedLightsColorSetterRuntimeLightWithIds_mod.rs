@@ -28,7 +28,7 @@ for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
         false
     }
 }
-#[cfg(feature = "cordl_class_MixedLightsColorSetterRuntimeLightWithIds")]
+#[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
     type Target = crate::GlobalNamespace::RuntimeLightWithIds;
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MixedLightsColorSetterRuntimeLightWithIds")]
+#[cfg(feature = "MixedLightsColorSetterRuntimeLightWithIds")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MixedLightsColorSetterRuntimeLightWithIds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

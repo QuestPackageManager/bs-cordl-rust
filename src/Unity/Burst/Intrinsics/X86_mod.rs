@@ -625,14 +625,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1049,14 +1049,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Avx {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Avx {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6758,14 +6758,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Avx2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Avx2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx2")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Avx2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -12638,14 +12638,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi1")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Bmi1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi1")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi1")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Bmi1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -12963,14 +12963,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Bmi2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Bmi2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Bmi2")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Bmi2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -13198,14 +13198,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+F16C")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_F16C {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+F16C")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+F16C")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_F16C {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -13403,14 +13403,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Fma")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Fma {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Fma")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Fma {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -14612,14 +14612,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Popcnt")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Popcnt {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Popcnt")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Popcnt")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Popcnt {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -14978,14 +14978,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -17591,14 +17591,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse2")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -23089,14 +23089,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse3")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse3 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse3")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse3")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse3 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -23405,14 +23405,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_1")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_1")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_1")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse4_1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -25235,14 +25235,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Sse4_2")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Sse4_2 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -26224,14 +26224,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Ssse3")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
 impl std::ops::Deref for crate::Unity::Burst::Intrinsics::X86_Ssse3 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Burst+Intrinsics+X86+Ssse3")]
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Ssse3")]
 impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::X86_Ssse3 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

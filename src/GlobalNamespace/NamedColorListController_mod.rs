@@ -33,14 +33,14 @@ for crate::GlobalNamespace::NamedColorListController {
         false
     }
 }
-#[cfg(feature = "cordl_class_NamedColorListController")]
+#[cfg(feature = "NamedColorListController")]
 impl std::ops::Deref for crate::GlobalNamespace::NamedColorListController {
     type Target = crate::GlobalNamespace::ListColorController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NamedColorListController")]
+#[cfg(feature = "NamedColorListController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NamedColorListController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -333,7 +333,7 @@ for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
         false
     }
 }
-#[cfg(feature = "cordl_class_NamedColorListController+ColorValuePair")]
+#[cfg(feature = "NamedColorListController+ColorValuePair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -341,7 +341,7 @@ for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NamedColorListController+ColorValuePair")]
+#[cfg(feature = "NamedColorListController+ColorValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NamedColorListController_ColorValuePair {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

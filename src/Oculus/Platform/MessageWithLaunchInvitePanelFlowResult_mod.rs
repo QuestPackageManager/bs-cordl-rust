@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     type Target = crate::Oculus::Platform::Message_1<
@@ -40,7 +40,7 @@ for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithLaunchInvitePanelFlowResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithLaunchInvitePanelFlowResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

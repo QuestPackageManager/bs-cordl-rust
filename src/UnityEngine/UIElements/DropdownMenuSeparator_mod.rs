@@ -27,14 +27,14 @@ for crate::UnityEngine::UIElements::DropdownMenuSeparator {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownMenuSeparator")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuSeparator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownMenuSeparator {
     type Target = crate::UnityEngine::UIElements::DropdownMenuItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownMenuSeparator")]
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuSeparator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuSeparator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

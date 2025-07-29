@@ -24,14 +24,14 @@ for crate::System::Reflection::CustomAttributeFormatException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeFormatException")]
+#[cfg(feature = "System+Reflection+CustomAttributeFormatException")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeFormatException {
     type Target = crate::System::FormatException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+CustomAttributeFormatException")]
+#[cfg(feature = "System+Reflection+CustomAttributeFormatException")]
 impl std::ops::DerefMut for crate::System::Reflection::CustomAttributeFormatException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

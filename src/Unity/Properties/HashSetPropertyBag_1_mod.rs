@@ -46,7 +46,7 @@ for crate::Unity::Properties::HashSetPropertyBag_1<TElement> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+HashSetPropertyBag_1")]
+#[cfg(feature = "Unity+Properties+HashSetPropertyBag_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::HashSetPropertyBag_1<TElement> {
     type Target = crate::Unity::Properties::SetPropertyBagBase_2<
@@ -59,7 +59,7 @@ for crate::Unity::Properties::HashSetPropertyBag_1<TElement> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+HashSetPropertyBag_1")]
+#[cfg(feature = "Unity+Properties+HashSetPropertyBag_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::HashSetPropertyBag_1<TElement> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

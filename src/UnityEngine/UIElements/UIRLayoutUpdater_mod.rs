@@ -32,14 +32,14 @@ for crate::UnityEngine::UIElements::UIRLayoutUpdater {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRLayoutUpdater")]
+#[cfg(feature = "UnityEngine+UIElements+UIRLayoutUpdater")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRLayoutUpdater {
     type Target = crate::UnityEngine::UIElements::BaseVisualTreeUpdater;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIRLayoutUpdater")]
+#[cfg(feature = "UnityEngine+UIElements+UIRLayoutUpdater")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRLayoutUpdater {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

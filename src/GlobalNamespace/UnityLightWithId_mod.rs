@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityLightWi
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityLightWithId")]
+#[cfg(feature = "UnityLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityLightWithId")]
+#[cfg(feature = "UnityLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,14 +24,14 @@ for crate::GlobalNamespace::LobbyDataModelInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
+#[cfg(feature = "LobbyDataModelInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyDataModelInstaller {
     type Target = crate::Zenject::MonoInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LobbyDataModelInstaller")]
+#[cfg(feature = "LobbyDataModelInstaller")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LobbyDataModelInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

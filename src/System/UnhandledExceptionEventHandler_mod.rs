@@ -24,14 +24,14 @@ for crate::System::UnhandledExceptionEventHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+UnhandledExceptionEventHandler")]
+#[cfg(feature = "System+UnhandledExceptionEventHandler")]
 impl std::ops::Deref for crate::System::UnhandledExceptionEventHandler {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+UnhandledExceptionEventHandler")]
+#[cfg(feature = "System+UnhandledExceptionEventHandler")]
 impl std::ops::DerefMut for crate::System::UnhandledExceptionEventHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

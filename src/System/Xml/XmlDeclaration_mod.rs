@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDeclaration {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
+#[cfg(feature = "System+Xml+XmlDeclaration")]
 impl std::ops::Deref for crate::System::Xml::XmlDeclaration {
     type Target = crate::System::Xml::XmlLinkedNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlDeclaration")]
+#[cfg(feature = "System+Xml+XmlDeclaration")]
 impl std::ops::DerefMut for crate::System::Xml::XmlDeclaration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

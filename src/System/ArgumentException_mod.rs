@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ArgumentException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+ArgumentException")]
+#[cfg(feature = "System+ArgumentException")]
 impl std::ops::Deref for crate::System::ArgumentException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+ArgumentException")]
+#[cfg(feature = "System+ArgumentException")]
 impl std::ops::DerefMut for crate::System::ArgumentException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

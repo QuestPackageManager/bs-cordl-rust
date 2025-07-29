@@ -27,7 +27,7 @@ for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl std::ops::Deref
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
@@ -35,7 +35,7 @@ for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
+#[cfg(feature = "Ice+NoteCutFloorLightStreakTileEffectSpawnerLightWithId")]
 impl std::ops::DerefMut
 for crate::Ice::NoteCutFloorLightStreakTileEffectSpawnerLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

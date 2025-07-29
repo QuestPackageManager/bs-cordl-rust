@@ -33,7 +33,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     type Target = crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController;
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -382,7 +382,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
@@ -394,7 +394,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

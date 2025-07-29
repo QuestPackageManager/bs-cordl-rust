@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::MaskableGrap
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic")]
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic {
     type Target = crate::UnityEngine::UI::Graphic;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic")]
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::MaskableGraphic {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -685,14 +685,14 @@ for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
+#[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

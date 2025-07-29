@@ -32,9 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
     type Target = crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement;
@@ -42,9 +40,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

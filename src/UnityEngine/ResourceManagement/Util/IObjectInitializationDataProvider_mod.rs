@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvi
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+IObjectInitializationDataProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::IObjectInitializationDataProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

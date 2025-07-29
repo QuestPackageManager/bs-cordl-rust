@@ -63,7 +63,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -74,7 +74,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2")]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -504,9 +504,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
-)]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -522,9 +520,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1"
-)]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+DefaultComparer_1")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -753,7 +749,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -764,7 +760,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelDictionary_2+Entry")]
+#[cfg(feature = "System+Collections+Generic+LowLevelDictionary_2+Entry")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

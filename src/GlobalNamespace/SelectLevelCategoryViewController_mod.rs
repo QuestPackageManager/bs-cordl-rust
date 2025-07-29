@@ -53,14 +53,14 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_SelectLevelCategoryViewController")]
+#[cfg(feature = "SelectLevelCategoryViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLevelCategoryViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SelectLevelCategoryViewController")]
+#[cfg(feature = "SelectLevelCategoryViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SelectLevelCategoryViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -469,7 +469,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo 
         false
     }
 }
-#[cfg(feature = "cordl_class_SelectLevelCategoryViewController+LevelCategoryInfo")]
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SelectLevelCategoryViewController+LevelCategoryInfo")]
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

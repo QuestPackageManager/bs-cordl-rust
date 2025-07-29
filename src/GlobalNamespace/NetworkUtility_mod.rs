@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NetworkUtili
         false
     }
 }
-#[cfg(feature = "cordl_class_NetworkUtility")]
+#[cfg(feature = "NetworkUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NetworkUtility")]
+#[cfg(feature = "NetworkUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NetworkUtility {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

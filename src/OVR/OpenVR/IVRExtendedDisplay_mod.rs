@@ -137,14 +137,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetDXGIOutputInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -337,14 +337,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetEyeOutputViewport")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -554,14 +554,14 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
+#[cfg(feature = "OVR+OpenVR+IVRExtendedDisplay+_GetWindowBounds")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

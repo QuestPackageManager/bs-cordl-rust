@@ -53,14 +53,14 @@ for crate::TMPro::FastAction_1<A> {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
+#[cfg(feature = "TMPro+FastAction_1")]
 impl<A: quest_hook::libil2cpp::Type> std::ops::Deref for crate::TMPro::FastAction_1<A> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+FastAction_1")]
+#[cfg(feature = "TMPro+FastAction_1")]
 impl<A: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::TMPro::FastAction_1<A> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

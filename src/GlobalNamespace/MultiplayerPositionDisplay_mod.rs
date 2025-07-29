@@ -44,14 +44,14 @@ for crate::GlobalNamespace::MultiplayerPositionDisplay {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerPositionDisplay")]
+#[cfg(feature = "MultiplayerPositionDisplay")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPositionDisplay {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerPositionDisplay")]
+#[cfg(feature = "MultiplayerPositionDisplay")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPositionDisplay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -31,9 +31,7 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,9 +39,7 @@ for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceLocations+LocationWrapper")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

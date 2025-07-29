@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TimeSlider {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
+#[cfg(feature = "HMUI+TimeSlider")]
 impl std::ops::Deref for crate::HMUI::TimeSlider {
     type Target = crate::HMUI::RangeValuesTextSlider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+TimeSlider")]
+#[cfg(feature = "HMUI+TimeSlider")]
 impl std::ops::DerefMut for crate::HMUI::TimeSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,9 +28,7 @@ for crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder"
-)]
+#[cfg(feature = "Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder")]
 impl std::ops::Deref
 for crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
     type Target = crate::Zenject::DeclareSignalAsyncTickPriorityCopyBinder;
@@ -38,9 +36,7 @@ for crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder"
-)]
+#[cfg(feature = "Zenject+DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder")]
 impl std::ops::DerefMut
 for crate::Zenject::DeclareSignalRequireHandlerAsyncTickPriorityCopyBinder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -45,7 +45,7 @@ for crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FullExpression_1")]
+#[cfg(feature = "System+Linq+Expressions+FullExpression_1")]
 impl<TDelegate: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
     type Target = crate::System::Linq::Expressions::ExpressionN_1<TDelegate>;
@@ -53,7 +53,7 @@ for crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FullExpression_1")]
+#[cfg(feature = "System+Linq+Expressions+FullExpression_1")]
 impl<TDelegate: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

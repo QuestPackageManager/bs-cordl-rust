@@ -74,14 +74,14 @@ for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]
+#[cfg(feature = "Org+BouncyCastle+Apache+Bzip2+CBZip2InputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -41,14 +41,14 @@ for crate::UnityEngine::XR::Management::XRManagerSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRManagerSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+XR+Management+XRManagerSettings")]
+#[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRManagerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

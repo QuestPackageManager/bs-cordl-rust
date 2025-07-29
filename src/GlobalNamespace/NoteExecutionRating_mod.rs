@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteExecutio
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteExecutionRating")]
+#[cfg(feature = "NoteExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteExecutionRating {
     type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteExecutionRating")]
+#[cfg(feature = "NoteExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteExecutionRating {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::DecoderNLS {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+DecoderNLS")]
+#[cfg(feature = "System+Text+DecoderNLS")]
 impl std::ops::Deref for crate::System::Text::DecoderNLS {
     type Target = crate::System::Text::Decoder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+DecoderNLS")]
+#[cfg(feature = "System+Text+DecoderNLS")]
 impl std::ops::DerefMut for crate::System::Text::DecoderNLS {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

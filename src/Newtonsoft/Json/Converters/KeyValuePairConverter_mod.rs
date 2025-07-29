@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+KeyValuePairConverter")]
+#[cfg(feature = "Newtonsoft+Json+Converters+KeyValuePairConverter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Converters::KeyValuePairConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

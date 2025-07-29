@@ -28,14 +28,14 @@ for crate::System::Security::AccessControl::KnownAce {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+KnownAce")]
+#[cfg(feature = "System+Security+AccessControl+KnownAce")]
 impl std::ops::Deref for crate::System::Security::AccessControl::KnownAce {
     type Target = crate::System::Security::AccessControl::GenericAce;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+KnownAce")]
+#[cfg(feature = "System+Security+AccessControl+KnownAce")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::KnownAce {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

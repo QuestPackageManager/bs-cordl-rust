@@ -48,7 +48,7 @@ for crate::Zenject::FactoryToChoiceBinder_2<TParam1, TContract> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactoryToChoiceBinder_2")]
+#[cfg(feature = "Zenject+FactoryToChoiceBinder_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
@@ -58,7 +58,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+FactoryToChoiceBinder_2")]
+#[cfg(feature = "Zenject+FactoryToChoiceBinder_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,

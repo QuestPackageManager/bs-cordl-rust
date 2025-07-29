@@ -28,7 +28,7 @@ for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LightTranslationBeatmapEventDataProcessor")]
+#[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

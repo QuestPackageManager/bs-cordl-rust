@@ -47,14 +47,14 @@ for crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+AttributeCertificateInfo")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeCertificateInfo")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+X509+AttributeCertificateInfo")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+AttributeCertificateInfo")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::X509::AttributeCertificateInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

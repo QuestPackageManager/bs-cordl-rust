@@ -31,14 +31,14 @@ for crate::GlobalNamespace::EditableModifiersSelectionView {
         false
     }
 }
-#[cfg(feature = "cordl_class_EditableModifiersSelectionView")]
+#[cfg(feature = "EditableModifiersSelectionView")]
 impl std::ops::Deref for crate::GlobalNamespace::EditableModifiersSelectionView {
     type Target = crate::GlobalNamespace::ModifiersSelectionView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EditableModifiersSelectionView")]
+#[cfg(feature = "EditableModifiersSelectionView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EditableModifiersSelectionView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

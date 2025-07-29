@@ -26,7 +26,7 @@ for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
         false
     }
 }
-#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::ArcVisibilityType,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdo
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
+#[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

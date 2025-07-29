@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     type Target = crate::Newtonsoft::Json::Converters::DateTimeConverterBase;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
+#[cfg(feature = "Newtonsoft+Json+Converters+JavaScriptDateTimeConverter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::JavaScriptDateTimeConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

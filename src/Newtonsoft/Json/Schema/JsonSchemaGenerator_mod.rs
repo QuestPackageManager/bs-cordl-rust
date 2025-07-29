@@ -41,14 +41,14 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator")]
+#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -794,7 +794,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -802,7 +802,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
+#[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ScoreModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel")]
+#[cfg(feature = "ScoreModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel")]
+#[cfg(feature = "ScoreModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -232,14 +232,14 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel+MaxScoreCounterElement")]
+#[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -393,14 +393,14 @@ for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoreModel+NoteScoreDefinition")]
+#[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

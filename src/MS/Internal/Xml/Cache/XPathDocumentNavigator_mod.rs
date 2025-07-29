@@ -32,14 +32,14 @@ for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathDocumentNavigator")]
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
     type Target = crate::System::Xml::XPath::XPathNavigator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathDocumentNavigator")]
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathDocumentNavigator")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -51,7 +51,7 @@ for crate::Zenject::MonoInstaller_4<TParam1, TParam2, TParam3, TDerived> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MonoInstaller_4")]
+#[cfg(feature = "Zenject+MonoInstaller_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
@@ -64,7 +64,7 @@ for crate::Zenject::MonoInstaller_4<TParam1, TParam2, TParam3, TDerived> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MonoInstaller_4")]
+#[cfg(feature = "Zenject+MonoInstaller_4")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,

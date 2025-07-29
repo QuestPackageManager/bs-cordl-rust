@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables8kGcmMultiplier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables8kGcmMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables8kGcmMultiplier")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables8kGcmMultiplier {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -42,7 +42,7 @@ for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables8kGcmMultiplier {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Modes+Gcm+Tables8kGcmMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+Tables8kGcmMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Modes::Gcm::Tables8kGcmMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

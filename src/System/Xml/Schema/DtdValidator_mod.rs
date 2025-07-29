@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::DtdValid
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "System+Xml+Schema+DtdValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator {
     type Target = crate::System::Xml::Schema::BaseValidator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator")]
+#[cfg(feature = "System+Xml+Schema+DtdValidator")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -754,14 +754,14 @@ for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+DtdValidator+NamespaceManager")]
+#[cfg(feature = "System+Xml+Schema+DtdValidator+NamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

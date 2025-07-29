@@ -28,14 +28,14 @@ for crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+HtmlEncodedRawTextWriterIndent")]
+#[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]
 impl std::ops::Deref for crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     type Target = crate::System::Xml::HtmlEncodedRawTextWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+HtmlEncodedRawTextWriterIndent")]
+#[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]
 impl std::ops::DerefMut for crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

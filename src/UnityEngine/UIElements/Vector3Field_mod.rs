@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::Vector3Field {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field {
     type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
         crate::UnityEngine::Vector3,
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3Field {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -210,7 +210,7 @@ for crate::UnityEngine::UIElements::Vector3Field_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector3Field>,
@@ -222,7 +222,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field_UxmlFactor
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3Field_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -306,7 +306,7 @@ for crate::UnityEngine::UIElements::Vector3Field_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Vector3,
@@ -315,7 +315,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Vector3Field_UxmlTraits
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Vector3Field+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Vector3Field+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Vector3Field_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

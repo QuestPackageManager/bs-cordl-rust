@@ -25,7 +25,7 @@ for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     type Target = crate::System::Attribute;
@@ -33,7 +33,7 @@ for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Serialization+FormerlySerializedAsAttribute")]
+#[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

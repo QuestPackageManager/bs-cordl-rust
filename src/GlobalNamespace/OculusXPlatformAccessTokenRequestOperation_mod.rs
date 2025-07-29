@@ -26,7 +26,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         false
     }
 }
-#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OculusXPlatformAccessTokenRequestOperation")]
+#[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

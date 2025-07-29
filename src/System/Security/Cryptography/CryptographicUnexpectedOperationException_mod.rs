@@ -29,7 +29,7 @@ for crate::System::Security::Cryptography::CryptographicUnexpectedOperationExcep
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+CryptographicUnexpectedOperationException"
+    feature = "System+Security+Cryptography+CryptographicUnexpectedOperationException"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::CryptographicUnexpectedOperationException {
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::CryptographicUnexpectedOperationExcep
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+CryptographicUnexpectedOperationException"
+    feature = "System+Security+Cryptography+CryptographicUnexpectedOperationException"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::CryptographicUnexpectedOperationException {

@@ -29,7 +29,7 @@ for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanByte {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanByte"
+    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanByte"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanByte {
     type Target = crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GreaterThanInstruction_GreaterT
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanByte"
+    feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanByte"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GreaterThanInstruction_GreaterThanByte {

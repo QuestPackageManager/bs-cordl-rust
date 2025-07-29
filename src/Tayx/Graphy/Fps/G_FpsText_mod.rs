@@ -35,14 +35,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Fps::G_FpsText 
         false
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
 impl std::ops::Deref for crate::Tayx::Graphy::Fps::G_FpsText {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+Fps+G_FpsText")]
+#[cfg(feature = "Tayx+Graphy+Fps+G_FpsText")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Fps::G_FpsText {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

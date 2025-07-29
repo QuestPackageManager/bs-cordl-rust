@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotatio
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {
@@ -39,7 +39,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotatio
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidCompensateRotationProcessor"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidCompensateRotationProcessor {

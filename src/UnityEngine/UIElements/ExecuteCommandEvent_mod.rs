@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::ExecuteCommandEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     type Target = crate::UnityEngine::UIElements::CommandEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ExecuteCommandEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ExecuteCommandEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ExecuteCommandEvent")]
+#[cfg(feature = "UnityEngine+UIElements+ExecuteCommandEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ExecuteCommandEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

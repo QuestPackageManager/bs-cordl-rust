@@ -24,14 +24,14 @@ for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+VisibleToOtherModulesAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Bindings::VisibleToOtherModulesAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

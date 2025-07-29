@@ -29,14 +29,14 @@ for crate::Newtonsoft::Json::JsonReaderException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonReaderException {
     type Target = crate::Newtonsoft::Json::JsonException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonReaderException")]
+#[cfg(feature = "Newtonsoft+Json+JsonReaderException")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonReaderException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

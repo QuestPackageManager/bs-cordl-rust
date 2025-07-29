@@ -27,14 +27,14 @@ for crate::Mono::Net::Security::MonoSslClientAuthenticationOptions {
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslClientAuthenticationOptions")]
+#[cfg(feature = "Mono+Net+Security+MonoSslClientAuthenticationOptions")]
 impl std::ops::Deref for crate::Mono::Net::Security::MonoSslClientAuthenticationOptions {
     type Target = crate::Mono::Net::Security::MonoSslAuthenticationOptions;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Net+Security+MonoSslClientAuthenticationOptions")]
+#[cfg(feature = "Mono+Net+Security+MonoSslClientAuthenticationOptions")]
 impl std::ops::DerefMut
 for crate::Mono::Net::Security::MonoSslClientAuthenticationOptions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

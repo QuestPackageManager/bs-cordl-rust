@@ -27,14 +27,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::FloatRectOffset {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+FloatRectOffset")]
+#[cfg(feature = "HMUI+FloatRectOffset")]
 impl std::ops::Deref for crate::HMUI::FloatRectOffset {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+FloatRectOffset")]
+#[cfg(feature = "HMUI+FloatRectOffset")]
 impl std::ops::DerefMut for crate::HMUI::FloatRectOffset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

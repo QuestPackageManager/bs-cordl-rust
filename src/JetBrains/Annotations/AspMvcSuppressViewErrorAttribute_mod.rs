@@ -24,7 +24,7 @@ for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
+#[cfg(feature = "JetBrains+Annotations+AspMvcSuppressViewErrorAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::AspMvcSuppressViewErrorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

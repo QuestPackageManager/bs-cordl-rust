@@ -56,14 +56,14 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rendering+SupportedRenderingFeatures")]
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl std::ops::DerefMut for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

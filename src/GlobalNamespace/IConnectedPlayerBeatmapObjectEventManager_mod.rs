@@ -24,7 +24,7 @@ for crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_IConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "IConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "IConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

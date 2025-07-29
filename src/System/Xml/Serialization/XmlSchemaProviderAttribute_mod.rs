@@ -26,14 +26,14 @@ for crate::System::Xml::Serialization::XmlSchemaProviderAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSchemaProviderAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlSchemaProviderAttribute")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSchemaProviderAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Serialization+XmlSchemaProviderAttribute")]
+#[cfg(feature = "System+Xml+Serialization+XmlSchemaProviderAttribute")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSchemaProviderAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

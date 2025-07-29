@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::JsonDictionaryAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonDictionaryAttribute")]
+#[cfg(feature = "Newtonsoft+Json+JsonDictionaryAttribute")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonDictionaryAttribute {
     type Target = crate::Newtonsoft::Json::JsonContainerAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+JsonDictionaryAttribute")]
+#[cfg(feature = "Newtonsoft+Json+JsonDictionaryAttribute")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonDictionaryAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

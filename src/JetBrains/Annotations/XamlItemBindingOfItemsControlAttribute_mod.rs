@@ -28,9 +28,7 @@ for crate::JetBrains::Annotations::XamlItemBindingOfItemsControlAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+XamlItemBindingOfItemsControlAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+XamlItemBindingOfItemsControlAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::XamlItemBindingOfItemsControlAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::JetBrains::Annotations::XamlItemBindingOfItemsControlAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+XamlItemBindingOfItemsControlAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+XamlItemBindingOfItemsControlAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::XamlItemBindingOfItemsControlAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

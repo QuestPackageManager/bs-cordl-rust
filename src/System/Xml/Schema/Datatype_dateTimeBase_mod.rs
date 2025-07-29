@@ -25,14 +25,14 @@ for crate::System::Xml::Schema::Datatype_dateTimeBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTimeBase")]
+#[cfg(feature = "System+Xml+Schema+Datatype_dateTimeBase")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_dateTimeBase {
     type Target = crate::System::Xml::Schema::Datatype_anySimpleType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_dateTimeBase")]
+#[cfg(feature = "System+Xml+Schema+Datatype_dateTimeBase")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_dateTimeBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

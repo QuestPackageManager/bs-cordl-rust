@@ -83,7 +83,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlAttribute")]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlAttribute")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Layouts::InputControlAttribute {
     type Target = crate::UnityEngine::PropertyAttribute;
@@ -91,7 +91,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputControlAttribute")]
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlAttribute")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Layouts::InputControlAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

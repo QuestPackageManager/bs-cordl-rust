@@ -43,7 +43,7 @@ for crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<TBase> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTypeAttributeDescription_1")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlTypeAttributeDescription_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<TBase> {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
@@ -53,7 +53,7 @@ for crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<TBase> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlTypeAttributeDescription_1")]
+#[cfg(feature = "UnityEngine+UIElements+UxmlTypeAttributeDescription_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<TBase> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

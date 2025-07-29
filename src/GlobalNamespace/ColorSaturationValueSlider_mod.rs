@@ -41,14 +41,14 @@ for crate::GlobalNamespace::ColorSaturationValueSlider {
         false
     }
 }
-#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
+#[cfg(feature = "ColorSaturationValueSlider")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSaturationValueSlider {
     type Target = crate::HMUI::Slider2D;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ColorSaturationValueSlider")]
+#[cfg(feature = "ColorSaturationValueSlider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorSaturationValueSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

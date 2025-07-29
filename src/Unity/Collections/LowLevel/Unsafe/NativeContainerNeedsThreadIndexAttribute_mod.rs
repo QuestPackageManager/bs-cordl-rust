@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndex
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndex
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeContainerNeedsThreadIndexAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerNeedsThreadIndexAttribute {

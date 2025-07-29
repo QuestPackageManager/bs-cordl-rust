@@ -36,7 +36,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHead
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {
@@ -46,7 +46,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHead
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
+    feature = "System+Runtime+Serialization+Formatters+Binary+SerializationHeaderRecord"
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::SerializationHeaderRecord {

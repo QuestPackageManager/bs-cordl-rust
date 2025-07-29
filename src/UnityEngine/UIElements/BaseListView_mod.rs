@@ -79,14 +79,14 @@ for crate::UnityEngine::UIElements::BaseListView {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView")]
+#[cfg(feature = "UnityEngine+UIElements+BaseListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListView {
     type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView")]
+#[cfg(feature = "UnityEngine+UIElements+BaseListView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseListView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -983,14 +983,14 @@ for crate::UnityEngine::UIElements::BaseListView_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BaseListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseListView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListView+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BaseListView+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseListView_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

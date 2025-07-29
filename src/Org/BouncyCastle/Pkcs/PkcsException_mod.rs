@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Pkcs::PkcsException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::PkcsException {
     type Target = crate::System::Exception;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Pkcs+PkcsException")]
+#[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsException")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::PkcsException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

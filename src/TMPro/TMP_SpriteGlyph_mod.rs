@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_SpriteGlyph {
         false
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
 impl std::ops::Deref for crate::TMPro::TMP_SpriteGlyph {
     type Target = crate::UnityEngine::TextCore::Glyph;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_SpriteGlyph")]
+#[cfg(feature = "TMPro+TMP_SpriteGlyph")]
 impl std::ops::DerefMut for crate::TMPro::TMP_SpriteGlyph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

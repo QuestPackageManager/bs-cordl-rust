@@ -31,7 +31,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignatureList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignatureList")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignatureList")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignatureList {
     type Target = crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObject;
@@ -39,7 +39,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignatureList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignatureList")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpOnePassSignatureList")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpOnePassSignatureList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -27,14 +27,14 @@ for crate::System::Security::AccessControl::NativeObjectSecurity {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::NativeObjectSecurity {
     type Target = crate::System::Security::AccessControl::CommonObjectSecurity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity")]
+#[cfg(feature = "System+Security+AccessControl+NativeObjectSecurity")]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::NativeObjectSecurity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -427,7 +427,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromEr
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 impl std::ops::Deref
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {
@@ -437,7 +437,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromEr
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
+    feature = "System+Security+AccessControl+NativeObjectSecurity+ExceptionFromErrorCode"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromErrorCode {

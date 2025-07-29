@@ -26,14 +26,14 @@ for crate::GlobalNamespace::SortedList_SyncSortedList {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
 impl std::ops::Deref for crate::GlobalNamespace::SortedList_SyncSortedList {
     type Target = crate::System::Collections::SortedList;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+SortedList+SyncSortedList")]
+#[cfg(feature = "System+Collections+SortedList+SyncSortedList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SortedList_SyncSortedList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

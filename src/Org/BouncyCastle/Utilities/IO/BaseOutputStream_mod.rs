@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream {
     type Target = crate::System::IO::Stream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+IO+BaseOutputStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

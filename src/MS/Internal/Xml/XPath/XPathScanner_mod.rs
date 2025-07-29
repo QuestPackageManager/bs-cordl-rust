@@ -34,14 +34,14 @@ for crate::MS::Internal::Xml::XPath::XPathScanner {
         false
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathScanner")]
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathScanner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+XPath+XPathScanner")]
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::XPathScanner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SkinnedMeshRende
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
 impl std::ops::Deref for crate::UnityEngine::SkinnedMeshRenderer {
     type Target = crate::UnityEngine::Renderer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+SkinnedMeshRenderer")]
+#[cfg(feature = "UnityEngine+SkinnedMeshRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::SkinnedMeshRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::PlatformSet
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+PlatformSettings")]
+#[cfg(feature = "Oculus+Platform+PlatformSettings")]
 impl std::ops::Deref for crate::Oculus::Platform::PlatformSettings {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+PlatformSettings")]
+#[cfg(feature = "Oculus+Platform+PlatformSettings")]
 impl std::ops::DerefMut for crate::Oculus::Platform::PlatformSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

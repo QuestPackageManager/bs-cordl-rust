@@ -49,7 +49,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {
@@ -59,7 +59,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataE
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogDataEntry"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry {

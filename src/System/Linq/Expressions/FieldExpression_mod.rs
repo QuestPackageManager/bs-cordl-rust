@@ -25,14 +25,14 @@ for crate::System::Linq::Expressions::FieldExpression {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FieldExpression")]
+#[cfg(feature = "System+Linq+Expressions+FieldExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::FieldExpression {
     type Target = crate::System::Linq::Expressions::MemberExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+Expressions+FieldExpression")]
+#[cfg(feature = "System+Linq+Expressions+FieldExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::FieldExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

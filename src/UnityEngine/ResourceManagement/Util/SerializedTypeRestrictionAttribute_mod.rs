@@ -30,7 +30,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttri
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {
@@ -40,7 +40,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttri
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
+    feature = "UnityEngine+ResourceManagement+Util+SerializedTypeRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::Util::SerializedTypeRestrictionAttribute {

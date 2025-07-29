@@ -26,7 +26,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     type Target = crate::GlobalNamespace::BloomPrePassBackgroundNonLightRendererCore;
@@ -34,7 +34,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundParticleSystemRenderer")]
+#[cfg(feature = "BloomPrePassBackgroundParticleSystemRenderer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundParticleSystemRenderer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

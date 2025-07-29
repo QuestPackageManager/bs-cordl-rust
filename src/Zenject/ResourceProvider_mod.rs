@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ResourceProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ResourceProvider")]
+#[cfg(feature = "Zenject+ResourceProvider")]
 impl std::ops::Deref for crate::Zenject::ResourceProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ResourceProvider")]
+#[cfg(feature = "Zenject+ResourceProvider")]
 impl std::ops::DerefMut for crate::Zenject::ResourceProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -36,14 +36,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlayerDataFi
         false
     }
 }
-#[cfg(feature = "cordl_class_PlayerDataFileModel")]
+#[cfg(feature = "PlayerDataFileModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerDataFileModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_PlayerDataFileModel")]
+#[cfg(feature = "PlayerDataFileModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataFileModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

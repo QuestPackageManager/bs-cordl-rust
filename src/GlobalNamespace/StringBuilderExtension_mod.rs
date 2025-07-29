@@ -24,14 +24,14 @@ for crate::GlobalNamespace::StringBuilderExtension {
         false
     }
 }
-#[cfg(feature = "cordl_class_StringBuilderExtension")]
+#[cfg(feature = "StringBuilderExtension")]
 impl std::ops::Deref for crate::GlobalNamespace::StringBuilderExtension {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_StringBuilderExtension")]
+#[cfg(feature = "StringBuilderExtension")]
 impl std::ops::DerefMut for crate::GlobalNamespace::StringBuilderExtension {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

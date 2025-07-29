@@ -24,7 +24,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     type Target = crate::System::Security::Cryptography::AsymmetricSignatureFormatter;
@@ -32,7 +32,7 @@ for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
+#[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureFormatter")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::RSAPKCS1SignatureFormatter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

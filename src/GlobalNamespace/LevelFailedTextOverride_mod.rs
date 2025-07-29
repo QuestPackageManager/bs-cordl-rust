@@ -53,14 +53,14 @@ for crate::GlobalNamespace::LevelFailedTextOverride {
         false
     }
 }
-#[cfg(feature = "cordl_class_LevelFailedTextOverride")]
+#[cfg(feature = "LevelFailedTextOverride")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelFailedTextOverride {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LevelFailedTextOverride")]
+#[cfg(feature = "LevelFailedTextOverride")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelFailedTextOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -158,7 +158,7 @@ for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
         false
     }
 }
-#[cfg(feature = "cordl_class_LevelFailedTextOverride+LanguageOverride")]
+#[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -166,7 +166,7 @@ for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LevelFailedTextOverride+LanguageOverride")]
+#[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

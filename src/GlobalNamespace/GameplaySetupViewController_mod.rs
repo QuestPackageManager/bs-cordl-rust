@@ -59,14 +59,14 @@ for crate::GlobalNamespace::GameplaySetupViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplaySetupViewController")]
+#[cfg(feature = "GameplaySetupViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplaySetupViewController")]
+#[cfg(feature = "GameplaySetupViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -561,14 +561,14 @@ for crate::GlobalNamespace::GameplaySetupViewController_Panel {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
+#[cfg(feature = "GameplaySetupViewController+Panel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplaySetupViewController+Panel")]
+#[cfg(feature = "GameplaySetupViewController+Panel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController_Panel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

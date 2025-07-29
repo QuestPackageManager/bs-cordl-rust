@@ -30,7 +30,7 @@ for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     type Target = crate::UnityEngine::InputSystem::InputBindingComposite;
@@ -38,7 +38,7 @@ for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+Composites+OneModifierComposite")]
+#[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

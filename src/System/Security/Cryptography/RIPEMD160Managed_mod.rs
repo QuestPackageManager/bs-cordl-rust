@@ -28,14 +28,14 @@ for crate::System::Security::Cryptography::RIPEMD160Managed {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RIPEMD160Managed")]
+#[cfg(feature = "System+Security+Cryptography+RIPEMD160Managed")]
 impl std::ops::Deref for crate::System::Security::Cryptography::RIPEMD160Managed {
     type Target = crate::System::Security::Cryptography::RIPEMD160;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+Cryptography+RIPEMD160Managed")]
+#[cfg(feature = "System+Security+Cryptography+RIPEMD160Managed")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::RIPEMD160Managed {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

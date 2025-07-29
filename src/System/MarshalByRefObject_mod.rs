@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::MarshalByRefObject {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+MarshalByRefObject")]
+#[cfg(feature = "System+MarshalByRefObject")]
 impl std::ops::Deref for crate::System::MarshalByRefObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+MarshalByRefObject")]
+#[cfg(feature = "System+MarshalByRefObject")]
 impl std::ops::DerefMut for crate::System::MarshalByRefObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

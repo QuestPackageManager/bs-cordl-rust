@@ -29,7 +29,7 @@ for crate::GlobalNamespace::DecrementInstruction_DecrementUInt16 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
+    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementUInt16 {
     type Target = crate::System::Linq::Expressions::Interpreter::DecrementInstruction;
@@ -38,7 +38,7 @@ impl std::ops::Deref for crate::GlobalNamespace::DecrementInstruction_DecrementU
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
+    feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt16"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DecrementInstruction_DecrementUInt16 {

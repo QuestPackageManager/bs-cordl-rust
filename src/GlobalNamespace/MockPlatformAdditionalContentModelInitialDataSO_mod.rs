@@ -35,7 +35,7 @@ for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_MockPlatformAdditionalContentModelInitialDataSO")]
+#[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MockPlatformAdditionalContentModelInitialDataSO")]
+#[cfg(feature = "MockPlatformAdditionalContentModelInitialDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     type Target = crate::Org::BouncyCastle::Math::EC::Multiplier::AbstractECMultiplier;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+GlvMultiplier")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::GlvMultiplier {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

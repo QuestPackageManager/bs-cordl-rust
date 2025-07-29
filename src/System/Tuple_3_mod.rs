@@ -50,7 +50,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Tuple_3")]
+#[cfg(feature = "System+Tuple_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Tuple_3")]
+#[cfg(feature = "System+Tuple_3")]
 impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

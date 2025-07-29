@@ -24,14 +24,14 @@ for crate::System::Runtime::CompilerServices::RuntimeOps {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeOps")]
+#[cfg(feature = "System+Runtime+CompilerServices+RuntimeOps")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::RuntimeOps {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+RuntimeOps")]
+#[cfg(feature = "System+Runtime+CompilerServices+RuntimeOps")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::RuntimeOps {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

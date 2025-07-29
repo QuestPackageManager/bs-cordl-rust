@@ -25,14 +25,14 @@ for crate::GlobalNamespace::ArrayList_IListWrapper {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
 impl std::ops::Deref for crate::GlobalNamespace::ArrayList_IListWrapper {
     type Target = crate::System::Collections::ArrayList;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ArrayList+IListWrapper")]
+#[cfg(feature = "System+Collections+ArrayList+IListWrapper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ArrayList_IListWrapper {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Events::UnityAct
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityAction")]
+#[cfg(feature = "UnityEngine+Events+UnityAction")]
 impl std::ops::Deref for crate::UnityEngine::Events::UnityAction {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityAction")]
+#[cfg(feature = "UnityEngine+Events+UnityAction")]
 impl std::ops::DerefMut for crate::UnityEngine::Events::UnityAction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

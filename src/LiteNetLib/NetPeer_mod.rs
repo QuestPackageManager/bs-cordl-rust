@@ -84,14 +84,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::NetPeer {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPeer")]
+#[cfg(feature = "LiteNetLib+NetPeer")]
 impl std::ops::Deref for crate::LiteNetLib::NetPeer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPeer")]
+#[cfg(feature = "LiteNetLib+NetPeer")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetPeer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1511,14 +1511,14 @@ for crate::LiteNetLib::NetPeer_IncomingFragments {
         false
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPeer+IncomingFragments")]
+#[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]
 impl std::ops::Deref for crate::LiteNetLib::NetPeer_IncomingFragments {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LiteNetLib+NetPeer+IncomingFragments")]
+#[cfg(feature = "LiteNetLib+NetPeer+IncomingFragments")]
 impl std::ops::DerefMut for crate::LiteNetLib::NetPeer_IncomingFragments {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

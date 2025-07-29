@@ -31,14 +31,14 @@ for crate::UnityEngine::UIElements::ClickDetector {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector")]
+#[cfg(feature = "UnityEngine+UIElements+ClickDetector")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ClickDetector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector")]
+#[cfg(feature = "UnityEngine+UIElements+ClickDetector")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ClickDetector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -342,7 +342,7 @@ for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
+#[cfg(feature = "UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -350,7 +350,7 @@ for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
+#[cfg(feature = "UnityEngine+UIElements+ClickDetector+ButtonClickStatus")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

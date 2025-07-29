@@ -28,9 +28,7 @@ for crate::BeatmapDataLoaderVersion4::LightColorEventBoxGroupConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorEventBoxGroupConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorEventBoxGroupConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion4::LightColorEventBoxGroupConverter {
     type Target = crate::BeatmapDataLoaderVersion4::EventBoxGroupConverter;
@@ -38,9 +36,7 @@ for crate::BeatmapDataLoaderVersion4::LightColorEventBoxGroupConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion4+LightColorEventBoxGroupConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion4+LightColorEventBoxGroupConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::LightColorEventBoxGroupConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

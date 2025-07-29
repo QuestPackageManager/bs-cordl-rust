@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Point")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Point")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Point")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT571K1Point")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT571K1Point {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

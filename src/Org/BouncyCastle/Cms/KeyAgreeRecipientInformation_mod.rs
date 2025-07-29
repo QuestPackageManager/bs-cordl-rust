@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     type Target = crate::Org::BouncyCastle::Cms::RecipientInformation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
+#[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInformation")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

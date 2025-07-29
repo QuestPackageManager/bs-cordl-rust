@@ -28,7 +28,7 @@ for crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+Headers+StringWithQualityHeaderValue")]
+#[cfg(feature = "System+Net+Http+Headers+StringWithQualityHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -36,7 +36,7 @@ for crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Http+Headers+StringWithQualityHeaderValue")]
+#[cfg(feature = "System+Net+Http+Headers+StringWithQualityHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

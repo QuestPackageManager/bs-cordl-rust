@@ -41,7 +41,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
         false
     }
 }
-#[cfg(feature = "cordl_class_RemoteProcedureCall_1")]
+#[cfg(feature = "RemoteProcedureCall_1")]
 impl<T0: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RemoteProcedureCall_1")]
+#[cfg(feature = "RemoteProcedureCall_1")]
 impl<T0: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::RemoteProcedureCall_1<T0> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

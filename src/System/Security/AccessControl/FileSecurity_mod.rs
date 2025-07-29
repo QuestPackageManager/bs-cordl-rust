@@ -24,14 +24,14 @@ for crate::System::Security::AccessControl::FileSecurity {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+FileSecurity")]
+#[cfg(feature = "System+Security+AccessControl+FileSecurity")]
 impl std::ops::Deref for crate::System::Security::AccessControl::FileSecurity {
     type Target = crate::System::Security::AccessControl::FileSystemSecurity;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Security+AccessControl+FileSecurity")]
+#[cfg(feature = "System+Security+AccessControl+FileSecurity")]
 impl std::ops::DerefMut for crate::System::Security::AccessControl::FileSecurity {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

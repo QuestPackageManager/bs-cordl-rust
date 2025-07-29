@@ -27,14 +27,14 @@ for crate::System::Resources::FileBasedResourceGroveler {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+FileBasedResourceGroveler")]
+#[cfg(feature = "System+Resources+FileBasedResourceGroveler")]
 impl std::ops::Deref for crate::System::Resources::FileBasedResourceGroveler {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Resources+FileBasedResourceGroveler")]
+#[cfg(feature = "System+Resources+FileBasedResourceGroveler")]
 impl std::ops::DerefMut for crate::System::Resources::FileBasedResourceGroveler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

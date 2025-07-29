@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
+    feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+GetHashCodeClass"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NullableMethodCallInstruction_GetHashCodeClass {

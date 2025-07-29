@@ -29,7 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInst
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {
@@ -39,7 +39,7 @@ for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInst
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
+    feature = "System+Linq+Expressions+Interpreter+LoadLocalFromClosureBoxedInstruction"
 )]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::LoadLocalFromClosureBoxedInstruction {

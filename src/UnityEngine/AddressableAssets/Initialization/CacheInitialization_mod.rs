@@ -28,9 +28,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization"
-)]
+#[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -252,7 +248,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
+    feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
@@ -264,7 +260,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
+    feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization+CacheInitOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {

@@ -50,7 +50,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -488,7 +488,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_Ini
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_Ini
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLocalInactivePlayerSongSyncController+InitData")]
+#[cfg(feature = "MultiplayerLocalInactivePlayerSongSyncController+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

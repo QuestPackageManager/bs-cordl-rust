@@ -28,9 +28,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateExpiredExceptio
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateExpiredException"
-)]
+#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CertificateExpiredException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::Certificates::CertificateExpiredException {
     type Target = crate::Org::BouncyCastle::Security::Certificates::CertificateException;
@@ -38,9 +36,7 @@ for crate::Org::BouncyCastle::Security::Certificates::CertificateExpiredExceptio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Security+Certificates+CertificateExpiredException"
-)]
+#[cfg(feature = "Org+BouncyCastle+Security+Certificates+CertificateExpiredException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::Certificates::CertificateExpiredException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

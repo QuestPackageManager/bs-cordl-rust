@@ -24,14 +24,14 @@ for crate::System::Net::Configuration::HttpWebRequestElement {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Configuration+HttpWebRequestElement")]
+#[cfg(feature = "System+Net+Configuration+HttpWebRequestElement")]
 impl std::ops::Deref for crate::System::Net::Configuration::HttpWebRequestElement {
     type Target = crate::System::Configuration::ConfigurationElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+Configuration+HttpWebRequestElement")]
+#[cfg(feature = "System+Net+Configuration+HttpWebRequestElement")]
 impl std::ops::DerefMut for crate::System::Net::Configuration::HttpWebRequestElement {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

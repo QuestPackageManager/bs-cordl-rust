@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsDsaSigner {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDsaSigner")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDsaSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsDsaSigner {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsSigner;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Tls+TlsDsaSigner")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsDsaSigner")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsDsaSigner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Focu
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusEvent")]
+#[cfg(feature = "UnityEngine+UIElements+FocusEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusEvent {
     type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
@@ -34,7 +34,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FocusEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusEvent")]
+#[cfg(feature = "UnityEngine+UIElements+FocusEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

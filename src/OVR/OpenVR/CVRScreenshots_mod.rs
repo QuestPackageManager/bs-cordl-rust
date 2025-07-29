@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRScreenshots {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRScreenshots")]
+#[cfg(feature = "OVR+OpenVR+CVRScreenshots")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRScreenshots {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+CVRScreenshots")]
+#[cfg(feature = "OVR+OpenVR+CVRScreenshots")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRScreenshots {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -31,7 +31,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadReque
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {
@@ -41,7 +41,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadReque
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+ProviderLoadRequestOptions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderLoadRequestOptions {

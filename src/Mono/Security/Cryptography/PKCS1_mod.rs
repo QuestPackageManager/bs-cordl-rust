@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::Cryptography:
         false
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS1")]
+#[cfg(feature = "Mono+Security+Cryptography+PKCS1")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::PKCS1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Mono+Security+Cryptography+PKCS1")]
+#[cfg(feature = "Mono+Security+Cryptography+PKCS1")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::PKCS1 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -100,35 +100,6 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
         > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFromOid(
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::HashAlgorithm>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Security::Cryptography::HashAlgorithm,
-                        >,
-                        1usize,
-                    >("CreateFromOid")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateFromOid", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::HashAlgorithm,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (oid))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn Encode_v15(
         hash: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::HashAlgorithm,
@@ -170,39 +141,6 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (hash, hashValue, emLength))?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn HashNameFromOid(
-        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        throwOnError: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("HashNameFromOid")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HashNameFromOid", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (oid, throwOnError))? };
         Ok(__cordl_ret.into())
     }
     pub fn I2OSP(
@@ -308,7 +246,50 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
         > = unsafe { cordl_method_info.invoke_unchecked((), (rsa, s))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Verify_v15(
+    pub fn Verify_v15_HashAlgorithm0(
+        rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+        hash: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::HashAlgorithm,
+        >,
+        hashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Cryptography::RSA,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Cryptography::HashAlgorithm,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("Verify_v15")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Verify_v15", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (rsa, hash, hashValue, signature))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Verify_v15_HashAlgorithm__cordl_bool2(
         rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
         hash: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::HashAlgorithm,
@@ -354,6 +335,48 @@ impl crate::Mono::Security::Cryptography::PKCS1 {
                     (),
                     (rsa, hash, hashValue, signature, tryNonStandardEncoding),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Verify_v15_Il2CppString1(
+        rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+        hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Cryptography::RSA,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        bool,
+                        4usize,
+                    >("Verify_v15")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Verify_v15", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (rsa, hashName, hashValue, signature))?
         };
         Ok(__cordl_ret.into())
     }

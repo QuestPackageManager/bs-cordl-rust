@@ -43,14 +43,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::Audio::G_AudioG
         false
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioGraph")]
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioGraph")]
 impl std::ops::Deref for crate::Tayx::Graphy::Audio::G_AudioGraph {
     type Target = crate::Tayx::Graphy::Graph::G_Graph;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Tayx+Graphy+Audio+G_AudioGraph")]
+#[cfg(feature = "Tayx+Graphy+Audio+G_AudioGraph")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::Audio::G_AudioGraph {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

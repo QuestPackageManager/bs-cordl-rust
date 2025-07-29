@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
+#[cfg(feature = "UnityEngine+Texture2D")]
 impl std::ops::Deref for crate::UnityEngine::Texture2D {
     type Target = crate::UnityEngine::Texture;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Texture2D")]
+#[cfg(feature = "UnityEngine+Texture2D")]
 impl std::ops::DerefMut for crate::UnityEngine::Texture2D {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

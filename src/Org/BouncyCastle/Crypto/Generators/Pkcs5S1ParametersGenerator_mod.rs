@@ -29,9 +29,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Pkcs5S1ParametersGenerator"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S1ParametersGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
     type Target = crate::Org::BouncyCastle::Crypto::PbeParametersGenerator;
@@ -39,9 +37,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Pkcs5S1ParametersGenerator"
-)]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Pkcs5S1ParametersGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

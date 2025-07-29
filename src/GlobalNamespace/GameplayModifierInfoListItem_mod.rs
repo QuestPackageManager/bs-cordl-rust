@@ -26,14 +26,14 @@ for crate::GlobalNamespace::GameplayModifierInfoListItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
+#[cfg(feature = "GameplayModifierInfoListItem")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItem {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifierInfoListItem")]
+#[cfg(feature = "GameplayModifierInfoListItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifierInfoListItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

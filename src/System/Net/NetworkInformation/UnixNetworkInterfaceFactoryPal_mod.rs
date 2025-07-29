@@ -28,9 +28,7 @@ for crate::System::Net::NetworkInformation::UnixNetworkInterfaceFactoryPal {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceFactoryPal"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceFactoryPal")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceFactoryPal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::System::Net::NetworkInformation::UnixNetworkInterfaceFactoryPal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+NetworkInformation+UnixNetworkInterfaceFactoryPal"
-)]
+#[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceFactoryPal")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::UnixNetworkInterfaceFactoryPal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

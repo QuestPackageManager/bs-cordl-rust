@@ -24,14 +24,14 @@ for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+DefaultNamingStrategy")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::DefaultNamingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

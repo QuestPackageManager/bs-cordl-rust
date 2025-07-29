@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::HapticClip {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Haptics+HapticClip")]
+#[cfg(feature = "Oculus+Haptics+HapticClip")]
 impl std::ops::Deref for crate::Oculus::Haptics::HapticClip {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Haptics+HapticClip")]
+#[cfg(feature = "Oculus+Haptics+HapticClip")]
 impl std::ops::DerefMut for crate::Oculus::Haptics::HapticClip {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Uri")]
+#[cfg(feature = "System+Uri")]
 impl std::ops::Deref for crate::System::Uri {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Uri")]
+#[cfg(feature = "System+Uri")]
 impl std::ops::DerefMut for crate::System::Uri {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3965,14 +3965,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_MoreInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
+#[cfg(feature = "System+Uri+MoreInfo")]
 impl std::ops::Deref for crate::System::Uri_MoreInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Uri+MoreInfo")]
+#[cfg(feature = "System+Uri+MoreInfo")]
 impl std::ops::DerefMut for crate::System::Uri_MoreInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4153,14 +4153,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_UriInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
+#[cfg(feature = "System+Uri+UriInfo")]
 impl std::ops::Deref for crate::System::Uri_UriInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Uri+UriInfo")]
+#[cfg(feature = "System+Uri+UriInfo")]
 impl std::ops::DerefMut for crate::System::Uri_UriInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

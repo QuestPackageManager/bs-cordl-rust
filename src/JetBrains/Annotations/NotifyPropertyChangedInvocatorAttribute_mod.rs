@@ -31,9 +31,7 @@ for crate::JetBrains::Annotations::NotifyPropertyChangedInvocatorAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+NotifyPropertyChangedInvocatorAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+NotifyPropertyChangedInvocatorAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::NotifyPropertyChangedInvocatorAttribute {
     type Target = crate::System::Attribute;
@@ -41,9 +39,7 @@ for crate::JetBrains::Annotations::NotifyPropertyChangedInvocatorAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_JetBrains+Annotations+NotifyPropertyChangedInvocatorAttribute"
-)]
+#[cfg(feature = "JetBrains+Annotations+NotifyPropertyChangedInvocatorAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::NotifyPropertyChangedInvocatorAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

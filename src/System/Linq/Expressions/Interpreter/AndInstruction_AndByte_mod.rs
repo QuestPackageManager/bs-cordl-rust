@@ -28,18 +28,14 @@ for crate::GlobalNamespace::AndInstruction_AndByte {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction+AndByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
 impl std::ops::Deref for crate::GlobalNamespace::AndInstruction_AndByte {
     type Target = crate::System::Linq::Expressions::Interpreter::AndInstruction;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+AndInstruction+AndByte"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+AndInstruction+AndByte")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AndInstruction_AndByte {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

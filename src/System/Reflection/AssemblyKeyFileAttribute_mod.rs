@@ -27,14 +27,14 @@ for crate::System::Reflection::AssemblyKeyFileAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyKeyFileAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyKeyFileAttribute")]
 impl std::ops::Deref for crate::System::Reflection::AssemblyKeyFileAttribute {
     type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AssemblyKeyFileAttribute")]
+#[cfg(feature = "System+Reflection+AssemblyKeyFileAttribute")]
 impl std::ops::DerefMut for crate::System::Reflection::AssemblyKeyFileAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+DateTimeParse")]
+#[cfg(feature = "System+DateTimeParse")]
 impl std::ops::Deref for crate::System::DateTimeParse {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+DateTimeParse")]
+#[cfg(feature = "System+DateTimeParse")]
 impl std::ops::DerefMut for crate::System::DateTimeParse {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3198,14 +3198,14 @@ for crate::System::DateTimeParse_MatchNumberDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
 impl std::ops::Deref for crate::System::DateTimeParse_MatchNumberDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+DateTimeParse+MatchNumberDelegate")]
+#[cfg(feature = "System+DateTimeParse+MatchNumberDelegate")]
 impl std::ops::DerefMut for crate::System::DateTimeParse_MatchNumberDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

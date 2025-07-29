@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::FilterStream;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+WrappedGeneratorStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::WrappedGeneratorStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

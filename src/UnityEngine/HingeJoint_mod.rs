@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::HingeJoint {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+HingeJoint")]
+#[cfg(feature = "UnityEngine+HingeJoint")]
 impl std::ops::Deref for crate::UnityEngine::HingeJoint {
     type Target = crate::UnityEngine::Joint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+HingeJoint")]
+#[cfg(feature = "UnityEngine+HingeJoint")]
 impl std::ops::DerefMut for crate::UnityEngine::HingeJoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

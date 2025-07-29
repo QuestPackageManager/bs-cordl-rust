@@ -26,7 +26,7 @@ for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
         false
     }
 }
-#[cfg(feature = "cordl_class_EnvironmentEffectsFilterPresetDropdown")]
+#[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
     type Target = crate::GlobalNamespace::ValueDropdownController_1<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::EnvironmentEffectsFilterPresetD
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_EnvironmentEffectsFilterPresetDropdown")]
+#[cfg(feature = "EnvironmentEffectsFilterPresetDropdown")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentEffectsFilterPresetDropdown {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

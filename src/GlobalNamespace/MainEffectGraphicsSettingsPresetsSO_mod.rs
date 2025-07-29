@@ -31,14 +31,14 @@ for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_MainEffectGraphicsSettingsPresetsSO")]
+#[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
     type Target = crate::GlobalNamespace::NamedPresetsSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MainEffectGraphicsSettingsPresetsSO")]
+#[cfg(feature = "MainEffectGraphicsSettingsPresetsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -196,7 +196,7 @@ for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset {
         false
     }
 }
-#[cfg(feature = "cordl_class_MainEffectGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset {
     type Target = crate::GlobalNamespace::NamedPreset;
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MainEffectGraphicsSettingsPresetsSO+Preset")]
+#[cfg(feature = "MainEffectGraphicsSettingsPresetsSO+Preset")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MainEffectGraphicsSettingsPresetsSO_Preset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

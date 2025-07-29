@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Crypto::Generators::DesKeyGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+DesKeyGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DesKeyGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Generators::DesKeyGenerator {
     type Target = crate::Org::BouncyCastle::Crypto::CipherKeyGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+DesKeyGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DesKeyGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::DesKeyGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

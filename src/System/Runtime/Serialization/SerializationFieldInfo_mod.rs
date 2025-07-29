@@ -28,14 +28,14 @@ for crate::System::Runtime::Serialization::SerializationFieldInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationFieldInfo")]
+#[cfg(feature = "System+Runtime+Serialization+SerializationFieldInfo")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::SerializationFieldInfo {
     type Target = crate::System::Reflection::FieldInfo;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationFieldInfo")]
+#[cfg(feature = "System+Runtime+Serialization+SerializationFieldInfo")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::SerializationFieldInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

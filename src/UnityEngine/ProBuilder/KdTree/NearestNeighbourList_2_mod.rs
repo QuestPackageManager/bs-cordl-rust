@@ -55,7 +55,7 @@ for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDista
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
@@ -66,7 +66,7 @@ for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDista
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+NearestNeighbourList_2")]
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,

@@ -39,14 +39,14 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls")]
+#[cfg(feature = "OVRVirtualKeyboardSampleControls")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

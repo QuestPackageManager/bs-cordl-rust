@@ -42,7 +42,7 @@ for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+CachedInvokableCall_1")]
+#[cfg(feature = "UnityEngine+Events+CachedInvokableCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
     type Target = crate::UnityEngine::Events::InvokableCall_1<T>;
@@ -50,7 +50,7 @@ for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+CachedInvokableCall_1")]
+#[cfg(feature = "UnityEngine+Events+CachedInvokableCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

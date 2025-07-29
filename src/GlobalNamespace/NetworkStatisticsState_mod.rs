@@ -249,7 +249,7 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
         false
     }
 }
-#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -257,7 +257,7 @@ for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelega
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
+#[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

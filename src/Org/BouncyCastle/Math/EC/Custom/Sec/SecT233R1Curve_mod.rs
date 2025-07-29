@@ -27,7 +27,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve;
@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -500,7 +500,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve_SecT233R1Loo
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve+SecT233R1LookupTable"
+    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve+SecT233R1LookupTable"
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve_SecT233R1LookupTable {
@@ -510,7 +510,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve_SecT233R1Loo
     }
 }
 #[cfg(
-    feature = "cordl_class_Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve+SecT233R1LookupTable"
+    feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecT233R1Curve+SecT233R1LookupTable"
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT233R1Curve_SecT233R1LookupTable {

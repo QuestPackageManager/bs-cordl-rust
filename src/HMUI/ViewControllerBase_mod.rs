@@ -29,14 +29,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewControllerBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
+#[cfg(feature = "HMUI+ViewControllerBase")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase")]
+#[cfg(feature = "HMUI+ViewControllerBase")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -292,14 +292,14 @@ for crate::HMUI::ViewControllerBase_DidActivateDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidActivateDelegate")]
+#[cfg(feature = "HMUI+ViewControllerBase+DidActivateDelegate")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase_DidActivateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -494,14 +494,14 @@ for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::Deref for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ViewControllerBase+DidDeactivateDelegate")]
+#[cfg(feature = "HMUI+ViewControllerBase+DidDeactivateDelegate")]
 impl std::ops::DerefMut for crate::HMUI::ViewControllerBase_DidDeactivateDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

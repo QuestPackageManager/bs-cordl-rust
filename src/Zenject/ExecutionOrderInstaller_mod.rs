@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ExecutionOrderInstal
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
 impl std::ops::Deref for crate::Zenject::ExecutionOrderInstaller {
     type Target = crate::Zenject::Installer_2<
         quest_hook::libil2cpp::Gc<
@@ -49,7 +49,7 @@ impl std::ops::Deref for crate::Zenject::ExecutionOrderInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ExecutionOrderInstaller")]
+#[cfg(feature = "Zenject+ExecutionOrderInstaller")]
 impl std::ops::DerefMut for crate::Zenject::ExecutionOrderInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

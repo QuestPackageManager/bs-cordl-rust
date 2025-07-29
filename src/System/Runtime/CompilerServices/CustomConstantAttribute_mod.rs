@@ -24,7 +24,7 @@ for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CustomConstantAttribute")]
+#[cfg(feature = "System+Runtime+CompilerServices+CustomConstantAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::CustomConstantAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

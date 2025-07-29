@@ -46,14 +46,14 @@ for crate::GlobalNamespace::TutorialBeatmapObjectManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialBeatmapObjectManager")]
+#[cfg(feature = "TutorialBeatmapObjectManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager {
     type Target = crate::GlobalNamespace::BeatmapObjectManager;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialBeatmapObjectManager")]
+#[cfg(feature = "TutorialBeatmapObjectManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TutorialBeatmapObjectManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -434,14 +434,14 @@ for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_TutorialBeatmapObjectManager+InitData")]
+#[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TutorialBeatmapObjectManager+InitData")]
+#[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

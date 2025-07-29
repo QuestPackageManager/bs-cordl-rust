@@ -29,7 +29,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocatio
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {
@@ -39,7 +39,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocatio
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
+    feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnMoveLocationPreview"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnMoveLocationPreview {

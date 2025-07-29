@@ -24,14 +24,14 @@ for crate::System::Globalization::GlobalizationMode {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+GlobalizationMode")]
+#[cfg(feature = "System+Globalization+GlobalizationMode")]
 impl std::ops::Deref for crate::System::Globalization::GlobalizationMode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Globalization+GlobalizationMode")]
+#[cfg(feature = "System+Globalization+GlobalizationMode")]
 impl std::ops::DerefMut for crate::System::Globalization::GlobalizationMode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -56,7 +56,7 @@ for crate::System::Collections::ObjectModel::KeyedCollection_2<TKey, TItem> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
@@ -67,7 +67,7 @@ for crate::System::Collections::ObjectModel::KeyedCollection_2<TKey, TItem> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+ObjectModel+KeyedCollection_2")]
+#[cfg(feature = "System+Collections+ObjectModel+KeyedCollection_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,

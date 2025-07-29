@@ -28,14 +28,14 @@ for crate::GlobalNamespace::SignalOnToggleChange {
         false
     }
 }
-#[cfg(feature = "cordl_class_SignalOnToggleChange")]
+#[cfg(feature = "SignalOnToggleChange")]
 impl std::ops::Deref for crate::GlobalNamespace::SignalOnToggleChange {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_SignalOnToggleChange")]
+#[cfg(feature = "SignalOnToggleChange")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SignalOnToggleChange {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

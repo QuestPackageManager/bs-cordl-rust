@@ -26,7 +26,7 @@ for crate::GlobalNamespace::GameplayModifierInfoListItemsList {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifierInfoListItemsList")]
+#[cfg(feature = "GameplayModifierInfoListItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItemsList {
     type Target = crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierInfoListItem>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItemsLi
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameplayModifierInfoListItemsList")]
+#[cfg(feature = "GameplayModifierInfoListItemsList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifierInfoListItemsList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

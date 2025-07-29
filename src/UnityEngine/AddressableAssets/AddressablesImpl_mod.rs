@@ -92,14 +92,14 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl")]
+#[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AddressablesImpl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5261,7 +5261,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5279,7 +5279,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
+    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeyOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeyOp {
@@ -5487,7 +5487,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {
@@ -5505,7 +5505,7 @@ for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocation
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
+    feature = "UnityEngine+AddressableAssets+AddressablesImpl+LoadResourceLocationKeysOp"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocationKeysOp {

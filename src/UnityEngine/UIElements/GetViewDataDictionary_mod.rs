@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::GetViewDataDictionary {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GetViewDataDictionary {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+GetViewDataDictionary")]
+#[cfg(feature = "UnityEngine+UIElements+GetViewDataDictionary")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::GetViewDataDictionary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

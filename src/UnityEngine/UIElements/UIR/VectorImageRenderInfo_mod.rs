@@ -33,7 +33,7 @@ for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -44,7 +44,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderI
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

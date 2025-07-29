@@ -30,9 +30,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectStrin
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectString"
-)]
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectString")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -40,9 +38,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectStrin
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+Serialization+Formatters+Binary+BinaryObjectString"
-)]
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryObjectString")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectString {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

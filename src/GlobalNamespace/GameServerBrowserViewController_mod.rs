@@ -38,14 +38,14 @@ for crate::GlobalNamespace::GameServerBrowserViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
+#[cfg(feature = "GameServerBrowserViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerBrowserViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameServerBrowserViewController")]
+#[cfg(feature = "GameServerBrowserViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameServerBrowserViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

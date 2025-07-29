@@ -36,14 +36,14 @@ for crate::GlobalNamespace::OtherSettingsViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_OtherSettingsViewController")]
+#[cfg(feature = "OtherSettingsViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::OtherSettingsViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OtherSettingsViewController")]
+#[cfg(feature = "OtherSettingsViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OtherSettingsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

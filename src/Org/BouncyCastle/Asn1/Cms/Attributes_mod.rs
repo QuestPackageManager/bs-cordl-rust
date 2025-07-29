@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Asn1::Cms::Attributes {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Attributes")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Attributes")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::Attributes {
     type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+Cms+Attributes")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Attributes")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::Attributes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

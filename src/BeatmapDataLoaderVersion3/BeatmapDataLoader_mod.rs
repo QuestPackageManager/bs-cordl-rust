@@ -24,14 +24,14 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader")]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader")]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader")]
 impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -634,9 +634,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -644,9 +642,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BasicEventConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BasicEventConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -806,9 +802,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -816,9 +810,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BeatmapDataItemConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -961,9 +953,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -971,9 +961,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BombNoteConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BombNoteConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1112,9 +1100,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -1122,9 +1108,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BpmEventConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BpmEventConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1265,9 +1249,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -1275,9 +1257,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+BurstSliderConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BurstSliderConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1416,9 +1396,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -1426,9 +1404,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorBoostEventConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorBoostEventConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1569,9 +1545,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -1579,9 +1553,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ColorNoteConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ColorNoteConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1720,9 +1692,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConverto
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1730,9 +1700,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConverto
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1826,9 +1794,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverte
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1836,9 +1802,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverte
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxEventBoxConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxEventBoxConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1969,9 +1933,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1979,9 +1941,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2068,9 +2028,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2078,9 +2036,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2172,9 +2128,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -2182,9 +2136,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxEventBoxConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxEventBoxConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2316,7 +2268,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvert
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {
@@ -2326,7 +2278,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvert
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {
@@ -2415,7 +2367,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConver
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
@@ -2425,7 +2377,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConver
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
@@ -2550,7 +2502,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataCon
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {
@@ -2560,7 +2512,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataCon
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {
@@ -2649,7 +2601,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCon
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
@@ -2659,7 +2611,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCon
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
@@ -2784,7 +2736,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseData
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {
@@ -2794,7 +2746,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseData
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {
@@ -2883,7 +2835,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBox
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
@@ -2893,7 +2845,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBox
     }
 }
 #[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
+    feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
@@ -3017,9 +2969,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -3027,9 +2977,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+ObstacleConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3193,9 +3141,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -3203,9 +3149,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SliderConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SliderConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3349,9 +3293,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3359,9 +3301,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+SpecialEventsFilter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3495,9 +3435,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
     type Target = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_BeatmapDataItemConverter;
@@ -3505,9 +3443,7 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter"
-)]
+#[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -33,14 +33,14 @@ for crate::GlobalNamespace::ParticleSystemLightWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemLightWithId")]
+#[cfg(feature = "ParticleSystemLightWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::ParticleSystemLightWithId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ParticleSystemLightWithId")]
+#[cfg(feature = "ParticleSystemLightWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ParticleSystemLightWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

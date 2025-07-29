@@ -26,14 +26,14 @@ for crate::Priority_Queue::FastPriorityQueueNode {
         false
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+FastPriorityQueueNode")]
+#[cfg(feature = "Priority_Queue+FastPriorityQueueNode")]
 impl std::ops::Deref for crate::Priority_Queue::FastPriorityQueueNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Priority_Queue+FastPriorityQueueNode")]
+#[cfg(feature = "Priority_Queue+FastPriorityQueueNode")]
 impl std::ops::DerefMut for crate::Priority_Queue::FastPriorityQueueNode {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -41,7 +41,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     type Target = crate::HMUI::ViewController;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapCharacteristicSelectionViewController")]
+#[cfg(feature = "BeatmapCharacteristicSelectionViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapCharacteristicSelectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

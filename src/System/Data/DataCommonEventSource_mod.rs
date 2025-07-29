@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataCommonEvent
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataCommonEventSource")]
+#[cfg(feature = "System+Data+DataCommonEventSource")]
 impl std::ops::Deref for crate::System::Data::DataCommonEventSource {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataCommonEventSource")]
+#[cfg(feature = "System+Data+DataCommonEventSource")]
 impl std::ops::DerefMut for crate::System::Data::DataCommonEventSource {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

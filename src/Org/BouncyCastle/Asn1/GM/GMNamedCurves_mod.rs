@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -395,7 +395,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -403,7 +403,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+SM2P256V1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -506,7 +506,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
@@ -514,7 +514,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+GM+GMNamedCurves+WapiP192V1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

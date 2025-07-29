@@ -41,7 +41,7 @@ for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapDifficultySegmentedControlController")]
+#[cfg(feature = "BeatmapDifficultySegmentedControlController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

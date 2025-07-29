@@ -28,9 +28,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Impl"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Impl")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl {
     type Target = crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl;
@@ -38,9 +36,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509Certificate2Impl"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Impl")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

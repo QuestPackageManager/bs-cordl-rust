@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XmlSchem
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaGroup")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaGroup {
     type Target = crate::System::Xml::Schema::XmlSchemaAnnotated;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaGroup")]
+#[cfg(feature = "System+Xml+Schema+XmlSchemaGroup")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

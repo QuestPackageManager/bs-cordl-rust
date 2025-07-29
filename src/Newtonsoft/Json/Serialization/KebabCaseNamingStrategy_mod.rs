@@ -24,7 +24,7 @@ for crate::Newtonsoft::Json::Serialization::KebabCaseNamingStrategy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::KebabCaseNamingStrategy {
     type Target = crate::Newtonsoft::Json::Serialization::NamingStrategy;
@@ -32,7 +32,7 @@ for crate::Newtonsoft::Json::Serialization::KebabCaseNamingStrategy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+KebabCaseNamingStrategy")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::KebabCaseNamingStrategy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -38,14 +38,14 @@ for crate::System::Text::RegularExpressions::MatchCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchCollection")]
+#[cfg(feature = "System+Text+RegularExpressions+MatchCollection")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::MatchCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchCollection")]
+#[cfg(feature = "System+Text+RegularExpressions+MatchCollection")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::MatchCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1215,7 +1215,7 @@ for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchCollection+Enumerator")]
+#[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -1223,7 +1223,7 @@ for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Text+RegularExpressions+MatchCollection+Enumerator")]
+#[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

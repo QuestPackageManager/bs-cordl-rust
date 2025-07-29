@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyCenterStageLayoutAnimator")]
+#[cfg(feature = "MultiplayerLobbyCenterStageLayoutAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyCenterStageLayoutAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

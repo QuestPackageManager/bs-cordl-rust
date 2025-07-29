@@ -40,14 +40,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ColorGradientSlider {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ColorGradientSlider")]
+#[cfg(feature = "HMUI+ColorGradientSlider")]
 impl std::ops::Deref for crate::HMUI::ColorGradientSlider {
     type Target = crate::HMUI::TextSlider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ColorGradientSlider")]
+#[cfg(feature = "HMUI+ColorGradientSlider")]
 impl std::ops::DerefMut for crate::HMUI::ColorGradientSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

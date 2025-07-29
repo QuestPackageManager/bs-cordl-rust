@@ -41,14 +41,14 @@ for crate::Tweening::Tween_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Tweening+Tween_1")]
+#[cfg(feature = "Tweening+Tween_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::Tweening::Tween_1<T> {
     type Target = crate::Tweening::Tween;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Tweening+Tween_1")]
+#[cfg(feature = "Tweening+Tween_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut for crate::Tweening::Tween_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

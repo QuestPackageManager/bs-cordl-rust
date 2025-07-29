@@ -28,9 +28,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     type Target = crate::UnityEngine::ResourceManagement::ResourceProviders::TextDataProvider;
@@ -38,9 +36,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider"
-)]
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+JsonAssetProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

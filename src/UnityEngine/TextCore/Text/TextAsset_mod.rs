@@ -29,14 +29,14 @@ for crate::UnityEngine::TextCore::Text::TextAsset {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextAsset")]
+#[cfg(feature = "UnityEngine+TextCore+Text+TextAsset")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextAsset {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextAsset")]
+#[cfg(feature = "UnityEngine+TextCore+Text+TextAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextAsset {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

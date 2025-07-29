@@ -24,14 +24,14 @@ for crate::UnityEngine::UIElements::IRuntimePanelComponent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+IRuntimePanelComponent")]
+#[cfg(feature = "UnityEngine+UIElements+IRuntimePanelComponent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IRuntimePanelComponent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+IRuntimePanelComponent")]
+#[cfg(feature = "UnityEngine+UIElements+IRuntimePanelComponent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IRuntimePanelComponent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

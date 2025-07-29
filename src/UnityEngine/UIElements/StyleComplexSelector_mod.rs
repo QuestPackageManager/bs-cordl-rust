@@ -40,14 +40,14 @@ for crate::UnityEngine::UIElements::StyleComplexSelector {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleComplexSelector {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleComplexSelector")]
+#[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleComplexSelector {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

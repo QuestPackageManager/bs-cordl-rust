@@ -37,7 +37,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyCenterScreenLayoutAnimator")]
+#[cfg(feature = "MultiplayerLobbyCenterScreenLayoutAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerLobbyCenterScreenLayoutAnimator")]
+#[cfg(feature = "MultiplayerLobbyCenterScreenLayoutAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLobbyCenterScreenLayoutAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

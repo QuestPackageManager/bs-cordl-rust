@@ -62,7 +62,7 @@ for crate::GlobalNamespace::IScoreSyncStateManager_5<
         false
     }
 }
-#[cfg(feature = "cordl_class_IScoreSyncStateManager_5")]
+#[cfg(feature = "IScoreSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -82,7 +82,7 @@ for crate::GlobalNamespace::IScoreSyncStateManager_5<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_IScoreSyncStateManager_5")]
+#[cfg(feature = "IScoreSyncStateManager_5")]
 impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

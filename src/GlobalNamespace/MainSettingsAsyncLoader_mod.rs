@@ -36,14 +36,14 @@ for crate::GlobalNamespace::MainSettingsAsyncLoader {
         false
     }
 }
-#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
+#[cfg(feature = "MainSettingsAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::MainSettingsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MainSettingsAsyncLoader")]
+#[cfg(feature = "MainSettingsAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsAsyncLoader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

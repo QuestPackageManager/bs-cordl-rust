@@ -29,9 +29,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicat
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator {
     type Target = crate::UnityEngine::UIElements::VisualElement;
@@ -39,9 +37,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicat
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator"
-)]
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumnSortIndicator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::TransitionCancelEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionCancelEvent {
     type Target = crate::UnityEngine::UIElements::TransitionEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionCancelEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionCancelEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+TransitionCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+TransitionCancelEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TransitionCancelEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

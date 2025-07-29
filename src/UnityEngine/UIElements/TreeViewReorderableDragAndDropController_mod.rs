@@ -38,9 +38,7 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController"
-)]
+#[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     type Target = crate::UnityEngine::UIElements::BaseReorderableDragAndDropController;
@@ -48,9 +46,7 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController"
-)]
+#[cfg(feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -405,7 +401,7 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dro
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {
@@ -415,7 +411,7 @@ for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dro
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
+    feature = "UnityEngine+UIElements+TreeViewReorderableDragAndDropController+DropData"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_DropData {

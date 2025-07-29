@@ -28,9 +28,7 @@ for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Http+Headers+TransferCodingWithQualityHeaderValue"
-)]
+#[cfg(feature = "System+Net+Http+Headers+TransferCodingWithQualityHeaderValue")]
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
     type Target = crate::System::Net::Http::Headers::TransferCodingHeaderValue;
@@ -38,9 +36,7 @@ for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Http+Headers+TransferCodingWithQualityHeaderValue"
-)]
+#[cfg(feature = "System+Net+Http+Headers+TransferCodingWithQualityHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

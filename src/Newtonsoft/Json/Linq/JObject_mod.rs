@@ -32,14 +32,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JObje
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject {
     type Target = crate::Newtonsoft::Json::Linq::JContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2707,7 +2707,7 @@ for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     type Target = crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
@@ -2716,7 +2716,7 @@ impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicPr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

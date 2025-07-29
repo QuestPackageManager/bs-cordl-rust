@@ -41,7 +41,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionsGridViewAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

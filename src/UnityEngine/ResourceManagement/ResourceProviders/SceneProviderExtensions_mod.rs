@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExte
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {
@@ -39,7 +39,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExte
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {

@@ -70,14 +70,14 @@ for crate::UnityEngine::UIElements::ReusableTreeViewItem {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableTreeViewItem")]
+#[cfg(feature = "UnityEngine+UIElements+ReusableTreeViewItem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ReusableTreeViewItem {
     type Target = crate::UnityEngine::UIElements::ReusableCollectionItem;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableTreeViewItem")]
+#[cfg(feature = "UnityEngine+UIElements+ReusableTreeViewItem")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ReusableTreeViewItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

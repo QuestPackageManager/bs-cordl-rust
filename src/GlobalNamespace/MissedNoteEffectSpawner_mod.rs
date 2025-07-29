@@ -37,14 +37,14 @@ for crate::GlobalNamespace::MissedNoteEffectSpawner {
         false
     }
 }
-#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
+#[cfg(feature = "MissedNoteEffectSpawner")]
 impl std::ops::Deref for crate::GlobalNamespace::MissedNoteEffectSpawner {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MissedNoteEffectSpawner")]
+#[cfg(feature = "MissedNoteEffectSpawner")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissedNoteEffectSpawner {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

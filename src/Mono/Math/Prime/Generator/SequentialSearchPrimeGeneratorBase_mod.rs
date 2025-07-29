@@ -28,9 +28,7 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
-)]
+#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 impl std::ops::Deref
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     type Target = crate::Mono::Math::Prime::Generator::PrimeGeneratorBase;
@@ -38,9 +36,7 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase"
-)]
+#[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 impl std::ops::DerefMut
 for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

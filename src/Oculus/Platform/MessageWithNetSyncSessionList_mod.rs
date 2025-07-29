@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithNetSyncSessionList {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithNetSyncSessionList")]
+#[cfg(feature = "Oculus+Platform+MessageWithNetSyncSessionList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithNetSyncSessionList {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSessionList>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithNetSyncSessionList 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithNetSyncSessionList")]
+#[cfg(feature = "Oculus+Platform+MessageWithNetSyncSessionList")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithNetSyncSessionList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

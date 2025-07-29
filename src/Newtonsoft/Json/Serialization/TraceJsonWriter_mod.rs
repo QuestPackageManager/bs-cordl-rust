@@ -27,14 +27,14 @@ for crate::Newtonsoft::Json::Serialization::TraceJsonWriter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonWriter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::TraceJsonWriter {
     type Target = crate::Newtonsoft::Json::JsonWriter;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+TraceJsonWriter")]
+#[cfg(feature = "Newtonsoft+Json+Serialization+TraceJsonWriter")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::TraceJsonWriter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

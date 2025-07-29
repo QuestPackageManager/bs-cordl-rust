@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::PointerCancelEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+PointerCancelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCancelEvent {
     type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCancelEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCancelEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerCancelEvent")]
+#[cfg(feature = "UnityEngine+UIElements+PointerCancelEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerCancelEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

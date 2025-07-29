@@ -38,14 +38,14 @@ for crate::GlobalNamespace::BTSCharacterDataModel {
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
+#[cfg(feature = "BTSCharacterDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel")]
+#[cfg(feature = "BTSCharacterDataModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -212,7 +212,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -220,7 +220,7 @@ for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel+AnimationClipWithId")]
+#[cfg(feature = "BTSCharacterDataModel+AnimationClipWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BTSCharacterDataModel_AnimationClipWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -344,14 +344,14 @@ for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
         false
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 impl std::ops::Deref for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BTSCharacterDataModel+PrefabWithId")]
+#[cfg(feature = "BTSCharacterDataModel+PrefabWithId")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BTSCharacterDataModel_PrefabWithId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

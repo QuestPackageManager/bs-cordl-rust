@@ -29,7 +29,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -39,7 +39,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection"
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection {
@@ -279,7 +279,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {
@@ -289,7 +289,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509CertificateColl
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
+    feature = "System+Security+Cryptography+X509Certificates+X509CertificateCollection+X509CertificateEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection_X509CertificateEnumerator {

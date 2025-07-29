@@ -45,14 +45,14 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
+#[cfg(feature = "MultiplayerModeSelectionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     type Target = crate::HMUI::ViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
+#[cfg(feature = "MultiplayerModeSelectionViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

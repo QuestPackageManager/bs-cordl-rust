@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::MouseLeaveWindowEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveWindowEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseLeaveWindowEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseLeaveWindowEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseLeaveWindowEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MouseLeaveWindowEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseLeaveWindowEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseLeaveWindowEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseLeaveWindowEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

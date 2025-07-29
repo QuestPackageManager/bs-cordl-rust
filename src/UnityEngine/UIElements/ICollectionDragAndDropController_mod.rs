@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+ICollectionDragAndDropController")]
+#[cfg(feature = "UnityEngine+UIElements+ICollectionDragAndDropController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ICollectionDragAndDropController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::MouseOverEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseOverEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseOverEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseOverEvent {
     type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseOverEvent>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::MouseOverEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseOverEvent")]
+#[cfg(feature = "UnityEngine+UIElements+MouseOverEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseOverEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

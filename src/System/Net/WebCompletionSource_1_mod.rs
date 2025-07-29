@@ -51,7 +51,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
+#[cfg(feature = "System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -59,7 +59,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
+#[cfg(feature = "System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Net::WebCompletionSource_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -426,7 +426,7 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -434,7 +434,7 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1+Result")]
+#[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Net::WebCompletionSource_1_Result<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

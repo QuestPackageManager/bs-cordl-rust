@@ -35,7 +35,7 @@ for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         false
     }
 }
-#[cfg(feature = "cordl_class_VertexDisplacementFloatFxGroupEffectTarget")]
+#[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     type Target = crate::GlobalNamespace::FloatFxGroupEffectTarget;
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_VertexDisplacementFloatFxGroupEffectTarget")]
+#[cfg(feature = "VertexDisplacementFloatFxGroupEffectTarget")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

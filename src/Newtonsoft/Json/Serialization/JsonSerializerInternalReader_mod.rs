@@ -28,9 +28,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
@@ -38,9 +36,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader"
-)]
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2559,7 +2555,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
@@ -2569,7 +2565,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     }
 }
 #[cfg(
-    feature = "cordl_class_Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+CreatorPropertyContext"
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {

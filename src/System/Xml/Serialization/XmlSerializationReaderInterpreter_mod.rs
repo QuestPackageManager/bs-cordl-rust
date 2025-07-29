@@ -32,9 +32,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     type Target = crate::System::Xml::Serialization::XmlSerializationReader;
@@ -42,9 +40,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter"
-)]
+#[cfg(feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter")]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1440,7 +1436,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1450,7 +1446,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCa
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+FixupCallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_FixupCallbackInfo {
@@ -1589,7 +1585,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderC
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {
@@ -1599,7 +1595,7 @@ for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderC
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
+    feature = "System+Xml+Serialization+XmlSerializationReaderInterpreter+ReaderCallbackInfo"
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::Serialization::XmlSerializationReaderInterpreter_ReaderCallbackInfo {

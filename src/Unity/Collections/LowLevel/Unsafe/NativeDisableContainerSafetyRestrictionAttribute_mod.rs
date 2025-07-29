@@ -29,7 +29,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRes
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {
@@ -39,7 +39,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRes
     }
 }
 #[cfg(
-    feature = "cordl_class_Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
+    feature = "Unity+Collections+LowLevel+Unsafe+NativeDisableContainerSafetyRestrictionAttribute"
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeDisableContainerSafetyRestrictionAttribute {

@@ -29,7 +29,7 @@ for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSour
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSour
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
+    feature = "System+Threading+CancellationTokenSource+LinkedNCancellationTokenSource"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CancellationTokenSource_LinkedNCancellationTokenSource {

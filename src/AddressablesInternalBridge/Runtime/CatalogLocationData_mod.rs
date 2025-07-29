@@ -33,7 +33,7 @@ for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
         false
     }
 }
-#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl std::ops::Deref
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -41,7 +41,7 @@ for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AddressablesInternalBridge+Runtime+CatalogLocationData")]
+#[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl std::ops::DerefMut
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

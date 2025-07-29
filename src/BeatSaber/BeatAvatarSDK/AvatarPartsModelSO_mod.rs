@@ -63,14 +63,14 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPartsModelSO")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarPartsModelSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

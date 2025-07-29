@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rigidbody {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rigidbody")]
+#[cfg(feature = "UnityEngine+Rigidbody")]
 impl std::ops::Deref for crate::UnityEngine::Rigidbody {
     type Target = crate::UnityEngine::Component;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Rigidbody")]
+#[cfg(feature = "UnityEngine+Rigidbody")]
 impl std::ops::DerefMut for crate::UnityEngine::Rigidbody {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

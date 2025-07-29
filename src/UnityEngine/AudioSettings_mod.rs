@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings")]
+#[cfg(feature = "UnityEngine+AudioSettings")]
 impl std::ops::Deref for crate::UnityEngine::AudioSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings")]
+#[cfg(feature = "UnityEngine+AudioSettings")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -373,7 +373,7 @@ for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
+#[cfg(feature = "UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
 impl std::ops::Deref
 for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
     type Target = crate::System::MulticastDelegate;
@@ -381,7 +381,7 @@ for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
+#[cfg(feature = "UnityEngine+AudioSettings+AudioConfigurationChangeHandler")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -490,14 +490,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioSettings_Mo
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings+Mobile")]
+#[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
 impl std::ops::Deref for crate::UnityEngine::AudioSettings_Mobile {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AudioSettings+Mobile")]
+#[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
 impl std::ops::DerefMut for crate::UnityEngine::AudioSettings_Mobile {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

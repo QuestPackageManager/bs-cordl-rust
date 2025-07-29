@@ -42,7 +42,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
@@ -53,7 +53,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChainCommand
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainCommand")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

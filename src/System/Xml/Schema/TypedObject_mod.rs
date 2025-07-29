@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::TypedObj
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject")]
+#[cfg(feature = "System+Xml+Schema+TypedObject")]
 impl std::ops::Deref for crate::System::Xml::Schema::TypedObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject")]
+#[cfg(feature = "System+Xml+Schema+TypedObject")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::TypedObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -381,14 +381,14 @@ for crate::System::Xml::Schema::TypedObject_DecimalStruct {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject+DecimalStruct")]
+#[cfg(feature = "System+Xml+Schema+TypedObject+DecimalStruct")]
 impl std::ops::Deref for crate::System::Xml::Schema::TypedObject_DecimalStruct {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+TypedObject+DecimalStruct")]
+#[cfg(feature = "System+Xml+Schema+TypedObject+DecimalStruct")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::TypedObject_DecimalStruct {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

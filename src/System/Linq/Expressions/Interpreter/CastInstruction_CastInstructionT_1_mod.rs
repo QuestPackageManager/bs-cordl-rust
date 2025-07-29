@@ -46,7 +46,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
@@ -56,7 +56,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionT_1"
 )]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {

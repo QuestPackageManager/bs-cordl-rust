@@ -24,7 +24,7 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
+#[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl std::ops::Deref
 for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
@@ -32,7 +32,7 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
+#[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl std::ops::DerefMut
 for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -41,29 +41,53 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
-    pub fn ConcurrentDictionary_AcquiringAllLocks(
+    pub fn ConcurrentBag_TryPeekSteals(
         &mut self,
-        numOfBuckets: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32),
+                        (),
                         quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ConcurrentDictionary_AcquiringAllLocks")
+                        0usize,
+                    >("ConcurrentBag_TryPeekSteals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConcurrentDictionary_AcquiringAllLocks", 1usize
+                            "ConcurrentBag_TryPeekSteals", 0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (numOfBuckets))?
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConcurrentBag_TryTakeSteals(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ConcurrentBag_TryTakeSteals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConcurrentBag_TryTakeSteals", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

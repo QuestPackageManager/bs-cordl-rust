@@ -50,7 +50,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
         false
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     type Target = crate::HMUI::ViewController;
@@ -58,7 +58,7 @@ for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
+#[cfg(feature = "AnnotatedBeatmapLevelCollectionsViewController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

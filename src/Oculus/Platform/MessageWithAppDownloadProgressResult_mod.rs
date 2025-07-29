@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithAppDownloadProgress
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAppDownloadProgressResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

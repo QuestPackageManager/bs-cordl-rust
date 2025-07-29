@@ -34,7 +34,7 @@ for crate::GlobalNamespace::ScoreSyncStateManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_ScoreSyncStateManager")]
+#[cfg(feature = "ScoreSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreSyncStateManager {
     type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         crate::GlobalNamespace::StandardScoreSyncState,
@@ -51,7 +51,7 @@ impl std::ops::Deref for crate::GlobalNamespace::ScoreSyncStateManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_ScoreSyncStateManager")]
+#[cfg(feature = "ScoreSyncStateManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ScoreSyncStateManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

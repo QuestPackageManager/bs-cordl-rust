@@ -38,7 +38,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase")]
+#[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -847,7 +847,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -857,7 +857,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
+    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectEntry"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
@@ -962,7 +962,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
@@ -972,7 +972,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
+    feature = "System+Collections+Specialized+NameObjectCollectionBase+NameObjectKeysEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {

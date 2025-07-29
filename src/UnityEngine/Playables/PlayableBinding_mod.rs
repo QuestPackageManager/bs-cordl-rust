@@ -255,7 +255,7 @@ for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl std::ops::Deref
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     type Target = crate::System::MulticastDelegate;
@@ -263,7 +263,7 @@ for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
+#[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

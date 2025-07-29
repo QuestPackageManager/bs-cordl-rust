@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FileWebStream {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Net+FileWebStream")]
+#[cfg(feature = "System+Net+FileWebStream")]
 impl std::ops::Deref for crate::System::Net::FileWebStream {
     type Target = crate::System::IO::FileStream;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Net+FileWebStream")]
+#[cfg(feature = "System+Net+FileWebStream")]
 impl std::ops::DerefMut for crate::System::Net::FileWebStream {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

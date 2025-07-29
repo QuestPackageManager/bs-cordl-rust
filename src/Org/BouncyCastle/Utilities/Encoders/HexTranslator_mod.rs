@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
+#[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexTranslator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Encoders::HexTranslator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -32,9 +32,7 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
-)]
+#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
 impl std::ops::Deref
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -42,9 +40,7 @@ for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+SubsystemsImplementation+SubsystemWithProvider"
-)]
+#[cfg(feature = "UnityEngine+SubsystemsImplementation+SubsystemWithProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

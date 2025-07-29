@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientRemapPool 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+GradientRemapPool")]
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

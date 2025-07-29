@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MockServerSe
         false
     }
 }
-#[cfg(feature = "cordl_class_MockServerSettings")]
+#[cfg(feature = "MockServerSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::MockServerSettings {
     type Target = crate::GlobalNamespace::MockPlayerSettings;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MockServerSettings")]
+#[cfg(feature = "MockServerSettings")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MockServerSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

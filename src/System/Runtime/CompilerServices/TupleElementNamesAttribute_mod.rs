@@ -33,9 +33,7 @@ for crate::System::Runtime::CompilerServices::TupleElementNamesAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+TupleElementNamesAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+TupleElementNamesAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::TupleElementNamesAttribute {
     type Target = crate::System::Attribute;
@@ -43,9 +41,7 @@ for crate::System::Runtime::CompilerServices::TupleElementNamesAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+TupleElementNamesAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+TupleElementNamesAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::TupleElementNamesAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

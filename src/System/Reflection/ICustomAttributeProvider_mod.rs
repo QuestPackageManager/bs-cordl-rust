@@ -24,14 +24,14 @@ for crate::System::Reflection::ICustomAttributeProvider {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+ICustomAttributeProvider")]
+#[cfg(feature = "System+Reflection+ICustomAttributeProvider")]
 impl std::ops::Deref for crate::System::Reflection::ICustomAttributeProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+ICustomAttributeProvider")]
+#[cfg(feature = "System+Reflection+ICustomAttributeProvider")]
 impl std::ops::DerefMut for crate::System::Reflection::ICustomAttributeProvider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

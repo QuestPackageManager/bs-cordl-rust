@@ -45,9 +45,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainPolicy"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainPolicy")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,9 +53,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainPolicy"
-)]
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainPolicy")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

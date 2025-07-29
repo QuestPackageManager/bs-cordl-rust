@@ -26,14 +26,14 @@ for crate::Zenject::ZenjectStateMachineBehaviourAutoInjecter {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ZenjectStateMachineBehaviourAutoInjecter")]
+#[cfg(feature = "Zenject+ZenjectStateMachineBehaviourAutoInjecter")]
 impl std::ops::Deref for crate::Zenject::ZenjectStateMachineBehaviourAutoInjecter {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+ZenjectStateMachineBehaviourAutoInjecter")]
+#[cfg(feature = "Zenject+ZenjectStateMachineBehaviourAutoInjecter")]
 impl std::ops::DerefMut for crate::Zenject::ZenjectStateMachineBehaviourAutoInjecter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -29,14 +29,14 @@ for crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+SkinColorSetSO")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::SkinColorSetSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

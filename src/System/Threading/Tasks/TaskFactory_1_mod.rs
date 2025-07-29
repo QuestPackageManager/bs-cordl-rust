@@ -47,7 +47,7 @@ for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory_1")]
+#[cfg(feature = "System+Threading+Tasks+TaskFactory_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -55,7 +55,7 @@ for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+TaskFactory_1")]
+#[cfg(feature = "System+Threading+Tasks+TaskFactory_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -882,9 +882,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Threading+Tasks+TaskFactory_1+FromAsyncTrimPromise_1"
-)]
+#[cfg(feature = "System+Threading+Tasks+TaskFactory_1+FromAsyncTrimPromise_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
     TInstance: quest_hook::libil2cpp::Type,
@@ -898,9 +896,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Threading+Tasks+TaskFactory_1+FromAsyncTrimPromise_1"
-)]
+#[cfg(feature = "System+Threading+Tasks+TaskFactory_1+FromAsyncTrimPromise_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
     TInstance: quest_hook::libil2cpp::Type,

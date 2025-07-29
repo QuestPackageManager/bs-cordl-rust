@@ -26,14 +26,14 @@ for crate::UnityEngine::EventSystems::OVRPointerEventData {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::OVRPointerEventData {
     type Target = crate::UnityEngine::EventSystems::PointerEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+OVRPointerEventData")]
+#[cfg(feature = "UnityEngine+EventSystems+OVRPointerEventData")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::OVRPointerEventData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

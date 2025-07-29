@@ -35,14 +35,14 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor")]
+#[cfg(feature = "RecordingToolConfigurationProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor")]
+#[cfg(feature = "RecordingToolConfigurationProcessor")]
 impl std::ops::DerefMut for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -596,7 +596,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+ColorSaveData")]
+#[cfg(feature = "RecordingToolConfigurationProcessor+ColorSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -604,7 +604,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+ColorSaveData")]
+#[cfg(feature = "RecordingToolConfigurationProcessor+ColorSaveData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -693,7 +693,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreensh
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+PlaybackScreenshot")]
+#[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -701,7 +701,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreensh
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolConfigurationProcessor+PlaybackScreenshot")]
+#[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -808,9 +808,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfigu
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingConfiguration"
-)]
+#[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -818,9 +816,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfigu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingConfiguration"
-)]
+#[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -907,9 +903,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolCon
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingToolConfiguration"
-)]
+#[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -917,9 +911,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolCon
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_RecordingToolConfigurationProcessor+RecordingToolConfiguration"
-)]
+#[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

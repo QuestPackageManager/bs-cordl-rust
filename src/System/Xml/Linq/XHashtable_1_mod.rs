@@ -168,7 +168,7 @@ for crate::System::Xml::Linq::XHashtable_1<TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -176,7 +176,7 @@ for crate::System::Xml::Linq::XHashtable_1<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Xml::Linq::XHashtable_1<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -368,7 +368,7 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
     type Target = crate::System::MulticastDelegate;
@@ -376,7 +376,7 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1+ExtractKeyDelegate")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -533,7 +533,7 @@ for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+XHashtableState")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -541,7 +541,7 @@ for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+XHashtableState")]
+#[cfg(feature = "System+Xml+Linq+XHashtable_1+XHashtableState")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

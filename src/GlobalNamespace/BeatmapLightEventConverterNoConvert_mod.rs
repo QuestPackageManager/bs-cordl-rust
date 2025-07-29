@@ -24,14 +24,14 @@ for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLightEventConverterNoConvert")]
+#[cfg(feature = "BeatmapLightEventConverterNoConvert")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLightEventConverterNoConvert")]
+#[cfg(feature = "BeatmapLightEventConverterNoConvert")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

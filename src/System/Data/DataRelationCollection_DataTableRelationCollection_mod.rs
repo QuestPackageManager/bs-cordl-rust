@@ -34,9 +34,7 @@ for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
-)]
+#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     type Target = crate::System::Data::DataRelationCollection;
@@ -44,9 +42,7 @@ for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Data+DataRelationCollection+DataTableRelationCollection"
-)]
+#[cfg(feature = "System+Data+DataRelationCollection+DataTableRelationCollection")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DataRelationCollection_DataTableRelationCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

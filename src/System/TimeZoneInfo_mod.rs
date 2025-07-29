@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
+#[cfg(feature = "System+TimeZoneInfo")]
 impl std::ops::Deref for crate::System::TimeZoneInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo")]
+#[cfg(feature = "System+TimeZoneInfo")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3610,14 +3610,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Adjustme
         false
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_AdjustmentRule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo+AdjustmentRule")]
+#[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_AdjustmentRule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4356,14 +4356,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_CachedDa
         false
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "System+TimeZoneInfo+CachedData")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_CachedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+TimeZoneInfo+CachedData")]
+#[cfg(feature = "System+TimeZoneInfo+CachedData")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_CachedData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

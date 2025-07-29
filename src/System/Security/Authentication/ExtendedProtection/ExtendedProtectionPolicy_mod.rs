@@ -29,7 +29,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl std::ops::Deref
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {
@@ -39,7 +39,7 @@ for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtect
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
+    feature = "System+Security+Authentication+ExtendedProtection+ExtendedProtectionPolicy"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy {

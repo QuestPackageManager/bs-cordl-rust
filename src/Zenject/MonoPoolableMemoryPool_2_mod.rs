@@ -49,7 +49,7 @@ for crate::Zenject::MonoPoolableMemoryPool_2<TParam1, TValue> {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MonoPoolableMemoryPool_2")]
+#[cfg(feature = "Zenject+MonoPoolableMemoryPool_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -59,7 +59,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+MonoPoolableMemoryPool_2")]
+#[cfg(feature = "Zenject+MonoPoolableMemoryPool_2")]
 impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

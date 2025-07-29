@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FlyingSprite
         false
     }
 }
-#[cfg(feature = "cordl_class_FlyingSpriteEffect")]
+#[cfg(feature = "FlyingSpriteEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingSpriteEffect {
     type Target = crate::GlobalNamespace::FlyingObjectEffect;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FlyingSpriteEffect")]
+#[cfg(feature = "FlyingSpriteEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingSpriteEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -181,7 +181,7 @@ for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
         false
     }
 }
-#[cfg(feature = "cordl_class_FlyingSpriteEffect+Pool")]
+#[cfg(feature = "FlyingSpriteEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FlyingSpriteEffect>,
@@ -190,7 +190,7 @@ impl std::ops::Deref for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FlyingSpriteEffect+Pool")]
+#[cfg(feature = "FlyingSpriteEffect+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FlyingSpriteEffect_Pool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

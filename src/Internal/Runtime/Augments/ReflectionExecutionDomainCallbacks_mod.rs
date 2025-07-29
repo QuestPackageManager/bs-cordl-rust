@@ -28,9 +28,7 @@ for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
-)]
+#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
 impl std::ops::Deref
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,9 +36,7 @@ for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks"
-)]
+#[cfg(feature = "Internal+Runtime+Augments+ReflectionExecutionDomainCallbacks")]
 impl std::ops::DerefMut
 for crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

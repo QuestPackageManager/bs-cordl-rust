@@ -34,14 +34,14 @@ for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]
 impl std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

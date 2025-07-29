@@ -30,7 +30,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT"
 )]
 impl std::ops::Deref for crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
     type Target = crate::System::Linq::Expressions::Interpreter::CastInstruction;
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::GlobalNamespace::CastInstruction_CastInstruction
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT"
+    feature = "System+Linq+Expressions+Interpreter+CastInstruction+CastInstructionNoT"
 )]
 impl std::ops::DerefMut for crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

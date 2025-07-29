@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
@@ -39,7 +39,7 @@ for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
+    feature = "System+Linq+Expressions+Interpreter+NegateCheckedInstruction+NegateCheckedInt64"
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NegateCheckedInstruction_NegateCheckedInt64 {

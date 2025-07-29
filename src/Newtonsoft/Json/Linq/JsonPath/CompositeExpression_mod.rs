@@ -31,14 +31,14 @@ for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     type Target = crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+CompositeExpression")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

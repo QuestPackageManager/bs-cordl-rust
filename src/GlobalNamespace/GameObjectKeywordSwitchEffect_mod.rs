@@ -32,14 +32,14 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "GameObjectKeywordSwitchEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect")]
+#[cfg(feature = "GameObjectKeywordSwitchEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameObjectKeywordSwitchEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -146,7 +146,7 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem 
         false
     }
 }
-#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -154,7 +154,7 @@ for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
+#[cfg(feature = "GameObjectKeywordSwitchEffect+GameObjectKeywordItem")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameObjectKeywordSwitchEffect_GameObjectKeywordItem {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

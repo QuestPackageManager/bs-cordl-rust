@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Array")]
+#[cfg(feature = "System+Array")]
 impl std::ops::Deref for crate::System::Array {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Array")]
+#[cfg(feature = "System+Array")]
 impl std::ops::DerefMut for crate::System::Array {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5045,14 +5045,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_ArrayEnumerator
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
+#[cfg(feature = "System+Array+ArrayEnumerator")]
 impl std::ops::Deref for crate::System::Array_ArrayEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Array+ArrayEnumerator")]
+#[cfg(feature = "System+Array+ArrayEnumerator")]
 impl std::ops::DerefMut for crate::System::Array_ArrayEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5266,7 +5266,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -5274,7 +5274,7 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Array+EmptyInternalEnumerator_1")]
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5854,14 +5854,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_RawData {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Array+RawData")]
+#[cfg(feature = "System+Array+RawData")]
 impl std::ops::Deref for crate::System::Array_RawData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Array+RawData")]
+#[cfg(feature = "System+Array+RawData")]
 impl std::ops::DerefMut for crate::System::Array_RawData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

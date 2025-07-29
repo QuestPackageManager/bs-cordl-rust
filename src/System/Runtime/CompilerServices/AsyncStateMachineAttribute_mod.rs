@@ -28,9 +28,7 @@ for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     type Target = crate::System::Runtime::CompilerServices::StateMachineAttribute;
@@ -38,9 +36,7 @@ for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+CompilerServices+AsyncStateMachineAttribute"
-)]
+#[cfg(feature = "System+Runtime+CompilerServices+AsyncStateMachineAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncStateMachineAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -27,14 +27,14 @@ for crate::UnityEngine::AnimatorOverrideController {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AnimatorOverrideController")]
+#[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::Deref for crate::UnityEngine::AnimatorOverrideController {
     type Target = crate::UnityEngine::RuntimeAnimatorController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+AnimatorOverrideController")]
+#[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::DerefMut for crate::UnityEngine::AnimatorOverrideController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -295,7 +295,7 @@ for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCall
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
+    feature = "UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {
@@ -305,7 +305,7 @@ for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCall
     }
 }
 #[cfg(
-    feature = "cordl_class_UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
+    feature = "UnityEngine+AnimatorOverrideController+OnOverrideControllerDirtyCallback"
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {

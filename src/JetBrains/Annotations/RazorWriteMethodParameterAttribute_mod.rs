@@ -24,7 +24,7 @@ for crate::JetBrains::Annotations::RazorWriteMethodParameterAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorWriteMethodParameterAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorWriteMethodParameterAttribute")]
 impl std::ops::Deref
 for crate::JetBrains::Annotations::RazorWriteMethodParameterAttribute {
     type Target = crate::System::Attribute;
@@ -32,7 +32,7 @@ for crate::JetBrains::Annotations::RazorWriteMethodParameterAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_JetBrains+Annotations+RazorWriteMethodParameterAttribute")]
+#[cfg(feature = "JetBrains+Annotations+RazorWriteMethodParameterAttribute")]
 impl std::ops::DerefMut
 for crate::JetBrains::Annotations::RazorWriteMethodParameterAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
+#[cfg(feature = "UnityEngine+RectTransform")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform {
     type Target = crate::UnityEngine::Transform;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RectTransform")]
+#[cfg(feature = "UnityEngine+RectTransform")]
 impl std::ops::DerefMut for crate::UnityEngine::RectTransform {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1376,14 +1376,14 @@ for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl std::ops::Deref for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+RectTransform+ReapplyDrivenProperties")]
+#[cfg(feature = "UnityEngine+RectTransform+ReapplyDrivenProperties")]
 impl std::ops::DerefMut for crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

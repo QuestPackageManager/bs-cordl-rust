@@ -38,7 +38,7 @@ for crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueueOperation")]
+#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueueOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -46,7 +46,7 @@ for crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ResourceManagement+WebRequestQueueOperation")]
+#[cfg(feature = "UnityEngine+ResourceManagement+WebRequestQueueOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::WebRequestQueueOperation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

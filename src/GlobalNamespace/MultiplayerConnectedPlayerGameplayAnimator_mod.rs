@@ -41,7 +41,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     type Target = crate::GlobalNamespace::MultiplayerGameplayAnimator;
@@ -49,7 +49,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameplayAnimator")]
+#[cfg(feature = "MultiplayerConnectedPlayerGameplayAnimator")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameplayAnimator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

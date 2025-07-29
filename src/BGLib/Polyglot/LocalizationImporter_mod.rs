@@ -24,14 +24,14 @@ for crate::BGLib::Polyglot::LocalizationImporter {
         false
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationImporter")]
+#[cfg(feature = "BGLib+Polyglot+LocalizationImporter")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationImporter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationImporter")]
+#[cfg(feature = "BGLib+Polyglot+LocalizationImporter")]
 impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationImporter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -24,7 +24,7 @@ for crate::System::Collections::Specialized::INotifyCollectionChanged {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+INotifyCollectionChanged")]
+#[cfg(feature = "System+Collections+Specialized+INotifyCollectionChanged")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::INotifyCollectionChanged {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::System::Collections::Specialized::INotifyCollectionChanged {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Specialized+INotifyCollectionChanged")]
+#[cfg(feature = "System+Collections+Specialized+INotifyCollectionChanged")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::INotifyCollectionChanged {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

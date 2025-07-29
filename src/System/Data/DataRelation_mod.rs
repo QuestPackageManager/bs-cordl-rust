@@ -61,14 +61,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataRelation {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRelation")]
+#[cfg(feature = "System+Data+DataRelation")]
 impl std::ops::Deref for crate::System::Data::DataRelation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+DataRelation")]
+#[cfg(feature = "System+Data+DataRelation")]
 impl std::ops::DerefMut for crate::System::Data::DataRelation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

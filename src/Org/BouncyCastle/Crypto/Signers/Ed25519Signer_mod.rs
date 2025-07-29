@@ -34,14 +34,14 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -325,7 +325,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer {
     type Target = crate::System::IO::MemoryStream;
@@ -333,7 +333,7 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519Signer+Buffer")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519Signer_Buffer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

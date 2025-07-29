@@ -72,7 +72,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
         false
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -80,7 +80,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MultiplayerConnectedPlayerBeatmapObjectEventManager")]
+#[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

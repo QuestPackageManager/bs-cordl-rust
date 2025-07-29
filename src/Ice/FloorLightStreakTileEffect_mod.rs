@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightStreakTileEffe
         false
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect {
     type Target = crate::GlobalNamespace::AbstractPoolContainer;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
+#[cfg(feature = "Ice+FloorLightStreakTileEffect")]
 impl std::ops::DerefMut for crate::Ice::FloorLightStreakTileEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -275,14 +275,14 @@ for crate::Ice::FloorLightStreakTileEffect_Element {
         false
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect_Element {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect+Element")]
+#[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::DerefMut for crate::Ice::FloorLightStreakTileEffect_Element {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -39,14 +39,14 @@ for crate::GlobalNamespace::NoteCutParticlesEffect {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
+#[cfg(feature = "NoteCutParticlesEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutParticlesEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteCutParticlesEffect")]
+#[cfg(feature = "NoteCutParticlesEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutParticlesEffect {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -33,14 +33,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Scro
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller {
     type Target = crate::UnityEngine::UIElements::VisualElement;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -697,14 +697,14 @@ for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     type Target = crate::UnityEngine::UIElements::Slider;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+ScrollerSlider")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+ScrollerSlider")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -818,7 +818,7 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
@@ -828,7 +828,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -915,14 +915,14 @@ for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::VisualElement_UxmlTraits;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Scroller+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Scroller_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

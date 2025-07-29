@@ -25,14 +25,14 @@ for crate::System::Xml::XmlTextWriterBase64Encoder {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlTextWriterBase64Encoder")]
+#[cfg(feature = "System+Xml+XmlTextWriterBase64Encoder")]
 impl std::ops::Deref for crate::System::Xml::XmlTextWriterBase64Encoder {
     type Target = crate::System::Xml::Base64Encoder;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlTextWriterBase64Encoder")]
+#[cfg(feature = "System+Xml+XmlTextWriterBase64Encoder")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextWriterBase64Encoder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

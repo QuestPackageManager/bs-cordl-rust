@@ -26,14 +26,14 @@ for crate::GlobalNamespace::LocalPlayerInGameMenuInitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_LocalPlayerInGameMenuInitData")]
+#[cfg(feature = "LocalPlayerInGameMenuInitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalPlayerInGameMenuInitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LocalPlayerInGameMenuInitData")]
+#[cfg(feature = "LocalPlayerInGameMenuInitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalPlayerInGameMenuInitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

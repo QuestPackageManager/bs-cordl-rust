@@ -52,7 +52,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_2")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
     type Target = crate::UnityEngine::Events::UnityEventBase;
@@ -60,7 +60,7 @@ for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Events+UnityEvent_2")]
+#[cfg(feature = "UnityEngine+Events+UnityEvent_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

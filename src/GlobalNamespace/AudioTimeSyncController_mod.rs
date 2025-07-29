@@ -58,14 +58,14 @@ for crate::GlobalNamespace::AudioTimeSyncController {
         false
     }
 }
-#[cfg(feature = "cordl_class_AudioTimeSyncController")]
+#[cfg(feature = "AudioTimeSyncController")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AudioTimeSyncController")]
+#[cfg(feature = "AudioTimeSyncController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -763,14 +763,14 @@ for crate::GlobalNamespace::AudioTimeSyncController_InitData {
         false
     }
 }
-#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
+#[cfg(feature = "AudioTimeSyncController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_AudioTimeSyncController+InitData")]
+#[cfg(feature = "AudioTimeSyncController+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

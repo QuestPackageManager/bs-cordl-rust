@@ -28,9 +28,7 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<u32>;
@@ -38,9 +36,7 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription"
-)]
+#[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

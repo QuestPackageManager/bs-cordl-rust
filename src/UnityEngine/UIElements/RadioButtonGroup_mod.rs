@@ -39,14 +39,14 @@ for crate::UnityEngine::UIElements::RadioButtonGroup {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup {
     type Target = crate::UnityEngine::UIElements::BaseField_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButtonGroup {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -404,7 +404,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
     type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButtonGroup>,
@@ -416,7 +416,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFa
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -498,7 +498,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
         i32,
@@ -510,7 +510,7 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTr
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

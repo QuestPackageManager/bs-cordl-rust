@@ -26,7 +26,7 @@ for crate::GlobalNamespace::GuestNameButtonsListItemsList {
         false
     }
 }
-#[cfg(feature = "cordl_class_GuestNameButtonsListItemsList")]
+#[cfg(feature = "GuestNameButtonsListItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::GuestNameButtonsListItemsList {
     type Target = crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GuestNameButtonsListItem>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GuestNameButtonsListItemsList {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GuestNameButtonsListItemsList")]
+#[cfg(feature = "GuestNameButtonsListItemsList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GuestNameButtonsListItemsList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

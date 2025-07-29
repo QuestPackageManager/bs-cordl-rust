@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+IValueAnimationUpdate")]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+IValueAnimationUpdate")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+Experimental+IValueAnimationUpdate")]
+#[cfg(feature = "UnityEngine+UIElements+Experimental+IValueAnimationUpdate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

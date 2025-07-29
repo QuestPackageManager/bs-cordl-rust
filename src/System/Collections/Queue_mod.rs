@@ -34,14 +34,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::Queue {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue")]
+#[cfg(feature = "System+Collections+Queue")]
 impl std::ops::Deref for crate::System::Collections::Queue {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue")]
+#[cfg(feature = "System+Collections+Queue")]
 impl std::ops::DerefMut for crate::System::Collections::Queue {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -540,14 +540,14 @@ for crate::System::Collections::Queue_QueueDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue+QueueDebugView")]
+#[cfg(feature = "System+Collections+Queue+QueueDebugView")]
 impl std::ops::Deref for crate::System::Collections::Queue_QueueDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue+QueueDebugView")]
+#[cfg(feature = "System+Collections+Queue+QueueDebugView")]
 impl std::ops::DerefMut for crate::System::Collections::Queue_QueueDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -595,14 +595,14 @@ for crate::System::Collections::Queue_QueueEnumerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue+QueueEnumerator")]
+#[cfg(feature = "System+Collections+Queue+QueueEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Queue_QueueEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Collections+Queue+QueueEnumerator")]
+#[cfg(feature = "System+Collections+Queue+QueueEnumerator")]
 impl std::ops::DerefMut for crate::System::Collections::Queue_QueueEnumerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

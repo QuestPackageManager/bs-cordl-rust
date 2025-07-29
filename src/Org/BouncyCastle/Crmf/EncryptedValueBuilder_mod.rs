@@ -33,14 +33,14 @@ for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
+#[cfg(feature = "Org+BouncyCastle+Crmf+EncryptedValueBuilder")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crmf::EncryptedValueBuilder {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -48,7 +48,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_MemoryPoolContainer_2")]
+#[cfg(feature = "MemoryPoolContainer_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::MemoryPoolContainer_2<T0, T1> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -56,7 +56,7 @@ for crate::GlobalNamespace::MemoryPoolContainer_2<T0, T1> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MemoryPoolContainer_2")]
+#[cfg(feature = "MemoryPoolContainer_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::MemoryPoolContainer_2<T0, T1> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

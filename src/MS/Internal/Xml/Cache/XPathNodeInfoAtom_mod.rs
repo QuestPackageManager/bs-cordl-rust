@@ -39,14 +39,14 @@ for crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
         false
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

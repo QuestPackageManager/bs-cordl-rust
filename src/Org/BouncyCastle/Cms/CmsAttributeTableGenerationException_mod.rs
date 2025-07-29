@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerationException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableGenerationException")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableGenerationException")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerationException {
     type Target = crate::Org::BouncyCastle::Cms::CmsException;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerationException {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Cms+CmsAttributeTableGenerationException")]
+#[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableGenerationException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerationException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

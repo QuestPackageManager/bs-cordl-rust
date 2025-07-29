@@ -30,7 +30,7 @@ for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
         false
     }
 }
-#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     type Target = crate::UnityEngine::MonoBehaviour;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_FadeOutSongPreviewPlayerOnSceneTransitionStart")]
+#[cfg(feature = "FadeOutSongPreviewPlayerOnSceneTransitionStart")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FadeOutSongPreviewPlayerOnSceneTransitionStart {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

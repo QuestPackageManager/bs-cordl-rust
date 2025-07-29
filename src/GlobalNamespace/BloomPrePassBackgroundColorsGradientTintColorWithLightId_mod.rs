@@ -29,7 +29,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLig
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightId")]
+#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightId")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightId {
     type Target = crate::GlobalNamespace::RuntimeLightWithIds;
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLig
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassBackgroundColorsGradientTintColorWithLightId")]
+#[cfg(feature = "BloomPrePassBackgroundColorsGradientTintColorWithLightId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientTintColorWithLightId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

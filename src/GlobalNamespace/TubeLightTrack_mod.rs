@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TubeLightTra
         false
     }
 }
-#[cfg(feature = "cordl_class_TubeLightTrack")]
+#[cfg(feature = "TubeLightTrack")]
 impl std::ops::Deref for crate::GlobalNamespace::TubeLightTrack {
     type Target = crate::UnityEngine::Timeline::TrackAsset;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_TubeLightTrack")]
+#[cfg(feature = "TubeLightTrack")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TubeLightTrack {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

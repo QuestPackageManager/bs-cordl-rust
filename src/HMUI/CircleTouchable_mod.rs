@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::CircleTouchable {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
+#[cfg(feature = "HMUI+CircleTouchable")]
 impl std::ops::Deref for crate::HMUI::CircleTouchable {
     type Target = crate::HMUI::Touchable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+CircleTouchable")]
+#[cfg(feature = "HMUI+CircleTouchable")]
 impl std::ops::DerefMut for crate::HMUI::CircleTouchable {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -50,7 +50,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2<TSource, TResu
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -61,7 +61,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2<TSource, TResu
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2")]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -266,9 +266,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2_Select<
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
@@ -282,9 +280,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2_Select<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select"
-)]
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+SelectObservable_2+Select")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,

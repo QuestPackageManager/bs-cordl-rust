@@ -38,14 +38,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutter {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter")]
+#[cfg(feature = "NoteCutter")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter")]
+#[cfg(feature = "NoteCutter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutter {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -153,14 +153,14 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter+CuttableBySaberSortParams")]
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter+CuttableBySaberSortParams")]
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -234,7 +234,7 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
         false
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter+CuttableBySaberSortParamsComparer")]
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -242,7 +242,7 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NoteCutter+CuttableBySaberSortParamsComparer")]
+#[cfg(feature = "NoteCutter+CuttableBySaberSortParamsComparer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

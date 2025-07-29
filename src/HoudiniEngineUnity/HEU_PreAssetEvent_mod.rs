@@ -26,7 +26,7 @@ for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
         false
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PreAssetEvent")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PreAssetEventData>,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_PreAssetEvent")]
+#[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEvent")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

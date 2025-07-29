@@ -43,14 +43,14 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroupList")]
+#[cfg(feature = "BeatmapEventDataBoxGroupList")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapEventDataBoxGroupList")]
+#[cfg(feature = "BeatmapEventDataBoxGroupList")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

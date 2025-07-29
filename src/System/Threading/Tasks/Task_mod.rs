@@ -37,14 +37,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Threading::Tasks::Tas
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task")]
+#[cfg(feature = "System+Threading+Tasks+Task")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task")]
+#[cfg(feature = "System+Threading+Tasks+Task")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::Task {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4490,14 +4490,14 @@ for crate::System::Threading::Tasks::Task_ContingentProperties {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+ContingentProperties")]
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task_ContingentProperties {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+ContingentProperties")]
+#[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_ContingentProperties {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4620,14 +4620,14 @@ for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+SetOnInvokeMres")]
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     type Target = crate::System::Threading::ManualResetEventSlim;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Threading+Tasks+Task+SetOnInvokeMres")]
+#[cfg(feature = "System+Threading+Tasks+Task+SetOnInvokeMres")]
 impl std::ops::DerefMut for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

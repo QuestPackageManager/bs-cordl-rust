@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LeaderboardI
         false
     }
 }
-#[cfg(feature = "cordl_class_LeaderboardIdsSO")]
+#[cfg(feature = "LeaderboardIdsSO")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardIdsSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LeaderboardIdsSO")]
+#[cfg(feature = "LeaderboardIdsSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardIdsSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -290,14 +290,14 @@ for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
         false
     }
 }
-#[cfg(feature = "cordl_class_LeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_LeaderboardIdsSO+LeaderboardIdData")]
+#[cfg(feature = "LeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

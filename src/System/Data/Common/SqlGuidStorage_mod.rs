@@ -26,14 +26,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::Common::SqlGuid
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+SqlGuidStorage")]
+#[cfg(feature = "System+Data+Common+SqlGuidStorage")]
 impl std::ops::Deref for crate::System::Data::Common::SqlGuidStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+SqlGuidStorage")]
+#[cfg(feature = "System+Data+Common+SqlGuidStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::SqlGuidStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

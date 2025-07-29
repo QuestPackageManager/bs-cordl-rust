@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlDocumentFragm
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlDocumentFragment")]
+#[cfg(feature = "System+Xml+XmlDocumentFragment")]
 impl std::ops::Deref for crate::System::Xml::XmlDocumentFragment {
     type Target = crate::System::Xml::XmlNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+XmlDocumentFragment")]
+#[cfg(feature = "System+Xml+XmlDocumentFragment")]
 impl std::ops::DerefMut for crate::System::Xml::XmlDocumentFragment {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

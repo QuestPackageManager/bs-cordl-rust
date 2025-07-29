@@ -33,9 +33,7 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
-)]
+#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     type Target = crate::System::EventArgs;
@@ -43,9 +41,7 @@ for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Collections+Specialized+NotifyCollectionChangedEventArgs"
-)]
+#[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedEventArgs")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -34,14 +34,14 @@ for crate::BeatSaber::GameSettings::ControllersTransformSettings {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllersTransformSettings")]
+#[cfg(feature = "BeatSaber+GameSettings+ControllersTransformSettings")]
 impl std::ops::DerefMut
 for crate::BeatSaber::GameSettings::ControllersTransformSettings {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

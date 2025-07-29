@@ -47,9 +47,7 @@ for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+FixedHeightVirtualizationController_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+FixedHeightVirtualizationController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
     type Target = crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T>;
@@ -57,9 +55,7 @@ for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_UnityEngine+UIElements+FixedHeightVirtualizationController_1"
-)]
+#[cfg(feature = "UnityEngine+UIElements+FixedHeightVirtualizationController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

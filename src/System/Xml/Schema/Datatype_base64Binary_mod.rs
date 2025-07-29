@@ -24,14 +24,14 @@ for crate::System::Xml::Schema::Datatype_base64Binary {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_base64Binary")]
+#[cfg(feature = "System+Xml+Schema+Datatype_base64Binary")]
 impl std::ops::Deref for crate::System::Xml::Schema::Datatype_base64Binary {
     type Target = crate::System::Xml::Schema::Datatype_anySimpleType;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+Schema+Datatype_base64Binary")]
+#[cfg(feature = "System+Xml+Schema+Datatype_base64Binary")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_base64Binary {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::BindingUtil {
         false
     }
 }
-#[cfg(feature = "cordl_class_Zenject+BindingUtil")]
+#[cfg(feature = "Zenject+BindingUtil")]
 impl std::ops::Deref for crate::Zenject::BindingUtil {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Zenject+BindingUtil")]
+#[cfg(feature = "Zenject+BindingUtil")]
 impl std::ops::DerefMut for crate::Zenject::BindingUtil {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

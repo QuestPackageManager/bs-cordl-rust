@@ -28,14 +28,14 @@ for crate::GlobalNamespace::BloomPrePassEffectSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
+#[cfg(feature = "BloomPrePassEffectSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassEffectSO {
     type Target = crate::GlobalNamespace::TextureEffectSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassEffectSO")]
+#[cfg(feature = "BloomPrePassEffectSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassEffectSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

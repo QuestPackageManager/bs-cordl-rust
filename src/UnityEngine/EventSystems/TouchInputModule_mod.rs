@@ -30,14 +30,14 @@ for crate::UnityEngine::EventSystems::TouchInputModule {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+TouchInputModule")]
+#[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::TouchInputModule {
     type Target = crate::UnityEngine::EventSystems::PointerInputModule;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+EventSystems+TouchInputModule")]
+#[cfg(feature = "UnityEngine+EventSystems+TouchInputModule")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::TouchInputModule {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

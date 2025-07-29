@@ -27,7 +27,7 @@ for crate::UnityEngine::UIElements::CollectionVirtualizationController {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::CollectionVirtualizationController {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionVirtualizationController")]
+#[cfg(feature = "UnityEngine+UIElements+CollectionVirtualizationController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::CollectionVirtualizationController {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

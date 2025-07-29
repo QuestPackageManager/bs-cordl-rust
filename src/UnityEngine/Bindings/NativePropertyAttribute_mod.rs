@@ -25,14 +25,14 @@ for crate::UnityEngine::Bindings::NativePropertyAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::NativePropertyAttribute {
     type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+NativePropertyAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+NativePropertyAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::NativePropertyAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

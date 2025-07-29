@@ -24,7 +24,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::Kdf1BytesGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Kdf1BytesGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf1BytesGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::Kdf1BytesGenerator {
     type Target = crate::Org::BouncyCastle::Crypto::Generators::BaseKdfBytesGenerator;
@@ -32,7 +32,7 @@ for crate::Org::BouncyCastle::Crypto::Generators::Kdf1BytesGenerator {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Generators+Kdf1BytesGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Generators+Kdf1BytesGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Generators::Kdf1BytesGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

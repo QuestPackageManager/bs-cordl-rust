@@ -48,14 +48,14 @@ for crate::GlobalNamespace::BloomPrePassRendererSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO")]
+#[cfg(feature = "BloomPrePassRendererSO")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRendererSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO")]
+#[cfg(feature = "BloomPrePassRendererSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRendererSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -613,7 +613,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO+LightsRenderingData")]
+#[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -621,7 +621,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO+LightsRenderingData")]
+#[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -699,7 +699,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
         false
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO+PreallocationData")]
+#[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -707,7 +707,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BloomPrePassRendererSO+PreallocationData")]
+#[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

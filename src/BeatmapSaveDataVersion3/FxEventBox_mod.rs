@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::FxEv
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventBox")]
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBox {
     type Target = crate::BeatmapSaveDataVersion3::EventBox;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+FxEventBox")]
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventBox")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::FxEventBox {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,14 +28,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+FpCurve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+FpCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::FpCurve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpCurve;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Math+EC+FpCurve")]
+#[cfg(feature = "Org+BouncyCastle+Math+EC+FpCurve")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::FpCurve {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

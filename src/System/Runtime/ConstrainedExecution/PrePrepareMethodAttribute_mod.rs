@@ -28,9 +28,7 @@ for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
-)]
+#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
 impl std::ops::Deref
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     type Target = crate::System::Attribute;
@@ -38,9 +36,7 @@ for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute"
-)]
+#[cfg(feature = "System+Runtime+ConstrainedExecution+PrePrepareMethodAttribute")]
 impl std::ops::DerefMut
 for crate::System::Runtime::ConstrainedExecution::PrePrepareMethodAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

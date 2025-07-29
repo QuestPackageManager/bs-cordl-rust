@@ -30,7 +30,7 @@ for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
         false
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     type Target = crate::Zenject::NoTransitionInstaller;
@@ -38,7 +38,7 @@ for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_RecordingToolSettingsNoTransitionInstaller")]
+#[cfg(feature = "RecordingToolSettingsNoTransitionInstaller")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::RecordingToolSettingsNoTransitionInstaller {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

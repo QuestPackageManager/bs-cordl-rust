@@ -27,14 +27,14 @@ for crate::GlobalNamespace::HealthWarningSceneSetupData {
         false
     }
 }
-#[cfg(feature = "cordl_class_HealthWarningSceneSetupData")]
+#[cfg(feature = "HealthWarningSceneSetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HealthWarningSceneSetupData")]
+#[cfg(feature = "HealthWarningSceneSetupData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningSceneSetupData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

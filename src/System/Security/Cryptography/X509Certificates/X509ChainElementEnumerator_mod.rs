@@ -30,7 +30,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnu
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
 )]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnumerator {
@@ -40,7 +40,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnu
     }
 }
 #[cfg(
-    feature = "cordl_class_System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
+    feature = "System+Security+Cryptography+X509Certificates+X509ChainElementEnumerator"
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElementEnumerator {

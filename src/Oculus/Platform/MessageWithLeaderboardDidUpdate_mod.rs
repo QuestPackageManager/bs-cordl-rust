@@ -24,14 +24,14 @@ for crate::Oculus::Platform::MessageWithLeaderboardDidUpdate {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardDidUpdate")]
+#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardDidUpdate")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLeaderboardDidUpdate {
     type Target = crate::Oculus::Platform::Message_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardDidUpdate")]
+#[cfg(feature = "Oculus+Platform+MessageWithLeaderboardDidUpdate")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithLeaderboardDidUpdate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

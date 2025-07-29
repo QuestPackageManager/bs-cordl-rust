@@ -24,14 +24,14 @@ for crate::Org::BouncyCastle::Security::InvalidParameterException {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+InvalidParameterException")]
+#[cfg(feature = "Org+BouncyCastle+Security+InvalidParameterException")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::InvalidParameterException {
     type Target = crate::Org::BouncyCastle::Security::KeyException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Security+InvalidParameterException")]
+#[cfg(feature = "Org+BouncyCastle+Security+InvalidParameterException")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::InvalidParameterException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

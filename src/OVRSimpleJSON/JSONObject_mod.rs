@@ -30,14 +30,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONObject {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONObject")]
+#[cfg(feature = "OVRSimpleJSON+JSONObject")]
 impl std::ops::Deref for crate::OVRSimpleJSON::JSONObject {
     type Target = crate::OVRSimpleJSON::JSONNode;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRSimpleJSON+JSONObject")]
+#[cfg(feature = "OVRSimpleJSON+JSONObject")]
 impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

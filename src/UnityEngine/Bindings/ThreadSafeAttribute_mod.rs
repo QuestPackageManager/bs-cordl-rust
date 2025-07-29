@@ -24,14 +24,14 @@ for crate::UnityEngine::Bindings::ThreadSafeAttribute {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
 impl std::ops::Deref for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     type Target = crate::UnityEngine::Bindings::NativeMethodAttribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+Bindings+ThreadSafeAttribute")]
+#[cfg(feature = "UnityEngine+Bindings+ThreadSafeAttribute")]
 impl std::ops::DerefMut for crate::UnityEngine::Bindings::ThreadSafeAttribute {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

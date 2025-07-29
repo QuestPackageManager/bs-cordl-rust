@@ -61,7 +61,7 @@ for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
@@ -72,7 +72,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+GroupedEnumerable_3")]
+#[cfg(feature = "System+Linq+GroupedEnumerable_3")]
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,

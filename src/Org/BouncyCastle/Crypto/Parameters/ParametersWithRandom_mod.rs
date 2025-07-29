@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithRandom {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithRandom {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -38,7 +38,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithRandom {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+ParametersWithRandom")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithRandom {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -25,14 +25,14 @@ for crate::Org::BouncyCastle::Asn1::DerSetGenerator {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerSetGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerSetGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::DerSetGenerator {
     type Target = crate::Org::BouncyCastle::Asn1::DerGenerator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Asn1+DerSetGenerator")]
+#[cfg(feature = "Org+BouncyCastle+Asn1+DerSetGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerSetGenerator {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

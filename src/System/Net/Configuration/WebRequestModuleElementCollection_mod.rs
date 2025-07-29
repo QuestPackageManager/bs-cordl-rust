@@ -28,9 +28,7 @@ for crate::System::Net::Configuration::WebRequestModuleElementCollection {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Configuration+WebRequestModuleElementCollection"
-)]
+#[cfg(feature = "System+Net+Configuration+WebRequestModuleElementCollection")]
 impl std::ops::Deref
 for crate::System::Net::Configuration::WebRequestModuleElementCollection {
     type Target = crate::System::Configuration::ConfigurationElementCollection;
@@ -38,9 +36,7 @@ for crate::System::Net::Configuration::WebRequestModuleElementCollection {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Net+Configuration+WebRequestModuleElementCollection"
-)]
+#[cfg(feature = "System+Net+Configuration+WebRequestModuleElementCollection")]
 impl std::ops::DerefMut
 for crate::System::Net::Configuration::WebRequestModuleElementCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

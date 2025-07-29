@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
     type Target = crate::Oculus::Platform::Message_1<
@@ -40,7 +40,7 @@ for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
+#[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

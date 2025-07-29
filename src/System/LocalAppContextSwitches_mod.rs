@@ -23,43 +23,21 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::LocalAppContextSwitch
         false
     }
 }
-#[cfg(feature = "cordl_class_System+LocalAppContextSwitches")]
+#[cfg(feature = "System+LocalAppContextSwitches")]
 impl std::ops::Deref for crate::System::LocalAppContextSwitches {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+LocalAppContextSwitches")]
+#[cfg(feature = "System+LocalAppContextSwitches")]
 impl std::ops::DerefMut for crate::System::LocalAppContextSwitches {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+LocalAppContextSwitches")]
-impl crate::System::LocalAppContextSwitches {
-    pub fn get_AllowArbitraryTypeInstantiation() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_AllowArbitraryTypeInstantiation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_AllowArbitraryTypeInstantiation", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
-        Ok(__cordl_ret.into())
-    }
-}
+impl crate::System::LocalAppContextSwitches {}
 #[cfg(feature = "cordl_class_System+LocalAppContextSwitches")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::LocalAppContextSwitches {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

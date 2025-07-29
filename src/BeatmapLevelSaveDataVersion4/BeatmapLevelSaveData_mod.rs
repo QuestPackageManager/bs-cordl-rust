@@ -52,14 +52,14 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
         false
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::DerefMut for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -418,9 +418,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
-)]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -428,9 +426,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme"
-)]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -523,9 +519,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
-)]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -533,9 +527,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap"
-)]
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

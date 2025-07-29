@@ -30,14 +30,14 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint {
     type Target = crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
+#[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PolygonPoint")]
 impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::PolygonPoint {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

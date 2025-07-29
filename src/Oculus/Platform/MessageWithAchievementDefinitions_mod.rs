@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithAchievementDefinitions {
         false
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAchievementDefinitions")]
+#[cfg(feature = "Oculus+Platform+MessageWithAchievementDefinitions")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAchievementDefinitions {
     type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
@@ -39,7 +39,7 @@ impl std::ops::Deref for crate::Oculus::Platform::MessageWithAchievementDefiniti
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Oculus+Platform+MessageWithAchievementDefinitions")]
+#[cfg(feature = "Oculus+Platform+MessageWithAchievementDefinitions")]
 impl std::ops::DerefMut for crate::Oculus::Platform::MessageWithAchievementDefinitions {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -23,14 +23,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::IJsonLineIn
         false
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+IJsonLineInfo")]
+#[cfg(feature = "Newtonsoft+Json+IJsonLineInfo")]
 impl std::ops::Deref for crate::Newtonsoft::Json::IJsonLineInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Newtonsoft+Json+IJsonLineInfo")]
+#[cfg(feature = "Newtonsoft+Json+IJsonLineInfo")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::IJsonLineInfo {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -28,9 +28,7 @@ for crate::System::Linq::Expressions::Interpreter::StoreLocalBoxedInstruction {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreLocalBoxedInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalBoxedInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::StoreLocalBoxedInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction;
@@ -38,9 +36,7 @@ for crate::System::Linq::Expressions::Interpreter::StoreLocalBoxedInstruction {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+StoreLocalBoxedInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+StoreLocalBoxedInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::StoreLocalBoxedInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

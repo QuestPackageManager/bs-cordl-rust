@@ -34,7 +34,7 @@ for crate::GlobalNamespace::NodePoseSyncStateManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
+#[cfg(feature = "NodePoseSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateManager {
     type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
@@ -51,7 +51,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateManager {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_NodePoseSyncStateManager")]
+#[cfg(feature = "NodePoseSyncStateManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NodePoseSyncStateManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

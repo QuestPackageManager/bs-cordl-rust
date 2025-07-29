@@ -26,7 +26,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
         false
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Bounds,
@@ -35,7 +35,7 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::BoundsPropertyBag {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -119,9 +119,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty"
-)]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -132,9 +130,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+CenterProperty"
-)]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -244,9 +240,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty"
-)]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     type Target = crate::Unity::Properties::Property_2<
@@ -257,9 +251,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty"
-)]
+#[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

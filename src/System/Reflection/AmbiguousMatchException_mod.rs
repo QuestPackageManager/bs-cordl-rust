@@ -24,14 +24,14 @@ for crate::System::Reflection::AmbiguousMatchException {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AmbiguousMatchException")]
+#[cfg(feature = "System+Reflection+AmbiguousMatchException")]
 impl std::ops::Deref for crate::System::Reflection::AmbiguousMatchException {
     type Target = crate::System::SystemException;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Reflection+AmbiguousMatchException")]
+#[cfg(feature = "System+Reflection+AmbiguousMatchException")]
 impl std::ops::DerefMut for crate::System::Reflection::AmbiguousMatchException {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

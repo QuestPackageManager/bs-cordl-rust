@@ -44,7 +44,7 @@ unsafe impl<
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+IGrouping_2")]
+#[cfg(feature = "System+Linq+IGrouping_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
@@ -54,7 +54,7 @@ impl<
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Linq+IGrouping_2")]
+#[cfg(feature = "System+Linq+IGrouping_2")]
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,

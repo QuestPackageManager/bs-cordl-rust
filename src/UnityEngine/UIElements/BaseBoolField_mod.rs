@@ -32,14 +32,14 @@ for crate::UnityEngine::UIElements::BaseBoolField {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseBoolField")]
+#[cfg(feature = "UnityEngine+UIElements+BaseBoolField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseBoolField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseBoolField")]
+#[cfg(feature = "UnityEngine+UIElements+BaseBoolField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseBoolField {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -45,14 +45,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
+#[cfg(feature = "UnityEngine+UI+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider {
     type Target = crate::UnityEngine::UI::Selectable;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Slider")]
+#[cfg(feature = "UnityEngine+UI+Slider")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Slider {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1511,14 +1511,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Slide
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider_SliderEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
+#[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Slider_SliderEvent {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

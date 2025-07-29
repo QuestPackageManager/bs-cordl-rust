@@ -278,14 +278,14 @@ for crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_AddApplicationManifest")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -479,14 +479,14 @@ for crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_CancelApplicationLaunch")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -664,14 +664,14 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationAutoLaunch")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -849,14 +849,14 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationCount")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationCount")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationCount")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1020,14 +1020,14 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByIndex")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1231,7 +1231,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
     type Target = crate::System::MulticastDelegate;
@@ -1239,7 +1239,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationKeyByProcessId")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1437,7 +1437,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
     type Target = crate::System::MulticastDelegate;
@@ -1445,7 +1445,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationLaunchArguments")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1636,14 +1636,14 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationProcessId")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -1821,7 +1821,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
     type Target = crate::System::MulticastDelegate;
@@ -1829,7 +1829,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyBool")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2037,7 +2037,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
     type Target = crate::System::MulticastDelegate;
@@ -2045,7 +2045,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyString")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2287,7 +2287,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
     type Target = crate::System::MulticastDelegate;
@@ -2295,7 +2295,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationPropertyUint64")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2507,9 +2507,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
     type Target = crate::System::MulticastDelegate;
@@ -2517,9 +2515,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationSupportedMimeTypes")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2731,9 +2727,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
@@ -2741,9 +2735,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsErrorNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2925,9 +2917,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
     type Target = crate::System::MulticastDelegate;
@@ -2935,9 +2925,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetApplicationsThatSupportMimeType")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3160,7 +3148,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromE
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
+    feature = "OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
 )]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum {
@@ -3170,7 +3158,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromE
     }
 }
 #[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
+    feature = "OVR+OpenVR+IVRApplications+_GetApplicationsTransitionStateNameFromEnum"
 )]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromEnum {
@@ -3351,14 +3339,14 @@ for crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetCurrentSceneProcessId")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3527,9 +3515,7 @@ for crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
     type Target = crate::System::MulticastDelegate;
@@ -3537,9 +3523,7 @@ for crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetDefaultApplicationForMimeType")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3743,14 +3727,14 @@ for crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetStartingApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetStartingApplication")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetStartingApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetStartingApplication")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3940,14 +3924,14 @@ for crate::OVR::OpenVR::IVRApplications__GetTransitionState {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetTransitionState")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetTransitionState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__GetTransitionState {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_GetTransitionState")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_GetTransitionState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__GetTransitionState {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4123,14 +4107,14 @@ for crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IdentifyApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IdentifyApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IdentifyApplication")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4316,14 +4300,14 @@ for crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IsApplicationInstalled")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4500,14 +4484,14 @@ for crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_IsQuitUserPromptRequested")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -4672,14 +4656,14 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplication {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__LaunchApplication {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplication")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchApplication {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -4856,7 +4840,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
     type Target = crate::System::MulticastDelegate;
@@ -4864,7 +4848,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchApplicationFromMimeType")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5055,14 +5039,14 @@ for crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchDashboardOverlay")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5239,14 +5223,14 @@ for crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchInternalProcess")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -5455,14 +5439,14 @@ for crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_LaunchTemplateApplication")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5696,9 +5680,7 @@ for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
     type Target = crate::System::MulticastDelegate;
@@ -5706,9 +5688,7 @@ for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_PerformApplicationPrelaunchCheck")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -5888,14 +5868,14 @@ for crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_RemoveApplicationManifest")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6081,14 +6061,14 @@ for crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
     type Target = crate::System::MulticastDelegate;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_SetApplicationAutoLaunch")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -6279,9 +6259,7 @@ for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
     type Target = crate::System::MulticastDelegate;
@@ -6289,9 +6267,7 @@ for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType"
-)]
+#[cfg(feature = "OVR+OpenVR+IVRApplications+_SetDefaultApplicationForMimeType")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

@@ -29,9 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstructio
         false
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::CastInstruction;
@@ -39,9 +37,7 @@ for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstructio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(
-    feature = "cordl_class_System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction"
-)]
+#[cfg(feature = "System+Linq+Expressions+Interpreter+CastReferenceToEnumInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::CastReferenceToEnumInstruction {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

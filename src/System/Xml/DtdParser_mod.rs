@@ -69,14 +69,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
+#[cfg(feature = "System+Xml+DtdParser")]
 impl std::ops::Deref for crate::System::Xml::DtdParser {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser")]
+#[cfg(feature = "System+Xml+DtdParser")]
 impl std::ops::DerefMut for crate::System::Xml::DtdParser {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3049,7 +3049,7 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl std::ops::Deref
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -3057,7 +3057,7 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
+#[cfg(feature = "System+Xml+DtdParser+ParseElementOnlyContent_LocalFrame")]
 impl std::ops::DerefMut
 for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -3397,14 +3397,14 @@ for crate::System::Xml::DtdParser_UndeclaredNotation {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
 impl std::ops::Deref for crate::System::Xml::DtdParser_UndeclaredNotation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Xml+DtdParser+UndeclaredNotation")]
+#[cfg(feature = "System+Xml+DtdParser+UndeclaredNotation")]
 impl std::ops::DerefMut for crate::System::Xml::DtdParser_UndeclaredNotation {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

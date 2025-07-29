@@ -24,7 +24,7 @@ for crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal {
         false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+HierarchyTraversal")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+HierarchyTraversal")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheets+HierarchyTraversal")]
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+HierarchyTraversal")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

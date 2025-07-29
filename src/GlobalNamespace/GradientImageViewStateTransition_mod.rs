@@ -31,7 +31,7 @@ for crate::GlobalNamespace::GradientImageViewStateTransition {
         false
     }
 }
-#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
+#[cfg(feature = "GradientImageViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransition {
     type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
@@ -40,7 +40,7 @@ impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransitio
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_GradientImageViewStateTransition")]
+#[cfg(feature = "GradientImageViewStateTransition")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GradientImageViewStateTransition {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

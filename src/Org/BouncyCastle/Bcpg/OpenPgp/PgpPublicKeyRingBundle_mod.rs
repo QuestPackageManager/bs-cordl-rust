@@ -26,7 +26,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
         false
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     type Target = quest_hook::libil2cpp::Il2CppObject;
@@ -34,7 +34,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
+#[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

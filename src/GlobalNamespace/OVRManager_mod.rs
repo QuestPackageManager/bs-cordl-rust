@@ -95,14 +95,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRManager {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRManager")]
+#[cfg(feature = "OVRManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRManager {
     type Target = crate::UnityEngine::MonoBehaviour;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRManager")]
+#[cfg(feature = "OVRManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6591,14 +6591,14 @@ for crate::GlobalNamespace::OVRManager_EventListener {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+EventListener")]
+#[cfg(feature = "OVRManager+EventListener")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRManager_EventListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+EventListener")]
+#[cfg(feature = "OVRManager+EventListener")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager_EventListener {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -6957,7 +6957,7 @@ for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+InstantiateMrcCameraDelegate")]
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
     type Target = crate::System::MulticastDelegate;
@@ -6965,7 +6965,7 @@ for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+InstantiateMrcCameraDelegate")]
+#[cfg(feature = "OVRManager+InstantiateMrcCameraDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -7343,14 +7343,14 @@ for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
         false
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+PassthroughCapabilities")]
+#[cfg(feature = "OVRManager+PassthroughCapabilities")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_OVRManager+PassthroughCapabilities")]
+#[cfg(feature = "OVRManager+PassthroughCapabilities")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

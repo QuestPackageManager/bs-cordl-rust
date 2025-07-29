@@ -29,14 +29,14 @@ for crate::System::Data::Common::SqlBytesStorage {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+SqlBytesStorage")]
+#[cfg(feature = "System+Data+Common+SqlBytesStorage")]
 impl std::ops::Deref for crate::System::Data::Common::SqlBytesStorage {
     type Target = crate::System::Data::Common::DataStorage;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Data+Common+SqlBytesStorage")]
+#[cfg(feature = "System+Data+Common+SqlBytesStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::SqlBytesStorage {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }

@@ -31,14 +31,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Dynamic::ExpandoObjec
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject")]
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject")]
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1355,14 +1355,14 @@ for crate::System::Dynamic::ExpandoObject_ExpandoData {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ExpandoData")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ExpandoData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ExpandoData")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_ExpandoData {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -1643,14 +1643,14 @@ for crate::System::Dynamic::ExpandoObject_KeyCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollection")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollection")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_KeyCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2068,14 +2068,14 @@ for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 impl std::ops::DerefMut
 for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
@@ -2120,14 +2120,14 @@ for crate::System::Dynamic::ExpandoObject_MetaExpando {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+MetaExpando")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_MetaExpando {
     type Target = crate::System::Dynamic::DynamicMetaObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+MetaExpando")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
 impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_MetaExpando {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -2668,14 +2668,14 @@ for crate::System::Dynamic::ExpandoObject_ValueCollection {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollection")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollection")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_ValueCollection {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
@@ -3093,14 +3093,14 @@ for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
         false
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
     type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 impl std::ops::DerefMut
 for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {

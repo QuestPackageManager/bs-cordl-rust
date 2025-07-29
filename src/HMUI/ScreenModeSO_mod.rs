@@ -24,14 +24,14 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScreenModeSO {
         false
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ScreenModeSO")]
+#[cfg(feature = "HMUI+ScreenModeSO")]
 impl std::ops::Deref for crate::HMUI::ScreenModeSO {
     type Target = crate::UnityEngine::ScriptableObject;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_HMUI+ScreenModeSO")]
+#[cfg(feature = "HMUI+ScreenModeSO")]
 impl std::ops::DerefMut for crate::HMUI::ScreenModeSO {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
